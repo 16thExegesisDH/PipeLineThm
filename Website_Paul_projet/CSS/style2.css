@@ -1,0 +1,59 @@
+/* General Body and Page Styling */
+body {
+    font-family: "Junicode", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Main document container: stack elements vertically */
+.document {
+    display: block; /* Default block layout for vertical flow */
+    margin: 1em auto;
+    max-width: 800px; /* Control the max width of the content */
+    padding: 1em;
+}
+
+/* Text container styles */
+.text-container {
+    margin-bottom: 2em; /* Add space below the text before the image */
+}
+
+/* Ensure tables within text are styled properly */
+.text-container table {
+    width: 100%;
+    margin-bottom: 1em; /* Space between tables */
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.text-container .para {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+/* Big image container styles */
+.big-image-container {
+    width: 100%; /* Make the image span the entire width of the page */
+    margin: 0 auto; /* Center the image */
+    text-align: center; /* Center-align the image inside */
+}
+
+/* Ensure the image scales properly */
+.big-image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Prevent overly large image */
+    display: block; /* Center the image */
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
