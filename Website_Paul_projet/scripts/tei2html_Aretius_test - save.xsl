@@ -104,74 +104,17 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template> 
-        
-    <!-- Match the <body> tag -->
+    
     <xsl:template match="body">
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>document</xsl:text>
             </xsl:attribute>
-            <xsl:for-each select="pb">
-                <!-- Extract the relevant digit sequence from pb/@corresp -->
-                <xsl:variable name="pbID" select="substring-after(@corresp, 'fbsb10313792_')"/>
-                <xsl:element name="div">
-                    <xsl:attribute name="class">
-                        <xsl:text>content-wrapper</xsl:text>
-                    </xsl:attribute>
-                    <xsl:apply-templates select="."/>
-                    <!-- Enclose matching fw or ab elements -->
-                    <xsl:apply-templates select="../fw[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
-                    <xsl:apply-templates select="../ab[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
-                </xsl:element>
-            </xsl:for-each>
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
     
-    <!-- Match and process the pb element -->
-    <xsl:template match="pb">
-        <xsl:choose>
-            <xsl:when test="sourcelink">
-                <!-- Add processing for sourcelink if required -->
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:variable name="var2" select="'https://api.digitale-sammlungen.de/iiif/image/v2/'"/>
-                <xsl:variable name="IIIF_link2">
-                    <xsl:value-of select="substring-after(@corresp, 'f')"/>
-                </xsl:variable>
-                <xsl:variable name="endlink" select="'/full/full/0/default.jpg'"/>
-                
-                <xsl:element name="hr">
-                    <!-- Left section with the picture -->
-                    <xsl:element name="div">
-                        <xsl:attribute name="class">image-section</xsl:attribute>
-                        <xsl:element name="img">
-                            <xsl:attribute name="src">
-                                <xsl:value-of select="concat($var2, $IIIF_link2, $endlink)"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="alt">
-                                <xsl:value-of select="substring-after(@corresp,'f')"/>
-                            </xsl:attribute>
-                        </xsl:element>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <!-- Copy the content of fw and ab elements -->
-    <xsl:template match="fw | ab">
-        <xsl:copy>
-            <xsl:copy-of select="@*"/>
-            <xsl:apply-templates select="node()"/>
-        </xsl:copy>
-    </xsl:template>
-    
     <xsl:template match="ab">
-        <!-- right section  with the text -->
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>text-section</xsl:text>
-            </xsl:attribute>
         <xsl:choose>
             <xsl:when test="@type='DropCapitalZone'">
                 <xsl:element name="span">
@@ -195,7 +138,7 @@
             </xsl:otherwise>
            
         </xsl:choose> 
-      </xsl:element>
+      
     </xsl:template>
     
     <xsl:template match="p">
@@ -226,11 +169,6 @@
     </xsl:template>
     
     <xsl:template match="fw">
-        <!-- right section  with the text -->
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>text-section</xsl:text>
-            </xsl:attribute>
         <xsl:choose>
             <xsl:when test="@type='NumberingZone'">
                 <xsl:element name="span">
@@ -265,7 +203,6 @@
                 </xsl:element>
             </xsl:otherwise>
         </xsl:choose>
-      </xsl:element>
     </xsl:template>
     
     <xsl:template match="choice">
@@ -285,7 +222,40 @@
         </xsl:choose>
     </xsl:template>
     
-    
+    <xsl:template match="pb">
+        <xsl:choose>
+            <xsl:when test="sourcelink"></xsl:when>
+            <xsl:otherwise>
+            <xsl:variable name="var2" select="'https://api.digitale-sammlungen.de/iiif/image/v2/'"/>
+            <xsl:variable name="IIIF_link2">
+                <xsl:value-of select="substring-after(@corresp, 'f')"/>
+            </xsl:variable>
+            <xsl:variable name="endlink" select="'/full/full/0/default.jpg'"/>
+        
+        <xsl:element name="hr">
+            <xsl:element name="div">
+                <xsl:attribute name="class">
+                    <xsl:text>content-wrapper</xsl:text>
+                </xsl:attribute>
+<!-- left section with the picture -->
+           <xsl:element name="div">
+               <xsl:attribute name="class">
+                   <xsl:text>image-section</xsl:text>
+               </xsl:attribute>
+                    <xsl:element name="img">
+                        <xsl:attribute name="src">
+                            <xsl:value-of select="concat($var2,$IIIF_link2,$endlink)"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="substring-after(@corresp,'f')"/>
+                        </xsl:attribute>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:element>
+        </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
     <xsl:template match="abbr"/>
     <xsl:template match="expan">
