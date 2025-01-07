@@ -10,10 +10,13 @@
     <xsl:template match="/">
         <html>
             <head>
-                    <!-- Extract the title from short title -->
-                    <title><xsl:value-of select="//title[parent::titleStmt]"/></title>
-                <link href="../Website_Paul_projet/CSS/Lambertus.css" rel="stylesheet"></link>
-                <script src="../Website_Paul_projet/JS/script.js"></script>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                  <!-- Extract the title from short title -->
+                <title>
+                    <xsl:value-of select="//title[parent::titleStmt]"/>
+                </title>
+                <link href="../Website_Paul_projet/CSS/updated.css" rel="stylesheet"/>
+                <script src="../Website_Paul_projet/JS/script.js" defer="defer"></script>
             </head>
             <body>
                 <div id="mySidebar" class="sidebar">
@@ -105,7 +108,6 @@
         </xsl:element>
     </xsl:template> 
         
-    <!-- Match the <body> tag -->
     <xsl:template match="body">
         <xsl:element name="div">
             <xsl:attribute name="class">
@@ -118,35 +120,22 @@
                     <xsl:attribute name="class">
                         <xsl:text>content-wrapper</xsl:text>
                     </xsl:attribute>
-                    <xsl:apply-templates select="."/>
-                    <!-- Enclose matching fw or ab elements -->
-                    <xsl:apply-templates select="../fw[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
-                    <xsl:apply-templates select="../ab[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element>
-    </xsl:template>
-    
-    <!-- Match and process the pb element -->
-    <xsl:template match="pb">
-        <xsl:choose>
-            <xsl:when test="sourcelink">
-                <!-- Add processing for sourcelink if required -->
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:variable name="var2" select="'https://api.digitale-sammlungen.de/iiif/image/v2/'"/>
-                <xsl:variable name="IIIF_link2">
-                    <xsl:value-of select="substring-after(@corresp, 'f')"/>
-                </xsl:variable>
-                <xsl:variable name="endlink" select="'/full/full/0/default.jpg'"/>
-                
-                <xsl:element name="hr">
-                    <!-- Left section with the picture -->
+                    
+                    <!-- Process matching text sections (fw/ab) -->
+                    <xsl:element name="div">
+                        <xsl:attribute name="class">
+                            <xsl:text>text-container</xsl:text>
+                        </xsl:attribute>
+                        <xsl:apply-templates select="../fw[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
+                        <xsl:apply-templates select="../ab[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
+                    </xsl:element>
+                    
+                    <!-- Generate the image section after the text-container -->
                     <xsl:element name="div">
                         <xsl:attribute name="class">image-section</xsl:attribute>
                         <xsl:element name="img">
                             <xsl:attribute name="src">
-                                <xsl:value-of select="concat($var2, $IIIF_link2, $endlink)"/>
+                                <xsl:value-of select="concat('https://api.digitale-sammlungen.de/iiif/image/v2/', substring-after(@corresp, 'f'), '/full/full/0/default.jpg')"/>
                             </xsl:attribute>
                             <xsl:attribute name="alt">
                                 <xsl:value-of select="substring-after(@corresp,'f')"/>
@@ -154,8 +143,8 @@
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
-            </xsl:otherwise>
-        </xsl:choose>
+            </xsl:for-each>
+        </xsl:element>
     </xsl:template>
     
     <!-- Copy the content of fw and ab elements -->
@@ -165,7 +154,7 @@
             <xsl:apply-templates select="node()"/>
         </xsl:copy>
     </xsl:template>
-    
+       
     <xsl:template match="ab">
         <!-- right section  with the text -->
         <xsl:element name="div">
