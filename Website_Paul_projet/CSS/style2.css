@@ -49,6 +49,28 @@ img {
   height: 100%;
 }
 
+/* Image Styling with Gradient Background */
+.image {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    height: 60vh; /* Full viewport height */
+    padding: 20px;
+    position: relative; /* Allow child elements (image) to be positioned relative to this container */
+}
+
+/* Image itself */
+.image .picture {
+    display: block;
+    max-width: 100%; /* Ensures the image respects the container's size */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center the image */
+    border-radius: 50%; /* Make the image itself circular */
+    position: relative; /* Make it movable */
+    top: -2cm; /* Move the image upwards by 5cm */
+}
+
+
 
 /* Footer */
 #footer {
