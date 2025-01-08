@@ -15,7 +15,7 @@
                 <title>
                     <xsl:value-of select="//title[parent::titleStmt]"/>
                 </title>
-                <link href="../Website_Paul_projet/CSS/updated.css" rel="stylesheet"/>
+                <link href="../Website_Paul_projet/CSS/updated_2.css" rel="stylesheet"/>
                 <script src="../Website_Paul_projet/JS/script.js" defer="defer"></script>
             </head>
             <body>
@@ -165,11 +165,21 @@
             <xsl:when test="@type='DropCapitalZone'">
                 <xsl:element name="span">
                     <xsl:attribute name="class">
-                        <xsl:text>drop</xsl:text>
+                        <xsl:text>ab_Drop</xsl:text>
                     </xsl:attribute>
                     <xsl:apply-templates/>
                 </xsl:element>
             </xsl:when>
+<!-- for determine the verset identify as MainZone-Haed -->
+            <xsl:when test="@type='MainZone-Head' and not(hi/choice/orig[contains(text(), 'CAP')])">
+                <xsl:element name="span">
+                    <xsl:attribute name="class">
+                        <xsl:text>ab_mzHead</xsl:text>
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                </xsl:element>
+            </xsl:when>
+ <!-- Default case -->           
             <xsl:otherwise>          
                 <xsl:element name="table">
                     <xsl:element name="tr">
@@ -177,24 +187,17 @@
                             <xsl:attribute name="class">
                                 <xsl:text>para</xsl:text>
                             </xsl:attribute>
-                            <xsl:apply-templates/>
+                                <xsl:element name="p">
+                                    <xsl:apply-templates/>
+                                </xsl:element>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
-            </xsl:otherwise>
-           
+            </xsl:otherwise>         
         </xsl:choose> 
       </xsl:element>
     </xsl:template>
     
-    <xsl:template match="p">
-        <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:text>p</xsl:text>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
     
     <xsl:template match="placeName">
         <xsl:element name="span">
