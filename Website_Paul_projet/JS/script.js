@@ -8,3 +8,11 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "0";
 }
 
+function toggleDocumentList() {
+             const documentList = document.getElementById('documentList');
+             if (documentList.style.display === 'none') {
+                 documentList.style.display = 'block';
+             } else {
+                 documentList.style.display = 'none';
+             }
+         }

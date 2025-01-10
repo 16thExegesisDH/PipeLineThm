@@ -6,7 +6,10 @@ html, body {
 }
 
 #main {
-    flex: 1; /* This ensures the main content area takes up all available space */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    padding-top: 40px;
 }
 
 body {
@@ -42,7 +45,7 @@ body {
 
 /* Image Styling */
 img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -51,7 +54,7 @@ img {
 
 /* Image Styling with Gradient Background */
 .image {
-    display: flex; /* Flexbox for centering */
+    display: block; /* Flexbox for centering */
     justify-content: center; /* Horizontally center the image */
     align-items: center; /* Vertically center the image */
     height: 60vh; /* Full viewport height */
@@ -124,7 +127,6 @@ img {
   color: #818181;
   display: block;
   transition: 0.3s;
-  font-size: 1.3em;
 }
 
 .sidebar a:hover {

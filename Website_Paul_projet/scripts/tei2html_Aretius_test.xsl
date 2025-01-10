@@ -42,7 +42,7 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../4_Edition_tei.xml</xsl:text>
+                                    <xsl:text>../Website_Paul_projet/5_normalized_Aretius.xml</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>
@@ -82,14 +82,35 @@
                         <xsl:attribute name="id">
                             <xsl:text>footer</xsl:text>
                         </xsl:attribute>
+                        <xsl:element name="div">
+                            <xsl:attribute name="class">
+                                <xsl:text>logos</xsl:text>
+                            </xsl:attribute>
                         <xsl:element name="img">
                             <xsl:attribute name="class">
                                 <xsl:text>logo</xsl:text>
                             </xsl:attribute>
                             <xsl:attribute name="src">
-                                <xsl:text>../IMG/unige.svg</xsl:text>
+                                <xsl:text>../IMG/ihreformation_blanc.png</xsl:text>
                             </xsl:attribute>
                         </xsl:element>
+                        <xsl:element name="img">
+                            <xsl:attribute name="class">
+                                <xsl:text>logo2</xsl:text>
+                            </xsl:attribute>
+                            <xsl:attribute name="src">
+                                <xsl:text>../IMG/SNF_logo_standard_web_sw_neg_e.png</xsl:text>
+                            </xsl:attribute>
+                        </xsl:element>
+                        <xsl:element name="img">
+                            <xsl:attribute name="class">
+                                <xsl:text>logo3</xsl:text>
+                            </xsl:attribute>
+                            <xsl:attribute name="src">
+                                <xsl:text>../IMG/uzh-logo-white.png</xsl:text>
+                            </xsl:attribute>
+                        </xsl:element>
+                      </xsl:element>Website_Paul_projet
                     </xsl:element>
                 </xsl:element>
             </body>
@@ -260,6 +281,7 @@
       </xsl:element>
     </xsl:template>
     
+    <!--  -->
     <xsl:template match="choice">
         <xsl:choose>
             <xsl:when test="ancestor::ab[@type='Main*']">

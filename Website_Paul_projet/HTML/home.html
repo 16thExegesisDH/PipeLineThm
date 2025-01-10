@@ -10,12 +10,19 @@
    <body>
       <div id="mySidebar" class="sidebar">
          <a href="home.html">Accueil</a>
-         <a href="miroir.html">Miroir</a>
-         <a href="../HTML/miroir.html">Documents</a>
-      </div>
-      
+         <a href="https://github.com/16thExegesisDH">Construction du projet: Github</a>
+         <a href="https://ihr-num.unige.ch/rrp/">RRP | Reformation Readings of Paul</a>
+         <!-- Documents Section -->
+         <a href="#!" onclick="toggleDocumentList()">Documents ▼</a> <!-- Toggle -->
+         <ul id="documentList" style="display: none; padding-left: 20px;">
+            <li><a href="../5_normalized_Aretius.html" target="_blank">Aretius Benedictus</a></li>
+            <li><a href="../5_normalize_lambertus.html" target="_blank">Lambertus Danaeus</a></li>
+            <li><a href="../Documents/document3.html" target="_blank">Document 3</a></li>
+         </ul>
+      </div>  
       <div id="main">
          <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+         <!--  the downlaod option is unnecessary here
          <span class="download">
             <button class="openbtn">
                <a href="../HTML/miroir.html" target="_blank">[↓] XML-TEI</a>
@@ -23,9 +30,8 @@
             <button class="openbtn">
                <a href="../PDF/.pdf" target="_blank">[↓] PDF</a>
             </button>
-         </span>
+         </span> -->
          <div class="title">Exégèse paulinienne en ligne</div>
-         
          <div class="document">
             <span class="p">Bienvenue sur le site du projet : 16th Century Paul's Exegesis.</span>
          </div>
