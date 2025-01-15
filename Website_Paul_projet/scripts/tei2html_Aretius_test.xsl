@@ -147,6 +147,10 @@
                         <xsl:attribute name="class">
                             <xsl:text>text-container</xsl:text>
                         </xsl:attribute>
+                        <!-- Add a tag corresponding to the iiif identifier of the page -->
+                        <xsl:attribute name="id">
+                            <xsl:value-of select="substring-after(@corresp,'f')"/>
+                        </xsl:attribute>
                         <xsl:apply-templates select="../fw[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
                         <xsl:apply-templates select="../ab[starts-with(@corresp, concat('#fbsb10313792_', $pbID))]"/>
                     </xsl:element>
@@ -285,13 +289,7 @@
     <xsl:template match="choice">
         <xsl:choose>
             <xsl:when test="ancestor::ab[@type='Main*']">
-                <xsl:variable name="truc">
-                    <xsl:number level="any" count="choice[parent::ab/@type='Main*']" from="body"/>
-                </xsl:variable>
-                
-                <xsl:variable name="absolute_line_number" select="count(ancestor::body/preceding-sibling::choice)"/>
-                
-                <xsl:value-of select="$truc"/>. <xsl:value-of select="reg"/><xsl:element name="br"/>
+               <xsl:value-of select="reg"/><xsl:element name="br"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="reg"/><xsl:element name="br"/>
