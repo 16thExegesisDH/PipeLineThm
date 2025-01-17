@@ -288,7 +288,7 @@
     <!--  -->
     <xsl:template match="choice">
         <xsl:choose>
-            <xsl:when test="ancestor::ab[@type='Main*']">
+            <xsl:when test="ab[@type='Main*']">
                <xsl:value-of select="reg"/><xsl:element name="br"/>
             </xsl:when>
             <xsl:otherwise>

@@ -1,15 +1,17 @@
+% !TeX TS-program = lualatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}% Pour l'ajustement de la mise en page
 \usepackage[pdfusetitle,hidelinks]{hyperref}
 \usepackage[english]{french} % Pour les règles typographiques du français
+\usepackage{polyglossia}
+\setotherlanguage{greek}
 \usepackage[series={},nocritical,noend,noeledsec,nofamiliar,noledgroup]{reledmac}
 \usepackage{reledpar} % Package pour l'édition
 
-\usepackage{fontspec} % Package pour mettre Junicode comme police (important pour MUFI)
-\setmainfont{Junicode}[
-Extension=.ttf,
-BoldFont=*-Bold]
+\usepackage{fontspec} % 
+\setmainfont{Liberation Serif}
+
 
 
 \begin{document}
@@ -20,8 +22,10 @@ BoldFont=*-Bold]
 
 \begin{pages} 
 \beginnumbering
-        \marginpar{8 \\
-                }\marginpar{COMMENTARIE \\
+        
+\marginpar{8 \\
+                }
+\section*{COMMENTARIE \\
                 }Sexto, quomodo cum seruis agendum, \\
                 contra schismaticos, cum diuitibus, capite \\
                 sexto, etc. \\
@@ -46,8 +50,11 @@ BoldFont=*-Bold]
                 Timotheo exprimeret, cauerétque contra- \\
                 ria. Et ipsa natura in omni sermone pri- \\
                 mum locum tribuit salutationibus, post \\
-                \textbf{}\marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{9 \\
+                
+\textbf{}
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{9 \\
                 }quas demum solent inferre animi conceptio- \\
                 nem. \\
                 Tribus partibus constat haec salutatio, vt \\
@@ -77,8 +84,10 @@ BoldFont=*-Bold]
                 de vocatione sua dubitaret Timotheus, sed \\
                 vt rebus maior accederet dignitas. Deinde \\
                 quod vbique in omnibus suis epistolis hoc \\
-                \marginpar{10 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{10 \\
+                }
+\section*{COMMENTARII \\
                 }seruet Apostolus: non fuit igitur ratio cur i- \\
                 dem hic non praestaret. Itaque in rebus gra- \\
                 uibus, loco et tempore pium est titulis sui mu \\
@@ -117,7 +126,8 @@ BoldFont=*-Bold]
                 et doctores prius scholarum est vocabulum: \\
                 minister hodie solum Ecclesiae relictum est, \\
                 de quibus alibi dictum est. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }Secundum ordinationem. \\
                 Vocationis suae ad Apostolatum profert \\
                 autorem Deum Patrem et Filium eius Ie- \\
@@ -131,7 +141,8 @@ BoldFont=*-Bold]
                 dubitata expectatio vitae aeternae, ex Dei \\
                 misericordia, quae in nos per filium media- \\
                 torem tansfunditur. \\
-                \marginpar{11 \\
+                
+\marginpar{11 \\
                 }Ἐπιταγὴ, autem dicitur mandatum, in- \\
                 structio, significans Apostoli doctrinam di- \\
                 uinitus esse traditam, non natam apud ho- \\
@@ -139,8 +150,10 @@ BoldFont=*-Bold]
                 ctrina quam hic proferet. Superioris as- \\
                 fert mandata, hoc est, Dei mittentis et ad \\
                 hanc doctrinam ligat se, et Timotheum: \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{12 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{12 \\
                 }ideo successores Apostolorum etiam hamc so- \\
                 lam doctrinam proferre debent, et qui ab hac \\
                 Ἐπιταγῇ  recedunt, non Apostolorum, sed apo- \\
@@ -170,8 +183,10 @@ BoldFont=*-Bold]
                 merent nomina. Nomen pium religioni \\
                 conforme est, muneri respondens, quia diui- \\
                 no consecratus est ministerio: quae res a Deo \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{13 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{13 \\
                 }gubernatur, vt piorum parentum vota in \\
                 impositione nominum dirigat ad felicem \\
                 euentum. \\
@@ -201,8 +216,10 @@ BoldFont=*-Bold]
                 animo et studio iuuandi:sic praeceptores, tu- \\
                 tores, omnésque benefactores parentum sunt \\
                 loco. Sic Paulus in fidei causa pater eius fuit. \\
-                \marginpar{14 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{14 \\
+                }
+\section*{COMMENTARII \\
                 }Ac fides accipiatur pro tota religionis causa \\
                 q.d.in religione Christiana, in Christianismo \\
                 filius meus est. \\
@@ -232,8 +249,10 @@ BoldFont=*-Bold]
                 lum cui faciunt: ideoque vltronea est bene- \\
                 uolentia, alioquin gratia non esset gratia. \\
                 Ἔλεος , misericordia est. Apud Hebr. Chéfed et \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{15 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{15 \\
                 }Rechem, commiseratio, dolor de alieno malo- \\
                 quod malum ad nos quoque pertingere pos- \\
                 se videatur. Sic quidem Philosophi defi- \\
@@ -263,8 +282,10 @@ BoldFont=*-Bold]
                 quia pax illa inuiolata manet, et ex hac pro- \\
                 manans omnimoda felicitas. \\
                 Hamc securitatem animi et summam felicitatem \\
-                \marginpar{16 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{16 \\
+                }
+\section*{COMMENTARII \\
                 }ignorat mundus, ridétque pios vt stupidos, \\
                 ac stultè transfert nomen felicitatis ac pacis \\
                 ad externa quaedam subsidia opum, gloriae, \\
@@ -294,8 +315,10 @@ BoldFont=*-Bold]
                 Et quia Apostolus hoc mandaturus est, prius \\
                 idoneam personam ei Ecclesiae praefecit. \\
                 Ideo discimus omnibus Ecclesiis (vt sint \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{17 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{17 \\
                 }tutiores contra corruptelas) necessarium esse \\
                 vt habeant manentes, et in eis haerentes mi- \\
                 uistros idoneos. Ratio est, quia hoc Aposto- \\
@@ -325,8 +348,10 @@ BoldFont=*-Bold]
                 strum, ideo vsus est potius suasoriis argumem- \\
                 tis, quam Apostolica autoritate praecipiendo. \\
                 Altera ratio est a genere corruptae do- \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{18 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{18 \\
                 }ctrinae, seu forma ac materia, quae est έτεροδι- \\
                 δασκαλεῖν : genus enim videtur significare \\
                 omnium corruptelarum, quibus omnibus \\
@@ -356,8 +381,10 @@ BoldFont=*-Bold]
                 mine notat, τισὶ quibusdam, significans non \\
                 solum animi sui modestiam in taxandis re- \\
                 probis, sed spem de illorum emendatione su- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{19 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{19 \\
                 }peresse: nam mox infra desperatos ipsis no- \\
                 minibus traducit, Alexandrum et Hymenaeum \\
                 indubie quia hi iam plane reprobi et inemem- \\
@@ -387,8 +414,10 @@ BoldFont=*-Bold]
                 commenta in Legem, et Prophetas, quid \\
                 de Adamo, de serpente, de Eua, de Ange- \\
                 lis fabulentur notum est. Sic de Messia, \\
-                \marginpar{20 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{20 \\
+                }
+\section*{COMMENTARII \\
                 }de Elia, de Leuiathan, et boue conuiuii mag- \\
                 ni in aduentu Messiae, de ouo, de Sole, Luna, \\
                 pudendas babent fabulas. \\
@@ -418,8 +447,10 @@ BoldFont=*-Bold]
                 dum. \\
                 Quarto, quaestiones exhibent magis quam \\
                 aedificationem Dei in fide. Argumentum fir- \\
-                \marginpar{IN I. EPIST. AD TIMOTH \\
-                }\marginpar{21 \\
+                
+\section*{IN I. EPIST. AD TIMOTH \\
+                }
+\marginpar{21 \\
                 }mum est ab vsu. Finis totius doctrinae est cer- \\
                 ta vtilitas, hoc est, aedificatio: sed hanc non \\
                 praestat aduersariorum doctrina, est igitur stu \\
@@ -448,8 +479,10 @@ BoldFont=*-Bold]
                 na est accommodanda: loquitur autem hic \\
                 de fine intermedio, cum dicit finem manda- \\
                 ti esse dilectionem. Est autem finis perfectio \\
-                \marginpar{22 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{22 \\
+                }
+\section*{COMMENTARII \\
                 }rei, cuius gratia aliquid fit. Si finem igitur \\
                 perfectionem accipias, tum finis Legis est \\
                 Christus, vt loquitur ad Rom.10.versu 4. \\
@@ -479,7 +512,8 @@ BoldFont=*-Bold]
                 haurire possit : purum dicitur cor minimè \\
                 fucatum, dolo carens, candide et ingenue \\
                 agens. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }Deinde proximus est gradus, conscientia \\
                 bona, hoc est, integra. Est conscientia pars \\
                 memoriae, qua de actib. nostris bene aut male \\
@@ -509,9 +543,12 @@ BoldFont=*-Bold]
                 solute viuentes. Vel est fuco tecta, qua- \\
                 lis est in Pharisaica vita, hanc remouet \\
                 hic. His tribus gradibus vera dilectio est \\
-                \marginpar{23 \\
-                }\marginpar{COMMENTARII \\
-                }\marginpar{24 \\
+                
+\marginpar{23 \\
+                }
+\section*{COMMENTARII \\
+                }
+\marginpar{24 \\
                 }instructa. Argumentum est contra seducto- \\
                 res qui in docenda lege hos fines non obser- \\
                 uant, ideo aberrant a dilectione, et hic toto caelo. \\
@@ -541,8 +578,10 @@ BoldFont=*-Bold]
                 addit ignorantiam crassam et satis impuden \\
                 tem. Doctores Legis esse volunt, quo signifi- \\
                 cat eos titulum hunc venari passim apud \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{25 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{25 \\
                 }fideles, vt ipsi magni doctores habeantur, \\
                 Rabbi dicantur, et magistri, quos confutat \\
                 D. Christus Matth.23. Deinde cum hac ambi- \\
@@ -572,8 +611,10 @@ BoldFont=*-Bold]
                 tunt. Ac est illa ignorantia distinguenda: in \\
                 aliis enim fuit affectata et crassa, vt adhuc est \\
                 in multis, qui agnitae veritati contumaciter \\
-                \marginpar{26 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{26 \\
+                }
+\section*{COMMENTARII \\
                 }resistunt, quales videntur fuisse isti Nomo- \\
                 didascali, et bona pars Pharisaeorum apud Iu \\
                 daeos. In aliis vero erat ex zelo Legis et glo- \\
@@ -603,8 +644,10 @@ BoldFont=*-Bold]
                 concedit bonam, sed cum conditione, S1 QVIS \\
                 ILLA LEGITIME VTATVR, h.e. vsu bona est, \\
                 sic abusu mala redditur: ideo ad vsum referem- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{27 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{27 \\
                 }da sunt omnia. legitime vtitur Lege qui mentem \\
                 legislatoris in illa respicit, et ad hanc mentem \\
                 omnia refert. Mens autem Dei erat, vt Lex illa \\
@@ -635,8 +678,10 @@ BoldFont=*-Bold]
                 natione et iure peccati absolutus est, et liber \\
                 pronunciatus. Sunt enim iustorum tres ordi- \\
                 nes. Alii iusti sunt natura, talis Adam erat ante \\
-                \marginpar{28 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{28 \\
+                }
+\section*{COMMENTARII \\
                 }lapsum: sed absolutissimum in humana na- \\
                 tura habemus exemplum, filium Dei homi- \\
                 nem Iesum Christum. Secundi ordinis sunt \\
@@ -666,8 +711,10 @@ BoldFont=*-Bold]
                 Pharisaei ei loco probri obiiciunt. Ἀνόσιοι, im- \\
                 pii, qui studium honestae vitae negligunt quo \\
                 Deo inseruiant. Βέβηλοι, prophani, impuri: \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{29 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{29 \\
                 }Βήλος dicitur purus, βέβηλος, impurus: vt erant \\
                 apud Graecos quaedam sacra βέβηλα nomi- \\
                 nata, ad quae impurissimis quibusque lice- \\
@@ -696,8 +743,10 @@ BoldFont=*-Bold]
                 Ostendit vnde sana doctrina sit peten- \\
                 da, scilicet ex Euangelio. Itaque et sana Le- \\
                 gis interpretatio hinc petenda est. Dicitur \\
-                \marginpar{30 \\
-                }\marginpar{COMMENTA.RII \\
+                
+\marginpar{30 \\
+                }
+\section*{COMMENTA.RII \\
                 }autem Euangelium gloriae, vel quia est glo- \\
                 riosa doctrina, hoc est, praestantissima, nec vn \\
                 quam sati laudata. \\
@@ -727,8 +776,10 @@ BoldFont=*-Bold]
                 12. Et gratiam habeo, etc. \\
                 Tertium membrum de sua vocatione dis- \\
                 serit. Cohaeret autem pulchre superioribus, \\
-                \marginpar{IN I. EPIST. AD TI MOTH. \\
-                }\marginpar{31 \\
+                
+\section*{IN I. EPIST. AD TI MOTH. \\
+                }
+\marginpar{31 \\
                 }in quibus doctrinae sanitatem suo Euangelio \\
                 alligauit. Ideo iam de vocatione nonnihil dis- \\
                 serit: praedicat autem hic insignem Dei mi- \\
@@ -759,8 +810,10 @@ BoldFont=*-Bold]
                 θην, inquit, misericordiam sum assecutus, non re- \\
                 pudiando oblatam misericordiam. Addit tamen \\
                 aliquam rationem, QVIA IGNORANS FECI, \\
-                \marginpar{32 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{32 \\
+                }
+\section*{COMMENTARII \\
                 }ignorantia non crassa et affectata, et zelo Le- \\
                 gis patriae excitata: leuius tamen peccat qui \\
                 per ignorantiam labitur: attamem et is fatetur \\
@@ -789,8 +842,10 @@ BoldFont=*-Bold]
                 sione peccatorum, ac proponit in ea veram \\
                 causam efficientem, scilicet Christum. Ac \\
                 membra illius duo sunt: remedium et eius \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{33 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{33 \\
                 }laus, a laude incipit. FIDVS SERMO, πιστὸς λό- \\
                 γος , hoc est, doctrina fide digna, vel ἀξιόπιστος, \\
                 digna cui credatur: ideo πιστὸν interpretatur \\
@@ -820,8 +875,10 @@ BoldFont=*-Bold]
                 rant : tales etiam soli apud Christum reme- \\
                 dium receperunt, hoc est, qui suam iniustitiam \\
                 fatentur. Reliqui quanuis et ipsi peccatores \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{34 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{34 \\
                 }sint, tamen non prodest illis Christus, quan- \\
                 doquidem peccatum non agnoscunt, imo sibi \\
                 iusti videntur. \\
@@ -851,8 +908,10 @@ BoldFont=*-Bold]
                 nostra. Obserua autem in confessione pecca- \\
                 torum promptitudinem: dicit, EGO SVM \\
                 PRIMVS PECCATORVM, non vti- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{35 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{35 \\
                 }que primus erat, ante illum infiniti fuerant, et \\
                 fuerat primus Adam ante quem erat pecca- \\
                 trix Eua. Quos omnes praeterit ac se primum \\
@@ -880,8 +939,10 @@ BoldFont=*-Bold]
                 tur in Domino, quod plus aliis laborarit. In \\
                 peccato igitur maximus, in ministerio mini- \\
                 mus, vbiq. tamẽ inter homines magnus erat. \\
-                \marginpar{36 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{36 \\
+                }
+\section*{COMMENTARII \\
                 }Repetit suum exemplum, vt aliis prosit. \\
                 Ostendit autem fines Dei quos respexerit in \\
                 Pauli vocatione. Duo sunt cohaerentes: prior \\
@@ -911,8 +972,10 @@ BoldFont=*-Bold]
                 exemplo loquitur Rom.4.ver.24. \\
                 Colligantur hic causae Iustificationis ac Re- \\
                 missionis peccatorum: vera causa efficiens \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{37 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{37 \\
                 }est Dei misericordia: organica est Christi sa- \\
                 tisfactio: formalis a parte peccatoris peccasse \\
                 per ignorantiam in ignorantia, vers.13. finalis \\
@@ -942,8 +1005,10 @@ BoldFont=*-Bold]
                 mo vidit vnquam, sed etiam nunc respectu \\
                 humanae, quia ex humanis subduxit se, residems \\
                 ad dextram Deiin caelestibus, vnde aliquan- \\
-                \marginpar{36 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{36 \\
+                }
+\section*{COMMENTARII \\
                 }do visibilem expectamus. Ἄφθαpτος autem v- \\
                 triusque naturae respectu quatenus erat Deus \\
                 semper fuit et est ἄρθαρτος: sed quatenus ho- \\
@@ -973,8 +1038,10 @@ BoldFont=*-Bold]
                 debet esse custos sanae doctrinae. Mandatum \\
                 accipiatur de Apostoli hoc praecepto, man- \\
                 dantis ei conseruationem sanae doctrinae \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{39 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{39 \\
                 }contra omnes corruptelas. Hoc illi tradit \\
                 quasi depositum: in eo igitur debet esse vigi- \\
                 lans et fidelis. Rationes igitur sunt Propo- \\
@@ -1004,8 +1071,10 @@ BoldFont=*-Bold]
                 Militiae titulus de periculis nos admonet: \\
                 ministri milites sunt antesignani, et du- \\
                 ces auditorum : in qua re maius etiam est \\
-                \marginpar{40 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{40 \\
+                }
+\section*{COMMENTARII \\
                 }19 Habens fidem et bonam etc. \\
                 Vt pulchra possit esse Timothei mili- \\
                 tia circunscribit illius quasi limites, q.d. duo \\
@@ -1028,7 +1097,8 @@ BoldFont=*-Bold]
                 Quinto, ET BONAM CONSCIEN- \\
                 TIAM. Praesidium alterum est ad victoriam, \\
                 et meta recte agendi in hac militia. Bona \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }conscientia est in ministro qua nihil agit pe- \\
                 tulanter, nihil ambitiose, nihil temere: hanc \\
                 siconseruat, ingens praesidium ad res vtiliter \\
@@ -1058,9 +1128,12 @@ BoldFont=*-Bold]
                 minoris hos gradus constituerunt, priuatam \\
                 admonitionem, admonitionem factam per \\
                 mnistros Ecclesiae, demum submouere a \\
-                \marginpar{41 \\
-                }\marginpar{42 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{41 \\
+                }
+\marginpar{42 \\
+                }
+\section*{COMMENTARII \\
                 }Sacramentis donec resipiscat. \\
                 Maiorem vocarunt seclusionem ab omni \\
                 licito actu: non multum differt ab anathe- \\
@@ -1074,7 +1147,8 @@ BoldFont=*-Bold]
                 Excommunicatione. \\
                 CAPVT \\
                 II. \\
-                \textbf{D \\
+                
+\textbf{D \\
                 }Vo sunt fidelium officia in publicis \\
                 coetibus: audire sanam doctrinam \\
                 ex verbo Dei, et cum toto coetu \\
@@ -1087,8 +1161,10 @@ BoldFont=*-Bold]
                 huc omnes sub infidelibus agerent magi- \\
                 stratibus. \\
                 Et quia in coetibus publicis quoque orant \\
-                \marginpar{IN L. EPIST. AD TIMOTH. \\
-                }\marginpar{33 \\
+                
+\section*{IN L. EPIST. AD TIMOTH. \\
+                }
+\marginpar{33 \\
                 }mulieres, adhuc tamenforte Ethnico more, \\
                 parum decore sese gererent, his praescribit \\
                 suum quoddam decorum, quod eis omni- \\
@@ -1118,8 +1194,10 @@ BoldFont=*-Bold]
                 tatem, vt hortetur ad rem tam piam: neces- \\
                 sariam autem indicat dum hortatur vt fiant \\
                 πρῶτον πάντων.i.ante omnia, non quidem sine \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{44 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{44 \\
                 }cura sanae doctrinae, quae vtique prima esse \\
                 debet, sed cum illa semper orationis haben- \\
                 dam esse rationem: quod ita constanter sem- \\
@@ -1149,8 +1227,10 @@ BoldFont=*-Bold]
                 sum, vel ad alium, adeoque totam Ecclesiam, \\
                 aut Remp. concernat. \\
                 Προσευχὴ autem est qua bona largiri nobis \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{45 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{45 \\
                 }petimus, imprimis corpori necessaria quae in \\
                 oratione solet animus magis necessariis sub- \\
                 iicere quasi secundaria in votis. \\
@@ -1180,8 +1260,10 @@ BoldFont=*-Bold]
                 bus hominibus orare. Atque hac re Christia- \\
                 ni superant alias omnes sectas. Iudaei ad \\
                 huc pro Israële fundunt preces, reliquos \\
-                \marginpar{46 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{46 \\
+                }
+\section*{COMMENTARII \\
                 }omnes execrantur in suis precibus : idem fa- \\
                 ciunt Turcae, soli Christiani pro infidelibus \\
                 orant. Itaque pietatis nostrae, adeoque verae \\
@@ -1210,8 +1292,10 @@ BoldFont=*-Bold]
                 precibus sunt Domino commendandi. Pri- \\
                 mum hic astruitur magistratus, vt cuius non \\
                 possit non diuina esse ordinatio, cum pro his \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{47 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{47 \\
                 }Deus sit rogandus. Deinde impios non indi- \\
                 gnos esse nostra intercessione, item de nullis re- \\
                 probis facile desperandum cum indiscrimi- \\
@@ -1240,8 +1324,10 @@ BoldFont=*-Bold]
                 stratum vtriusque custodem esse, verae scili- \\
                 cet doctrinae, et honestatis vitae, in vtraque \\
                 conseruanda est subditis pax. Similia habes \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{48 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{48 \\
                 }Ierem.2.9. vbi iubet pro statu et pace Baby- \\
                 lonis orare Iudaeos, vt et ipsi pacem habeant. \\
                 3 Hoc enim bonumn est,etc. \\
@@ -1271,8 +1357,10 @@ BoldFont=*-Bold]
                 ne manserunt, contempta omni pia admo- \\
                 nitione, merito damnantur. Sic interpretatur \\
                 hanc clausulam D. Ambrosius, vt dicat sub- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{49 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{49 \\
                 }esse conditionem, secundum quam prorsus \\
                 nemini salutem negat Deus, ea omnino ne- \\
                 cessaria est subintelligenda. Quarto, non \\
@@ -1302,8 +1390,10 @@ BoldFont=*-Bold]
                 MEDIATOR : ergo ab hoc non sunt ar \\
                 cendae Gentes. Vt enim vnus tantum est \\
                 Deus omnium hominum: ex quo efficitur \\
-                \marginpar{50 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{50 \\
+                }
+\section*{COMMENTARII \\
                 }curam omnium ad hunc vnum pertinere, sic \\
                 quia vnus tantum est mediator: consequens \\
                 est, omnium peccatorum causam ad hunc \\
@@ -1333,8 +1423,10 @@ BoldFont=*-Bold]
                 D. Christus pro omnibus passus est. Cur \\
                 igitur dubitares pro omnibus orare , quum \\
                 Christus non dubitarit pro omnibus |mori? \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{5 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{5 \\
                 }Mortuus est autem pro omnibus, vt hic lo- \\
                 quitur Apostolus, nec impedit hoc quod \\
                 non omnes mortis beneficium amplectun- \\
@@ -1364,8 +1456,10 @@ BoldFont=*-Bold]
                 Redit ad institutum, ac infert πρòς τὴν \\
                 θέσιν rationes suas. Est quinta orationis cir- \\
                 cunstantia, a quibus orandum sit. A viris \\
-                \marginpar{52 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{52 \\
+                }
+\section*{COMMENTARII \\
                 }simul ac mulieribus, hoc est, a toto coetu con- \\
                 sentienter orandum est pro omnibus homini- \\
                 bus. Ac hac diuisione sexus includit omnes \\
@@ -1395,8 +1489,10 @@ BoldFont=*-Bold]
                 pietati. \\
                 Septima, Quomodo orandum sit, qui mo- \\
                 dus propriè ad pietatem pertinet. Huc re- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{53 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{53 \\
                 }fero quod hic scribitur, TOLLENTES \\
                 PIAS MANVS ABS QVE IRAET DI- \\
                 SCEPTATIONE. Tollere manus in o- \\
@@ -1426,8 +1522,10 @@ BoldFont=*-Bold]
                 vt inquit, sanctae, hoc est, lotae in innocentia, \\
                 opponitur enim sanguinolentis, auaris, vsura- \\
                 riis. Deinde manus sint etiam alienae ab ira: \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{5 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{5 \\
                 }quanquam ad totum hominem referatur \\
                 forte melius, q.d. abesse debet studium vin- \\
                 dictae, ne contra aduersarium tuum ores vt \\
@@ -1457,8 +1555,10 @@ BoldFont=*-Bold]
                 duo enim hic taxat vitia in muliebri sexu. \\
                 Superbiam in habitu, natura enim mulier \\
                 est animal φιλόκοσμον. Deinde studium do- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{55 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{55 \\
                 }minandi, vult enim videri tanquam et ipsa \\
                 sapiat. \\
                 De priori inquit, IN AMICTV HONESTO, \\
@@ -1487,8 +1587,10 @@ BoldFont=*-Bold]
                 also vff den ermtenn, golleamm: sint πλέγματα, schnur spi \\
                 zlii, et similes nugae, tamen adauctum est, hoc lo- \\
                 co nobis dici,mu blegii, vomi belegenn non a Graeco; \\
-                \marginpar{56 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{56 \\
+                }
+\section*{COMMENTARII \\
                 }cui tamen affine est πλέγμα, et Graecum πλέ- \\
                 γμα de reticulo crinium et fuco crispandi \\
                 pilum proprie dici. \\
@@ -1518,8 +1620,10 @@ BoldFont=*-Bold]
                 πρέπον seruandum est in omni habitu. Deco- \\
                 rum autem hoc regatur a pietatis regula, non \\
                 iudicio humano. PER OPERA BONA, addit \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{57 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{57 \\
                 }Apostolus, quia operis rationem habet, quo- \\
                 cunque tandem aedificatur proximus. \\
                 11 Mulier in silentio discat, etc. \\
@@ -1548,8 +1652,10 @@ BoldFont=*-Bold]
                 Confirmat cur mulieri non sit permit- \\
                 tendum imperium : ratio est, ab ordine crea- \\
                 tionis. Primo, Adam conditus est, ergo fa- \\
-                \marginpar{58 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{58 \\
+                }
+\section*{COMMENTARII \\
                 }pientior et prudentior Eua: valet ratio in ea- \\
                 dem specie, alioquin infirma, cum pecudes \\
                 et plantae ante Adamum conditae sint: sed \\
@@ -1578,8 +1684,10 @@ BoldFont=*-Bold]
                 sti merito. Deinde poenae loco impositum, \\
                 quas poenas si patienter ferat, saluti suae con- \\
                 sulit: illud posterius est τεκνογονία, sic infra 5. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{59 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{59 \\
                 }cap. de viduis iunioribus loquitur, quas vult \\
                 nubere, liberos procreare, et domum custodi- \\
                 re. Addit hinc, SI MANSERINT IN FIDE: \\
@@ -1594,7 +1702,8 @@ BoldFont=*-Bold]
                 fessio: modestia vero est σεμνότης illa ciuilis, \\
                 quaein habitu et excessu elucet. \\
                 CAPVT III. \\
-                \textbf{G \\
+                
+\textbf{G \\
                 }VBERNATIO Ecclesiastica \\
                 docet quodnam sit omnium or- \\
                 dinum officium in coetu fide- \\
@@ -1606,8 +1715,10 @@ BoldFont=*-Bold]
                 gelio: disciplina autem mores doctrinae sa- \\
                 nae conformes requirit, vtrunque procurare \\
                 debent praesides Ecclesiarum, ac de sana \\
-                \marginpar{60 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{60 \\
+                }
+\section*{COMMENTARII \\
                 }doctrina admonuit primo capite:mox ad dis- \\
                 ciplinam de εὐταξία tramsiuit capite 2. nunc ve- \\
                 ro tertio loco admonet de ipsis personis per \\
@@ -1637,8 +1748,10 @@ BoldFont=*-Bold]
                 primum de ipsis ministris. Deinde de mini- \\
                 strorum diaconis. Tertio de ipsorum familia et \\
                 vxoribus. Quarto de altero diaconorum ge- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{61 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{61 \\
                 }nere, quod eleemosynis praeest. Sunt igitur \\
                 sex huius capitis partes. Principium συστατι- \\
                 κὸν: Deinde, idea boni ministri: Tertiò, de vir- \\
@@ -1667,8 +1780,10 @@ BoldFont=*-Bold]
                 Επισκοπὴ, munus docendi dicitur, hinc E- \\
                 piscopi, qui hodie ministri et simpliciter con- \\
                 cionatores dicuntur: nomen habent ab inspi- \\
-                \marginpar{62 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{62 \\
+                }
+\section*{COMMENTARII \\
                 }ciendo, quia attendunt quid singuli doceant, \\
                 et agant, et viuant in Ecclesia singuli ordines. \\
                 Recte igitur dicitur nomen laboris ac diligem- \\
@@ -1698,8 +1813,10 @@ BoldFont=*-Bold]
                 est institutum. Deinde καλὸν, quia Ecclesiae \\
                 summopere est vtile et necessarium: καλὸν igi- \\
                 tur est etiam, quia χρήσιμον, et deniq. quia arduũ \\
-                \marginpar{IN T. EPIST. AD TIMOTH \\
-                }\marginpar{63 \\
+                
+\section*{IN T. EPIST. AD TIMOTH \\
+                }
+\marginpar{63 \\
                 }ac difficile, quemadmodum dicere solemus, \\
                 Difficilia quae pulchra:nam Episcopi primi ra- \\
                 piebantur ad supplicia in persecutionibus: sic \\
@@ -1728,8 +1845,10 @@ BoldFont=*-Bold]
                 riae concubinae. Praeterea si vna legitima, aliae \\
                 accedunt concubinae. Praeterea damnatur etiam \\
                 coelibatus, vt fine illo non possit esse idoneus \\
-                \marginpar{64 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{64 \\
+                }
+\section*{COMMENTARII \\
                 }minister non enim requirit ἄγαμον, sed con- \\
                 tentum sua legitima vxore. . \\
                 Constat igitur vxoratum posse ministrum \\
@@ -1759,8 +1878,10 @@ BoldFont=*-Bold]
                 qui professionem ornat, ne militaris sit vesti- \\
                 tus, vel ad iustitiae studium referatur vt res- \\
                 pondeat ἐγκρατῇ, ad Tit.1. sed malo de ornatu \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{65 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{65 \\
                 }sui decori accipere, non sordidum vult, nec \\
                 indecenter vestiri, sed vt ex habitu cognosci \\
                 possit. \\
@@ -1790,8 +1911,10 @@ BoldFont=*-Bold]
                 tas sobrietatis, de qua iam diximus. Significat \\
                 autem πάροινος, vino quodammodo affixum, \\
                 assidentem ei semper: et παροινεῖν est ex vino \\
-                \marginpar{66 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{66 \\
+                }
+\section*{COMMENTARII \\
                 }lasciuire, peccare, quemadmodum Nerote- \\
                 mulentus saltat inter scenicos, libidinatur, \\
                 corrumpit puellas et matronas, canit, etc. Sic \\
@@ -1821,8 +1944,10 @@ BoldFont=*-Bold]
                 pugnacem, nunc alienum a pugnis: sed latius \\
                 etiam patet ἄμαχον esse, hoc est, non debet e- \\
                 tiam verbis esse pugnax, contentiosus dispu- \\
-                \marginpar{IN I. EPSIT. AD TIMOTH. \\
-                }\marginpar{67 \\
+                
+\section*{IN I. EPSIT. AD TIMOTH. \\
+                }
+\marginpar{67 \\
                 }tator, sed placidus doctor potius. \\
                 6 Ἀφιλάργυρον, alienum ab auaritia, prius \\
                 dixerat hospitalem, numc radicem notat ipsam \\
@@ -1852,8 +1977,10 @@ BoldFont=*-Bold]
                 tamem conuertitur, vt is ꝗ domui pont conmode \\
                 praeesse possit etia Ecclesiam regere: non enim \\
                 statim maiora potest, ꝗ minora nouit admini \\
-                \marginpar{68 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{68 \\
+                }
+\section*{COMMENTARII \\
                 }strare: negatiue igitur recte colligit Aposto- \\
                 lus, ac defectus scientiae includit etiam defe- \\
                 ctum facultatis, quasi dicat, non potest plane \\
@@ -1882,8 +2009,10 @@ BoldFont=*-Bold]
                 graue iudicium Satanae cadunt isti. \\
                 7 Oportet autem ipsum etiam, etc. \\
                 Bono testimonio ministrum munit contra \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{69 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{69 \\
                 }calumnias. Geminum autem potest esse vel \\
                 a domesticis fidei, id non requirit hic, quan- \\
                 quam prorsus sit necessarium: consistit au- \\
@@ -1913,8 +2042,10 @@ BoldFont=*-Bold]
                 ctrinae, aut gubernationis doctrinae facultas \\
                 est, vt sit διδακτικὸς gubernationis, et suae \\
                 domui bene praesit, h.e.bonus sit oeonomus. \\
-                \marginpar{70 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{70 \\
+                }
+\section*{COMMENTARII \\
                 }Assuefactionis moralis reliquae sunt, quae \\
                 vel facit ad temperantiam, vt repri mere ar- \\
                 dorem venereum, SIT VNIVS VXO- \\
@@ -1943,8 +2074,10 @@ BoldFont=*-Bold]
                 qui episcopo docendo, administrando Sacra- \\
                 menta, scribendo etiam, aliisque curandis re- \\
                 bus adhibetur, vt visitare aegros, curare elec- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{75 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{75 \\
                 }quiritur, hoc est, grauitas pietati congruens: \\
                 est enim in quolibet officio sua quaedam gra- \\
                 uitas qua ornatur muneris professio. Hinc \\
@@ -1974,8 +2107,10 @@ BoldFont=*-Bold]
                 tiam in deferendo aliorum peccata, alioquin \\
                 vinum per se non damnat, sed πόλλον, hoc \\
                 est, copiam, et προσέχειν, studium. \\
-                \marginpar{72 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{72 \\
+                }
+\section*{COMMENTARII \\
                 }4. NON LVCRI CVPIDOIS, quae \\
                 ratio valuit supra, hic etiam repetatur, lu- \\
                 crum turpe est in diacono, si ad munera re- \\
@@ -2005,8 +2140,10 @@ BoldFont=*-Bold]
                 ribus, ne polluat conscientiam suam: conscien- \\
                 tia se habet vt nuda tabella, bona autem vel \\
                 mala fit studio ac vitae qualitate. Virtutum \\
-                \marginpar{IN I. EPIST. AD TIMOTH \\
-                }\marginpar{73 \\
+                
+\section*{IN I. EPIST. AD TIMOTH \\
+                }
+\marginpar{73 \\
                 }studio et bonorum operum exercitio bona \\
                 nascitur: mala autem vitae petulantia ac im \\
                 probitate: recte igitur fidei coniungit con \\
@@ -2036,8 +2173,10 @@ BoldFont=*-Bold]
                 de sexu muliebri haec interpretantur. Prius \\
                 enim cap.2.versu 9. harum decorum descri- \\
                 psit, vt nonsit opus hic repetere. Itaque \\
-                \marginpar{74 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{74 \\
+                }
+\section*{COMMENTARII \\
                 }vxores intelligo episcoporum et diacono- \\
                 rum: debent istae esse primum σεμναὶ, vt or- \\
                 nent maritorum suorum conditionem. Di- \\
@@ -2067,8 +2206,10 @@ BoldFont=*-Bold]
                 norum genere, quod scil. administrabat opes \\
                 Ecclesiasticas, erant hi instituti primitus ab \\
                 Apostolis, Act.6. Hinc videtur in aliis Ec- \\
-                \marginpar{IN L. EPIST. AD TIMOTH. \\
-                }\marginpar{75 \\
+                
+\section*{IN L. EPIST. AD TIMOTH. \\
+                }
+\marginpar{75 \\
                 }clesiis passim obseruatum, vt ministris adessent \\
                 diaconi quidam de senioribus selecti, quibus \\
                 committebatur aerarium Ecclesiae: hi paupe- \\
@@ -2098,8 +2239,10 @@ BoldFont=*-Bold]
                 ue bone fuisti in modico fidelis, constituam \\
                 te super maiora. \\
                 Item habenti dabitur, et ab co qui non \\
-                \marginpar{76 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{76 \\
+                }
+\section*{COMMENTARII \\
                 }habet, auferetur etiam id quod habet. Dili- \\
                 gentes igitur habent quo sperent donorum \\
                 auctionem. Deinde bonus gradus est apud \\
@@ -2129,8 +2272,10 @@ BoldFont=*-Bold]
                 Sexto loco sequitur epilogus: docet au- \\
                 tem cur scripserit de his rebus breuius: dein- \\
                 de cur etiam simpliciter scribat. nam videtur du- \\
-                \marginpar{IN I. EPIST. AD TIMOTH \\
-                }\marginpar{77 \\
+                
+\section*{IN I. EPIST. AD TIMOTH \\
+                }
+\marginpar{77 \\
                 }plex occupatio: primum enim de breuitate \\
                 inre tam difficili non immerito quaeri po- \\
                 terat: deinde quia respondet se scribere bre- \\
@@ -2160,8 +2305,10 @@ BoldFont=*-Bold]
                 hine modum gubernationis Ecclesiasticae \\
                 depromat. \\
                 Propositio igitur sit, Timotheus, et ob id \\
-                \marginpar{78 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{78 \\
+                }
+\section*{COMMENTARII \\
                 }omnis Ecclesiae Christi minister gubernatio- \\
                 nis formulam non nisi hinc debet petere. Pe- \\
                 tantur hinc argumenta suasoria ad diligen- \\
@@ -2191,8 +2338,10 @@ BoldFont=*-Bold]
                 et securiter stertunt heris improuidis, aut \\
                 non satis callidis et attentis ad rem, secus \\
                 hic ratio se habet. Deus viuens huic familiae \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{79 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{79 \\
                 }praeest, falli igitur non potest. Ac videtur \\
                 Deum opponere hominibus, viuum vero ido- \\
                 lis: plus enim Deus quam homo metui solet: \\
@@ -2222,8 +2371,10 @@ BoldFont=*-Bold]
                 tatis illius tam firmae praecipuos locos. \\
                 eosque imprimis, qui latent rationem: piis \\
                 autem sunt ὁμολογούμενοι. Et petatur hinc \\
-                \marginpar{80 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{80 \\
+                }
+\section*{COMMENTARII \\
                 }quartum argumentum ad diligentiam, qui a mini- \\
                 stri tractant mysteria solis piis ὁμολογούμενα: \\
                 ergo vigilandum illis ne tanta mysteria suo \\
@@ -2252,8 +2403,10 @@ BoldFont=*-Bold]
                 iustitiae laudem obtinuit, quòd sit pura et i- \\
                 donea hostia pro hominum peccatis delen- \\
                 dis, iustificatus dicitur absolutus, et liber pro- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{81 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{81 \\
                 }nuntiatus, vere iustus, vide Matt.11.Luc.7. \\
                 ver.35. Psal.51. \\
                 3 Visus Angelis. \\
@@ -2283,8 +2436,10 @@ BoldFont=*-Bold]
                 Quarto, PRAEDICATVS EST GENTIBVS, \\
                 scil. incredibili successu contra spem rationis: \\
                 homines piscatores dementant totum mundum. \\
-                \marginpar{82 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{82 \\
+                }
+\section*{COMMENTARII \\
                 }Vocatio igitur Gentium hypothesis est. \\
                 Quinto, CREDITVM EST ILLI IN MVN- \\
                 Do. Locum habuit Euangelica doctrina in \\
@@ -2301,7 +2456,8 @@ BoldFont=*-Bold]
                 Haec maiestas Christi est, quidquid dicant con \\
                 temptores eius. \\
                 CAPVT IIII. \\
-                \textbf{L \\
+                
+\textbf{L \\
                 }OCVS grauissimus hic explicatur \\
                 de erroribus circa fidem, qui po- \\
                 stremis temporibus simplicitatem \\
@@ -2310,8 +2466,10 @@ BoldFont=*-Bold]
                 Christi Ecclesiae relictum ad vtilitatem. Si- \\
                 mile habemus in 2. ad Timotheum capite \\
                 tertio versu quinto, et in 2.Petri capite 2. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{83 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{83 \\
                 }et in epistola Iudae versu decimo octauo. Hic \\
                 explicat oraculum per circunstantias, tan- \\
                 dem accommodat ad corruptae doctrinae \\
@@ -2341,8 +2499,10 @@ BoldFont=*-Bold]
                 tiam specialia ad Timotheum sic pertinen- \\
                 tia, vt in illius persona omnium ministrorum \\
                 idea formetur. \\
-                \marginpar{84 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{84 \\
+                }
+\section*{COMMENTARII \\
                 }Vers.1. Spiritus autem manifeste dicit, \\
                 quod in posterioribus temporibus desciscent \\
                 quidam a fide. \\
@@ -2371,8 +2531,10 @@ BoldFont=*-Bold]
                 hoc est, expresse, quasi dicat, sine amba- \\
                 gibus, sed nuda et perspicua oratione: per- \\
                 spicuitas igitur est testimonium veritatis, \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{85 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{85 \\
                 }cum mendacium inuolucris vtatur, et variis \\
                 coloribus sese pingat. Sic oracula Ethnica \\
                 semper ambigua fuerunt, aut certe obscura: \\
@@ -2402,8 +2564,10 @@ BoldFont=*-Bold]
                 erit, a vera Dei cognitione ad falsam declina \\
                 tio, id dixit a fide deficere: fidem accipio \\
                 pro simplicitare verae religionis, quod aliâs \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{86 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{86 \\
                 }dicit sanam doctrinam, et hic mox καλὴν δι- \\
                 δασκαλίαν, bonam doctrinam. Vide igitur \\
                 quae sit Apostolica doctrina, et contra quae \\
@@ -2432,8 +2596,10 @@ BoldFont=*-Bold]
                 tales efficit. Deinde errans dicitur spiritus, \\
                 quia aliis quoque erroris est causa, vt enim \\
                 i pse mendax est, sic alios tales efficit et men- \\
-                \marginpar{IN L. EPIST. AD TIMOTH \\
-                }\marginpar{87 \\
+                
+\section*{IN L. EPIST. AD TIMOTH \\
+                }
+\marginpar{87 \\
                 }daciorum, hoc est, errorum quaerit patronos. \\
                 Is est spiritus mendax in ore omnium fal- \\
                 sorum doctorum. \\
@@ -2461,8 +2627,10 @@ BoldFont=*-Bold]
                 sum, sed his contrarium, vt Purgato- \\
                 rium, de inuocatione sanctorum, et si- \\
                 milia πευδολογίαν habent, quia de his \\
-                \marginpar{88 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{88 \\
+                }
+\section*{COMMENTARII \\
                 }scriptura nihil habet. Deinde est ψευδολογία, \\
                 quando Scripturae alius assuitur sensus, quam \\
                 ferat sana doctrina, qualis est interpretatio \\
@@ -2491,8 +2659,10 @@ BoldFont=*-Bold]
                 repraesentant, quos illi nunquam viderunt: \\
                 tales sunt isti personati sancti et Chri- \\
                 stiani. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{89 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{89 \\
                 }Iertio, HABENT CAVTERIATAM \\
                 CONSCIENTIAM, quasi dicat, infeli- \\
                 citer illis cedit errorum defensio: foris splen- \\
@@ -2522,7 +2692,8 @@ BoldFont=*-Bold]
                 1. Prohibebunt γαμεῖν, hoc est, honesta- \\
                 tem matrimonii tollent: ius eius in arctum \\
                 redigent: quod factum est duplici modo. Pri- \\
-                \marginpar{90 \\
+                
+\marginpar{90 \\
                 }mum, simpliciter quidam danarunt nuptias: \\
                 alii secundum quid, hoc est, eos qui nati ad \\
                 coelibatum non sunt, contra naturam voto \\
@@ -2538,7 +2709,8 @@ BoldFont=*-Bold]
                 elegantem epistolam Cypriani lib.1.epist.11. \\
                 de virginibus quae votum castitatis non ser- \\
                 uabant. \\
-                \marginpar{COMMENTARII \\
+                
+\section*{COMMENTARII \\
                 }11. De ciborum delectu, de quo vide Aug. \\
                 epist. 86.ad Casulanum, et li.2. de morib. Eccle \\
                 siae cap.13. vbi delicatam abstinentiam damnat, prae \\
@@ -2553,8 +2725,10 @@ BoldFont=*-Bold]
                 condidit, h.e de genere sunt bonorum sua natu- \\
                 ra:ergo non debent simpliciter damnari. \\
                 Deinde fine bono conditi sunt, qui est \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{91 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{91 \\
                 }μετάληψις : ergo ab vsu hoc non sunt exclu- \\
                 dendi. Μετάληψιν intelligo iudicium de cibis \\
                 noxiis et innoxiis ex creaturis, quasi dicat, ca- \\
@@ -2584,8 +2758,10 @@ BoldFont=*-Bold]
                 batum. Habes ex antithesi illustre argumentum. \\
                 Cibi piis concessi sunt diuina authoritate. \\
                 Hinc καλὸν dicitur: prohiberi autem hominum \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{92 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{92 \\
                 }doctrina, hinc ἀπόβλητον : igitur cauenda est \\
                 haec doctrina, et sequenda prima illa Dei con- \\
                 cessio. Addit tamen limitationem, quae prius \\
@@ -2614,8 +2790,10 @@ BoldFont=*-Bold]
                 quae nobis debebatur ob peccatum in rebus \\
                 per se ad vitam salutaribus. Hae preces igitur \\
                 consecrant nobis cibos. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{93 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{93 \\
                 }Damnanda hic est consecrandi ratio im- \\
                 pia, qua res in Papatu consecrantur ad vsus \\
                 insolitos, quos natura non habet, nec a Deo his \\
@@ -2645,8 +2823,10 @@ BoldFont=*-Bold]
                 propositio loci, Timotheus et omnis bonus \\
                 Christi minister de his corruptelis quam fi- \\
                 delissime suos auditores monere debet:ratio \\
-                \marginpar{94 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{94 \\
+                }
+\section*{COMMENTARII \\
                 }est, quia sic erit bonus minister. Ergo qui hoc \\
                 negligit, non Christi est bonus minister, sed \\
                 Antichristi, qui apostaticam sequitur doctri- \\
@@ -2676,8 +2856,10 @@ BoldFont=*-Bold]
                 certaminibus persecutionum, debent asse- \\
                 qui doctrinam, hoc est, percipere id quod \\
                 Christus illis praedixerat: hic tamen pro do- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{95 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{95 \\
                 }cendi facultate loquitur proprie vt apparet. \\
                 7 Prophanas autem et aniles fabulas, etc. \\
                 cis, quae tamen ad propositionem, et illatio- \\
@@ -2707,8 +2889,10 @@ BoldFont=*-Bold]
                 lus antithesi quadam: primum enim praecepti \\
                 est oppositio. HOC AVERSARE, παραίοῦ: in il- \\
                 lo vero, TEIPSVM γύμναζε Illud ἄρνησιν \\
-                \marginpar{96 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{96 \\
+                }
+\section*{COMMENTARII \\
                 }habet, hoc θέσιν. Fugiendum est in disciplina \\
                 morali μυθικὸν fabulosum, hoc est, quod spe- \\
                 ciem habet antiquitatis, sed cum vero Dei \\
@@ -2738,8 +2922,10 @@ BoldFont=*-Bold]
                 suis, opus supererogationis fabricatur, meri- \\
                 torium apud Deum pro sua salute. His adde- \\
                 tur tertius profanus compotator qui pernox- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{97 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{97 \\
                 }est in vino ab occasu Solis ad ortum eiusdem \\
                 debacchatur. Hic quaeritur quis apud Deum \\
                 bona vtatur disciplina, et cuius vigiliae Domi \\
@@ -2769,9 +2955,12 @@ BoldFont=*-Bold]
                 aniles et profanas de exercitiis corporalibus \\
                 accipere, alioquin nihil concludit oratio. Ita- \\
                 que nos de disciplina morum interpretati su- \\
-                \marginpar{G \\
-                }\marginpar{98 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{G \\
+                }
+\marginpar{98 \\
+                }
+\section*{COMMENTARII \\
                 }mus. Est enim fabulosum in doctrina vel fi- \\
                 dei vel morum ac disciplinae. sup. cap.1, vers, \\
                 4.taxauit quoque fabulas, sed ad doctrinam \\
@@ -2801,8 +2990,10 @@ BoldFont=*-Bold]
                 tamem ὀλίγον, hie. res parua respectu eorum quae \\
                 ei tribuunt superstitionsi, ac sanu reddit corpus \\
                 sobrietas, vigiliae animum excitat ad orandum. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{99 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{99 \\
                 }Aliquid illa quidem sunt, imo magna, sed quid \\
                 respectu abusus? hypocritae ei longe maiora \\
                 assignant, merita erogationis et supererogatio \\
@@ -2832,8 +3023,10 @@ BoldFont=*-Bold]
                 tore honesto turpis vsurarius, aut impostor, in \\
                 mechanicis dictat honesta viuendi ratione, \\
                 oportere esse contentum, nec defraudandum \\
-                \marginpar{100 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{100 \\
+                }
+\section*{COMMENTARII \\
                 }in vendendo proximum: idem agricolae di- \\
                 ctabit, et aliis in genere omnibus. Sed Apo- \\
                 stoli explicatio audienda est. Propositum fuit, \\
@@ -2863,8 +3056,10 @@ BoldFont=*-Bold]
                 ritatem pertinuit eatenus si manserit in sta- \\
                 tutis Domini, hoc est, Deum sic colerent, quem- \\
                 admodum colendum sese proposuerat. Hinc \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{101 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{101 \\
                 }sol pii recte Deum colentes sperare poterant \\
                 illa bona externa, quae terrae Canaan nomine \\
                 erant comprehensa, vt fertilitas, vbertas, sa- \\
@@ -2894,8 +3089,10 @@ BoldFont=*-Bold]
                 Christiana, et αὐτόπιςτα, hoc est, quae per se et \\
                 sine demonstratione debebant valere in Ec- \\
                 clesia Christi: qualia supra quoque recensuit \\
-                \marginpar{102 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{102 \\
+                }
+\section*{COMMENTARII \\
                 }cap.1.ver.15. et initio cap.3.et ver.16, cap.3.ta- \\
                 le hoc quoque est, quod in disciplina corpo- \\
                 rali sola vera Deum colendi ratio sit sequenda, \\
@@ -2925,8 +3122,10 @@ BoldFont=*-Bold]
                 Obserua in hoc argumento, quomodo ve- \\
                 ri cultores Dei distingui possint ab hypocri- \\
                 tis. Primum, crucis forma multum differunt, \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{103 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{103 \\
                 }dum veri cultores duriter tractantur in hoc \\
                 mundo, quod significat voce κοπιῶμεν. Dein- \\
                 de ignominiose quoque tractantur, quod ex- \\
@@ -2957,8 +3156,10 @@ BoldFont=*-Bold]
                 lem super bonos et malos, id est, communiter \\
                 bonis et malis contulit et prospicit. IMPRI- \\
                 MIS AVTEM FIDELIVM, hoc \\
-                \marginpar{104 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{104 \\
+                }
+\section*{COMMENTARII \\
                 }est, hos serio curat ipsorum bono fine, cum \\
                 malis externa beneficia cedant ad damnatio- \\
                 nem. Oratio argumentatur a toto ad praeci- \\
@@ -2987,8 +3188,10 @@ BoldFont=*-Bold]
                 aetate docentis, contra quos hic disserit A- \\
                 postolus. Et exempla declarant Deum in suis \\
                 donis non excludere iuuentutem quin ei det \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{105 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{105 \\
                 }Nemo tuam iuuentutem despiciat, etc. \\
                 illustria dona: sic Daniel puer inter Prophe- \\
                 tas habitus est, et Samuel. Dauid, iuuenis e- \\
@@ -3018,8 +3221,10 @@ BoldFont=*-Bold]
                 tiam. \\
                 Propositio sit, Aetas si caeterae adsint dotes, \\
                 in ministro non vsque adeo respicienda est. \\
-                \marginpar{106 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{106 \\
+                }
+\section*{COMMENTARII \\
                 }Praeoccupatione orditur locum: ac prae- \\
                 ceptum dat auditoribus quid illis sit facien- \\
                 dum in persona Timothei: Non damnan- \\
@@ -3049,8 +3254,10 @@ BoldFont=*-Bold]
                 ciliat, id fit in Ecclesia vitae innocentia: πάθος \\
                 vero si graui oratione auditores ad sui imi- \\
                 tationem possit propellere. Haec in Timo- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{107 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{107 \\
                 }theo videmus: primum enim sanam doctri- \\
                 nam illi tribuit iam prius, nunc addit virae \\
                 grauitatem, et morum innocentiam, quo \\
@@ -3080,8 +3287,10 @@ BoldFont=*-Bold]
                 templanda est vita et doctrina. \\
                 Primum, in sermone debet minister prae- \\
                 lucere dotibus omnibus, quae in aliis me- \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{108 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{108 \\
                 }diocres ferri possunt, in ipsis excellentes de- \\
                 bent esse. Hac vt ad mores principis totus \\
                 componitur orbis: sic auditores facile arri- \\
@@ -3111,8 +3320,10 @@ BoldFont=*-Bold]
                 autem vt seipsum, vel proxime ad hunc ac- \\
                 cedat gradum. \\
                 Quarto, IN SPIRITV, hoc est,zelo pieta- \\
-                \marginpar{IN I. EPIST, AD TIMOTH. \\
-                }\marginpar{109 \\
+                
+\section*{IN I. EPIST, AD TIMOTH. \\
+                }
+\marginpar{109 \\
                 }tis, qui gestibus, oratione, habitu, vita, adeo- \\
                 que verbis ac factis declarari potest: is zelus \\
                 quia singularis est motus spiritus Dei agen- \\
@@ -3142,8 +3353,10 @@ BoldFont=*-Bold]
                 tem excusabit in ministro, assiduum es- \\
                 se in lectione Scripturae. De lectione aliâs \\
                 diimus. Commendatur Psalmo 1. nam inter \\
-                \marginpar{110 \\
-                }\marginpar{COMMENTARII. \\
+                
+\marginpar{110 \\
+                }
+\section*{COMMENTARII. \\
                 }beati viri virtutes, ponitur die et noctu me- \\
                 ditari in lege Domini: et Ioann.5. Christus \\
                 iubet scrutari Scripturam. Sic neglectum \\
@@ -3173,8 +3386,10 @@ BoldFont=*-Bold]
                 sam male agendo deperdas: doctrina indi- \\
                 gent rudes, vt iuuentus, cui rudimenta propo- \\
                 nuntur pietatis perspicua breuitate. Deinde \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{111 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{111 \\
                 }adulti haerentes in perplexis quaestionibus, \\
                 vtlocis in speciem pugnantibus. Item con- \\
                 tumaces, qui nostra oppugnant: nam et κατη- \\
@@ -3204,8 +3419,10 @@ BoldFont=*-Bold]
                 in impositione manuum, qualia tum saepe continge \\
                 bant piis, quale fuit maior dexteritas inter- \\
                 pretandi Scripturam quam habuerit prius: \\
-                \marginpar{112 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{112 \\
+                }
+\section*{COMMENTARII \\
                 }solertia regendi Ecclesiam, docendi Euan- \\
                 gelium, et similia. Hoc donum non debet \\
                 neghgere, hoc est, debet auctius reddere, ne- \\
@@ -3235,8 +3452,10 @@ BoldFont=*-Bold]
                 certa edidisse testimonia, quod talis persona \\
                 illi ad tale munus placeret. Illapsus est ali- \\
                 quando visibili specie Spiritus sanctns, aliâs \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{113 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{113 \\
                 }linguis nouis loquebantur, aliosq. motus no \\
                 uos in auditorib.edebat S.sanctus, et indubie \\
                 siidem symbolum rite administraretur ad- \\
@@ -3266,8 +3485,10 @@ BoldFont=*-Bold]
                 sic vixerit, et a virtutibus omnibus sit notus. \\
                 16 Attende tibi ipsi et doctrinae. \\
                 Quarto loco appendicem addit duplici argu- \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{114 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{114 \\
                 }mento munitam. Duo autem hic conside- \\
                 randa veniunt: praeceptum etcausa praecepti. \\
                 Praeceptum est, ATTENDE TIBI ET DO- \\
@@ -3297,8 +3518,10 @@ BoldFont=*-Bold]
                 sit pro suae animae salute: dicitur autem seruare \\
                 se organice, alioquin principaliter et absolu- \\
                 te Deus seruat, vt priusdixit, qui est seruator \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{115 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{115 \\
                 }omnium hominum, maxime fidelium. Hoc \\
                 non euertit quin Timotheus sui quoque sit \\
                 seruator: Deus enim in ipso seruando eodem \\
@@ -3325,10 +3548,13 @@ BoldFont=*-Bold]
                 riorum Dei. Sed organa se meminerint, quae \\
                 si ad Deum comparentur, recte dicent se ni- \\
                 hil esse, etc. \\
-                \marginpar{116 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{116 \\
+                }
+\section*{COMMENTARII \\
                 }CAPVT V. \\
-                \textbf{T \\
+                
+\textbf{T \\
                 }RADIT hoc cap. diuersas regulas \\
                 ipsi Timotheo, quas in admini- \\
                 stratione officii sui sequatur etiam \\
@@ -3351,8 +3577,10 @@ BoldFont=*-Bold]
                 dine in tot laboribus. De his fere disputatur \\
                 hoc capite quinto. \\
                 Propositio in singulis locis quaerenda et con \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{117 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{117 \\
                 }tituenda est specialiter, ne partes confundantur. \\
                 Habent tamem hic ministri praesertim iunio- \\
                 res quod sequantur: De moderanda acerbitate \\
@@ -3382,8 +3610,10 @@ BoldFont=*-Bold]
                 bus. His omnibus prae est Timotheus iuuenis: \\
                 hunc igitur primum cum auditoribus com- \\
                 mittit, deinde cum aetate paribus aut infe- \\
-                \marginpar{118 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{118 \\
+                }
+\section*{COMMENTARII \\
                 }rioribus, mox cum sexu differentibus, vt sciat \\
                 quomodo se erga omnes gerere debeat. Se- \\
                 niorem non debet ἐπιπλήττειν, hoc est, du- \\
@@ -3413,8 +3643,10 @@ BoldFont=*-Bold]
                 est, animum filii prodere. Seniorum ho- \\
                 nori parcere, loco parentum colere. Hoc \\
                 Timotheum iubet praestare: igitur omni- \\
-                \marginpar{IN I. EPIST. AD. TIMOTH. \\
-                }\marginpar{119 \\
+                
+\section*{IN I. EPIST. AD. TIMOTH. \\
+                }
+\marginpar{119 \\
                 }bus iunioribus ministris curandum est vt pru- \\
                 denter et leniter seniores castigent. \\
                 Iuniores vero vt fratres, \\
@@ -3444,8 +3676,10 @@ BoldFont=*-Bold]
                 omnes moderationis et lenitatis. \\
                 3 Viduas honora quae vere, etc. \\
                 Secumdus locus de cura viduarum. Propositio \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{120 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{120 \\
                 }igitur hic specialis constituatur, Ministro di- \\
                 ligenter curandum est vt viduae de publico \\
                 alendae, aut ministerio Ecclesiastico depu- \\
@@ -3474,7 +3708,8 @@ BoldFont=*-Bold]
                 hoc est, orbata viro: sic χήρά ἑςτι  μονοθεῖσα ἀπʹ \\
                 ἀνδρὸς, vel vt Apostolus loquitur, μεμονωμένη, \\
                 solitaria facta, et destituta viri patrocinio et \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }necessario auxilio: tales honora, inquit. Ver- \\
                 bum τιμᾶν accipio de victu etiam et amictu, \\
                 vt in Decalogo dicitur, Honora patrem tuum \\
@@ -3504,9 +3739,12 @@ BoldFont=*-Bold]
                 est differentia inter viduas: aliae vere sunt, \\
                 quod dicuntur re et nomine viduae: aliae solo \\
                 nomine. Apostolus igitur praeceptum de ho- \\
-                \marginpar{121 \\
-                }\marginpar{122 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{121 \\
+                }
+\marginpar{122 \\
+                }
+\section*{COMMENTARII \\
                 }norandis viduis applicat, ad solas illas quae \\
                 ὄντως sunt quod dicuntur: id quale sit ex sub- \\
                 iectis notis intelligatur. \\
@@ -3536,8 +3774,10 @@ BoldFont=*-Bold]
                 mentum si vidua nolit suis cohabitare, et ma \\
                 gis delectetur aliorum conuersatione, quam \\
                 domus suae et familiae. Et id etiam dicitur \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{123 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{123 \\
                 }vicem rependere maioribus suis:: nam vidua \\
                 suis maioribus debet si recte instituta est, \\
                 hanc pietatem relinquat posteritati. Alter \\
@@ -3567,8 +3807,10 @@ BoldFont=*-Bold]
                 Altera est, quia idem DOMINO EST GRA- \\
                 TVM,h.e. officium hoc Deo acceptum est: nam \\
                 multa videntur natura honesta, quae tamen \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{124 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{124 \\
                 }talia non sunt, nec pacatur his Deus: et vim vi \\
                 repellere Christiano in loco et tempore non \\
                 licet. Voluptas natura honesta videtur, quae \\
@@ -3597,7 +3839,8 @@ BoldFont=*-Bold]
                 Iterum contrarium addit vt fecit in \\
                 prima nota: illic opposuit μεμονωμένην, et \\
                 ἔχουσαν τέκνα, ἤ ἔκγονα.  Hîc προσμένουσαν προ- \\
-                \marginpar{IN I. EPSIT. AD TIMOTH. \\
+                
+\section*{IN I. EPSIT. AD TIMOTH. \\
                 }σευχαῖς opponit ei quae est σπαταλουσα, hoc est, \\
                 lasciuae et petulanti. Vox desumpta est a spa- \\
                 thale, quae significat oruamenta muliebria, \\
@@ -3627,9 +3870,12 @@ BoldFont=*-Bold]
                 bo dicit ἀνεπίληπτοι, irreprehensibiles, hoc est, \\
                 si suos habeant, ne petant de publico ali, piae \\
                 sint non lasciuae. \\
-                \marginpar{125 \\
-                }\marginpar{126 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{125 \\
+                }
+\marginpar{126 \\
+                }
+\section*{COMMENTARII \\
                 }8 Si qua vero, etc. \\
                 Comminatio est quae habet vim argu- \\
                 menti, ne de publico ali velit, quae a suis ali \\
@@ -3659,7 +3905,8 @@ BoldFont=*-Bold]
                 partui et ob id libidini minus subiecta. Poste- \\
                 rius seculum mitigauit humc numerum, quadrage- \\
                 nariam admittendo: plus peccant hodie, quamlibet \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }suscipiendo modo votum sanctae viduitatis \\
                 promittat, licet id nunquam seruare cogitet. \\
                 Quarta nota hic etiam additur, quae fuerit \\
@@ -3689,9 +3936,12 @@ BoldFont=*-Bold]
                 II Iuniores autem viduas auersare, etc. \\
                 Locus est de iuniorib. viduis diligenter i mimi \\
                 steriopublico cauendis. Constat locꝰ propositione, \\
-                \marginpar{127 \\
-                }\marginpar{128 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{127 \\
+                }
+\marginpar{128 \\
+                }
+\section*{COMMENTARII \\
                 }ratione, et illatione. Propositio est, IVNIO- \\
                 RES VITATO, hoc est, indignas iudica- \\
                 to publico alimento et ministerio Ecclesiae, \\
@@ -3721,8 +3971,10 @@ BoldFont=*-Bold]
                 stianismi professione, quae merito prima fi- \\
                 des est, hoc est, prima fidei professio. Idem \\
                 Graecis dicitur πίςτις, hoc est, fidei professio, \\
-                \marginpar{IN L. EPIST. AD TIMOTH. \\
-                }\marginpar{129 \\
+                
+\section*{IN L. EPIST. AD TIMOTH. \\
+                }
+\marginpar{129 \\
                 }quam adulti edebant in Baptismo post con- \\
                 uersionem, renunciantes Satanae et mundo, \\
                 obstringentésq. se vni Christo. Hunc negant \\
@@ -3752,8 +4004,10 @@ BoldFont=*-Bold]
                 Illatio ex superiorib. vt plurimum con- \\
                 sequentibus, et veris malis: constituit autem \\
                 generalem regulam quae valere debet intota \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{130 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{130 \\
                 }illa aetate, scil. vt iuniores omnes nubant dum \\
                 praedicta pericula cauere non possunt. Hinc ꝓ- \\
                 bantur secundae nuptiae, quia Apostolus illa- \\
@@ -3783,8 +4037,10 @@ BoldFont=*-Bold]
                 filium, aut nepotem, vt dixit ver.4. vel quae \\
                 habet πιςτὴν, hoc est, filiam, aut neptem: talis \\
                 vidua debet ali a suis domesticis, et opponitut \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{131 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{131 \\
                 }equae hic et supra versu tertio dicitur ὄντως \\
                 χήρα, hoc est, re et nomine vidua: haec alenda \\
                 est, prior non: ratio est, ne greuetur Ecclesia: \\
@@ -3814,8 +4070,10 @@ BoldFont=*-Bold]
                 quia supra dicebat Episcopum vnius vxoris, \\
                 esse hospitalis: quod tamen mihi non placet, \\
                 hoc est, vnius Heclesiae debere esse maritum, \\
-                \marginpar{132 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{132 \\
+                }
+\section*{COMMENTARII \\
                 }h.c.praesidem. Non potest igitur ab vna Eccle- \\
                 sia duplum accipere stipendium. Altera est sen- \\
                 tentia inter pretantium duplicem honorem: primum \\
@@ -3845,8 +4103,10 @@ BoldFont=*-Bold]
                 stant operam vigilanter. Nunc propositionis \\
                 additur confirmatio a pronunciatis: éstq. argu- \\
                 mentum geminum:primum a veteri testamento \\
-                \marginpar{IN I. EPSIT. AD TIMOTH. \\
-                }\marginpar{133 \\
+                
+\section*{IN I. EPSIT. AD TIMOTH. \\
+                }
+\marginpar{133 \\
                 }depromptum, alterum ex nouo. Mosis enim est \\
                 sententia, Boui trituranti non obligabis os, de qua \\
                 diximus, Cor.9.ver.9. Vnde hoc sequitur. Si \\
@@ -3876,8 +4136,10 @@ BoldFont=*-Bold]
                 aut latet, et ob id conuincendum est testibus: \\
                 aut notorium est, nec habent opus peccator te- \\
                 stibus, quia constat de peccato, aut etiam fatetur: \\
-                \marginpar{134 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{134 \\
+                }
+\section*{COMMENTARII \\
                 }de vtroque hoc genere breuiter agit. \\
                 Exorditur autem a peccato quod latet, vt \\
                 solet in magnis viris, quales sunt praesides \\
@@ -3907,8 +4169,10 @@ BoldFont=*-Bold]
                 ritur in omni iudicio Ecclesiastico eam esse \\
                 adhibendam docet. Sunt interim multa leuia \\
                 et puerilia in quibus nec de famae nec nomi- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{135. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{135. \\
                 }nis integritate agitur, in quibus non est opus \\
                 fimili rigore. Statuamus igitur hanc commu- \\
                 nem regulam. In omni iudicio Ecclefiastico \\
@@ -3938,8 +4202,10 @@ BoldFont=*-Bold]
                 chantur in auditorum peccata, quam vtiliter. \\
                 Addit rationem Apostolus, VT RELIQVI TI- \\
                 MOREM HABEANT, hoc est, iram Domini \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{136 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{136 \\
                 }metuant, offensam eiusdem, quae fluit exper- \\
                 petrato peccato. Illustre igitur hinc ducitur \\
                 argumentum, Timor in Ecclesia est confir- \\
@@ -3974,7 +4240,8 @@ BoldFont=*-Bold]
                 fratribus peccantibus. Haec argumenta pon- \\
                 dus addunt propositioni quam vno verbo \\
                 refricat, VT HAEC SERVES. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }Ταῦτα primum refero ad iudicia Ecclesia- \\
                 stica, vt sit sensus, In his volo te quam san- \\
                 ctissime versari, nec solum te, sed vt alii i- \\
@@ -3998,10 +4265,13 @@ BoldFont=*-Bold]
                 sunt ωρόκλησις, et πρόκριμα quae peccant anti- \\
                 cipatione. Quare ταῦτα ad priorem senten- \\
                 tiam refero. \\
-                \marginpar{137 \\
+                
+\marginpar{137 \\
                 }22 Manus ne cui cito imponas, etc. \\
-                \marginpar{138 \\
-                }\marginpar{COMMENTARII. \\
+                
+\marginpar{138 \\
+                }
+\section*{COMMENTARII. \\
                 }Quintus locus sequitur de impositione \\
                 manuum: habet autem locus iste duo, πρότασιν \\
                 et αἴτιον. Propositio est, Episcopo danda est o- \\
@@ -4031,8 +4301,10 @@ BoldFont=*-Bold]
                 loco a nobis est dictum. \\
                 Ratio propositionis est gemina: prior, Ne \\
                 ALIENIS COMMVNICES PECCATIS hoc est, \\
-                \marginpar{IN I. EPIST. AD TIMOTH \\
-                }\marginpar{139 \\
+                
+\section*{IN I. EPIST. AD TIMOTH \\
+                }
+\marginpar{139 \\
                 }ne reus fias corrupti ministerii. Cogitent hoc \\
                 diligenter quibus electiones sunt concessae, \\
                 ne alie no peccato sese maculent, dum eligunt, \\
@@ -4062,8 +4334,10 @@ BoldFont=*-Bold]
                 Aquae potio minus in nostris ministris habet \\
                 periculi, quia saluberrima quum sit nostrae \\
                 regioms aqua, tamen caute illa vtuntur, \\
-                \marginpar{140 \\
-                }\marginpar{COMMENTARTI \\
+                
+\marginpar{140 \\
+                }
+\section*{COMMENTARTI \\
                 }vino magis dediti, imprimis delicatioribus. \\
                 Olim peccabant magis in defectu boni pa- \\
                 stores, hoc est, vt minus vinum curarent, \\
@@ -4093,8 +4367,10 @@ BoldFont=*-Bold]
                 inquit, TVVM, quia scilicet is frigiditate a- \\
                 quae corruptus etiam concoctionis officium \\
                 non praestabat: hinc varii morbi et ex mor- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{141 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{141 \\
                 }bis languidum et inhabile ad tantum mu \\
                 nus corpusculum. Nostrae hodie rationes \\
                 instruendae magis sunt contra vini potionem \\
@@ -4124,8 +4400,10 @@ BoldFont=*-Bold]
                 men post crisin produntur, vt superbia et ar- \\
                 rogantia, quae se prodit, si hypocrita fuerit ad- \\
                 missus, nam vestis virum faciet, et magistratus \\
-                \marginpar{142 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{142 \\
+                }
+\section*{COMMENTARII \\
                 }illum arguet, hoc est, mores mutabit iam e- \\
                 uectus ad aliquam dignitatem. Illa licet se- \\
                 quantur crisin factam, tamen correctionem \\
@@ -4155,10 +4433,13 @@ BoldFont=*-Bold]
                 solatio et in hisest, Veritatem semper latere \\
                 non posse quin patefiat: temporis enim est \\
                 filia. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{143 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{143 \\
                 }CAPVT VI. \\
-                \textbf{V \\
+                
+\textbf{V \\
                 }ARIOS persequitur locos hoc \\
                 capite quos ordine recensebimus. \\
                 quo facilior sit illorum deinceps \\
@@ -4185,8 +4466,10 @@ BoldFont=*-Bold]
                 Eph.6.v.5.ad Col.3.V.22.et habebimus infra \\
                 ad Tit.2.V.9.1.ep. Pet.2.V.18, quibus consonant \\
                 illa quae ad Rom.13. habentur. Hoc loco Apo- \\
-                \marginpar{144 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{144 \\
+                }
+\section*{COMMENTARII \\
                 }stolus hunc ordinem seruat. Initio dat praece \\
                 ptum quod seruis est sequendum: mox addit \\
                 praecepti rationem: tertio respondet impa- \\
@@ -4216,8 +4499,10 @@ BoldFont=*-Bold]
                 ga magistratum, famuli, ancillae, clientes, di- \\
                 scipuli et similes personae. Obedientiam de- \\
                 bent his quibus Dominus eos subiecit, quos \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{145 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{145 \\
                 }notanter hic exprimit Apostolus, ἱδίους δεσπό- \\
                 τας vocando. Dicuntur autem ἴδιοι iure di- \\
                 uino et humano: Deus enim in populo suo \\
@@ -4247,8 +4532,10 @@ BoldFont=*-Bold]
                 inobe dientiam subditorum praesertim sernilem \\
                 impatientiam blasphemari nomem Dei:fic ad to \\
                 tam vitam argumentum facit, quae si flagitiosa sit \\
-                \marginpar{146 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{146 \\
+                }
+\section*{COMMENTARII \\
                 }et professioni minime respõdeat, nomem Dei \\
                 blasphematur: sic argumentatur Apostolus \\
                 ad Rom.2.V.24. Iudaeorum moribus effectum \\
@@ -4278,8 +4565,10 @@ BoldFont=*-Bold]
                 seruilem rebellionem, ne doctrina Christi calum \\
                 niam patiatur apud infideles. \\
                 2 Qui vero habent fideles dominos, etc. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{147 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{147 \\
                 }Occurrit Apostolus seruili impatientiae, \\
                 ac eripit ei firmamentum defensionis suae. \\
                 Primum igitur hic obseruetur superiora pro \\
@@ -4310,8 +4599,10 @@ BoldFont=*-Bold]
                 dum non minus quam plane impiis, qui conuersi \\
                 nondum sunt. Firmamentum ipsorum seruorum \\
                 eratifratres sunt, ergo fraterne nos debebant \\
-                \marginpar{148 \\
-                }\marginpar{COMM ENTARII \\
+                
+\marginpar{148 \\
+                }
+\section*{COMM ENTARII \\
                 }dimittere, id non faciunt, causam igitur prae- \\
                 bent nobis ipsos contemnendi. Respondet \\
                 Apostolus, non recte hoc effici: imò ob hoc \\
@@ -4341,8 +4632,10 @@ BoldFont=*-Bold]
                 reddimus doctrinae ex scriptura. Hortari aunt \\
                 proposito conmodo aut inconmodo ad eadem \\
                 auditores incitare. Vtrunque faciendum est \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{149 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{149 \\
                 }ministro: docendi sunt serui, ne propter fi- \\
                 dem conditionem suam deserant, ídque ex \\
                 semptura: deinde incitandi sunt ad obedientiam \\
@@ -4372,8 +4665,10 @@ BoldFont=*-Bold]
                 reses renouant hanc ipsam notam manife- \\
                 ste in se produnt. \\
                 4 Inflatus est nihil sciens, etc. \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{150 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{150 \\
                 }Altera est nota, iidem etiam superbi et ar- \\
                 rogantes sunt, τύφωσις et τύφος dicitur  μετα- \\
                 βατικῶς, inflatio, arrogantia, fastus, sumpta \\
@@ -4403,7 +4698,8 @@ BoldFont=*-Bold]
                 analoga sunt religioni Christianae, et sanae \\
                 doctrinae respondent, sunt ἑπιστημονικά. \\
                 Schismatici igitur quum ab analogia fidei \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
                 }ertent, recte dicuntur nihil scire, vtvt docti \\
                 videantur, quia ad finem veritatis non per- \\
                 ueniunt. \\
@@ -4433,9 +4729,12 @@ BoldFont=*-Bold]
                 salutem, etc. Alia est ζήτησις νοσώδης, mor- \\
                 bida, quae Christi meritum obscurat, bonis \\
                 obest moribus, aut ad cognitionem veritatis \\
-                \marginpar{151 \\
-                }\marginpar{152 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{151 \\
+                }
+\marginpar{152 \\
+                }
+\section*{COMMENTARII \\
                 }nihil confert, qualis est quaestio de purgato- \\
                 rio, de inuocatione sanctorum, de operibus \\
                 condignis, et congruis, de intercessione san- \\
@@ -4465,8 +4764,10 @@ BoldFont=*-Bold]
                 virtutibus pellere vident, inuident, non quod \\
                 tales esle vellent, sed quod ipsis similes in \\
                 malitia omnes non sint. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{153 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{153 \\
                 }Ἔριν, contentio ex rationum collisione na- \\
                 scitur, et fere praecedit inuidiam: nam virtus \\
                 demum cognita patitur φθόνος. \\
@@ -4496,8 +4797,10 @@ BoldFont=*-Bold]
                 ficationem primam limitat, malámque facit. \\
                 Exempla peruersarum exercitationum, in scho- \\
                 lastica Theologia obuia sunt, vt apud mona- \\
-                \marginpar{154 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{154 \\
+                }
+\section*{COMMENTARII \\
                 }nachos, peregrinationes, humicubationes, vi- \\
                 giliae, inediae, cantus, aliaq. satis testari possunt. \\
                 Hominum mente corruptorum, etc. \\
@@ -4527,8 +4830,10 @@ BoldFont=*-Bold]
                 tur ad Rom.16.ver. 18.non Christo, sed ven- \\
                 tri suo inseruire, et ad Tit.1.vers.11.docentes \\
                 quae non oportet turpis lucri gratia. \\
-                \marginpar{IN I. EPSIT. AD TIMOTH. \\
-                }\marginpar{155 \\
+                
+\section*{IN I. EPSIT. AD TIMOTH. \\
+                }
+\marginpar{155 \\
                 }HOS DECLINA. Conclusio est loci de vi- \\
                 tandis schismaticis: sensus est, nihil cum his con- \\
                 mune tibi sit, nec in doctrina, nec moribus. \\
@@ -4557,8 +4862,10 @@ BoldFont=*-Bold]
                 mictus. His igitur contentos esse oportet. \\
                 9 Qui autem volunt ditescere, etc. \\
                 Locus quartus contra auaritiam, quam in \\
-                \marginpar{156 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{156 \\
+                }
+\section*{COMMENTARII \\
                 }schismaticis taxauit : rationibus autem firmis \\
                 remouit a pio Christi seruo. Iam expresse mor- \\
                 bum ipsum describit a suis fructibus. Πλουτεῖν \\
@@ -4588,8 +4895,10 @@ BoldFont=*-Bold]
                 nium malorum. Radix dicitur μεταβατικῶς: \\
                 est enim radix proprie plantarum, sed trans- \\
                 fertur vox illa ad ea quae principii vicem et \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{157 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{157 \\
                 }originem signifieant: vt apud Pindarum de \\
                 Therone, quia Thaesandro genus duxit, scri- \\
                 bitur, ὅτεν σπέρματος ἔχοντι ῥίζαν, vnde generis \\
@@ -4619,8 +4928,10 @@ BoldFont=*-Bold]
                 certe maior pars, quia Christus dixit difficile \\
                 esse talem ingredi in regnum caelorum, quod \\
                 mox respectu Dei mitigat, apud quem omne \\
-                \marginpar{158 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{158 \\
+                }
+\section*{COMMENTARII \\
                 }verbum sit possibile: potest igitur auaros ser- \\
                 uare, vt Zachaeum forte et Matthaeum: Pu- \\
                 blicanos enim auaros fuisse probabile est. Ve- \\
@@ -4650,8 +4961,10 @@ BoldFont=*-Bold]
                 tibus fidei sanam laedit doctrinam, vel in mori- \\
                 bus vitae innocentiam euertit, omnibus modis \\
                 vitetur. Contra virtutes quae vel in docente \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{159 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{159 \\
                 }requiruntur, vel in genere innocentiam vitae \\
                 concernunt, quam studiosissime exprimat. \\
                 Priorem partem vno commate expressit A- \\
@@ -4681,8 +4994,10 @@ BoldFont=*-Bold]
                 Primum proponit illi virtutes persequen- \\
                 das, ex quibus facile colligi potest quid in con- \\
                 trario membro ταῦτα φεῦγε, comprehenderit. \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{160 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{160 \\
                 }Enumerat hic sex ordine virtutes. 1. IVSTI \\
                 TIAM, quae vinculum est humanae societatis, \\
                 ac imprimis auertitur ab auaris, qui iusti et \\
@@ -4712,8 +5027,10 @@ BoldFont=*-Bold]
                 damus. \\
                 Ratio est, quia vt credimus, sic viuimus, et \\
                 vt viuitur, sic creditur. Deinde admonemur \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{161 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{161 \\
                 }has virtutes nunquam plane a nobis in hac \\
                 vita possideri: sed ex parte, sempérque fuga- \\
                 ces in nobis esse, vt perpetua venatione et in- \\
@@ -4743,8 +5060,10 @@ BoldFont=*-Bold]
                 mam conditionem nobis ardenter est affectan- \\
                 da. Ratio est, quia ad hanc vocati sumus, ideo \\
                 toties dicitur vt digne Deo et vocatione no- \\
-                \marginpar{162 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{162 \\
+                }
+\section*{COMMENTARII \\
                 }stra ambulemus. Indignus igitur vita aeterna \\
                 censendus est, quia innocentiae non studiosus, \\
                 qui in officio negligens est. \\
@@ -4774,8 +5093,10 @@ BoldFont=*-Bold]
                 Christi, quae vt exemplum profertur constam- \\
                 tiae in aduersis pro veritatis testimonio. Ita- \\
                 que pathetice vrget Timotheum prius cum peri- \\
-                \marginpar{IN I. EPSIT. AD TIMOTH. \\
-                }\marginpar{163 \\
+                
+\section*{IN I. EPSIT. AD TIMOTH. \\
+                }
+\marginpar{163 \\
                 }culo vitae praeclare te gessisti, perge igitur \\
                 magno et forti animo in coeptocursu. \\
                 13 Denuntio tibi coram Deo, etc. \\
@@ -4805,8 +5126,10 @@ BoldFont=*-Bold]
                 14 Vt serues hoc mandatum, etc, \\
                 Redditio est, continens instituti proposi- \\
                 tionem, significat se obtestationes illas attuliffe, \\
-                \marginpar{164 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{164 \\
+                }
+\section*{COMMENTARII \\
                 }vt in officio sit quam diligentissimus. Ἐντολὴν \\
                 accipio pro officii praecepto: scopus enim e- \\
                 pistolae huius est, vt quam vigilantissime exe- \\
@@ -4836,8 +5159,10 @@ BoldFont=*-Bold]
                 consolando diutina mora, quia quod Christu \\
                 15 Quem temporibus suis, etc. \\
                 iudex nondum venit, non probat illum nun- \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{165 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{165 \\
                 }quain venturuin, sed tempora nondum esse \\
                 completa, quae vbi cursum absoluerint, indu- \\
                 bitanter aderit iudex. Iudicium hic commem- \\
@@ -4867,8 +5192,10 @@ BoldFont=*-Bold]
                 Deum κύριον, hoc est, rectorem Ecclesiae suae, \\
                 qui alias dominationes omnes superat. \\
                 Quinto, QUI SOLVS HABET IM- \\
-                \marginpar{COMMENTARII \\
-                }\marginpar{166 \\
+                
+\section*{COMMENTARII \\
+                }
+\marginpar{166 \\
                 }MORTALITATEM, et solus potens est, \\
                 non excludens alias potentias, sic solus est \\
                 immortalis, hoc est, natura sua, eamque sic \\
@@ -4898,8 +5225,10 @@ BoldFont=*-Bold]
                 meridiana, sed causam ignorauit, hamc nos do- \\
                 cent sacrae literae, peccatum scilicet, quod nos \\
                 imagine Dei priuauit. \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{167 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{167 \\
                 }Septimo, QVAM NEMO VIDIT \\
                 HOMINVM, NEC VIDERE PO- \\
                 TEST: et haec laus est diuinae maiestatis, \\
@@ -4929,8 +5258,10 @@ BoldFont=*-Bold]
                 17 Diuitibus in hoc seculo, etc. \\
                 Sextus locus de diuitum officio, ac per- \\
                 tinet ad quartum, qui iam expositus est. Duo \\
-                \marginpar{168 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{168 \\
+                }
+\section*{COMMENTARII \\
                 }autem hic explicantur: primum vitia cauen- \\
                 da exprimit: mox his opponit virtutes sequem- \\
                 das diuitibus. Vitia sunt primum ὑψηλοφρο- \\
@@ -4960,8 +5291,10 @@ BoldFont=*-Bold]
                 Reliquas persequitur virtutes, vt est \\
                 ἀγαθοεργεῖν: benefacere opponitur otio diui- \\
                 tum: deinde malis illorum operibus, vt est \\
-                \marginpar{IN I. EPIST. AD TIMOTH. \\
-                }\marginpar{169 \\
+                
+\section*{IN I. EPIST. AD TIMOTH. \\
+                }
+\marginpar{169 \\
                 }vsurari, libidinari, scortari, et similia. Tertia \\
                 virtus est abundare bonis operibus, hoc est, \\
                 beneficum esse in multos. Quarta εὐμεταδό- \\
@@ -4991,8 +5324,10 @@ BoldFont=*-Bold]
                 Propositionem repetitam. Apostrophe pa- \\
                 thos habet. Depositum vocat officium Ec- \\
                 clesiasticum quod debet seruare, hoc est, quam \\
-                \marginpar{170 \\
-                }\marginpar{COMMENTARII \\
+                
+\marginpar{170 \\
+                }
+\section*{COMMENTARII \\
                 }vigilantissime obire. Dicitur depositum alie- \\
                 ni non nostri iuris, et debet summa fide cu- \\
                 stodiri et reddi, sed officium docendi Euan- \\

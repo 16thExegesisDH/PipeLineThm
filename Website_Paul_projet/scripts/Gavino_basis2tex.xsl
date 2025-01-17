@@ -9,18 +9,20 @@
     <xsl:strip-space elements="*"/>
     
     <xsl:template match="/">
-        <xsl:text>\documentclass{article}
+        <xsl:text>% !TeX TS-program = lualatex
+\documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}% Pour l'ajustement de la mise en page
 \usepackage[pdfusetitle,hidelinks]{hyperref}
 \usepackage[english]{french} % Pour les règles typographiques du français
+\usepackage{polyglossia}
+\setotherlanguage{greek}
 \usepackage[series={},nocritical,noend,noeledsec,nofamiliar,noledgroup]{reledmac}
 \usepackage{reledpar} % Package pour l'édition
 
-\usepackage{fontspec} % Package pour mettre Junicode comme police (important pour MUFI)
-\setmainfont{Junicode}[
-Extension=.ttf,
-BoldFont=*-Bold]
+\usepackage{fontspec} % 
+\setmainfont{Liberation Serif}
+
 
 
 \begin{document}
@@ -58,10 +60,12 @@ BoldFont=*-Bold]
     <xsl:template match="fw">
         <xsl:choose>
             <xsl:when test="@type='NumberingZone'">
-                <xsl:text>\marginpar{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+                <xsl:text>
+\marginpar{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:when test="@type='RunningTitleZone'">
-                <xsl:text>\marginpar{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+                <xsl:text>
+\section*{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -70,7 +74,8 @@ BoldFont=*-Bold]
     <xsl:template match="ab">
         <xsl:choose>
             <xsl:when test="@type='DropCapitalZone'">
-                <xsl:text>\textbf{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+                <xsl:text>
+\textbf{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
@@ -80,9 +85,12 @@ BoldFont=*-Bold]
     
     <xsl:template match="choice">
         <xsl:choose>
-            <xsl:when test="ancestor::ab[@type='Main*']">
-                <xsl:value-of select="reg"/><xsl:text> \\
-                </xsl:text>
+            <xsl:when test="ab[@type='Main*']">
+                <xsl:value-of select="reg"/><xsl:text></xsl:text>
+            </xsl:when>
+            <xsl:when test="@type='MainZone-Head' and not(hi/choice/orig[contains(text(), 'CAP')])">
+                        <xsl:text>
+\textit{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="reg"/><xsl:text> \\
