@@ -56,9 +56,9 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../PDF/</xsl:text>
+                                    <xsl:text>../Website_Paul_projet/PDF/</xsl:text>
                                     <xsl:value-of select="//TEI/@xml:id"/>
-                                    <xsl:text>.pdf</xsl:text>
+                                    <xsl:text>.update.pdf</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>
