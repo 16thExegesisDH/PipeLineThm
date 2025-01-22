@@ -30,11 +30,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Website_Paul_projet/scripts/Gavino_basis2tex.xsl</String>
+                                    <String>Website_Paul_projet/scripts/tei2html_Aretius_test.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Gavino_basis2tex</String>
+                                        <String>tei2html_Aretius_test</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -50,11 +50,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Website_Paul_projet/scripts/tei2html_Aretius_test.xsl</String>
+                                    <String>Website_Paul_projet/scripts/Gavino_basis2tex.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>tei2html_Aretius_test</String>
+                                        <String>Gavino_basis2tex</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -771,10 +771,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Website_Paul_projet/scripts/tei2tex.xsl</String>
+                                    <String>${pdu}/Website_Paul_projet/scripts/tei2tex.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Website_Paul_projet/5_normalized_Aretius.xml</String>
+                                    <String>${pdu}/Website_Paul_projet/5_Aretius_normal.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -1272,7 +1272,7 @@
                                     <String>${pdu}/Website_Paul_projet/scripts/tei2html_Aretius_test.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Website_Paul_projet/5_normalized_Aretius.xml</String>
+                                    <String>${pdu}/Website_Paul_projet/5_Aretius_normal.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
