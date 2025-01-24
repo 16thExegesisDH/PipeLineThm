@@ -42,7 +42,7 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../4_Edition_tei.xml</xsl:text>
+                                    <xsl:text>../5_Lambertus_tei_NF.xml</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>
@@ -56,9 +56,9 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../PDF/</xsl:text>
+                                    <xsl:text>../Website_Paul_projet/PDF/</xsl:text>
                                     <xsl:value-of select="//TEI/@xml:id"/>
-                                    <xsl:text>.pdf</xsl:text>
+                                    <xsl:text>.update.pdf</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>

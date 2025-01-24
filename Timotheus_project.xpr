@@ -10,7 +10,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Website_Paul_projet/Lambertus_tei_NF.xml</String>
+                                    <String>Website_Paul_projet/scripts/tei2html_Lambertusold.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -30,7 +30,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Website_Paul_projet/normalized_lambertus.xml</String>
+                                    <String>Website_Paul_projet/scripts/tei2html_Aretius_test.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -70,7 +70,27 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Website_Paul_projet/scripts/tei2html_Aretius_test.xsl</String>
+                                    <String>Website_Paul_projet/5_Lambertus_tei_NF.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_Lambertusold</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Website_Paul_projet/normalized_lambertus.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -80,6 +100,26 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Website_Paul_projet/Lambertus_tei_NF.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_Lambertusold</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
                                     </list>
                                 </field>
                                 <field name="scenarioStorageLocations">
@@ -115,26 +155,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>tei2tex_test</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Website_Paul_projet/scripts/tei2html_Lambertusold.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2html_Lambertusold</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -628,7 +648,7 @@
                                     <String>${pdu}/Website_Paul_projet/scripts/tei2html_Lambertusold.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Website_Paul_projet/Lambertus_tei_NF.xml</String>
+                                    <String>${pdu}/Website_Paul_projet/5_Lambertus_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -646,7 +666,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Website_Paul_projet/6_normalize_lambertus.html</String>
+                                    <String>${pd}/Website_Paul_projet/6_Lambertus.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -794,7 +814,7 @@
                                     <String>${pdu}/Website_Paul_projet/scripts/tei2tex.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Website_Paul_projet/5_Aretius_tei_NF.xml</String>
+                                    <String>${pdu}/Website_Paul_projet/5_Lambertus_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -812,7 +832,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Website_Paul_projet/TEX/Aretius.tex</String>
+                                    <String>${pd}/Website_Paul_projet/TEX/Lambertus.tex</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -1292,7 +1312,7 @@
                                     <String>${pdu}/Website_Paul_projet/scripts/tei2html_Aretius_test.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Website_Paul_projet/Lambertus_tei_NF.xml</String>
+                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Website_Paul_projet/5_Aretius_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -1310,7 +1330,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Website_Paul_projet/5_normalize_lambertus.html</String>
+                                    <String>${pd}/Website_Paul_projet/6_Aretius.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
