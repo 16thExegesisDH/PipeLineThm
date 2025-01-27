@@ -20,6 +20,7 @@
             </head>
             <body>
                 <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                     <a href="../Website_Paul_projet/HTML/home.html">Accueil</a>
                     <a href="https://github.com/16thExegesisDH">Construction du projet: Github</a>
                     <a href="https://ihr-num.unige.ch/rrp/">RRP | Reformation Readings of Paul</a>
