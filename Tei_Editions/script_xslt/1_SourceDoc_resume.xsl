@@ -104,7 +104,7 @@
         
         <!-- Changer le "path" si nécessaire : 'file:/home/floriane/Documents/PaulPipeline/fgTEIpipeLine/data/' -->
         
-        <xsl:variable name="xmlDocuments" select="collection(concat('file:/home/floriane/Documents/16thExegesisDH/PipeLine_Timotheus/data/', $fileName, '/?select=?*.xml;recurse=yes'))"/>
+        <xsl:variable name="xmlDocuments" select="collection(concat('file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Tei_Editions/data/', $fileName, '/?select=?*.xml;recurse=yes'))"/>
         <!-- Pour l'instant j'utilise l'odd construit par Sonia Solfrini pour le projet SETAF avec quelques modifications mineurs -->      
         <xsl:template match="/" >
             <xsl:processing-instruction name="xml-model">
