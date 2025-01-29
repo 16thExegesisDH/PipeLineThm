@@ -8,15 +8,16 @@ from utils.ordre_and_categorize import (
     remove_duplicate_pb_elements
 )
 from utils.clean_xml import clean_xml
-from utils.title_form import normalize_titles_Aretius
+from utils.title_form import normalize_titles_Aretius, normalize_titles_Lambertus
 
 def reorder_elements_and_pb(input_file, output_file):
     """Main function to reorder elements and sort <pb> tags."""
     declaration, xml_content = read_input_file(input_file)
     root = parse_xml(xml_content)
     
-     # Normalize titles using the function from script.py
+    #normalize_title
     normalize_titles_Aretius(root)
+    normalize_titles_Lambertus(root)
 
     body = root.find(".//body")
     reorder_elements_around_pb(body)

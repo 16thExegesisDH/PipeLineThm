@@ -11,6 +11,7 @@ def replace_lettre(text):
 
     replacements = {
         r'ſ': 's',      # Replace the old 'long s' with the modern 's'
+        r'ß': 'ss',      # Replace scharfes S by ss
         r'œ': 'oe',     # Replace the ligature 'œ' with 'oe'
         r'æ': 'ae',     # Replace the ligature 'æ' with 'ae'
         r'ę': 'ae',     # Replace 'ę' with 'ae'
@@ -36,8 +37,18 @@ def replace_lettre(text):
         r'ú': 'u',     # Replace accented 'ú' with 'u'
         r'ù': 'u',     # Replace 'ù' with 'u'
         r'ꝑ': 'per',    # Replace the abbreviation 'ꝑ' with 'per'
+        r'ꝓ': 'pro',
+        r'q́;': 'que',
+        r'q́': 'que',
+        r'q́': 'que',
         r'ꝙ': 'qu',     # Replace the abbreviation 'ꝙ' with 'qu'
         r'q;': 'que',   # Replace 'q;' with 'que'
+        r'q ': 'que',
+        r'' : 'que',
+        r'́ ': 'que', 
+        r'́' :'que',
+        r'q́;' : 'que',
+        r'ü̃' : 'un',
     }
 
     # Apply each pattern-replacement pair to the text

@@ -58,5 +58,9 @@ def replace_tilde(text):
     text = re.sub(r'ẽ¬?([^\S\r\n<]|.)', lambda m: 'em ' if m.group(1).isspace() else 'em' + m.group(1), text)
     # Replace 'ẽ' at the end of a line with 'em'
     text = re.sub(r'ẽ¬?$', 'em', text, flags=re.MULTILINE)
+    
+     # Rule for 'b' followed by '.' or '·'
+    text = re.sub(r'b[.·](?!<)', r'bus ', text)  # Replace 'b.' and 'b·' with 'b us '
+    
 
     return text

@@ -11,7 +11,8 @@ def replace_symbol(text):
 
     replacements = {
         r'¬': '-',        # Replace the symbol '¬' with a dash '-'
-        r'\$': ' ',       #  # Replace the dollar sign '$' with a whitespace
+        r'\$': ' ',       # Replace the dollar sign '$' with a white space
+        r'·':'. ',
     }
 
     for pattern, replacement in replacements.items():

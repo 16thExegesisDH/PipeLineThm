@@ -11,11 +11,13 @@ def reorder_elements_around_pb(body):
             following_elements = body_elements[pb_position + 1:]
             categorized_elements = categorize_elements(following_elements)
 
-            new_order = [pb_element] + categorized_elements['running_title'] + \
+            new_order = [pb_element] + \
+                        categorized_elements['running_title'] + \
                         categorized_elements['numbering_zone'] + \
                         categorized_elements['quire_marks_zone'] + \
                         categorized_elements['ab_elements'] + \
-                        categorized_elements['other_elements']
+                        categorized_elements['other_elements'] +\
+                        categorized_elements['note']  
 
             for elem in following_elements:
                 body.remove(elem)
@@ -30,7 +32,8 @@ def categorize_elements(following_elements):
         'numbering_zone': [],
         'quire_marks_zone': [],
         'ab_elements': [],
-        'other_elements': []
+        'other_elements': [],
+        'note':[] # Add a category for note elements
     }
 
     for elem in following_elements:
@@ -41,8 +44,14 @@ def categorize_elements(following_elements):
                 categories['numbering_zone'].append(elem)
             elif elem.attrib.get("type") == "QuireMarksZone":
                 categories['quire_marks_zone'].append(elem)
+                
         elif elem.tag == "ab":
             categories['ab_elements'].append(elem)
+            
+        elif elem.tag == "note":
+            if elem.attrib.get("type") == "MarginTextZone-Notes":
+                categories['note'].append(elem)  # Categorize notes separately
+                
         else:
             categories['other_elements'].append(elem)
 
