@@ -109,7 +109,7 @@
                     <xsl:apply-templates/>
                 </xsl:element>      
             </xsl:when>
-            <xsl:when test="@type='MarginTextZone:handwrittenAddition'">
+            <xsl:when test="@type='MarginTextZone-Notes'">
                 <!-- <note> (note) contains a note or annotation. -->
                 <xsl:element name="note" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:attribute name="corresp"><xsl:text>#</xsl:text><xsl:value-of select="@xml:id"/></xsl:attribute>
