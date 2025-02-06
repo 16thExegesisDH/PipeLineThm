@@ -43,7 +43,7 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../Web_interface/TEI/</xsl:text>
+                                    <xsl:text>../../Web_interface/TEI/</xsl:text>
                                     <xsl:value-of select="//TEI/@xml:id"/>
                                     <xsl:text>_tei_NF.xml</xsl:text>
                                 </xsl:attribute>
@@ -59,9 +59,9 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../Web_interface/PDF/</xsl:text>
+                                    <xsl:text>../../Web_interface/PDF/</xsl:text>
                                     <xsl:value-of select="//TEI/@xml:id"/>
-                                    <xsl:text>.update.pdf</xsl:text>
+                                    <xsl:text>_update.pdf</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>
@@ -113,7 +113,7 @@
                                 <xsl:text>../IMG/uzh-logo-white.png</xsl:text>
                             </xsl:attribute>
                         </xsl:element>
-                      </xsl:element>Website_Paul_projet
+                        </xsl:element>
                     </xsl:element>
                 </xsl:element>
             </body>

@@ -10,7 +10,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Web_interface/TEI/5a_Bucer_NF.xml</String>
+                                    <String>Web_interface/scripts/tei2tex.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -30,47 +30,47 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>Web_interface/scripts/tei2html_Aretius.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_Aretius</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/TEI/Aretius_tei_NF.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_Bucerus</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>Web_interface/TEI/5_Aretius_tei_NF.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2html_Bucerus</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Web_interface/TEI/5_Bucerus_tei_NF.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2html_Bucerus</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Web_interface/scripts/tei2html_Bucerus.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -150,11 +150,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Tei_Editions/script_xslt/1_SourceDoc_noemi.xsl</String>
+                                    <String>Tei_Editions/script_xslt/1_SourceDoc_resume.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>1_SourceDoc_noemi</String>
+                                        <String>1_SourceDoc_resume</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -190,11 +190,71 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Web_interface/scripts/tei2tex.xsl</String>
+                                    <String>Web_interface/TEI/5a_Bucer_NF.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>tei2tex</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/TEI/5_Bucerus_tei_NF.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_Bucerus</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/scripts/tei2html_Bucerus.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_Bucerus</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Tei_Editions/script_xslt/1_SourceDoc_noemi.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>1_SourceDoc_noemi</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -250,26 +310,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Web_interface/scripts/tei2html_Aretius.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2html_Aretius</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>Web_interface/TEI/5.Bucer_tei_NF.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -295,26 +335,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>2_sorted_SourceDoc</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Tei_Editions/script_xslt/1_SourceDoc_resume.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>1_SourceDoc_resume</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -1406,7 +1426,7 @@
                                     <String>${pdu}/Web_interface/scripts/tei2tex.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Web_interface/TEI/5a_Bucer_NF.xml</String>
+                                    <String>${pdu}/Web_interface/TEI/Aretius_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -1424,7 +1444,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Web_interface/TEX/Bucerus.tex</String>
+                                    <String>${pd}/Web_interface/TEX/Aretius.tex</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -1904,7 +1924,7 @@
                                     <String>${pdu}/Web_interface/scripts/tei2html_Aretius.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Aretius_tei_NF.xml</String>
+                                    <String>${pdu}/Web_interface/TEI/Aretius_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -1922,7 +1942,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Web_interface/HTML/Artius2.html</String>
+                                    <String>${pd}/Web_interface/HTML/6_Aretius.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>

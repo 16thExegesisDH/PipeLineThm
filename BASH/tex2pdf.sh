@@ -15,13 +15,13 @@ if [ ! -f "$input_file" ]; then
 fi
 
 # Output file
-output_file="${input_file%.tex}.update.tex"
+output_file="${input_file%.tex}_update.tex"
 
 # Replace occurrences of word splits (e.g., "wo- man" to "woman")
 # Also handle line breaks within LaTeX commands like \textit{} where the hyphen should be removed
 sed -E '
-    # Remove hyphen and space at end of words
-    s/([A-Za-z])- +/\1/g;
+    # Remove hyphen and space at end of words of greek and latin alphabet
+    s/([A-Za-zΆ-Ωά-ω])- +/\1/g;
 
     # Specifically remove hyphen at the end of LaTeX commands like \textit{}
     s/(\\[a-zA-Z]+\{[^}]+)-/\1/g

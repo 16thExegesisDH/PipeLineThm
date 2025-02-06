@@ -19,8 +19,8 @@
         <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
         -->
         <!-- for mdz --> 
-        <xsl:variable name="document">Lambertus_tim_essaie</xsl:variable>
-        <xsl:variable name="fileName">doc_1</xsl:variable>
+        <xsl:variable name="document">Aretius</xsl:variable>
+        <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
         <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
@@ -104,7 +104,7 @@
         
         <!-- Changer le "path" si nécessaire : 'file:/home/floriane/Documents/PaulPipeline/fgTEIpipeLine/data/' -->
         
-        <xsl:variable name="xmlDocuments" select="collection(concat('file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Tei_Editions/data/', $fileName, '/?select=?*.xml;recurse=yes'))"/>
+        <xsl:variable name="xmlDocuments" select="collection(concat('file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Tei_Editions/data/', $folderName, '/?select=?*.xml;recurse=yes'))"/>
         <!-- Pour l'instant j'utilise l'odd construit par Sonia Solfrini pour le projet SETAF avec quelques modifications mineurs -->      
         <xsl:template match="/" >
             <xsl:processing-instruction name="xml-model">
