@@ -19,7 +19,7 @@
         <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
         -->
         <!-- for mdz --> 
-        <xsl:variable name="document">Lambertus_tim_essaie</xsl:variable>
+        <xsl:variable name="document">Bucerus</xsl:variable> <!-- name of the future html file -->
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
