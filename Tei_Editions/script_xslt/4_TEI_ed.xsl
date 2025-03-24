@@ -24,7 +24,8 @@
     
     <xsl:template match="//body/surface/zone">
         <xsl:choose>
-            <!--  <ab> (anonymous block) contains any component-level unit of text, acting as a container for phrase or inter level elements analogous to, but without the same constraints as, a paragraph
+            <!--  <ab> (anonymous block) contains any component-level unit of text, acting as a container for phrase or inter level elements analogous to, but without the same constraints as, a paragraph -->
+            <!-- commenter si on est dans la nouvelle segmentation, sans MainZone -->
             <xsl:when test="@type='MainZone'">
                  
                 <xsl:element name="ab" namespace="http://www.tei-c.org/ns/1.0">
@@ -33,7 +34,7 @@
                     <xsl:apply-templates/>
                 </xsl:element>      
             </xsl:when>
-            -->
+
             <xsl:when test="@type='MainZone-P'">
                 <!-- <ab> (anonymous block) contains any component-level unit of text, acting as a container for phrase or inter level elements analogous to, but without the same constraints as, a paragraph. -->
                 <xsl:element name="ab" namespace="http://www.tei-c.org/ns/1.0">

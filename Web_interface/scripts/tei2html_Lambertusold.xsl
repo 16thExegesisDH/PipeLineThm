@@ -15,16 +15,16 @@
                 <title>
                     <xsl:value-of select="//title[parent::titleStmt]"/>
                 </title>
-                <link href="../Website_Paul_projet/CSS/updated_2.css" rel="stylesheet"/>
-                <script src="../Website_Paul_projet/JS/script.js" defer="defer"></script>
+                <link href="../../Web_interface/CSS/updated_2.css" rel="stylesheet"/>
+                <script src="../../Web_interface/JS/script.js" defer="defer"></script>
             </head>
             <body>
                 <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
-                    <a href="../Website_Paul_projet/HTML/home.html">Accueil</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="../../index.html">Accueil</a>
                     <a href="https://github.com/16thExegesisDH">Construction du projet: Github</a>
                     <a href="https://ihr-num.unige.ch/rrp/">RRP | Reformation Readings of Paul</a>
-                </div> 
+                </div>  
                 
                 <xsl:element name="div">
                     <xsl:attribute name="id">
@@ -43,7 +43,7 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../5_Lambertus_tei_NF.xml</xsl:text>
+                                    <xsl:text>../5_Lambertus1-2_tei_NF.xml</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>

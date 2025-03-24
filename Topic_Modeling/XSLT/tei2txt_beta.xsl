@@ -8,7 +8,7 @@
     <xsl:output method="text" encoding="UTF-8"/>
     
     <xsl:strip-space elements="*"/>
-    
+    <!-- ce script sert à tester differente option de mise en page -->
     <xsl:template match="teiHeader"/>
     
     <xsl:template match="sourceDoc"/>
