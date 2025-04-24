@@ -12,7 +12,7 @@
         <!-- Changer les variables suivantes si nécessaire -->
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
-        <xsl:variable name="document">Lambertus_1-2</xsl:variable>
+        <xsl:variable name="document">Bullinger_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
@@ -121,7 +121,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Commentarii In Epistolas D. Pavli Ad Timotheum : [Aretius, Benedictus], [1580]</title>
+                            <title>Commentarii In Epistolas D. Pavli Ad Timotheum : [Bullinger, Heinrich], [1536]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -160,11 +160,11 @@
                         <sourceDesc>
                             <msDesc>
                                 <!-- corriger en fonction de lambertus  -->
-                                <msIdentifier xml:id="bsb10313792">
-                                    <country>Deutschland</country>
-                                    <settlement>München</settlement>
-                                    <institution>Bayerische Staatsbibliothek</institution>
-                                    <idno type="shelfmark">Exeg.53#Beibd.1</idno>
+                                <msIdentifier xml:id="23723">
+                                    <country>Switzerland</country>
+                                    <settlement>Zürich</settlement>
+                                    <institution>Zentralbibliothek Zürich</institution>
+                                    <idno type="shelfmark">VD 16 B 5144 Vischer C 251</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -172,26 +172,26 @@
                                             <monogr>
                                                 <!-- AUTEUR -->
                                                 <author>
-                                                    <persName role="exegete" ref="isni:000000010923037X">
-                                                        <surname>Benedictus</surname>
-                                                        <forename>Aretius</forename>
+                                                    <persName role="exegete" ref="isni:0000000109036374">
+                                                        <surname>Heinrich</surname>
+                                                        <forename>Bullinger</forename>
                                                     </persName>
                                                 </author>
                                                 <!-- TITRE -->
-                                                <title type="complete_title">Aretius, Benedictus : Commentarii In Epistolas D. Pavli Ad Timoth. ad Titum, et ad Philemonem</title> 
-                                                <title type="short_title">Commentarii In Epistolas D. Pavli Ad Timotheum</title>
+                                                <title type="complete_title">Bullinger, Heinrich: In D. Apostoli Pauli ad Thessalonicenses, Timotheum, Titum &amp;Philemonem epistolas</title> 
+                                                <title type="short_title">Commentarii In D. Apostoli Pauli ad Ad Timotheum</title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:2659496">Morges</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:2657896">Zürich</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:0000000108860919">
-                                                            <surname>Le Preux</surname>
-                                                            <forename>Jean</forename>
+                                                        <persName role="printer" ref="isni:0000000121270868">
+                                                            <surname>Froschauer</surname>
+                                                            <forename>Christoph</forename>
                                                         </persName>
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1580</date>
+                                                    <date cert="low">1536</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -207,20 +207,20 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant Aretius -->
+                                    <!-- concernant Bullinger -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://mdz-nbn-resolving.de/details:bsb10313792"/>
+                                            <ref target="https://doi.org/10.3931/e-rara-23723"/>
                                             <relatedItem type="original">
-                                                <ref target="#bsb10313792">mdz</ref>
+                                                <ref target="#23723">e-rara</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-4821">
-                                                <orgName>GLN</orgName>
-                                                <idno>2624</idno>
+                                            <ref target="https://d-nb.info/gnd/118517384">
+                                                <orgName>gnd</orgName>
+                                                <idno>118517384</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>

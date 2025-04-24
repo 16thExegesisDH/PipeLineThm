@@ -108,6 +108,16 @@
         </xsl:choose> 
     </xsl:template>
     
+    <!-- on the glossis -->
+    <xsl:template match="note">
+        <xsl:choose>
+            <xsl:when test="@type='MarginTextZone-Notes'">
+                <xsl:text>\footnote{\footnotesize</xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>}</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
   
     
 </xsl:stylesheet>

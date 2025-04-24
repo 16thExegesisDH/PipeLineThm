@@ -5,7 +5,7 @@
     version="2.0"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
-    
+    <!-- script for MDZ -->
     <!-- Match the root element -->
     <xsl:template match="/">
         <html>
@@ -15,15 +15,13 @@
                 <title>
                     <xsl:value-of select="//title[parent::titleStmt]"/>
                 </title>
-                <link href="../../Web_interface/CSS/updated_2.css" rel="stylesheet"/>
-                <script src="../../Web_interface/JS/script.js" defer="defer"></script>
+                <link href="../../../Web_interface/CSS/updated_2.css" rel="stylesheet"/>
+                <script src="../../../Web_interface/JS/script.js" defer="defer"></script>
             </head>
             <body>
                 <div id="mySidebar" class="sidebar">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <a href="../../index.html">Accueil</a>
-                    <a href="https://github.com/16thExegesisDH">Construction du projet: Github</a>
-                    <a href="https://ihr-num.unige.ch/rrp/">RRP | Reformation Readings of Paul</a>
+                    <a href="../../../index.html">Home</a>
                 </div> 
                 
                 <xsl:element name="div">
@@ -43,9 +41,9 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../../Web_interface/TEI/</xsl:text>
+                                    <xsl:text>../../TEI/</xsl:text>
                                     <xsl:value-of select="//TEI/@xml:id"/>
-                                    <xsl:text>_tei_NF.xml</xsl:text>
+                                    <xsl:text>_tei_NF.zip</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="target">
                                     <xsl:text>_blank</xsl:text>
@@ -59,7 +57,7 @@
                             </xsl:attribute>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>../../Web_interface/PDF/</xsl:text>
+                                    <xsl:text>../../PDF/</xsl:text>
                                     <xsl:value-of select="//TEI/@xml:id"/>
                                     <xsl:text>_update.pdf</xsl:text>
                                 </xsl:attribute>
@@ -94,7 +92,7 @@
                                 <xsl:text>logo</xsl:text>
                             </xsl:attribute>
                             <xsl:attribute name="src">
-                                <xsl:text>../IMG/ihreformation_blanc.png</xsl:text>
+                                <xsl:text>../../../Web_interface/IMG/ihreformation_blanc.png</xsl:text>
                             </xsl:attribute>
                         </xsl:element>
                         <xsl:element name="img">
@@ -102,7 +100,7 @@
                                 <xsl:text>logo2</xsl:text>
                             </xsl:attribute>
                             <xsl:attribute name="src">
-                                <xsl:text>../IMG/SNF_logo_standard_web_sw_neg_e.png</xsl:text>
+                                <xsl:text>../../../Web_interface/IMG/SNF_logo_standard_web_sw_neg_e.png</xsl:text>
                             </xsl:attribute>
                         </xsl:element>
                         <xsl:element name="img">
@@ -110,7 +108,7 @@
                                 <xsl:text>logo3</xsl:text>
                             </xsl:attribute>
                             <xsl:attribute name="src">
-                                <xsl:text>../IMG/uzh-logo-white.png</xsl:text>
+                                <xsl:text>../../../Web_interface/IMG/uzh-logo-white.png</xsl:text>
                             </xsl:attribute>
                         </xsl:element>
                         </xsl:element>

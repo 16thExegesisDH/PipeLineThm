@@ -21,7 +21,7 @@
             <body>
                 <div id="mySidebar" class="sidebar">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <a href="../../index.html">Accueil</a>
+                    <a href="../../index.html">Home</a>
                     <a href="https://github.com/16thExegesisDH">Construction du projet: Github</a>
                     <a href="https://ihr-num.unige.ch/rrp/">RRP | Reformation Readings of Paul</a>
                 </div> 
