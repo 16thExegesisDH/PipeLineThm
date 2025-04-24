@@ -28,7 +28,9 @@
 
 % Redefine \section font
 \sectionfont{\normalfont\scshape\color{gray}}
-
+\subsectionfont{\normalfont}
+% Redefine \subsubsection font
+\subsubsectionfont{\normalfont\footnotesize\color{black}}
 
 \begin{document}
 
@@ -36,7 +38,8 @@
         </xsl:text>
         <xsl:text>\title{</xsl:text><xsl:value-of select="//title[parent::titleStmt]"/><xsl:text>}
 \maketitle
-
+\tableofcontents
+\clearpage
 \begin{pages} 
 \beginnumbering
         </xsl:text>
@@ -77,8 +80,10 @@
 \textbf{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:when test="@type='MainZone-Head' and not(hi/choice/orig[contains(text(), 'CAP')])">
-            <xsl:text>
-\textit{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+            <xsl:text> <!-- create a table of content based on the commented verses -->
+\phantomsection
+\addcontentsline{toc}{subsection}{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}
+\subsection*{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}</xsl:text>
             </xsl:when>
              <xsl:when test="@type='MainZone-P'">
                  <xsl:text>\pstart </xsl:text>
@@ -108,16 +113,16 @@
         </xsl:choose> 
     </xsl:template>
     
-    <!-- on the glossis -->
     <xsl:template match="note">
         <xsl:choose>
             <xsl:when test="@type='MarginTextZone-Notes'">
-                <xsl:text>\footnote{\footnotesize</xsl:text>
-                <xsl:apply-templates/>
-                <xsl:text>}</xsl:text>
+    <xsl:text>
+\subsubsection*{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+    
+    
   
     
 </xsl:stylesheet>
