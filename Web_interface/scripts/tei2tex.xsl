@@ -103,15 +103,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <!-- Apply \textit formatting to only the first and last <seg> -->
-    <xsl:template match="seg">
-        <xsl:choose>
-        <xsl:when test="@type='verset'">
-         <xsl:text>\textit{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
-        </xsl:when>
-        </xsl:choose> 
-    </xsl:template>
+
     
     <xsl:template match="note">
         <xsl:choose>

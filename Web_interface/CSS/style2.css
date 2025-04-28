@@ -67,6 +67,7 @@ img {
     max-width: 100%; /* Ensures the image respects the container's size */
     height: auto; /* Maintain aspect ratio */
     margin: auto; /* Center the image */
+    margin-top: 20px;
     border-radius: 50%; /* Make the image itself circular */
     position: relative; /* Make it movable */
     top: -1.5cm; /* Move the image upwards by 5cm */
