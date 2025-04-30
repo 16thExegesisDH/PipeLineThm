@@ -90,8 +90,49 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="ab">
+        <xsl:choose>
+            <xsl:when test="@type='DropCapitalZone'">
+                <xsl:text>
+\textbf{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+            </xsl:when>
+            <xsl:when test="@type='MainZone-Head' and not(hi/choice/orig[contains(text(), 'CAP')])">
+                <xsl:text> <!-- create a table of content based on the commented verses -->
+\phantomsection
+\addcontentsline{toc}{subsection}{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}
+\subsection*{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}</xsl:text>
+            </xsl:when>
+            <xsl:when test="@type='MainZone-P'">
+                <xsl:text>\pstart </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text> \pend</xsl:text>
+            </xsl:when>
+            <xsl:when test="@type='MainZone-P-Continued'">
+                <xsl:text>\pstart </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text> \pend</xsl:text>
+            </xsl:when>
+            <xsl:when test="@type='MainZone'">
+                <xsl:apply-templates select="*|node()"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
-    <!-- Process text sections (ab elements) -->
+    
+    <xsl:template match="note">
+        <xsl:choose>
+            <xsl:when test="@type='MarginTextZone-Notes'">
+                <xsl:text>
+\subsubsection*{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    
+<!--    <!-\- Process text sections (ab elements) -\->
     <xsl:template match="ab">
         <xsl:choose>
             <xsl:when test="@type='DropCapitalZone'">
@@ -100,28 +141,9 @@
             </xsl:when>
             
             <xsl:when test="@type='MainZone-Head' and not(hi/choice/orig[contains(text(), 'CAP')])">
-                <xsl:text>
-\phantomsection
-\addcontentsline{toc}{subsection}{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}
-\subsection*{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}</xsl:text>
-            </xsl:when>
-            
-            <xsl:when test="@type='MainZone-P'">
                 <xsl:text>\pstart </xsl:text>
-                <xsl:apply-templates/>
-                <xsl:text> \pend</xsl:text>
-            </xsl:when>
-            
-            <xsl:when test="@type='MainZone-P-Continued'">
-                <xsl:text>\pstart </xsl:text>
-                <xsl:apply-templates/>
-                <xsl:text> \pend</xsl:text>
-            </xsl:when>
-            
-            <xsl:when test="@type='MainZone'">
-                <xsl:text>\pstart </xsl:text>
-                <!-- Handle all 'verset' segments together in one subsection -->
-                <xsl:variable name="versets" select=".//seg[@type='verset']"/>
+                <!-\- Handle all 'verset' segments together in one subsection -\->
+                <xsl:variable name="versets" select=".//reg[@type='MainZone-Head']"/>
                 <xsl:if test="$versets">
                     <xsl:text>\phantomsection
 \addcontentsline{toc}{subsection}{\textit{</xsl:text>
@@ -143,26 +165,38 @@
                 </xsl:if>
                 <xsl:apply-templates/>
                 <xsl:text> \pend</xsl:text>
-                <!-- Continue applying templates for the rest of the content -->
-                
+                <!-\- Continue applying templates for the rest of the content -\->
+            </xsl:when>
+            
+            <xsl:when test="@type='MainZone-P'">
+                <xsl:text>\pstart </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text> \pend</xsl:text>
+            </xsl:when>
+            
+            <xsl:when test="@type='MainZone-P-Continued'">
+                <xsl:text>\pstart </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text> \pend</xsl:text>
             </xsl:when>
             
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="note">
         <xsl:choose>
             <xsl:when test="@type='MarginTextZone-Notes'">
-    <xsl:text>
+                <xsl:text>
 \subsubsection*{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    
+</xsl:stylesheet>            
+            
+
     
   
     
-</xsl:stylesheet>
