@@ -5,7 +5,7 @@
     version="2.0"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
-    <!-- script for MDZ -->
+    <!-- script for e-rara image -->
     <!-- Match the root element -->
     <xsl:template match="/">
         <html>
@@ -136,8 +136,7 @@
                             </xsl:attribute>
                         </xsl:element>
                     </xsl:element>
-                </xsl:element>
-                
+                </xsl:element> 
             </body>
         </html>
     </xsl:template>

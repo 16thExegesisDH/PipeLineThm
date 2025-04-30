@@ -8,7 +8,7 @@
     <xsl:strip-space elements="*"/>
     <!-- Output clean HTML without useless indentations -->
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
-    <!-- script for MDZ -->
+    <!-- script for Lambertus old data -->
     <!-- Match the root element -->
     <xsl:template match="/">
         <html>

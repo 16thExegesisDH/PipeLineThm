@@ -148,6 +148,13 @@ p.note-text{
    font-size: 1.3em; 
 }
 
+.ab_mzEntry {
+    margin-left: 30px;
+   text-align: justify;
+   font-style: italic;
+   font-size: 1.3em; 
+}
+
 .ab_Drop {
    font-size: 1.8em;
    text-align: right;
