@@ -4321,6 +4321,22 @@
           <reg type="contemporary">3</reg>
         </choice>
       </fw>
+      <ab corresp="#f7325965_block_0" type="MainZone-P-Continued"><!-- ligne par défaut à supprimer si on rajouter le chapitre 1 -->
+        <lb corresp="#f7325965_line_0_ligne_0"/>
+        <choice>
+          <orig></orig>
+          <reg type="contemporary">[explicit CAP. I]</reg>
+        </choice>
+      </ab>
+      <ab corresp="#f7325965_block_2a" type="MainZone-Head"><!-- titre ajouter à la main -->
+        <hi>
+          <lb corresp="#f7325965_eSc_line_3395917e_ligne_12"/>
+          <choice>
+            <orig>CAP.II.</orig>
+            <reg type="contemporary">CAP.II.</reg>
+          </choice>
+        </hi>
+      </ab>
       <ab corresp="#f7325965_block_4" type="MainZone-P-Continued">
         <lb corresp="#f7325965_line_2_ligne_2"/>
         <choice>
@@ -4440,11 +4456,6 @@
         <choice>
           <orig>&amp; honestate.</orig>
           <reg type="contemporary">et honestate.</reg>
-        </choice>
-        <lb corresp="#f7325965_eSc_line_3395917e_ligne_12"/>
-        <choice>
-          <orig>CAP.II.</orig>
-          <reg type="contemporary">CAP.II.</reg>
         </choice>
       </ab>
       <pb corresp="f7325966"/>
@@ -9345,13 +9356,19 @@
           <reg type="contemporary">ctus hanc particulam πιςτὸς ὁ λόγος retulerunt ad</reg>
         </choice>
       </ab>
-      <note corresp="#f7325996_block_1" type="MarginTextZone-Notes">
+      <ab corresp="#f7325996_block_1" type="MainZone-Head">
         <lb corresp="#f7325996_line_25_ligne_2"/>
         <choice>
           <orig>CAP. III.</orig>
           <reg type="contemporary">CAP. III.</reg>
         </choice>
-      </note>
+      </ab><ab corresp="#f7325996_block_0" type="MainZone-P-Continued"><!-- ligne par défaut à supprimer si on rajouter le chapitre 1 -->
+        <lb corresp="#f7325965_line_0_ligne_0"/>
+        <choice>
+          <orig></orig>
+          <reg type="contemporary"></reg> <!-- ajouter le texte du chapitre III -->
+        </choice>
+      </ab>
     </body>
   </text>
 </TEI>

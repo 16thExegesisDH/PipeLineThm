@@ -9,7 +9,10 @@
     <xsl:strip-space elements="*"/>
     
     <xsl:template match="/">
-        <xsl:text>% !TeX TS-program = lualatex
+        <xsl:text>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SCRIPT FOR E-RARA AND MDZ FILES     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% fini le 30.04.2025 par F. GOY            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TeX TS-program = lualatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
@@ -92,10 +95,10 @@
     
     <xsl:template match="ab">
         <xsl:choose>
-            <xsl:when test="@type='DropCapitalZone'">
+          <!--  <xsl:when test="@type='DropCapitalZone'">
                 <xsl:text>
 \textbf{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
-            </xsl:when>
+            </xsl:when>-->
 
 <!-- Case: MainZone-Head with reg starting with "CAP" : for store the Chaptre in the TOC-->
             <xsl:when test="@type='MainZone-Head' and (choice/reg[matches(., '^CAP.*')] or hi/choice/reg[matches(., '^CAP.*')])">
@@ -143,12 +146,18 @@
                 <xsl:value-of select="$puce"/>
                 <xsl:text>}</xsl:text>
             </xsl:when>
-            
             <xsl:when test="@type='MainZone-P'">
                 <xsl:text>\pstart </xsl:text>
+                <!-- Insert DropCapital only if immediately preceded by DropCapitalZone -->
+                <xsl:if test="preceding-sibling::*[1][self::ab[@type='DropCapitalZone']]">
+                    <xsl:text>\textbf{</xsl:text>
+                    <xsl:value-of select="preceding-sibling::ab[@type='DropCapitalZone'][1]//choice/reg"/>
+                    <xsl:text>} </xsl:text>
+                </xsl:if>
                 <xsl:apply-templates/>
                 <xsl:text> \pend</xsl:text>
             </xsl:when>
+
             <xsl:when test="@type='MainZone-P-Continued'">
                 <xsl:text>\pstart </xsl:text>
                 <xsl:apply-templates/>
@@ -163,15 +172,42 @@
         </xsl:choose>
     </xsl:template>
     
+    <!--<xsl:template match="note">
+    <xsl:choose>
+        <xsl:when test="@type='MarginTextZone-Notes'">
+            <xsl:text>
+\vspace{0.5cm}\noindent</xsl:text> <!-\- Align with left margin -\->
+            <xsl:text>
+\vspace{0.2cm}\rule{5cm}{0.2pt}\\ </xsl:text>
+            <xsl:text>
+\textit{mg}
+\footnotesize </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>
+\normalsize|</xsl:text>
+        </xsl:when>
+    </xsl:choose>
+    </xsl:template>-->
     
     <xsl:template match="note">
         <xsl:choose>
             <xsl:when test="@type='MarginTextZone-Notes'">
+                <xsl:if test="not(preceding-sibling::*[self::note[@type='MarginTextZone-Notes']])">
+                    <xsl:text>
+\vspace{0.5cm}\noindent
+\vspace{0.2cm}\rule{5cm}{0.2pt}\\ </xsl:text>
+                </xsl:if>
                 <xsl:text>
-\subsubsection*{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+\textit{mg}
+\footnotesize </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>
+\normalsize| </xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+    
+
 
 </xsl:stylesheet>            
             
