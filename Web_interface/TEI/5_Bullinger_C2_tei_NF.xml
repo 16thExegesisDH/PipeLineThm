@@ -4321,13 +4321,13 @@
           <reg type="contemporary">3</reg>
         </choice>
       </fw>
-      <ab corresp="#f7325965_block_0" type="MainZone-P-Continued"><!-- ligne par défaut à supprimer si on rajouter le chapitre 1 -->
+     <!-- <ab corresp="#f7325965_block_0" type="MainZone-P-Continued"><!-\- ligne par défaut à supprimer si on rajouter le chapitre 1 -\->
         <lb corresp="#f7325965_line_0_ligne_0"/>
         <choice>
           <orig></orig>
           <reg type="contemporary">[explicit CAP. I]</reg>
         </choice>
-      </ab>
+      </ab>-->
       <ab corresp="#f7325965_block_2a" type="MainZone-Head"><!-- titre ajouter à la main -->
         <hi>
           <lb corresp="#f7325965_eSc_line_3395917e_ligne_12"/>

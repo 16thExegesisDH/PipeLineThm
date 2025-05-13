@@ -2,6 +2,7 @@
 
 # Script to process LaTeX files with clean progress display
 # Usage: ./compile_tex.sh <input_file.tex>
+# the scipt doesn't fixe the \section issue
 
 # --- Error checks (unchanged) ---
 if [ "$#" -ne 1 ]; then
@@ -15,6 +16,7 @@ base_name="${input_file%.tex}"
 
 [ ! -f "$input_file" ] && { echo "Error: File '$input_file' not found."; exit 1; }
 [[ "$input_file" != *.tex ]] && { echo "Error: Input must be .tex file."; exit 1; }
+
 
 # --- Processing ---
 output_file="${base_name}_update.tex"

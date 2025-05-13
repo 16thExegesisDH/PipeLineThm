@@ -10,11 +10,9 @@
     
     <xsl:template match="/">
         <xsl:text>
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SCRIPT FOR LAMBERT DANNEAU DATA     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SCRIPT FOR E-RARA AND MDZ FILES     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%% fini le 30.04.2025 par F. GOY            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%the data are old insert manually the \section{} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% same for huge bftext in the drop capital %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-eX TS-program = lualatex
+% !TeX TS-program = lualatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
@@ -95,69 +93,115 @@ eX TS-program = lualatex
         </xsl:choose>
     </xsl:template>
     
-    
-    <!-- Process text sections (ab elements) -->
     <xsl:template match="ab">
         <xsl:choose>
-            <xsl:when test="@type='DropCapitalZone'">
+          <!--  <xsl:when test="@type='DropCapitalZone'">
                 <xsl:text>
 \textbf{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+            </xsl:when>-->
+
+<!-- Case: MainZone-Head with reg starting with "CAP" : for store the Chaptre in the TOC-->
+            <xsl:when test="@type='MainZone-Head' and (choice/reg[matches(., '^CAP.*')] or hi/choice/reg[matches(., '^CAP.*')])">
+                <xsl:variable name="capTitle">
+                    <xsl:choose>
+                        <xsl:when test="choice/reg[matches(., '^CAP.*')]">
+                            <xsl:value-of select="choice/reg" />
+                        </xsl:when>
+                        <xsl:when test="hi/choice/reg[matches(., '^CAP.*')]">
+                            <xsl:value-of select="hi/choice/reg" />
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:text>
+\endnumbering\beginnumbering\section{</xsl:text>
+                <xsl:value-of select="$capTitle"/>
+                <xsl:text>}</xsl:text>
             </xsl:when>
             
-            <xsl:when test="@type='MainZone-Head' and not(hi/choice/orig[contains(text(), 'CAP')])">
+<!-- Case: NOT starting with CAP : for store the verset in the Table Of Content-->
+            <xsl:when test="@type='MainZone-Head' and not(choice/reg[matches(., '^CAP.*')]) and not(hi/choice/reg[matches(., '^CAP.*')])">
+                <xsl:variable name="verset">
+                    <xsl:apply-templates/>
+                </xsl:variable>
                 <xsl:text>
 \phantomsection
-\addcontentsline{toc}{subsection}{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}
-\subsection*{\textit{</xsl:text><xsl:apply-templates/><xsl:text>}}</xsl:text>
+\addcontentsline{toc}{subsection}{\textit{</xsl:text>
+                <xsl:value-of select="$verset"/>
+                <xsl:text>}}
+\subsection*{\textit{</xsl:text>
+                <xsl:value-of select="$verset"/>
+                <xsl:text>}}</xsl:text>
             </xsl:when>
             
+            <xsl:when test="@type='MainZone-Entry'">
+                <xsl:variable name="puce">
+                    <xsl:apply-templates/>
+                </xsl:variable>
+                <xsl:text>
+\phantomsection
+\addcontentsline{toc}{subsection}{\textit{◦     </xsl:text>
+                <xsl:value-of select="$puce"/>
+                <xsl:text>}}
+\subsection*{◦      </xsl:text>
+                <xsl:value-of select="$puce"/>
+                <xsl:text>}</xsl:text>
+            </xsl:when>
             <xsl:when test="@type='MainZone-P'">
                 <xsl:text>\pstart </xsl:text>
+                <!-- Insert DropCapital only if immediately preceded by DropCapitalZone -->
+                <xsl:if test="preceding-sibling::*[1][self::ab[@type='DropCapitalZone']]">
+                    <xsl:text>\textbf{</xsl:text>
+                    <xsl:value-of select="preceding-sibling::ab[@type='DropCapitalZone'][1]//choice/reg"/>
+                    <xsl:text>} </xsl:text>
+                </xsl:if>
                 <xsl:apply-templates/>
                 <xsl:text> \pend</xsl:text>
             </xsl:when>
-            
+
             <xsl:when test="@type='MainZone-P-Continued'">
                 <xsl:text>\pstart </xsl:text>
                 <xsl:apply-templates/>
                 <xsl:text> \pend</xsl:text>
             </xsl:when>
-            
             <xsl:when test="@type='MainZone'">
-                <xsl:text>\pstart </xsl:text>
-                <!-- Handle all 'verset' segments together in one subsection -->
-                <xsl:variable name="versets" select=".//seg[@type='verset']"/>
-                <xsl:if test="$versets">
-                    <xsl:text>\phantomsection
-\addcontentsline{toc}{subsection}{\textit{</xsl:text>
-                    <xsl:for-each select="$versets">
-                        <xsl:value-of select="normalize-space(.)"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>}}
-\subsection*{\textit{</xsl:text>
-                    <xsl:for-each select="$versets">
-                        <xsl:value-of select="normalize-space(.)"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>}}</xsl:text>
-                </xsl:if>
-                <xsl:apply-templates/>
-                <xsl:text> \pend</xsl:text>
-                <!-- Continue applying templates for the rest of the content -->
-                
+                <xsl:apply-templates select="*|node()"/>
             </xsl:when>
-            
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
+    <!--<xsl:template match="note">
+    <xsl:choose>
+        <xsl:when test="@type='MarginTextZone-Notes'">
+            <xsl:text>
+\vspace{0.5cm}\noindent</xsl:text> <!-\- Align with left margin -\->
+            <xsl:text>
+\vspace{0.2cm}\rule{5cm}{0.2pt}\\ </xsl:text>
+            <xsl:text>
+\textit{mg}
+\footnotesize </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>
+\normalsize|</xsl:text>
+        </xsl:when>
+    </xsl:choose>
+    </xsl:template>-->
+    
+    <!--<xsl:template match="note">
+        <xsl:choose>
+            <xsl:when test="@type='MarginTextZone-Notes'">
+                <xsl:text>
+\hspace{0.2cm}\textit{mg}
+\footnotesize </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>
+\normalsize| </xsl:text>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    -->
     <xsl:template match="note">
         <xsl:choose>
             <xsl:when test="@type='MarginTextZone-Notes'">
@@ -166,7 +210,7 @@ eX TS-program = lualatex
                     <xsl:text>
 \vspace{0.5cm}\noindent</xsl:text> <!--\- Align with left margin -\-->
                     <xsl:text>
-\vspace{0.2cm}\rule{1cm}{0.2pt}\\ </xsl:text>
+\vspace{0.2cm}\rule{3cm}{0.2pt}\\ </xsl:text>
                 </xsl:if>
                 <xsl:text>
 \hspace{0.2cm}\textit{mg}
@@ -178,7 +222,11 @@ eX TS-program = lualatex
         </xsl:choose>
     </xsl:template>
     
+
+
+</xsl:stylesheet>            
+            
+
     
   
     
-</xsl:stylesheet>
