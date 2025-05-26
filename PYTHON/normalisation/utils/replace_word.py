@@ -16,6 +16,7 @@ def replace_word(text):
     r'\s+libus':' liber',
     r'qué ':'que ',
     r'qd ': 'quod',
+    r' ́ ': '',
     } 
     
     for pattern, replacement in replacements.items():
