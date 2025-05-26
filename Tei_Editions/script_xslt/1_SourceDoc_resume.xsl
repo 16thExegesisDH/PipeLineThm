@@ -12,19 +12,21 @@
         <!-- Changer les variables suivantes si nécessaire -->
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
-        <xsl:variable name="document">Bullinger_C2</xsl:variable>
+        
+        <!--<xsl:variable name="document">Bullinger_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
         <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
+        -->
         
-        <!-- for mdz  
-        <xsl:variable name="document">Lambertus</xsl:variable>
+         <!--for mdz-->  
+        <xsl:variable name="document">Bugenhagen_C1_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
         <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
-        -->
+        
         <!-- template for coordinates with a specific path, specific path in the $context value -->
         <xsl:template name="coordinate-with-context" xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:param name="context"/>
@@ -121,7 +123,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Commentarii In Epistolas D. Pavli Ad Timotheum : [Bullinger, Heinrich], [1536]</title>
+                            <title>Annotationes in Epistolas Pavli Ad Timotheum : [Bugenhagen, Johannes], [1524]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -160,11 +162,11 @@
                         <sourceDesc>
                             <msDesc>
                                 <!-- corriger en fonction de lambertus  -->
-                                <msIdentifier xml:id="23723">
-                                    <country>Switzerland</country>
-                                    <settlement>Zürich</settlement>
-                                    <institution>Zentralbibliothek Zürich</institution>
-                                    <idno type="shelfmark">VD 16 B 5144 Vischer C 251</idno>
+                                <msIdentifier xml:id="bsb00027764">
+                                    <country>Deutschland</country>
+                                    <settlement>München</settlement>
+                                    <institution>Bayerische Staatsbibliothek</institution>
+                                    <idno type="shelfmark">Res/Exeg. 309 b#Beibd.3</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -173,25 +175,26 @@
                                                 <!-- AUTEUR -->
                                                 <author>
                                                     <persName role="exegete" ref="isni:0000000109036374">
-                                                        <surname>Heinrich</surname>
-                                                        <forename>Bullinger</forename>
+                                                        <surname>Johannes</surname>
+                                                        <forename>Bugenhagen</forename>
                                                     </persName>
                                                 </author>
                                                 <!-- TITRE -->
-                                                <title type="complete_title">Bullinger, Heinrich: In D. Apostoli Pauli ad Thessalonicenses, Timotheum, Titum &amp;Philemonem epistolas</title> 
-                                                <title type="short_title">Commentarii In D. Apostoli Pauli ad Ad Timotheum</title>
+                                                <title type="complete_title">Bugenhagen, Johannes: Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam &amp; secundam</title> 
+                                                <title type="short_title">Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam</title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:2657896">Zürich</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:7285161">Basel</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:0000000121270868">
-                                                            <surname>Froschauer</surname>
-                                                            <forename>Christoph</forename>
+                                                        <persName role="printer" ref="isni:0000000116244569">
+                                                            <surname>Adam?</surname>
+                                                            <forename>Petri?</forename>
                                                         </persName>
+                                                        <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"/>
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1536</date>
+                                                    <date cert="low">1524</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -207,20 +210,20 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant Bullinger -->
+                                    <!-- concernant Bugenhagen -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://doi.org/10.3931/e-rara-23723"/>
+                                            <ref target="https://mdz-nbn-resolving.de/details:bsb00027764"/>
                                             <relatedItem type="original">
-                                                <ref target="#23723">e-rara</ref>
+                                                <ref target="#bsb00027764">mdz</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target="https://d-nb.info/gnd/118517384">
+                                            <ref target=" https://d-nb.info/gnd/118517287 ">
                                                 <orgName>gnd</orgName>
-                                                <idno>118517384</idno>
+                                                <idno>118517287</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>
@@ -273,7 +276,7 @@
                                 <term type="segmentation_quality">gold</term>
                                 <term type="transcription_quality">gold</term>
                                 <term type="intermediary_reg_quality">not applicable</term>
-                                <term type="contemporary_reg_quality">not applicable</term>
+                                <term type="contemporary_reg_quality">normalize with a python script</term>
                                 <term type="ling_annotation_quality">not applicable</term>
                             </keywords>
                         </textClass>
