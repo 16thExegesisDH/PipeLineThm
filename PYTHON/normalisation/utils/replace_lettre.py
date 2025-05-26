@@ -54,7 +54,7 @@ def replace_lettre(text):
         r'́' :'que ', 
         r'q́' : 'que ',
         r'ꝗd' : 'quod',
-        r'qd' : 'quod',
+        r'qd’' : 'quod',
         r'ꝗa' : 'quam',
         r'ꝗ' : 'qui', # à vérifier (bugenhagen)
         r'ü̃' : 'un',
