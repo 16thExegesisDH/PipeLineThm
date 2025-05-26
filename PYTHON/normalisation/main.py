@@ -1,4 +1,6 @@
 """
+last update 24.03.2025
+
 This script provides functionality for normalizing latin from 16th century both TXT files and XML files.
 -undo abreviations, tildes and special caracters on the basis of classical latin
 

@@ -33,7 +33,7 @@ def categorize_elements(following_elements):
         'quire_marks_zone': [],
         'ab_elements': [],
         'other_elements': [],
-        'note':[] # Add a category for note elements
+        'note':[] # Add a category for note elements (= MarginText-N)
     }
 
     for elem in following_elements:
