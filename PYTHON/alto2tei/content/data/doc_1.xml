@@ -81,29 +81,41 @@
             <ptr target="https://github.com/segmonto"/>
           </bibl>
           <category xml:id="SegmOntoZones">
-            <catDesc xml:id="MusicZone">
-              <title>MusicZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/MusicZone"/>
-            </catDesc>
-            <catDesc xml:id="DropCapitalZone">
-              <title>DropCapitalZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/DropCapitalZone"/>
-            </catDesc>
-            <catDesc xml:id="StampZone">
-              <title>StampZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/StampZone"/>
-            </catDesc>
-            <catDesc xml:id="QuireMarksZone">
-              <title>QuireMarksZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/QuireMarksZone"/>
+            <catDesc xml:id="TitlePageZone">
+              <title>TitlePageZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/TitlePageZone"/>
             </catDesc>
             <catDesc xml:id="MainZone">
               <title>MainZone</title>
               <ptr target="https://segmonto.github.io/gd/gdZ/MainZone"/>
             </catDesc>
+            <catDesc xml:id="DropCapitalZone">
+              <title>DropCapitalZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/DropCapitalZone"/>
+            </catDesc>
+            <catDesc xml:id="QuireMarksZone">
+              <title>QuireMarksZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/QuireMarksZone"/>
+            </catDesc>
+            <catDesc xml:id="StampZone">
+              <title>StampZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/StampZone"/>
+            </catDesc>
+            <catDesc xml:id="MusicZone">
+              <title>MusicZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/MusicZone"/>
+            </catDesc>
+            <catDesc xml:id="SealZone">
+              <title>SealZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/SealZone"/>
+            </catDesc>
             <catDesc xml:id="DamageZone">
               <title>DamageZone</title>
               <ptr target="https://segmonto.github.io/gd/gdZ/DamageZone"/>
+            </catDesc>
+            <catDesc xml:id="CustomZone">
+              <title>CustomZone</title>
+              <ptr target="https://segmonto.github.io/gd/gdZ/CustomZone/"/>
             </catDesc>
             <catDesc xml:id="TableZone">
               <title>TableZone</title>
@@ -113,35 +125,15 @@
               <title>NumberingZone</title>
               <ptr target="https://segmonto.github.io/gd/gdZ/NumberingZone"/>
             </catDesc>
-            <catDesc xml:id="SealZone">
-              <title>SealZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/SealZone"/>
-            </catDesc>
-            <catDesc xml:id="TitlePageZone">
-              <title>TitlePageZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/TitlePageZone"/>
-            </catDesc>
             <catDesc xml:id="RunningTitleZone">
               <title>RunningTitleZone</title>
               <ptr target="https://segmonto.github.io/gd/gdZ/RunningTitleZone"/>
             </catDesc>
-            <catDesc xml:id="CustomZone">
-              <title>CustomZone</title>
-              <ptr target="https://segmonto.github.io/gd/gdZ/CustomZone/"/>
-            </catDesc>
           </category>
           <category xml:id="SegmOntoLines">
-            <catDesc xml:id="InterlinearLine">
-              <title>InterlinearLine</title>
-              <ptr target="https://segmonto.github.io/gd/gdL/InterlinearLine"/>
-            </catDesc>
             <catDesc xml:id="HeadingLine">
               <title>HeadingLine</title>
               <ptr target="https://segmonto.github.io/gd/gdL/HeadingLine"/>
-            </catDesc>
-            <catDesc xml:id="DefaultLine">
-              <title>DefaultLine</title>
-              <ptr target="https://segmonto.github.io/gd/gdL/DefaultLine"/>
             </catDesc>
             <catDesc xml:id="CustomLine">
               <title>CustomLine</title>
@@ -154,6 +146,14 @@
             <catDesc xml:id="DropCapitalLine">
               <title>DropCapitalLine</title>
               <ptr target="https://segmonto.github.io/gd/gdL/DropCapitalLine"/>
+            </catDesc>
+            <catDesc xml:id="InterlinearLine">
+              <title>InterlinearLine</title>
+              <ptr target="https://segmonto.github.io/gd/gdL/InterlinearLine"/>
+            </catDesc>
+            <catDesc xml:id="DefaultLine">
+              <title>DefaultLine</title>
+              <ptr target="https://segmonto.github.io/gd/gdL/DefaultLine"/>
             </catDesc>
           </category>
         </taxonomy>
@@ -1364,28 +1364,28 @@
           <line xml:id="f164-block_4-line_10-lineCount11-text" n="11">intus in corde ſciuerunt, &amp; tandem perdiderunt.</line>
         </zone>
       </zone>
-      <zone xml:id="f164-block_1-blockCount3" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="322.0" uly="803.0" lrx="1139" lry="1024" points="1139,803 1126,1024 332,1024 322,837" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/322.0,803.0,817.0,221.0/full/0/native.jpg">
-        <zone xml:id="f164-block_1-line_12-lineCount12" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="353.0" uly="805.0" lrx="1119" lry="871" points="354,860 354,870 501,866 551,870 566,871 567,871 568,871 571,870 592,859 627,864 628,864 629,864 641,858 766,857 775,863 776,863 777,863 778,863 779,863 808,856 826,866 827,866 828,866 829,866 830,866 831,866 848,856 885,856 899,865 900,865 901,865 902,865 903,865 904,865 921,856 941,856 986,869 987,869 988,869 989,869 992,869 1022,863 1116,868 1119,861 1116,820 1001,820 994,820 984,820 967,805 966,805 965,805 837,805 836,805 835,805 800,815 783,806 782,806 781,806 715,815 681,806 680,806 679,806 678,806 622,821 532,807 531,807 530,807 497,822 411,817 410,817 353,823 354,860" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/353.0,805.0,766.0,66.0/full/0/native.jpg">
-          <path xml:id="f164-block_1-line_12-lineCount12-baseline" points="354,860 690,844 869,842 1119,861"/>
-          <line xml:id="f164-block_1-line_12-lineCount12-text" n="12">Scilicet, ut ſupra, ut denuncies quibuſdã &amp;c. ut com¬</line>
-        </zone>
-        <zone xml:id="f164-block_1-line_13-lineCount13" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="329.0" uly="850.0" lrx="1112" lry="932" points="330,912 330,927 359,932 360,932 361,932 362,932 369,927 375,922 395,926 400,927 401,927 402,927 405,926 435,917 455,925 464,929 465,929 466,929 468,929 476,925 493,916 533,922 534,922 535,922 557,912 573,919 574,919 575,919 576,919 577,919 588,909 611,913 612,913 637,908 662,917 663,917 664,917 665,917 688,909 712,920 713,920 714,920 715,920 716,920 731,906 758,906 776,914 777,914 778,914 779,914 802,903 844,903 896,905 910,918 911,918 912,918 913,918 914,918 916,918 937,902 968,916 969,916 970,916 1112,913 1112,907 1110,863 958,866 957,866 927,850 926,850 925,850 884,859 840,852 839,852 838,852 837,852 820,863 799,855 798,855 797,855 796,855 795,855 785,861 751,856 750,856 749,856 748,856 739,863 706,863 699,857 698,857 697,857 696,857 624,858 623,858 573,871 538,862 537,862 536,862 535,862 534,862 523,870 515,864 514,864 513,864 512,864 511,864 490,876 473,869 472,869 471,869 470,869 442,878 441,878 415,866 414,866 413,866 412,866 382,879 380,881 329,881 330,912" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/329.0,850.0,783.0,82.0/full/0/native.jpg">
-          <path xml:id="f164-block_1-line_13-lineCount13-baseline" points="330,912 755,892 947,894 1112,907"/>
-          <line xml:id="f164-block_1-line_13-lineCount13-text" n="13">mendes gratiam Chriſti peccatoribus, ſicut ego, abſ</line>
-        </zone>
-        <zone xml:id="f164-block_1-line_14-lineCount14" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="329.0" uly="902.0" lrx="1122" lry="984" points="330,963 330,984 365,984 367,984 389,974 408,983 409,983 410,983 411,983 462,968 514,976 515,976 516,976 539,968 581,972 582,972 583,972 612,961 659,961 678,961 709,974 710,974 712,974 713,974 714,974 739,959 807,959 820,965 821,965 822,965 823,965 838,958 867,958 888,968 889,968 890,968 928,963 941,972 942,972 943,972 944,972 981,965 1001,971 1002,971 1003,971 1122,969 1122,959 1120,919 985,921 984,921 941,902 940,902 939,902 938,902 907,916 867,904 866,904 824,904 823,904 822,904 821,904 808,913 660,907 659,907 622,910 621,910 620,910 605,920 575,917 574,917 573,917 572,917 562,924 539,912 538,912 537,912 536,912 535,912 522,923 490,913 489,913 487,913 486,913 485,913 469,927 431,916 430,916 429,916 428,916 377,933 329,933 330,963" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/329.0,902.0,793.0,82.0/full/0/native.jpg">
-          <path xml:id="f164-block_1-line_14-lineCount14-baseline" points="330,963 748,944 905,944 1122,959"/>
-          <line xml:id="f164-block_1-line_14-lineCount14-text" n="14">operibus legis, &amp;c. Vel potes referre ad hoc quodſe¬</line>
-        </zone>
-        <zone xml:id="f164-block_1-line_15-lineCount15" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="330.0" uly="965.0" lrx="682" lry="1030" points="332,1011 332,1029 371,1030 372,1030 373,1030 379,1027 385,1024 396,1026 412,1029 413,1029 414,1029 426,1024 438,1020 446,1023 458,1027 459,1027 460,1027 494,1021 514,1016 517,1019 521,1023 522,1023 523,1023 524,1023 548,1018 565,1013 581,1015 618,1021 619,1021 620,1021 621,1021 634,1012 637,1010 681,1009 682,999 680,968 534,965 533,965 532,965 501,973 500,973 499,973 465,968 464,968 330,979 332,1011" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/330.0,965.0,352.0,65.0/full/0/native.jpg">
-          <path xml:id="f164-block_1-line_15-lineCount15-baseline" points="332,1011 682,999"/>
-          <line xml:id="f164-block_1-line_15-lineCount15-text" n="15">quitur:ut milites, &amp;c.</line>
+      <zone xml:id="f164-eSc_textblock_3c045fa3-blockCount3" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="511.0" uly="743.0" lrx="940" lry="810" points="511,743 511,810 940,810 940,743" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/511.0,743.0,429.0,67.0/full/0/native.jpg">
+        <zone xml:id="f164-eSc_textblock_3c045fa3-line_11-lineCount12" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="538.0" uly="743.0" lrx="925" lry="813" points="854,743 838,743 822,743 806,743 794,743 784,747 648,754 620,743 617,743 601,743 585,743 574,743 538,743 540,793 540,813 925,804 925,785 923,749 866,743 854,743" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/538.0,743.0,387.0,70.0/full/0/native.jpg">
+          <path xml:id="f164-eSc_textblock_3c045fa3-line_11-lineCount12-baseline" points="541,794 780,786 926,786"/>
+          <line xml:id="f164-eSc_textblock_3c045fa3-line_11-lineCount12-text" n="12">Hoc præceptum</line>
         </zone>
       </zone>
-      <zone xml:id="f164-eSc_textblock_3c045fa3-blockCount4" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="511.0" uly="743.0" lrx="940" lry="810" points="511,743 511,810 940,810 940,743" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/511.0,743.0,429.0,67.0/full/0/native.jpg">
-        <zone xml:id="f164-eSc_textblock_3c045fa3-line_11-lineCount16" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="538.0" uly="743.0" lrx="925" lry="813" points="854,743 838,743 822,743 806,743 794,743 784,747 648,754 620,743 617,743 601,743 585,743 574,743 538,743 540,793 540,813 925,804 925,785 923,749 866,743 854,743" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/538.0,743.0,387.0,70.0/full/0/native.jpg">
-          <path xml:id="f164-eSc_textblock_3c045fa3-line_11-lineCount16-baseline" points="541,794 780,786 926,786"/>
-          <line xml:id="f164-eSc_textblock_3c045fa3-line_11-lineCount16-text" n="16">Hoc præceptum</line>
+      <zone xml:id="f164-block_1-blockCount4" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="322.0" uly="803.0" lrx="1139" lry="1024" points="1139,803 1126,1024 332,1024 322,837" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/322.0,803.0,817.0,221.0/full/0/native.jpg">
+        <zone xml:id="f164-block_1-line_12-lineCount13" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="353.0" uly="805.0" lrx="1119" lry="871" points="354,860 354,870 501,866 551,870 566,871 567,871 568,871 571,870 592,859 627,864 628,864 629,864 641,858 766,857 775,863 776,863 777,863 778,863 779,863 808,856 826,866 827,866 828,866 829,866 830,866 831,866 848,856 885,856 899,865 900,865 901,865 902,865 903,865 904,865 921,856 941,856 986,869 987,869 988,869 989,869 992,869 1022,863 1116,868 1119,861 1116,820 1001,820 994,820 984,820 967,805 966,805 965,805 837,805 836,805 835,805 800,815 783,806 782,806 781,806 715,815 681,806 680,806 679,806 678,806 622,821 532,807 531,807 530,807 497,822 411,817 410,817 353,823 354,860" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/353.0,805.0,766.0,66.0/full/0/native.jpg">
+          <path xml:id="f164-block_1-line_12-lineCount13-baseline" points="354,860 690,844 869,842 1119,861"/>
+          <line xml:id="f164-block_1-line_12-lineCount13-text" n="13">Scilicet, ut ſupra, ut denuncies quibuſdã &amp;c. ut com¬</line>
+        </zone>
+        <zone xml:id="f164-block_1-line_13-lineCount14" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="329.0" uly="850.0" lrx="1112" lry="932" points="330,912 330,927 359,932 360,932 361,932 362,932 369,927 375,922 395,926 400,927 401,927 402,927 405,926 435,917 455,925 464,929 465,929 466,929 468,929 476,925 493,916 533,922 534,922 535,922 557,912 573,919 574,919 575,919 576,919 577,919 588,909 611,913 612,913 637,908 662,917 663,917 664,917 665,917 688,909 712,920 713,920 714,920 715,920 716,920 731,906 758,906 776,914 777,914 778,914 779,914 802,903 844,903 896,905 910,918 911,918 912,918 913,918 914,918 916,918 937,902 968,916 969,916 970,916 1112,913 1112,907 1110,863 958,866 957,866 927,850 926,850 925,850 884,859 840,852 839,852 838,852 837,852 820,863 799,855 798,855 797,855 796,855 795,855 785,861 751,856 750,856 749,856 748,856 739,863 706,863 699,857 698,857 697,857 696,857 624,858 623,858 573,871 538,862 537,862 536,862 535,862 534,862 523,870 515,864 514,864 513,864 512,864 511,864 490,876 473,869 472,869 471,869 470,869 442,878 441,878 415,866 414,866 413,866 412,866 382,879 380,881 329,881 330,912" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/329.0,850.0,783.0,82.0/full/0/native.jpg">
+          <path xml:id="f164-block_1-line_13-lineCount14-baseline" points="330,912 755,892 947,894 1112,907"/>
+          <line xml:id="f164-block_1-line_13-lineCount14-text" n="14">mendes gratiam Chriſti peccatoribus, ſicut ego, abſ</line>
+        </zone>
+        <zone xml:id="f164-block_1-line_14-lineCount15" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="329.0" uly="902.0" lrx="1122" lry="984" points="330,963 330,984 365,984 367,984 389,974 408,983 409,983 410,983 411,983 462,968 514,976 515,976 516,976 539,968 581,972 582,972 583,972 612,961 659,961 678,961 709,974 710,974 712,974 713,974 714,974 739,959 807,959 820,965 821,965 822,965 823,965 838,958 867,958 888,968 889,968 890,968 928,963 941,972 942,972 943,972 944,972 981,965 1001,971 1002,971 1003,971 1122,969 1122,959 1120,919 985,921 984,921 941,902 940,902 939,902 938,902 907,916 867,904 866,904 824,904 823,904 822,904 821,904 808,913 660,907 659,907 622,910 621,910 620,910 605,920 575,917 574,917 573,917 572,917 562,924 539,912 538,912 537,912 536,912 535,912 522,923 490,913 489,913 487,913 486,913 485,913 469,927 431,916 430,916 429,916 428,916 377,933 329,933 330,963" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/329.0,902.0,793.0,82.0/full/0/native.jpg">
+          <path xml:id="f164-block_1-line_14-lineCount15-baseline" points="330,963 748,944 905,944 1122,959"/>
+          <line xml:id="f164-block_1-line_14-lineCount15-text" n="15">operibus legis, &amp;c. Vel potes referre ad hoc quodſe¬</line>
+        </zone>
+        <zone xml:id="f164-block_1-line_15-lineCount16" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="330.0" uly="965.0" lrx="682" lry="1030" points="332,1011 332,1029 371,1030 372,1030 373,1030 379,1027 385,1024 396,1026 412,1029 413,1029 414,1029 426,1024 438,1020 446,1023 458,1027 459,1027 460,1027 494,1021 514,1016 517,1019 521,1023 522,1023 523,1023 524,1023 548,1018 565,1013 581,1015 618,1021 619,1021 620,1021 621,1021 634,1012 637,1010 681,1009 682,999 680,968 534,965 533,965 532,965 501,973 500,973 499,973 465,968 464,968 330,979 332,1011" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/330.0,965.0,352.0,65.0/full/0/native.jpg">
+          <path xml:id="f164-block_1-line_15-lineCount16-baseline" points="332,1011 682,999"/>
+          <line xml:id="f164-block_1-line_15-lineCount16-text" n="16">quitur:ut milites, &amp;c.</line>
         </zone>
       </zone>
       <zone xml:id="f164-eSc_textblock_064670e8-blockCount5" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="398.0" uly="1030.0" lrx="1022" lry="1087" points="398,1030 398,1087 1022,1087 1022,1030" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/398.0,1030.0,624.0,57.0/full/0/native.jpg">
@@ -1404,32 +1404,32 @@
           <line xml:id="f164-block_2-line_18-lineCount19-text" n="19">Ient contendere.</line>
         </zone>
       </zone>
-      <zone xml:id="f164-block_0-blockCount7" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="332.0" uly="1265.0" lrx="1138" lry="1531" points="1138,1267 1136,1531 336,1531 332,1265" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/332.0,1265.0,806.0,266.0/full/0/native.jpg">
-        <zone xml:id="f164-block_0-line_20-lineCount20" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="368.0" uly="1253.0" lrx="1127" lry="1324" points="1009,1253 1002,1253 984,1263 942,1253 941,1253 882,1264 807,1254 806,1254 805,1254 782,1263 742,1256 741,1256 651,1265 624,1258 623,1258 622,1258 555,1259 469,1273 465,1274 417,1274 416,1274 394,1265 393,1265 392,1265 391,1265 368,1273 370,1309 370,1324 431,1317 443,1322 444,1322 445,1322 446,1322 448,1322 457,1314 480,1321 481,1321 482,1321 483,1321 484,1321 492,1315 624,1308 675,1319 679,1319 680,1319 681,1319 683,1319 714,1305 860,1303 962,1311 963,1311 964,1311 977,1306 985,1313 986,1313 987,1313 988,1313 1127,1311 1127,1309 1125,1262 1032,1262 1013,1253 1009,1253" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/368.0,1253.0,759.0,71.0/full/0/native.jpg">
-          <path xml:id="f164-block_0-line_20-lineCount20-baseline" points="370,1309 794,1292 985,1295 1127,1309"/>
-          <line xml:id="f164-block_0-line_20-lineCount20-text" n="20">Sicut Corinthium, qui duxerat nouercam ſuam: de</line>
-        </zone>
-        <zone xml:id="f164-block_0-line_21-lineCount21" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="341.0" uly="1303.0" lrx="1128" lry="1377" points="352,1332 350,1319 341,1322 342,1359 342,1377 383,1376 384,1376 385,1376 396,1369 431,1375 432,1375 433,1375 468,1366 664,1359 695,1364 696,1364 697,1364 698,1364 705,1357 768,1356 820,1356 837,1367 838,1367 839,1367 840,1367 900,1354 941,1365 942,1365 943,1365 944,1365 984,1354 1021,1362 1022,1364 1128,1364 1128,1355 1126,1315 1022,1315 990,1309 989,1309 988,1309 970,1316 968,1317 967,1316 951,1306 950,1306 949,1306 948,1306 947,1306 934,1311 919,1303 918,1303 883,1303 882,1303 881,1303 880,1303 868,1311 819,1304 818,1304 741,1314 722,1306 721,1306 720,1306 693,1307 692,1307 660,1319 653,1322 639,1320 594,1311 593,1311 592,1311 591,1311 581,1319 562,1313 561,1313 560,1313 559,1313 539,1321 529,1326 519,1321 501,1312 500,1312 499,1312 498,1312 497,1312 482,1321 477,1326 472,1321 459,1313 458,1313 457,1313 456,1313 455,1313 429,1322 412,1329 383,1329 372,1322 361,1317 360,1317 359,1317 358,1317 353,1318 352,1332" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/341.0,1303.0,787.0,74.0/full/0/native.jpg">
-          <path xml:id="f164-block_0-line_21-lineCount21-baseline" points="342,1359 805,1344 949,1345 1128,1355"/>
-          <line xml:id="f164-block_0-line_21-lineCount21-text" n="21">quo uide in annotationibus Philippi. Hanc tamen ex¬</line>
-        </zone>
-        <zone xml:id="f164-block_0-line_22-lineCount22" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="341.0" uly="1353.0" lrx="1125" lry="1428" points="352,1382 350,1379 341,1380 342,1410 342,1423 392,1427 393,1427 394,1427 401,1423 411,1419 417,1423 421,1427 422,1427 423,1427 424,1427 443,1422 460,1419 473,1422 491,1428 492,1428 493,1428 494,1428 504,1422 517,1416 550,1419 551,1419 552,1419 553,1419 563,1412 598,1412 656,1420 670,1422 672,1422 673,1422 677,1420 697,1409 818,1407 859,1407 872,1416 873,1416 875,1416 908,1417 909,1417 958,1406 977,1417 978,1417 979,1417 980,1418 1000,1418 1000,1417 1001,1417 1002,1417 1013,1409 1034,1416 1035,1416 1036,1416 1125,1415 1125,1408 1123,1366 1028,1367 1009,1353 1008,1353 1007,1353 1006,1353 1005,1353 981,1362 938,1354 937,1354 881,1355 880,1355 857,1367 841,1359 840,1359 764,1357 763,1357 762,1357 727,1367 716,1359 715,1359 714,1359 713,1359 712,1359 694,1369 660,1359 659,1359 658,1359 657,1359 637,1370 599,1365 598,1365 561,1369 560,1369 559,1369 551,1376 533,1367 532,1367 531,1367 530,1367 512,1373 493,1365 492,1365 491,1365 490,1365 462,1378 420,1378 400,1372 399,1372 398,1372 353,1378 352,1382" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/341.0,1353.0,784.0,75.0/full/0/native.jpg">
-          <path xml:id="f164-block_0-line_22-lineCount22-baseline" points="342,1410 809,1394 999,1398 1125,1408"/>
-          <line xml:id="f164-block_0-line_22-lineCount22-text" n="22">communicationem, ſicut &amp; illam, oſtẽdit eſſe utilem,</line>
-        </zone>
-        <zone xml:id="f164-block_0-line_23-lineCount23" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="342.0" uly="1402.0" lrx="1129" lry="1476" points="343,1458 343,1474 431,1468 450,1473 460,1476 461,1476 462,1476 484,1473 527,1466 562,1472 580,1475 581,1475 582,1475 591,1472 614,1460 757,1459 786,1466 787,1466 788,1466 809,1457 892,1456 928,1467 929,1467 930,1467 931,1467 964,1456 1007,1466 1008,1466 1129,1464 1129,1459 1127,1416 1096,1416 1095,1416 1084,1408 1083,1408 1082,1408 1081,1408 1080,1408 1079,1408 1066,1417 1033,1417 1018,1417 1001,1410 1000,1410 999,1410 998,1410 977,1418 944,1402 943,1402 942,1402 941,1402 913,1415 878,1415 864,1405 863,1405 862,1405 861,1405 688,1408 687,1408 686,1408 669,1419 640,1411 639,1411 581,1409 580,1409 579,1409 510,1428 495,1428 476,1415 475,1415 474,1415 473,1415 472,1415 458,1422 434,1416 433,1416 432,1416 431,1416 430,1416 416,1429 342,1430 343,1458" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/342.0,1402.0,787.0,74.0/full/0/native.jpg">
-          <path xml:id="f164-block_0-line_23-lineCount23-baseline" points="343,1458 892,1444 1025,1450 1129,1459"/>
-          <line xml:id="f164-block_0-line_23-lineCount23-text" n="23">cum dicit: Vt diſcant nõ blaſphemare. Hæc non eſt pa¬</line>
-        </zone>
-        <zone xml:id="f164-block_0-line_24-lineCount24" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="343.0" uly="1455.0" lrx="1106" lry="1533" points="354,1476 350,1470 350,1470 349,1470 348,1470 347,1470 343,1472 344,1509 344,1533 474,1533 483,1532 514,1529 515,1529 516,1529 530,1520 559,1524 560,1524 561,1524 577,1518 596,1524 597,1524 598,1524 733,1514 780,1520 781,1520 782,1520 801,1513 864,1513 898,1521 899,1521 900,1521 954,1511 969,1520 970,1520 971,1520 972,1520 973,1520 995,1514 1013,1523 1014,1523 1015,1523 1106,1522 1106,1505 1104,1464 1026,1464 1006,1456 1005,1456 1004,1456 1003,1456 1002,1456 988,1466 987,1467 970,1467 970,1466 948,1455 947,1455 946,1455 945,1455 920,1463 904,1456 903,1456 902,1456 901,1456 871,1463 864,1458 863,1458 862,1458 861,1458 860,1458 845,1466 811,1457 810,1457 809,1457 808,1457 776,1469 764,1460 763,1460 762,1460 733,1458 731,1458 607,1460 606,1460 605,1460 588,1472 587,1472 557,1461 556,1461 555,1461 554,1461 533,1473 531,1474 435,1474 433,1474 397,1467 396,1467 395,1467 372,1475 371,1475 370,1475 356,1471 354,1476" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/343.0,1455.0,763.0,78.0/full/0/native.jpg">
-          <path xml:id="f164-block_0-line_24-lineCount24-baseline" points="344,1509 757,1495 925,1496 1106,1505"/>
-          <line xml:id="f164-block_0-line_24-lineCount24-text" n="24">piſtica, quam hodie uidemus excommunicatio, &amp;t,</line>
+      <zone xml:id="f164-eSc_textblock_7b3947bf-blockCount7" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="553.0" uly="1190.0" lrx="951" lry="1250" points="557,1198 553,1250 951,1250 945,1190" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/553.0,1190.0,398.0,60.0/full/0/native.jpg">
+        <zone xml:id="f164-eSc_textblock_7b3947bf-line_19-lineCount20" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="577.0" uly="1194.0" lrx="926" lry="1257" points="735,1194 720,1194 704,1195 688,1195 672,1195 656,1195 641,1195 625,1197 609,1197 593,1197 577,1197 579,1239 579,1257 926,1244 926,1232 923,1195 750,1194 735,1194" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/577.0,1194.0,349.0,63.0/full/0/native.jpg">
+          <path xml:id="f164-eSc_textblock_7b3947bf-line_19-lineCount20-baseline" points="580,1240 928,1233"/>
+          <line xml:id="f164-eSc_textblock_7b3947bf-line_19-lineCount20-text" n="20">Tradidi ſatanæ.</line>
         </zone>
       </zone>
-      <zone xml:id="f164-eSc_textblock_7b3947bf-blockCount8" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="553.0" uly="1190.0" lrx="951" lry="1250" points="557,1198 553,1250 951,1250 945,1190" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/553.0,1190.0,398.0,60.0/full/0/native.jpg">
-        <zone xml:id="f164-eSc_textblock_7b3947bf-line_19-lineCount25" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="577.0" uly="1194.0" lrx="926" lry="1257" points="735,1194 720,1194 704,1195 688,1195 672,1195 656,1195 641,1195 625,1197 609,1197 593,1197 577,1197 579,1239 579,1257 926,1244 926,1232 923,1195 750,1194 735,1194" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/577.0,1194.0,349.0,63.0/full/0/native.jpg">
-          <path xml:id="f164-eSc_textblock_7b3947bf-line_19-lineCount25-baseline" points="580,1240 928,1233"/>
-          <line xml:id="f164-eSc_textblock_7b3947bf-line_19-lineCount25-text" n="25">Tradidi ſatanæ.</line>
+      <zone xml:id="f164-block_0-blockCount8" type="MainZone" corresp="#MainZone" subtype="none" n="none" ulx="332.0" uly="1265.0" lrx="1138" lry="1531" points="1138,1267 1136,1531 336,1531 332,1265" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/332.0,1265.0,806.0,266.0/full/0/native.jpg">
+        <zone xml:id="f164-block_0-line_20-lineCount21" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="368.0" uly="1253.0" lrx="1127" lry="1324" points="1009,1253 1002,1253 984,1263 942,1253 941,1253 882,1264 807,1254 806,1254 805,1254 782,1263 742,1256 741,1256 651,1265 624,1258 623,1258 622,1258 555,1259 469,1273 465,1274 417,1274 416,1274 394,1265 393,1265 392,1265 391,1265 368,1273 370,1309 370,1324 431,1317 443,1322 444,1322 445,1322 446,1322 448,1322 457,1314 480,1321 481,1321 482,1321 483,1321 484,1321 492,1315 624,1308 675,1319 679,1319 680,1319 681,1319 683,1319 714,1305 860,1303 962,1311 963,1311 964,1311 977,1306 985,1313 986,1313 987,1313 988,1313 1127,1311 1127,1309 1125,1262 1032,1262 1013,1253 1009,1253" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/368.0,1253.0,759.0,71.0/full/0/native.jpg">
+          <path xml:id="f164-block_0-line_20-lineCount21-baseline" points="370,1309 794,1292 985,1295 1127,1309"/>
+          <line xml:id="f164-block_0-line_20-lineCount21-text" n="21">Sicut Corinthium, qui duxerat nouercam ſuam: de</line>
+        </zone>
+        <zone xml:id="f164-block_0-line_21-lineCount22" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="341.0" uly="1303.0" lrx="1128" lry="1377" points="352,1332 350,1319 341,1322 342,1359 342,1377 383,1376 384,1376 385,1376 396,1369 431,1375 432,1375 433,1375 468,1366 664,1359 695,1364 696,1364 697,1364 698,1364 705,1357 768,1356 820,1356 837,1367 838,1367 839,1367 840,1367 900,1354 941,1365 942,1365 943,1365 944,1365 984,1354 1021,1362 1022,1364 1128,1364 1128,1355 1126,1315 1022,1315 990,1309 989,1309 988,1309 970,1316 968,1317 967,1316 951,1306 950,1306 949,1306 948,1306 947,1306 934,1311 919,1303 918,1303 883,1303 882,1303 881,1303 880,1303 868,1311 819,1304 818,1304 741,1314 722,1306 721,1306 720,1306 693,1307 692,1307 660,1319 653,1322 639,1320 594,1311 593,1311 592,1311 591,1311 581,1319 562,1313 561,1313 560,1313 559,1313 539,1321 529,1326 519,1321 501,1312 500,1312 499,1312 498,1312 497,1312 482,1321 477,1326 472,1321 459,1313 458,1313 457,1313 456,1313 455,1313 429,1322 412,1329 383,1329 372,1322 361,1317 360,1317 359,1317 358,1317 353,1318 352,1332" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/341.0,1303.0,787.0,74.0/full/0/native.jpg">
+          <path xml:id="f164-block_0-line_21-lineCount22-baseline" points="342,1359 805,1344 949,1345 1128,1355"/>
+          <line xml:id="f164-block_0-line_21-lineCount22-text" n="22">quo uide in annotationibus Philippi. Hanc tamen ex¬</line>
+        </zone>
+        <zone xml:id="f164-block_0-line_22-lineCount23" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="341.0" uly="1353.0" lrx="1125" lry="1428" points="352,1382 350,1379 341,1380 342,1410 342,1423 392,1427 393,1427 394,1427 401,1423 411,1419 417,1423 421,1427 422,1427 423,1427 424,1427 443,1422 460,1419 473,1422 491,1428 492,1428 493,1428 494,1428 504,1422 517,1416 550,1419 551,1419 552,1419 553,1419 563,1412 598,1412 656,1420 670,1422 672,1422 673,1422 677,1420 697,1409 818,1407 859,1407 872,1416 873,1416 875,1416 908,1417 909,1417 958,1406 977,1417 978,1417 979,1417 980,1418 1000,1418 1000,1417 1001,1417 1002,1417 1013,1409 1034,1416 1035,1416 1036,1416 1125,1415 1125,1408 1123,1366 1028,1367 1009,1353 1008,1353 1007,1353 1006,1353 1005,1353 981,1362 938,1354 937,1354 881,1355 880,1355 857,1367 841,1359 840,1359 764,1357 763,1357 762,1357 727,1367 716,1359 715,1359 714,1359 713,1359 712,1359 694,1369 660,1359 659,1359 658,1359 657,1359 637,1370 599,1365 598,1365 561,1369 560,1369 559,1369 551,1376 533,1367 532,1367 531,1367 530,1367 512,1373 493,1365 492,1365 491,1365 490,1365 462,1378 420,1378 400,1372 399,1372 398,1372 353,1378 352,1382" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/341.0,1353.0,784.0,75.0/full/0/native.jpg">
+          <path xml:id="f164-block_0-line_22-lineCount23-baseline" points="342,1410 809,1394 999,1398 1125,1408"/>
+          <line xml:id="f164-block_0-line_22-lineCount23-text" n="23">communicationem, ſicut &amp; illam, oſtẽdit eſſe utilem,</line>
+        </zone>
+        <zone xml:id="f164-block_0-line_23-lineCount24" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="342.0" uly="1402.0" lrx="1129" lry="1476" points="343,1458 343,1474 431,1468 450,1473 460,1476 461,1476 462,1476 484,1473 527,1466 562,1472 580,1475 581,1475 582,1475 591,1472 614,1460 757,1459 786,1466 787,1466 788,1466 809,1457 892,1456 928,1467 929,1467 930,1467 931,1467 964,1456 1007,1466 1008,1466 1129,1464 1129,1459 1127,1416 1096,1416 1095,1416 1084,1408 1083,1408 1082,1408 1081,1408 1080,1408 1079,1408 1066,1417 1033,1417 1018,1417 1001,1410 1000,1410 999,1410 998,1410 977,1418 944,1402 943,1402 942,1402 941,1402 913,1415 878,1415 864,1405 863,1405 862,1405 861,1405 688,1408 687,1408 686,1408 669,1419 640,1411 639,1411 581,1409 580,1409 579,1409 510,1428 495,1428 476,1415 475,1415 474,1415 473,1415 472,1415 458,1422 434,1416 433,1416 432,1416 431,1416 430,1416 416,1429 342,1430 343,1458" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/342.0,1402.0,787.0,74.0/full/0/native.jpg">
+          <path xml:id="f164-block_0-line_23-lineCount24-baseline" points="343,1458 892,1444 1025,1450 1129,1459"/>
+          <line xml:id="f164-block_0-line_23-lineCount24-text" n="24">cum dicit: Vt diſcant nõ blaſphemare. Hæc non eſt pa¬</line>
+        </zone>
+        <zone xml:id="f164-block_0-line_24-lineCount25" type="DefaultLine" corresp="#DefaultLine" subtype="none" n="none" ulx="343.0" uly="1455.0" lrx="1106" lry="1533" points="354,1476 350,1470 350,1470 349,1470 348,1470 347,1470 343,1472 344,1509 344,1533 474,1533 483,1532 514,1529 515,1529 516,1529 530,1520 559,1524 560,1524 561,1524 577,1518 596,1524 597,1524 598,1524 733,1514 780,1520 781,1520 782,1520 801,1513 864,1513 898,1521 899,1521 900,1521 954,1511 969,1520 970,1520 971,1520 972,1520 973,1520 995,1514 1013,1523 1014,1523 1015,1523 1106,1522 1106,1505 1104,1464 1026,1464 1006,1456 1005,1456 1004,1456 1003,1456 1002,1456 988,1466 987,1467 970,1467 970,1466 948,1455 947,1455 946,1455 945,1455 920,1463 904,1456 903,1456 902,1456 901,1456 871,1463 864,1458 863,1458 862,1458 861,1458 860,1458 845,1466 811,1457 810,1457 809,1457 808,1457 776,1469 764,1460 763,1460 762,1460 733,1458 731,1458 607,1460 606,1460 605,1460 588,1472 587,1472 557,1461 556,1461 555,1461 554,1461 533,1473 531,1474 435,1474 433,1474 397,1467 396,1467 395,1467 372,1475 371,1475 370,1475 356,1471 354,1476" source="https://gallica.bnf.fr/iiif/ark:/12148/doc_1/f164/343.0,1455.0,763.0,78.0/full/0/native.jpg">
+          <path xml:id="f164-block_0-line_24-lineCount25-baseline" points="344,1509 757,1495 925,1496 1106,1505"/>
+          <line xml:id="f164-block_0-line_24-lineCount25-text" n="25">piſtica, quam hodie uidemus excommunicatio, &amp;t,</line>
         </zone>
       </zone>
     </surface>
@@ -2550,7 +2550,7 @@
         <fw corresp="#f163-block_0-blockCount10" type="QuireMarksZone"><lb corresp="#f163-block_0-eSc_line_c4123b10-lineCount34"/>l</fw>
         <pb corresp="#f164"/>
         <fw corresp="#f164-block_3-blockCount1" type="RunningTitleZone"><lb corresp="#f164-block_3-line_0-lineCount1"/>ANNOT. IOANNIS POMERANI</fw>
-        <ab corresp="#f164-block_4-blockCount2" type="MainZone"><lb corresp="#f164-block_4-line_1-lineCount2"/>id́ facias in fide, &amp; bona coſcientia, quæ duo ſepara¬<lb corresp="#f164-block_4-line_2-lineCount3"/>ri non poſſunt. Nã, ut inquit, qui cõſcientiam bonam<lb corresp="#f164-block_4-line_3-lineCount4"/>repulerunt, id eſt qui audent aliud dicere, aliud́ fa¬<lb corresp="#f164-block_4-line_4-lineCount5"/>cere, quàm quod in corde nouerunt, unde aliquid præ<lb corresp="#f164-block_4-line_5-lineCount6"/>cæteris uideantur, unde cæteris ſuperiores per cõten¬<lb corresp="#f164-block_4-line_6-lineCount7"/>tionem adpareãt: id quod hodie multum uulgare eſt.<lb corresp="#f164-block_4-line_7-lineCount8"/>Sed Paulus hic uocat blaſphemiam. Hi, inquit, qui bo¬<lb corresp="#f164-block_4-line_8-lineCount9"/>nam conſcientiam repulerunt, naufragium fecerunt<lb corresp="#f164-block_4-line_9-lineCount10"/>circa fidem: id eſt, etiam in eo periclitati ſunt, quod<lb corresp="#f164-block_4-line_10-lineCount11"/>intus in corde ſciuerunt, &amp; tandem perdiderunt.<lb corresp="#f164-block_1-line_12-lineCount12"/>Scilicet, ut ſupra, ut denuncies quibuſdã &amp;c. ut com¬<lb corresp="#f164-block_1-line_13-lineCount13"/>mendes gratiam Chriſti peccatoribus, ſicut ego, abſ<lb corresp="#f164-block_1-line_14-lineCount14"/>operibus legis, &amp;c. Vel potes referre ad hoc quodſe¬<lb corresp="#f164-block_1-line_15-lineCount15"/>quitur:ut milites, &amp;c.<lb corresp="#f164-eSc_textblock_3c045fa3-line_11-lineCount16"/>Hoc præceptum<lb corresp="#f164-eSc_textblock_064670e8-line_16-lineCount17"/>Hymenæus &amp; Alexander.<lb corresp="#f164-block_2-line_17-lineCount18"/>Qui ſcientes, contra ueritatem quam ſciuerunt, ſo¬<lb corresp="#f164-block_2-line_18-lineCount19"/>Ient contendere.<lb corresp="#f164-block_0-line_20-lineCount20"/>Sicut Corinthium, qui duxerat nouercam ſuam: de<lb corresp="#f164-block_0-line_21-lineCount21"/>quo uide in annotationibus Philippi. Hanc tamen ex¬<lb corresp="#f164-block_0-line_22-lineCount22"/>communicationem, ſicut &amp; illam, oſtẽdit eſſe utilem,<lb corresp="#f164-block_0-line_23-lineCount23"/>cum dicit: Vt diſcant nõ blaſphemare. Hæc non eſt pa¬<lb corresp="#f164-block_0-line_24-lineCount24"/>piſtica, quam hodie uidemus excommunicatio, &amp;t,<lb corresp="#f164-eSc_textblock_7b3947bf-line_19-lineCount25"/>Tradidi ſatanæ.</ab>
+        <ab corresp="#f164-block_4-blockCount2" type="MainZone"><lb corresp="#f164-block_4-line_1-lineCount2"/>id́ facias in fide, &amp; bona coſcientia, quæ duo ſepara¬<lb corresp="#f164-block_4-line_2-lineCount3"/>ri non poſſunt. Nã, ut inquit, qui cõſcientiam bonam<lb corresp="#f164-block_4-line_3-lineCount4"/>repulerunt, id eſt qui audent aliud dicere, aliud́ fa¬<lb corresp="#f164-block_4-line_4-lineCount5"/>cere, quàm quod in corde nouerunt, unde aliquid præ<lb corresp="#f164-block_4-line_5-lineCount6"/>cæteris uideantur, unde cæteris ſuperiores per cõten¬<lb corresp="#f164-block_4-line_6-lineCount7"/>tionem adpareãt: id quod hodie multum uulgare eſt.<lb corresp="#f164-block_4-line_7-lineCount8"/>Sed Paulus hic uocat blaſphemiam. Hi, inquit, qui bo¬<lb corresp="#f164-block_4-line_8-lineCount9"/>nam conſcientiam repulerunt, naufragium fecerunt<lb corresp="#f164-block_4-line_9-lineCount10"/>circa fidem: id eſt, etiam in eo periclitati ſunt, quod<lb corresp="#f164-block_4-line_10-lineCount11"/>intus in corde ſciuerunt, &amp; tandem perdiderunt.<lb corresp="#f164-eSc_textblock_3c045fa3-line_11-lineCount12"/>Hoc præceptum<lb corresp="#f164-block_1-line_12-lineCount13"/>Scilicet, ut ſupra, ut denuncies quibuſdã &amp;c. ut com¬<lb corresp="#f164-block_1-line_13-lineCount14"/>mendes gratiam Chriſti peccatoribus, ſicut ego, abſ<lb corresp="#f164-block_1-line_14-lineCount15"/>operibus legis, &amp;c. Vel potes referre ad hoc quodſe¬<lb corresp="#f164-block_1-line_15-lineCount16"/>quitur:ut milites, &amp;c.<lb corresp="#f164-eSc_textblock_064670e8-line_16-lineCount17"/>Hymenæus &amp; Alexander.<lb corresp="#f164-block_2-line_17-lineCount18"/>Qui ſcientes, contra ueritatem quam ſciuerunt, ſo¬<lb corresp="#f164-block_2-line_18-lineCount19"/>Ient contendere.<lb corresp="#f164-eSc_textblock_7b3947bf-line_19-lineCount20"/>Tradidi ſatanæ.<lb corresp="#f164-block_0-line_20-lineCount21"/>Sicut Corinthium, qui duxerat nouercam ſuam: de<lb corresp="#f164-block_0-line_21-lineCount22"/>quo uide in annotationibus Philippi. Hanc tamen ex¬<lb corresp="#f164-block_0-line_22-lineCount23"/>communicationem, ſicut &amp; illam, oſtẽdit eſſe utilem,<lb corresp="#f164-block_0-line_23-lineCount24"/>cum dicit: Vt diſcant nõ blaſphemare. Hæc non eſt pa¬<lb corresp="#f164-block_0-line_24-lineCount25"/>piſtica, quam hodie uidemus excommunicatio, &amp;t,</ab>
         <pb corresp="#f165"/>
         <fw corresp="#f165-block_3-blockCount1" type="RunningTitleZone"><lb corresp="#f165-block_3-line_0-lineCount1"/>IN EPI. PAV. AD TIM. PRI.</fw>
         <fw corresp="#f165-eSc_textblock_17391d7e-blockCount2" type="NumberingZone"><lb corresp="#f165-eSc_textblock_17391d7e-eSc_line_23266248-lineCount2"/>83</fw>

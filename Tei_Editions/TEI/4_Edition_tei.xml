@@ -4762,9 +4762,34 @@
                <line xml:id="fbsb00027764_00164_line_10_ligne_11">intus in corde ſciuerunt, &amp; tandem perdiderunt.</line>
             </zone>
          </zone>
+         <zone xml:id="fbsb00027764_00164_eSc_textblock_3c045fa3"
+               type="MainZone-Head"
+               n="3"
+               ulx="511.0"
+               uly="743.0"
+               lrx="940"
+               lry="810"
+               points="511,743 511,810 940,810 940,743 "
+               source="511.0,743.0,429.0,67.0/full/0/default.jpg">
+            <zone xml:id="fbsb00027764_00164_line_11"
+                  type="DefaultLine"
+                  n="2"
+                  ulx="538.0"
+                  uly="743.0"
+                  lrx="925"
+                  lry="813"
+                  points="854,743 838,743 822,743 806,743 794,743 784,747 648,754 620,743 617,743 601,743 585,743 574,743 538,743 540,793 540,813 925,804 925,785 923,749 866,743 854,743 "
+                  source="538.0,743.0,387.0,70.0/full/0/default.jpg">
+               <path n="2"
+                     xml:id="fbsb00027764_00164_line_11_baseline_2"
+                     type="baseline"
+                     points="854,743 838,743 822,743 806,743 794,743 784,747 648,754 620,743 617,743 601,743 585,743 574,743 538,743 540,793 540,813 925,804 925,785 923,749 866,743 854,743 "/>
+               <line xml:id="fbsb00027764_00164_line_11_ligne_2">Hoc præceptum</line>
+            </zone>
+         </zone>
          <zone xml:id="fbsb00027764_00164_block_1"
                type="MainZone-P"
-               n="3"
+               n="4"
                ulx="322.0"
                uly="803.0"
                lrx="1139"
@@ -4832,31 +4857,6 @@
                <line xml:id="fbsb00027764_00164_line_15_ligne_5">quitur:ut milites, &amp;c.</line>
             </zone>
          </zone>
-         <zone xml:id="fbsb00027764_00164_eSc_textblock_3c045fa3"
-               type="MainZone-Head"
-               n="4"
-               ulx="511.0"
-               uly="743.0"
-               lrx="940"
-               lry="810"
-               points="511,743 511,810 940,810 940,743 "
-               source="511.0,743.0,429.0,67.0/full/0/default.jpg">
-            <zone xml:id="fbsb00027764_00164_line_11"
-                  type="DefaultLine"
-                  n="2"
-                  ulx="538.0"
-                  uly="743.0"
-                  lrx="925"
-                  lry="813"
-                  points="854,743 838,743 822,743 806,743 794,743 784,747 648,754 620,743 617,743 601,743 585,743 574,743 538,743 540,793 540,813 925,804 925,785 923,749 866,743 854,743 "
-                  source="538.0,743.0,387.0,70.0/full/0/default.jpg">
-               <path n="2"
-                     xml:id="fbsb00027764_00164_line_11_baseline_2"
-                     type="baseline"
-                     points="854,743 838,743 822,743 806,743 794,743 784,747 648,754 620,743 617,743 601,743 585,743 574,743 538,743 540,793 540,813 925,804 925,785 923,749 866,743 854,743 "/>
-               <line xml:id="fbsb00027764_00164_line_11_ligne_2">Hoc præceptum</line>
-            </zone>
-         </zone>
          <zone xml:id="fbsb00027764_00164_eSc_textblock_064670e8"
                type="MainZone-Head"
                n="5"
@@ -4922,9 +4922,34 @@
                <line xml:id="fbsb00027764_00164_line_18_ligne_3">Ient contendere.</line>
             </zone>
          </zone>
+         <zone xml:id="fbsb00027764_00164_eSc_textblock_7b3947bf"
+               type="MainZone-Head"
+               n="7"
+               ulx="553.0"
+               uly="1190.0"
+               lrx="951"
+               lry="1250"
+               points="557,1198 553,1250 951,1250 945,1190 "
+               source="553.0,1190.0,398.0,60.0/full/0/default.jpg">
+            <zone xml:id="fbsb00027764_00164_line_19"
+                  type="DefaultLine"
+                  n="2"
+                  ulx="577.0"
+                  uly="1194.0"
+                  lrx="926"
+                  lry="1257"
+                  points="735,1194 720,1194 704,1195 688,1195 672,1195 656,1195 641,1195 625,1197 609,1197 593,1197 577,1197 579,1239 579,1257 926,1244 926,1232 923,1195 750,1194 735,1194 "
+                  source="577.0,1194.0,349.0,63.0/full/0/default.jpg">
+               <path n="2"
+                     xml:id="fbsb00027764_00164_line_19_baseline_2"
+                     type="baseline"
+                     points="735,1194 720,1194 704,1195 688,1195 672,1195 656,1195 641,1195 625,1197 609,1197 593,1197 577,1197 579,1239 579,1257 926,1244 926,1232 923,1195 750,1194 735,1194 "/>
+               <line xml:id="fbsb00027764_00164_line_19_ligne_2">Tradidi ſatanæ.</line>
+            </zone>
+         </zone>
          <zone xml:id="fbsb00027764_00164_block_0"
                type="MainZone-P"
-               n="7"
+               n="8"
                ulx="332.0"
                uly="1265.0"
                lrx="1138"
@@ -5005,31 +5030,6 @@
                      type="baseline"
                      points="354,1476 350,1470 350,1470 349,1470 348,1470 347,1470 343,1472 344,1509 344,1533 474,1533 483,1532 514,1529 515,1529 516,1529 530,1520 559,1524 560,1524 561,1524 577,1518 596,1524 597,1524 598,1524 733,1514 780,1520 781,1520 782,1520 801,1513 864,1513 898,1521 899,1521 900,1521 954,1511 969,1520 970,1520 971,1520 972,1520 973,1520 995,1514 1013,1523 1014,1523 1015,1523 1106,1522 1106,1505 1104,1464 1026,1464 1006,1456 1005,1456 1004,1456 1003,1456 1002,1456 988,1466 987,1467 970,1467 970,1466 948,1455 947,1455 946,1455 945,1455 920,1463 904,1456 903,1456 902,1456 901,1456 871,1463 864,1458 863,1458 862,1458 861,1458 860,1458 845,1466 811,1457 810,1457 809,1457 808,1457 776,1469 764,1460 763,1460 762,1460 733,1458 731,1458 607,1460 606,1460 605,1460 588,1472 587,1472 557,1461 556,1461 555,1461 554,1461 533,1473 531,1474 435,1474 433,1474 397,1467 396,1467 395,1467 372,1475 371,1475 370,1475 356,1471 354,1476 "/>
                <line xml:id="fbsb00027764_00164_line_24_ligne_6">piſtica, quam hodie uidemus excommunicatio, &amp;t,</line>
-            </zone>
-         </zone>
-         <zone xml:id="fbsb00027764_00164_eSc_textblock_7b3947bf"
-               type="MainZone-Head"
-               n="8"
-               ulx="553.0"
-               uly="1190.0"
-               lrx="951"
-               lry="1250"
-               points="557,1198 553,1250 951,1250 945,1190 "
-               source="553.0,1190.0,398.0,60.0/full/0/default.jpg">
-            <zone xml:id="fbsb00027764_00164_line_19"
-                  type="DefaultLine"
-                  n="2"
-                  ulx="577.0"
-                  uly="1194.0"
-                  lrx="926"
-                  lry="1257"
-                  points="735,1194 720,1194 704,1195 688,1195 672,1195 656,1195 641,1195 625,1197 609,1197 593,1197 577,1197 579,1239 579,1257 926,1244 926,1232 923,1195 750,1194 735,1194 "
-                  source="577.0,1194.0,349.0,63.0/full/0/default.jpg">
-               <path n="2"
-                     xml:id="fbsb00027764_00164_line_19_baseline_2"
-                     type="baseline"
-                     points="735,1194 720,1194 704,1195 688,1195 672,1195 656,1195 641,1195 625,1197 609,1197 593,1197 577,1197 579,1239 579,1257 926,1244 926,1232 923,1195 750,1194 735,1194 "/>
-               <line xml:id="fbsb00027764_00164_line_19_ligne_2">Tradidi ſatanæ.</line>
             </zone>
          </zone>
       </surface>
@@ -10649,6 +10649,14 @@
                <reg type="contemporary">intus in corde ſciuerunt, &amp; tandem perdiderunt.</reg>
             </choice>
          </ab>
+         <ab corresp="#fbsb00027764_00164_eSc_textblock_3c045fa3"
+             type="MainZone-Head">
+            <lb corresp="#fbsb00027764_00164_line_11_ligne_2"/>
+            <choice>
+               <orig>Hoc præceptum</orig>
+               <reg type="contemporary">Hoc præceptum</reg>
+            </choice>
+         </ab>
          <ab corresp="#fbsb00027764_00164_block_1" type="MainZone-P">
             <lb corresp="#fbsb00027764_00164_line_12_ligne_2"/>
             <choice>
@@ -10671,14 +10679,6 @@
                <reg type="contemporary">quitur:ut milites, &amp;c.</reg>
             </choice>
          </ab>
-         <ab corresp="#fbsb00027764_00164_eSc_textblock_3c045fa3"
-             type="MainZone-Head">
-            <lb corresp="#fbsb00027764_00164_line_11_ligne_2"/>
-            <choice>
-               <orig>Hoc præceptum</orig>
-               <reg type="contemporary">Hoc præceptum</reg>
-            </choice>
-         </ab>
          <ab corresp="#fbsb00027764_00164_eSc_textblock_064670e8"
              type="MainZone-Head">
             <lb corresp="#fbsb00027764_00164_line_16_ligne_2"/>
@@ -10697,6 +10697,14 @@
             <choice>
                <orig>Ient contendere.</orig>
                <reg type="contemporary">Ient contendere.</reg>
+            </choice>
+         </ab>
+         <ab corresp="#fbsb00027764_00164_eSc_textblock_7b3947bf"
+             type="MainZone-Head">
+            <lb corresp="#fbsb00027764_00164_line_19_ligne_2"/>
+            <choice>
+               <orig>Tradidi ſatanæ.</orig>
+               <reg type="contemporary">Tradidi ſatanæ.</reg>
             </choice>
          </ab>
          <ab corresp="#fbsb00027764_00164_block_0" type="MainZone-P">
@@ -10724,14 +10732,6 @@
             <choice>
                <orig>piſtica, quam hodie uidemus excommunicatio, &amp;t,</orig>
                <reg type="contemporary">piſtica, quam hodie uidemus excommunicatio, &amp;t,</reg>
-            </choice>
-         </ab>
-         <ab corresp="#fbsb00027764_00164_eSc_textblock_7b3947bf"
-             type="MainZone-Head">
-            <lb corresp="#fbsb00027764_00164_line_19_ligne_2"/>
-            <choice>
-               <orig>Tradidi ſatanæ.</orig>
-               <reg type="contemporary">Tradidi ſatanæ.</reg>
             </choice>
          </ab>
          <pb corresp="fbsb00027764_00165"/>

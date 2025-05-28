@@ -35,3 +35,4 @@ function toggleImageSource() {
 
    img.src = (img.src.includes("183631020.png")) ? secondSrc : firstSrc;
 }
+

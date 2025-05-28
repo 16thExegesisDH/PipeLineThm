@@ -202,6 +202,29 @@
                     WC="0.9961491797832732"></String>
           </TextLine>
         </TextBlock>
+        <TextBlock HPOS="511.0"
+                   VPOS="743.0"
+                   WIDTH="429.0"
+                   HEIGHT="67.0"
+                   ID="eSc_textblock_3c045fa3"
+                   TAGREFS="BT3020">
+          <Shape><Polygon POINTS="511 743 511 810 940 810 940 743"/></Shape>
+          <TextLine ID="line_11"
+                    TAGREFS="LT8"
+                    BASELINE="541 794 780 786 926 786" 
+                    HPOS="538.0"
+                    VPOS="743.0"
+                    WIDTH="387.0"
+                    HEIGHT="70.0">
+            <Shape><Polygon POINTS="854 743 838 743 822 743 806 743 794 743 784 747 648 754 620 743 617 743 601 743 585 743 574 743 538 743 540 793 540 813 925 804 925 785 923 749 866 743 854 743"/></Shape>
+            <String CONTENT="Hoc præceptum"
+                    HPOS="538.0"
+                    VPOS="743.0"
+                    WIDTH="387.0"
+                    HEIGHT="70.0"
+                    ></String>
+          </TextLine>
+        </TextBlock>
         <TextBlock HPOS="322.0"
                    VPOS="803.0"
                    WIDTH="817.0"
@@ -270,29 +293,6 @@
                     WC="0.9961192445321516"></String>
           </TextLine>
         </TextBlock>
-        <TextBlock HPOS="511.0"
-                   VPOS="743.0"
-                   WIDTH="429.0"
-                   HEIGHT="67.0"
-                   ID="eSc_textblock_3c045fa3"
-                   TAGREFS="BT3020">
-          <Shape><Polygon POINTS="511 743 511 810 940 810 940 743"/></Shape>
-          <TextLine ID="line_11"
-                    TAGREFS="LT8"
-                    BASELINE="541 794 780 786 926 786" 
-                    HPOS="538.0"
-                    VPOS="743.0"
-                    WIDTH="387.0"
-                    HEIGHT="70.0">
-            <Shape><Polygon POINTS="854 743 838 743 822 743 806 743 794 743 784 747 648 754 620 743 617 743 601 743 585 743 574 743 538 743 540 793 540 813 925 804 925 785 923 749 866 743 854 743"/></Shape>
-            <String CONTENT="Hoc præceptum"
-                    HPOS="538.0"
-                    VPOS="743.0"
-                    WIDTH="387.0"
-                    HEIGHT="70.0"
-                    ></String>
-          </TextLine>
-        </TextBlock>
         <TextBlock HPOS="398.0"
                    VPOS="1030.0"
                    WIDTH="624.0"
@@ -352,6 +352,29 @@
                     WIDTH="265.0"
                     HEIGHT="70.0"
                     WC="0.9998502619564533"></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="553.0"
+                   VPOS="1190.0"
+                   WIDTH="398.0"
+                   HEIGHT="60.0"
+                   ID="eSc_textblock_7b3947bf"
+                   TAGREFS="BT3020">
+          <Shape><Polygon POINTS="557 1198 553 1250 951 1250 945 1190"/></Shape>
+          <TextLine ID="line_19"
+                    TAGREFS="LT8"
+                    BASELINE="580 1240 928 1233" 
+                    HPOS="577.0"
+                    VPOS="1194.0"
+                    WIDTH="349.0"
+                    HEIGHT="63.0">
+            <Shape><Polygon POINTS="735 1194 720 1194 704 1195 688 1195 672 1195 656 1195 641 1195 625 1197 609 1197 593 1197 577 1197 579 1239 579 1257 926 1244 926 1232 923 1195 750 1194 735 1194"/></Shape>
+            <String CONTENT="Tradidi ſatanæ."
+                    HPOS="577.0"
+                    VPOS="1194.0"
+                    WIDTH="349.0"
+                    HEIGHT="63.0"
+                    WC="0.9998880426088969"></String>
           </TextLine>
         </TextBlock>
         <TextBlock HPOS="332.0"
@@ -435,29 +458,6 @@
                     WIDTH="763.0"
                     HEIGHT="78.0"
                     WC="0.999047300917037"></String>
-          </TextLine>
-        </TextBlock>
-        <TextBlock HPOS="553.0"
-                   VPOS="1190.0"
-                   WIDTH="398.0"
-                   HEIGHT="60.0"
-                   ID="eSc_textblock_7b3947bf"
-                   TAGREFS="BT3020">
-          <Shape><Polygon POINTS="557 1198 553 1250 951 1250 945 1190"/></Shape>
-          <TextLine ID="line_19"
-                    TAGREFS="LT8"
-                    BASELINE="580 1240 928 1233" 
-                    HPOS="577.0"
-                    VPOS="1194.0"
-                    WIDTH="349.0"
-                    HEIGHT="63.0">
-            <Shape><Polygon POINTS="735 1194 720 1194 704 1195 688 1195 672 1195 656 1195 641 1195 625 1197 609 1197 593 1197 577 1197 579 1239 579 1257 926 1244 926 1232 923 1195 750 1194 735 1194"/></Shape>
-            <String CONTENT="Tradidi ſatanæ."
-                    HPOS="577.0"
-                    VPOS="1194.0"
-                    WIDTH="349.0"
-                    HEIGHT="63.0"
-                    WC="0.9998880426088969"></String>
           </TextLine>
         </TextBlock>
       </PrintSpace>
