@@ -152,7 +152,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="../../../index.html">Home</a>
             <div id="toc_container">
-                <a class="toc_title" href="javascript:void(0)" onclick="toggleTOC()">Table of Content</a>
+                <a class="toc_title" href="javascript:void(0)" onclick="toggleTOC()">&gt; Table of Content</a>
                 <ul class="toc_list" style="display: none; padding-left: 8px;">
                     <xsl:for-each-group select="//*[@type='MainZone-Head']"
                         group-starting-with="*[choice/reg[matches(., '^CAP.*')] or hi/choice/reg[matches(., '^CAP.*')]]">
