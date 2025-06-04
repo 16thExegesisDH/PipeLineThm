@@ -21,7 +21,7 @@
         -->
         
          <!--for mdz-->  
-        <xsl:variable name="document">Bugenhagen_C1_C2</xsl:variable>
+        <xsl:variable name="document">Lefevre_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
@@ -123,7 +123,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Annotationes in Epistolas Pavli Ad Timotheum : [Bugenhagen, Johannes], [1524]</title>
+                            <title>Commentarii in epistolas d. Pauli: [Lefèvre d'Etaples, Jacques ], [1512]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -161,12 +161,12 @@
                         </publicationStmt>
                         <sourceDesc>
                             <msDesc>
-                                <!-- corriger en fonction de lambertus  -->
-                                <msIdentifier xml:id="bsb00027764">
+                                <!-- corriger en fonction ici Jacques lefevre  -->
+                                <msIdentifier xml:id="bsb11059254">
                                     <country>Deutschland</country>
-                                    <settlement>München</settlement>
-                                    <institution>Bayerische Staatsbibliothek</institution>
-                                    <idno type="shelfmark">Res/Exeg. 309 b#Beibd.3</idno>
+                                    <settlement>Regensburg</settlement>
+                                    <institution>Staatliche Bibliothek</institution>
+                                    <idno type="shelfmark">999/2Script.801</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -174,27 +174,27 @@
                                             <monogr>
                                                 <!-- AUTEUR -->
                                                 <author>
-                                                    <persName role="exegete" ref="isni:0000000109036374">
-                                                        <surname>Johannes</surname>
-                                                        <forename>Bugenhagen</forename>
+                                                    <persName role="exegete" ref="isni:0000000118337128">
+                                                        <surname>D'Etaples</surname>
+                                                        <forename>Lefèvre</forename>
                                                     </persName>
                                                 </author>
                                                 <!-- TITRE -->
-                                                <title type="complete_title">Bugenhagen, Johannes: Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam &amp; secundam</title> 
-                                                <title type="short_title">Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam</title>
+                                                <title type="complete_title">    Lefèvre d'Étaples, Jacques: Commentarii in epistolas d. Pauli</title> 
+                                                <title type="short_title">Commentarii in epistolas d. Pauli </title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:7285161">Basel</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:7285161">Paris</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:0000000116244569">
-                                                            <surname>Adam?</surname>
-                                                            <forename>Petri?</forename>
+                                                        <persName role="printer" ref="isni:anonymus">
+                                                            <surname>?</surname> <!-- anonymus -->
+                                                            <forename>?</forename>
                                                         </persName>
-                                                        <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"/>
+                               <!--                         <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"/>-->
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1524</date>
+                                                    <date cert="low">1512</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -210,20 +210,20 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant Bugenhagen -->
+                                    <!-- concernant Jacques Lefevre -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://mdz-nbn-resolving.de/details:bsb00027764"/>
+                                            <ref target="https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11059254-9"/>
                                             <relatedItem type="original">
-                                                <ref target="#bsb00027764">mdz</ref>
+                                                <ref target="#bsb11059254">mdz</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target=" https://d-nb.info/gnd/118517287 ">
+                                            <ref target=" http://d-nb.info/gnd/118682938 ">
                                                 <orgName>gnd</orgName>
-                                                <idno>118517287</idno>
+                                                <idno>118682938</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>

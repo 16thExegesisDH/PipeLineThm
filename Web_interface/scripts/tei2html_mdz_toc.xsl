@@ -312,12 +312,30 @@
     </xsl:template>
     
 <!-- copy the text forme the note (MarginText_Note) -->
-    <xsl:template match="note">
+   <!-- <xsl:template match="note">
         <xsl:element name="p">
             <xsl:attribute name="class">note-text</xsl:attribute>
             <xsl:apply-templates select=".//reg"/>   
         </xsl:element>
+    </xsl:template>-->
+    <!-- possibility to test in the mdz-toc xsl script -->
+    <xsl:template match="note">
+        <xsl:choose>
+            <xsl:when test="@type='MarginTextZone'">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">note-number</xsl:attribute>
+                    <xsl:apply-templates select=".//reg"/>   
+                </xsl:element> 
+            </xsl:when>
+            <xsl:when test="@type='MarginTextZone-Notes'">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">note-text</xsl:attribute>
+                    <xsl:apply-templates select=".//reg"/>   
+                </xsl:element>  
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
+    
     
 <!-- removes all the hyphens and add a space at the end of the line if there is no hyphens -->
     <xsl:template match="reg">

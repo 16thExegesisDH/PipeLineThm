@@ -214,7 +214,8 @@
         </xsl:element>
     </xsl:template>
     
-<!-- copy the text forme the note (MarginText_Note) -->
+<!-- copy the text forme the note (MarginText_Note[marginal glossis] and MarginTextZone [number]) -->
+    
     <xsl:template match="note">
         <xsl:element name="p">
             <xsl:attribute name="class">note-text</xsl:attribute>

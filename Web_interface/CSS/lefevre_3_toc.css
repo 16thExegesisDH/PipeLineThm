@@ -70,7 +70,7 @@ body, html {
 }
 .para { 
     width: 50%; 
-    font-size: 1.2em; 
+    font-size: 0.85em;  /*la taille a été change en fonction du forma de la page*/
     line-height: 1.5; 
     margin: 0; 
     text-align: justify; 
