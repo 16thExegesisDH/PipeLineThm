@@ -13,19 +13,19 @@
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
         
-        <!--<xsl:variable name="document">Bullinger_C2</xsl:variable>
+        <xsl:variable name="document">Pellicanus_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
         <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
-        -->
         
-         <!--for mdz-->  
+        
+         <!--<!-\-for mdz-\->  
         <xsl:variable name="document">Lefevre_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
-        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
+        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>-->
         
         <!-- template for coordinates with a specific path, specific path in the $context value -->
         <xsl:template name="coordinate-with-context" xmlns="http://www.tei-c.org/ns/1.0">
@@ -123,7 +123,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Commentarii in epistolas d. Pauli: [Lefèvre d'Etaples, Jacques ], [1512]</title>
+                            <title>Commentarium in epistolam D Pauli Apostoli ad Timotheum primam : [Pellicanus Conrad], [1539]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -161,12 +161,12 @@
                         </publicationStmt>
                         <sourceDesc>
                             <msDesc>
-                                <!-- corriger en fonction ici Jacques lefevre  -->
-                                <msIdentifier xml:id="bsb11059254">
-                                    <country>Deutschland</country>
-                                    <settlement>Regensburg</settlement>
-                                    <institution>Staatliche Bibliothek</institution>
-                                    <idno type="shelfmark">999/2Script.801</idno>
+                                <!-- corriger en fonction ici Pellicanus Conrad  -->
+                                <msIdentifier xml:id="#e-rara-3101">
+                                    <country>Schweiz</country>
+                                    <settlement>Zürich</settlement>
+                                    <institution>Zentralbibliothek Zürich</institution>
+                                    <idno type="shelfmark">III B 14 | G</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -174,27 +174,27 @@
                                             <monogr>
                                                 <!-- AUTEUR -->
                                                 <author>
-                                                    <persName role="exegete" ref="isni:0000000118337128">
-                                                        <surname>D'Etaples</surname>
-                                                        <forename>Lefèvre</forename>
+                                                    <persName role="exegete" ref="isni:000000012129718X">
+                                                        <surname>Pellicanus</surname>
+                                                        <forename>Conrad</forename>
                                                     </persName>
                                                 </author>
                                                 <!-- TITRE -->
-                                                <title type="complete_title">    Lefèvre d'Étaples, Jacques: Commentarii in epistolas d. Pauli</title> 
-                                                <title type="short_title">Commentarii in epistolas d. Pauli </title>
+                                                <title type="complete_title">In omnes apostolicas epistolas, Pauli, Petri, Iacobi, Ioannis et Iudae commentarii</title> 
+                                                <title type="short_title">Commentarium in epistolam D Pauli Apostoli ad Timotheum primam</title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:7285161">Paris</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:2657896">Zurich</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:anonymus">
-                                                            <surname>?</surname> <!-- anonymus -->
-                                                            <forename>?</forename>
+                                                        <persName role="printer" ref="isni:0000000121270868">
+                                                            <surname>Christoph</surname>
+                                                            <forename>Froschauer</forename>
                                                         </persName>
-                               <!--                         <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"/>-->
+                                                        <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"/>
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1512</date>
+                                                    <date cert="low">1539</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -210,20 +210,20 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant Jacques Lefevre -->
+                                    <!-- concernant  conrad Pellicanus -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11059254-9"/>
+                                            <ref target="https://doi.org/10.3931/e-rara-2604"/>
                                             <relatedItem type="original">
-                                                <ref target="#bsb11059254">mdz</ref>
+                                                <ref target="#e-rara-3101">e-rara</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target=" http://d-nb.info/gnd/118682938 ">
+                                            <ref target="https://d-nb.info/gnd/118739867">
                                                 <orgName>gnd</orgName>
-                                                <idno>118682938</idno>
+                                                <idno>118739867</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>

@@ -16,26 +16,26 @@
     </xsl:template>
     
     <!-- sorted every elements <surface> in numerical order for e-rara -->  
-   <!-- <xsl:template match="//body">
+    <xsl:template match="//body">
         <body xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:for-each select="surface">
                 <xsl:sort select="substring-after(@xml:id, 'f')" data-type="number"/>
                 <xsl:copy-of select="."/>
             </xsl:for-each>
         </body>
-    </xsl:template> --> 
+    </xsl:template>  
     
-    <!-- sorted every elements <surface> in numerical order for mdz -->   
+    <!--<!-\- sorted every elements <surface> in numerical order for mdz -\->   
     <xsl:template match="//body">
-        <!-- Create the output element -->
+        <!-\- Create the output element -\->
         <body xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:for-each select="surface">
-                <!-- Sort based on the numeric part after the underscore '_' -->
+                <!-\- Sort based on the numeric part after the underscore '_' -\->
                 <xsl:sort select="substring-after(@xml:id, '_')" data-type="number"/>                
-                <!-- Copy the entire surface element to the output -->
+                <!-\- Copy the entire surface element to the output -\->
                 <xsl:copy-of select="."/>
             </xsl:for-each>
         </body>
-    </xsl:template>
+    </xsl:template>-->
     
 </xsl:stylesheet>

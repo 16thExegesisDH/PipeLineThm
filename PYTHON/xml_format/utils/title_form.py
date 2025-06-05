@@ -66,6 +66,7 @@ def normalize_titles_Bullinger(root):
                     reg_tag.text = "COMMENT. IN I. EPIST." 
 """
 ############################## BUGENHAGEN #################################
+"""
 def normalize_titles_Bugenhagen(root):
     for fw_tag in root.findall(".//fw[@type='RunningTitleZone']"):
         for reg_tag in fw_tag.findall(".//reg[@type='contemporary']"):
@@ -75,5 +76,5 @@ def normalize_titles_Bugenhagen(root):
                     reg_tag.text = "ANNOT. IOANNIS POMERANI"
                 elif content.startswith("IN"):
                     reg_tag.text = "IN EPI. PAV. AD TIM. I." 
-
+"""
 # for now all the rule fonction together, but it can change adding file. 

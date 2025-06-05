@@ -26,19 +26,22 @@ from utils.clean_xml import clean_xml
 #from utils.title_form import normalize_titles_Aretius
 #from utils.title_form import normalize_titles_Lambertus 
 #from utils.title_form import normalize_titles_Bullinger
-from utils.title_form import normalize_titles_Bugenhagen
+#from utils.title_form import normalize_titles_Bugenhagen
 
 def reorder_elements_and_pb(input_file, output_file):
     """Main function to reorder elements and sort <pb> tags."""
     declaration, xml_content = read_input_file(input_file)
     root = parse_xml(xml_content)
     
+    #  Add TEI namespace
+    root.set("xmlns", "http://www.tei-c.org/ns/1.0")
+    
     #normalize_title : use the accurate fonction for your document
     #normalize_titles_Aretius(root)
     #normalize_titles_Lambertus(root)
     #normalize_titles_Bucer(root)
     #normalize_titles_Bullinger(root)
-    normalize_titles_Bugenhagen(root)
+    #normalize_titles_Bugenhagen(root)
     
     body = root.find(".//body")
     reorder_elements_around_pb(body)

@@ -14,11 +14,17 @@ following the tilde.
 
 """
 import re
+import unicodedata
+
+
 
 def replace_tilde(text):
+    
+    # Normalize to NFC to ensure consistency
+    text = unicodedata.normalize("NFC", text)
     # combine lettre ~+ a
     # Replace 'ã' followed by optional '¬' and 'd'/'t' with 'an'/'an' preserving 'd'/'t' + I add g for Evãgelium
-    text = re.sub(r'ã¬?([cdgsſt])', r'an\1', text)
+    text = re.sub(r'ã¬?([cdgqsſt])', r'an\1', text)
     # Replace 'ã' followed by optional '¬' and any other character with 'am', preserving the character
     text = re.sub(r'ã¬?([^\S\r\n<]|.)', lambda m: 'am ' if m.group(1).isspace() else 'am' + m.group(1), text)
     # Replace 'ã' at the end of a line with 'am'
@@ -26,7 +32,7 @@ def replace_tilde(text):
     
     # unice character ã
     # Replace 'ã' followed by optional '¬' and 'd'/'t' with 'an'/'an' preserving 'd'/'t' + I add g for Evãgelium
-    text = re.sub(r'ã¬?([cdgsſt])', r'an\1', text)
+    text = re.sub(r'ã¬?([cdgqsſt])', r'an\1', text)
     # Replace 'ã' followed by optional '¬' and any other character with 'am', preserving the character
     text = re.sub(r'ã¬?([^\S\r\n<]|.)', lambda m: 'am ' if m.group(1).isspace() else 'am' + m.group(1), text)
     # Replace 'ã' at the end of a line with 'am'
@@ -46,20 +52,33 @@ def replace_tilde(text):
     text = re.sub(r'ẽ¬?([^\S\r\n<]|.)', lambda m: 'em ' if m.group(1).isspace() else 'em' + m.group(1), text)
     # Replace 'ẽ' at the end of a line with 'em'
     text = re.sub(r'ẽ¬?$', 'em', text, flags=re.MULTILINE)
+    
+    # Standalone ĩ (NFC: precomposed)
+    text = re.sub(r'\bĩ\b', 'in', text)
+    
 
+    # Combine letter ĩ + optional ¬ before m
+    text = re.sub(r'ĩ¬?([m])', r'im\1', text)
+    text = re.sub(r'ĩ¬?([fgo])', r'im\1', text)
+    text = re.sub(r'ĩ¬?$', 'in', text, flags=re.MULTILINE)
+    # Handle special case for ĩ + optional ¬
+    text = re.sub(r'ĩ¬?([m])', r'im\1', text)
+    text = re.sub(r'ĩ¬?([fgno])', r'in\1', text)
+    text = re.sub(r'ĩ¬?$', 'in', text, flags=re.MULTILINE)
+    
     #combine lettre
     # Replace 'õ' followed by optional '¬' and 'p'/'b' with 'om'/'om' preserving the character
-    text = re.sub(r'õ¬?([pbm])', r'om\1', text)
+    text = re.sub(r'õ¬?([pbmn])', r'om\1', text)
     # Replace 'õ' followed by optional '¬' and any other character with 'on', preserving the character
-    text = re.sub(r'õ¬?([^pbm])', r'on\1', text)
+    text = re.sub(r'õ¬?([^pbmn])', r'on\1', text)
     # Replace 'õ' at the end of a line with 'on'
     text = re.sub(r'õ¬?$', 'on', text, flags=re.MULTILINE)
     
     #unice character
     # Replace 'õ' followed by optional '¬' and 'p'/'b' with 'om'/'om' preserving the character
-    text = re.sub(r'õ¬?([pbm])', r'om\1', text)
+    text = re.sub(r'õ¬?([pbmn])', r'om\1', text)
     # Replace 'õ' followed by optional '¬' and any other character with 'on', preserving the character
-    text = re.sub(r'õ¬?([^pbm])', r'on\1', text)
+    text = re.sub(r'õ¬?([^pbmn])', r'on\1', text)
     # Replace 'õ' at the end of a line with 'on'
     text = re.sub(r'õ¬?$', 'on', text, flags=re.MULTILINE)
     

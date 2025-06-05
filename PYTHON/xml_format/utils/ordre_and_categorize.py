@@ -51,7 +51,8 @@ def categorize_elements(following_elements):
         elif elem.tag == "note":
             if elem.attrib.get("type") == "MarginTextZone-Notes":
                 categories['note'].append(elem)  # Categorize notes separately
-                
+            elif elem.attrib.get("type") == "MarginTextZone":
+                categories['note'].append(elem)  # Categorize notes separately
         else:
             categories['other_elements'].append(elem)
 

@@ -16,30 +16,36 @@ def replace_lettre(text):
         r'æ': 'ae',     # Replace the ligature 'æ' with 'ae'
         r'ę': 'ae',     # Replace 'ę' with 'ae'
         r'ā': 'a',      # Replace 'ā' with 'a'
+        r'à': 'a',
         r'à': 'a',      # Replace 'à' with 'a'
         r'á': 'a',      # Replace accented 'á' with 'a'
         r'á': 'a',      # Replace combined diacritical 'á' with 'a'
         r'â': 'a',
+        r'â':'a',
         r'è': 'e',      # Replace 'è' with 'e'
         r'è': 'e',      # Replace accented 'è' with 'e'
         r'é': 'e',      # Replace accented 'é' with 'e'
         r'é': 'e',      # Replace combined diacritical 'é' with 'e'
         r'ę':'ae',
-        r'ī': 'i',      # Replace 'ī' with 'i'
+        #r'ī': 'i',      # Replace 'ī' with 'i'
         r'í': 'i',      # Replace accented 'í' with 'i'
         r'í': 'i',       # Replace combined diacritical 'í' with 'i'
         r'î': 'i',     # Replace combined diacritical 'î' with 'i' 
         r'î':'i',      # Replace the lettre 'î' with 'i'
-        r'ĩ': 'i',     # Replace combined diacritical 'ĩ' with 'i'
+        #r'ĩ': 'i',     # Replace combined diacritical 'ĩ' with 'i'
         r'ij': 'ii',    # Replace 'ij' with 'ii'
         r'ō': 'o',      # Replace 'ō' with 'o'
         r'ò': 'o',     # Replace 'ò' with 'o'
         r'ò': 'o',      # Replace accented 'ò' with 'o'
         r'ó': 'o',     # Replace combined diacritical 'ó' with 'o'
+        r'om̃':'omn',
         r'ū': 'u',      # Replace 'ū' with 'u'
         r'ú': 'u',     # Replace accented 'ú' with 'u'
         r'ú': 'u',    # Replace the lettre 'ú' with 'u'
         r'ù': 'u',     # Replace 'ù' with 'u'
+        r'oĩ':'omni',
+        r'oĩ':'omni',
+        r'oïa':'omnia',
         r'ꝑ': 'per',    # Replace the abbreviation 'ꝑ' with 'per'
         r'ꝓ': 'pro',
         r'q́': 'que ', 
@@ -50,15 +56,18 @@ def replace_lettre(text):
         r'q;': 'que ',   # Replace 'q;' with 'que'
         r'q ': 'que ',
         r'' : 'que ',
-        r'́ ': 'que ', 
-        r'́' :'que ', 
+        r'́ ': 'que   ', 
+        r'́' :'que  ', 
         r'q́' : 'que ',
         r'ꝗd' : 'quod ',
+        r'qđ' : 'quod ',
         r'qd’' : 'quod ',
         r'ꝗa' : 'quam',
-        r'ꝗ' : 'qui', # à vérifier (bugenhagen)
+        r'ꝗbus':'quibus',
+        #r'ꝗi' : 'qui', # à vérifier (bugenhagen)
+        r'ꝗ̃' :'quam',
         r'ü̃' : 'un',
-        r'ꝰ' : 'us'
+        r'ꝰ' : 'us',
     }
 
     # Apply each pattern-replacement pair to the text
