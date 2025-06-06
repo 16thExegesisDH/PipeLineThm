@@ -13,7 +13,7 @@
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
         
-        <xsl:variable name="document">Pellicanus_C2</xsl:variable>
+        <xsl:variable name="document">Hyperius_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
@@ -123,7 +123,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Commentarium in epistolam D Pauli Apostoli ad Timotheum primam : [Pellicanus Conrad], [1539]</title>
+                            <title>Commentarii in epistolas D. Pauli ad Timotheum: [Hyperius Andreae],[Ed. Mylius, Johannes], [1582]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -162,11 +162,11 @@
                         <sourceDesc>
                             <msDesc>
                                 <!-- corriger en fonction ici Pellicanus Conrad  -->
-                                <msIdentifier xml:id="#e-rara-3101">
+                                <msIdentifier xml:id="#e-rara-62382">
                                     <country>Schweiz</country>
                                     <settlement>Zürich</settlement>
                                     <institution>Zentralbibliothek Zürich</institution>
-                                    <idno type="shelfmark">III B 14 | G</idno>
+                                    <idno type="shelfmark">C 85 | G</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -175,13 +175,20 @@
                                                 <!-- AUTEUR -->
                                                 <author>
                                                     <persName role="exegete" ref="isni:000000012129718X">
-                                                        <surname>Pellicanus</surname>
-                                                        <forename>Conrad</forename>
+                                                        <surname>Hyperius</surname>
+                                                        <forename>Andreas</forename>
                                                     </persName>
                                                 </author>
+                                                <editor>
+                                                    <persName role="editeur" ref="">
+                                                        <surname>Mylius</surname>
+                                                        <forename>Johannes</forename>
+                                                        <note source="gnd" select=" https://d-nb.info/gnd/119770431 "/>
+                                                    </persName>
+                                                </editor>
                                                 <!-- TITRE -->
-                                                <title type="complete_title">In omnes apostolicas epistolas, Pauli, Petri, Iacobi, Ioannis et Iudae commentarii</title> 
-                                                <title type="short_title">Commentarium in epistolam D Pauli Apostoli ad Timotheum primam</title>
+                                                <title type="complete_title">Hyperius, Andreas: in omnes D. Pauli Apostoli epistolas, atque etiam in epistolam D. Iudae</title> 
+                                                <title type="short_title">Commentarii in epistolas D. Pauli ad Timotheum</title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
                                                     <pubPlace cert="medium" ref="geonames:2657896">Zurich</pubPlace>
@@ -194,7 +201,7 @@
                                                         <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"/>
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1539</date>
+                                                    <date cert="low">1582</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -210,10 +217,10 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant  conrad Pellicanus -->
+                                    <!-- concernant Andreas Hyperius -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://doi.org/10.3931/e-rara-2604"/>
+                                            <ref target="https://doi.org/10.3931/e-rara-62382 "/>
                                             <relatedItem type="original">
                                                 <ref target="#e-rara-3101">e-rara</ref>
                                             </relatedItem>
@@ -221,9 +228,9 @@
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target="https://d-nb.info/gnd/118739867">
+                                            <ref target="https://d-nb.info/gnd/118555146">
                                                 <orgName>gnd</orgName>
-                                                <idno>118739867</idno>
+                                                <idno>118555146</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>
