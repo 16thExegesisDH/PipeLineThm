@@ -287,8 +287,9 @@
                 </xsl:element> 
             </xsl:when>
             <xsl:when test="@type='MarginTextZone-Notes'">
-                <xsl:element name="p">
+                <xsl:element name="p">    
                     <xsl:attribute name="class">note-text</xsl:attribute>
+                    <xsl:text>• </xsl:text>
                     <xsl:apply-templates select=".//reg"/>   
                 </xsl:element>  
             </xsl:when>
@@ -464,6 +465,10 @@
         <xsl:choose>
             <!-- IF inside DropCapitalZone, NO <br> -->
             <xsl:when test="ab[@type='DropCapitalZone']">
+                <xsl:value-of select="reg"/>
+            </xsl:when>
+            <!-- add an element form margin -->
+            <xsl:when test="ab[@type='MarginTextZone:']">
                 <xsl:value-of select="reg"/>
             </xsl:when>
             <xsl:when test="ab[@type='Main*']">
