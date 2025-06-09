@@ -13,7 +13,7 @@
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
         
-        <xsl:variable name="document">Hyperius_C2</xsl:variable>
+        <xsl:variable name="document">Calvin_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
@@ -123,7 +123,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Commentarii in epistolas D. Pauli ad Timotheum: [Hyperius Andreae],[Ed. Mylius, Johannes], [1582]</title>
+                            <title>Commentarii in utranque Pauli epistolam ad Timotheum: [Calvin Jean], [1548]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -162,11 +162,11 @@
                         <sourceDesc>
                             <msDesc>
                                 <!-- corriger en fonction ici Pellicanus Conrad  -->
-                                <msIdentifier xml:id="#e-rara-62382">
+                                <msIdentifier xml:id="e-rara-62382">
                                     <country>Schweiz</country>
-                                    <settlement>Zürich</settlement>
-                                    <institution>Zentralbibliothek Zürich</institution>
-                                    <idno type="shelfmark">C 85 | G</idno>
+                                    <settlement>Genève</settlement>
+                                    <institution>Bibliothèque de Genève</institution>
+                                    <idno type="shelfmark">Bb 1493 (2)</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -174,34 +174,34 @@
                                             <monogr>
                                                 <!-- AUTEUR -->
                                                 <author>
-                                                    <persName role="exegete" ref="isni:000000012129718X">
-                                                        <surname>Hyperius</surname>
-                                                        <forename>Andreas</forename>
+                                                    <persName role="exegete" ref="isni:0000000121030063">
+                                                        <surname>Calvin</surname>
+                                                        <forename>Jean</forename>
                                                     </persName>
                                                 </author>
-                                                <editor>
+                                                <!--<editor>
                                                     <persName role="editeur" ref="">
                                                         <surname>Mylius</surname>
                                                         <forename>Johannes</forename>
                                                         <note source="gnd" select=" https://d-nb.info/gnd/119770431 "/>
                                                     </persName>
-                                                </editor>
+                                                </editor>-->
                                                 <!-- TITRE -->
-                                                <title type="complete_title">Hyperius, Andreas: in omnes D. Pauli Apostoli epistolas, atque etiam in epistolam D. Iudae</title> 
-                                                <title type="short_title">Commentarii in epistolas D. Pauli ad Timotheum</title>
+                                                <title type="complete_title">Joannis Calvini Commentarii in utranque Pauli epistolam ad Timotheum</title> 
+                                                <title type="short_title">Commentarii in utranque Pauli epistolam ad Timotheum</title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:2657896">Zurich</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:2660646">Geneve</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:0000000121270868">
-                                                            <surname>Christoph</surname>
-                                                            <forename>Froschauer</forename>
+                                                        <persName role="printer" ref="isni:0000000121021159">
+                                                            <surname>Jean</surname>
+                                                            <forename>Gérard</forename>
                                                         </persName>
-                                                        <note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"/>
+                                                        <!--<note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"/>-->
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1582</date>
+                                                    <date cert="low">1548</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -217,20 +217,20 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant Andreas Hyperius -->
+                                    <!-- concernant Jean Calvin -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://doi.org/10.3931/e-rara-62382 "/>
+                                            <ref target="https://doi.org/10.3931/e-rara-62382"/>
                                             <relatedItem type="original">
-                                                <ref target="#e-rara-3101">e-rara</ref>
+                                                <ref target="#e-rara-62382">e-rara</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target="https://d-nb.info/gnd/118555146">
+                                            <ref target="https://d-nb.info/gnd/118518534">
                                                 <orgName>gnd</orgName>
-                                                <idno>118555146</idno>
+                                                <idno>118518534</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>

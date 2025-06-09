@@ -188,7 +188,7 @@
                                         else '',$versetBaseText)"/>
                                     
                                     <!-- Only output if the result has content -->
-                                    <xsl:if test="string-length($versetFixedText) &gt; 0">
+                                    <xsl:if test="string-length($versetFixedText) &gt; 0 ">
                                         <li>
                                             <!-- Get current position in this group -->
                                             <xsl:variable name="currentNum" select="position()"/>
