@@ -1,0 +1,118 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Custom ODD from TEI Analysis</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Internal project</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Generated based on actual TEI usage</p>
+      </sourceDesc>
+    </fileDesc><encodingDesc><appInfo><application ident="RomaJS" version="1.1.2" when="2025-06-17T09:17:27.733Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="custom-tei" prefix="tei_" targetLang="en" docLang="en">
+        <!-- Import relevant modules -->
+        <moduleRef key="core"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="header"/>
+        <moduleRef key="textstructure"/>
+        <moduleRef key="namesdates"/>
+        <moduleRef key="figures"/>
+        <moduleRef key="linking"/>
+        <moduleRef key="msdescription"/>
+        <moduleRef key="transcr"/>
+        <moduleRef key="certainty"/>
+        <moduleRef key="analysis"/>
+        <moduleRef key="iso-fs"/> <!-- for coordinates if used -->
+
+        <!-- Elements used in your TEI file -->
+        <elementSpec ident="TEI"/>
+        <elementSpec ident="ab"/>
+        <elementSpec ident="additional"/>
+        <elementSpec ident="addrLine"/>
+        <elementSpec ident="address"/>
+        <elementSpec ident="appInfo"/>
+        <elementSpec ident="application"/>
+        <elementSpec ident="author"/>
+        <elementSpec ident="authority"/>
+        <elementSpec ident="availability"/>
+        <elementSpec ident="bibl"/>
+        <elementSpec ident="biblStruct"/>
+        <elementSpec ident="body"/>
+        <elementSpec ident="category"/>
+        <elementSpec ident="change"/>
+        <elementSpec ident="choice"/>
+        <elementSpec ident="classDecl"/>
+        <elementSpec ident="correction"/>
+        <elementSpec ident="country"/>
+        <elementSpec ident="date"/>
+        <elementSpec ident="dim"/>
+        <elementSpec ident="editorialDecl"/>
+        <elementSpec ident="encodingDesc"/>
+        <elementSpec ident="extent"/>
+        <elementSpec ident="fileDesc"/>
+        <elementSpec ident="forename"/>
+        <elementSpec ident="fw"/>
+        <elementSpec ident="graphic"/>
+        <elementSpec ident="hi"/>
+        <elementSpec ident="idno"/>
+        <elementSpec ident="imprint"/>
+        <elementSpec ident="institution"/>
+        <elementSpec ident="keywords"/>
+        <elementSpec ident="label"/>
+        <elementSpec ident="langUsage"/>
+        <elementSpec ident="language"/>
+        <elementSpec ident="lb"/>
+        <elementSpec ident="licence"/>
+        <elementSpec ident="line"/>
+        <elementSpec ident="listBibl"/>
+        <elementSpec ident="measure"/>
+        <elementSpec ident="monogr"/>
+        <elementSpec ident="msContents"/>
+        <elementSpec ident="msDesc"/>
+        <elementSpec ident="msIdentifier"/>
+        <elementSpec ident="normalization"/>
+        <elementSpec ident="objectDesc"/>
+        <elementSpec ident="orgName"/>
+        <elementSpec ident="orig"/>
+        <elementSpec ident="p"/>
+        <elementSpec ident="path"/>
+        <elementSpec ident="pb"/>
+        <elementSpec ident="persName"/>
+        <elementSpec ident="physDesc"/>
+        <elementSpec ident="profileDesc"/>
+        <elementSpec ident="projectDesc"/>
+        <elementSpec ident="ptr"/>
+        <elementSpec ident="pubPlace"/>
+        <elementSpec ident="publicationStmt"/>
+        <elementSpec ident="publisher"/>
+        <elementSpec ident="ref"/>
+        <elementSpec ident="reg"/>
+        <elementSpec ident="relatedItem"/>
+        <elementSpec ident="resp"/>
+        <elementSpec ident="respStmt"/>
+        <elementSpec ident="revisionDesc"/>
+        <elementSpec ident="settlement"/>
+        <elementSpec ident="sourceDesc"/>
+        <elementSpec ident="sourceDoc"/>
+        <elementSpec ident="support"/>
+        <elementSpec ident="supportDesc"/>
+        <elementSpec ident="surface"/>
+        <elementSpec ident="surname"/>
+        <elementSpec ident="surrogates"/>
+        <elementSpec ident="taxonomy"/>
+        <elementSpec ident="teiHeader"/>
+        <elementSpec ident="term"/>
+        <elementSpec ident="text"/>
+        <elementSpec ident="textClass"/>
+        <elementSpec ident="title"/>
+        <elementSpec ident="titleStmt"/>
+        <elementSpec ident="zone"/>
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>

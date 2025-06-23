@@ -166,7 +166,7 @@
                 <xsl:apply-templates/>
             </xsl:element>
             <xsl:element name="reg" namespace="http://www.tei-c.org/ns/1.0">
-                <xsl:attribute name="type">contemporary</xsl:attribute>
+                <xsl:attribute name="type">normalized</xsl:attribute>
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:element>
