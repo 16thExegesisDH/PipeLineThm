@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <!-- Source XSL : Simon Gabay ; adaptation : Sonia Solfrini : apaptation Floriane Goy aout 2024  -->
+    <!-- Source XSL : Simon Gabay ; adaptation : Sonia Solfrini : adaptation Floriane Goy aout 2024  -->
     
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -13,19 +13,19 @@
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
         
-        <xsl:variable name="document">Calvin_C2</xsl:variable>
+        <!--<xsl:variable name="document">Calvin_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
-        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
+        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>-->
         
         
-         <!--<!-\-for mdz-\->  
-        <xsl:variable name="document">Lefevre_C2</xsl:variable>
+         <!--for mdz-->  
+        <xsl:variable name="document">Cajetan_C2</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
-        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>-->
+        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
         
         <!-- template for coordinates with a specific path, specific path in the $context value -->
         <xsl:template name="coordinate-with-context" xmlns="http://www.tei-c.org/ns/1.0">
@@ -123,7 +123,7 @@
                     
                     <fileDesc>
                         <titleStmt>
-                            <title>Commentarii in utranque Pauli epistolam ad Timotheum: [Calvin Jean], [1548]</title>
+                            <title>In priorem epistolam Pauli ad Timotheum commemtarii : [Thomas Cajetan], [1531]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -161,12 +161,12 @@
                         </publicationStmt>
                         <sourceDesc>
                             <msDesc>
-                                <!-- corriger en fonction ici Pellicanus Conrad  -->
+                                <!-- corriger en fonction ici Cajetan  -->
                                 <msIdentifier xml:id="e-rara-62382">
-                                    <country>Schweiz</country>
-                                    <settlement>Genève</settlement>
-                                    <institution>Bibliothèque de Genève</institution>
-                                    <idno type="shelfmark">Bb 1493 (2)</idno>
+                                    <country>Deutschland</country>
+                                    <settlement>München</settlement>
+                                    <institution>München Bayerische Staatsbibliothek</institution>
+                                    <idno type="shelfmark">2 Exeg. 610</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
@@ -174,9 +174,9 @@
                                             <monogr>
                                                 <!-- AUTEUR -->
                                                 <author>
-                                                    <persName role="exegete" ref="isni:0000000121030063">
-                                                        <surname>Calvin</surname>
-                                                        <forename>Jean</forename>
+                                                    <persName role="exegete" ref="isni:0000000118758416 ">
+                                                        <surname>Cajetan</surname>
+                                                        <forename>Thomas</forename>
                                                     </persName>
                                                 </author>
                                                 <!--<editor>
@@ -187,21 +187,21 @@
                                                     </persName>
                                                 </editor>-->
                                                 <!-- TITRE -->
-                                                <title type="complete_title">Joannis Calvini Commentarii in utranque Pauli epistolam ad Timotheum</title> 
-                                                <title type="short_title">Commentarii in utranque Pauli epistolam ad Timotheum</title>
+                                                <title type="complete_title">Thomae De Vio Caietani Cardinalis sanct christi : in priorem epistolam Pauli ad Timotheum commemtarii </title> 
+                                                <title type="short_title">In priorem epistolam Pauli ad Timotheum commemtarii</title>
                                                 <imprint>
                                                     <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:2660646">Geneve</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:3187861">Venise</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:0000000121021159">
-                                                            <surname>Jean</surname>
-                                                            <forename>Gérard</forename>
+                                                        <persName role="printer" ref="isni:0000000121227528">
+                                                            <surname>Lucantonio</surname>
+                                                            <forename>Giunta</forename>
                                                         </persName>
                                                         <!--<note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"/>-->
                                                     </respStmt>
                                                     <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1548</date>
+                                                    <date cert="low">1531</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
@@ -217,20 +217,20 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant Jean Calvin -->
+                                    <!-- concernant thomas cajetan -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://doi.org/10.3931/e-rara-62382"/>
+                                            <ref target="https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb10143002-9"/>
                                             <relatedItem type="original">
-                                                <ref target="#e-rara-62382">e-rara</ref>
+                                                <ref target="bsb10143002">mdz</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target="https://d-nb.info/gnd/118518534">
+                                            <ref target="https://d-nb.info/gnd/118518348">
                                                 <orgName>gnd</orgName>
-                                                <idno>118518534</idno>
+                                                <idno>118518348</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>
