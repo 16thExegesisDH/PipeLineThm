@@ -21,7 +21,7 @@
         
         
          <!--for mdz-->  
-        <xsl:variable name="document">Bucerus_Eph</xsl:variable>
+        <xsl:variable name="document">Jonas_documents</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
