@@ -19,14 +19,14 @@
  <!-- sorted every elements <surface> in numerical order  -->
     
     <!-- sorted every elements <surface> in numerical order for e-rara -->
-   <!-- <xsl:template match="//sourceDoc">
+    <xsl:template match="//sourceDoc">
         <sourceDoc xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:for-each select="surface">
                 <xsl:sort select="substring-after(@xml:id, 'f')" data-type="number"/>
                 <xsl:copy-of select="."/>
             </xsl:for-each>
         </sourceDoc>
-    </xsl:template>-->
+    </xsl:template>
     
 <!--     sorted every elements <surface> in numerical order for mdz    -->
    <!-- <xsl:template match="//sourceDoc"> 
@@ -42,16 +42,16 @@
     </xsl:template>-->
     
     <!-- teste pour les donnes de jonas -->
-    <xsl:template match="sourceDoc">
+    <!--<xsl:template match="sourceDoc">
         <sourceDoc xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:for-each select="surface">
-                <!-- Extract the number after '_f' and sort numerically -->
+                <!-\- Extract the number after '_f' and sort numerically -\->
                 <xsl:sort select="number(substring-after(@xml:id, 'fbpt6k541127_f'))" data-type="number" order="ascending"/>
-                <!-- Copy each surface -->
+                <!-\- Copy each surface -\->
                 <xsl:copy-of select="."/>
             </xsl:for-each>
         </sourceDoc>
-    </xsl:template>
+    </xsl:template>-->
     
     <!-- copy the sorted elements from SourceDoc in body -->
     <xsl:template match="//body">
