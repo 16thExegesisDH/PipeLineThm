@@ -9144,6 +9144,7 @@
       </surface>
    </sourceDoc>
    <text>
+      <!-- id of C2 have been manually annotated according to the Vulgata verse  -->
       <body>
          <pb corresp="fbsb00027764_00155"/>
          <fw corresp="#fbsb00027764_00155_eSc_textblock_78cc095d"
@@ -10134,7 +10135,7 @@
          </ab>
          <ab corresp="#fbsb00027764_00166_eSc_textblock_02e0858e"
              type="MainZone-Head"
-             xml:id="C_II_v2">
+             xml:id="C_II_v4">
             <lb corresp="#fbsb00027764_00166_line_23_ligne_2"/>
             <choice>
                <orig>Omnes uult ſaluos fieri.</orig>
@@ -10253,7 +10254,7 @@
          </ab>
          <ab corresp="#fbsb00027764_00167_eSc_textblock_c017df6d"
              type="MainZone-Head"
-             xml:id="C_II_v3">
+             xml:id="C_II_v5">
             <lb corresp="#fbsb00027764_00167_line_17_ligne_2"/>
             <choice>
                <orig>Vnus mediator.</orig>
@@ -10356,7 +10357,7 @@
          </ab>
          <ab corresp="#fbsb00027764_00168_block_4"
              type="MainZone-Head"
-             xml:id="C_II_v4">
+             xml:id="C_II_v6">
             <lb corresp="#fbsb00027764_00168_line_19_ligne_2"/>
             <choice>
                <orig>Vt eſſet testimoniũ tẽporibus ſuis.</orig>
@@ -10365,7 +10366,7 @@
          </ab>
          <ab corresp="#fbsb00027764_00168_eSc_textblock_d6327d74"
              type="MainZone-Head"
-             xml:id="C_II_v5">
+             xml:id="C_II_v8">
             <lb corresp="#fbsb00027764_00168_line_34_ligne_2"/>
             <choice>
                <orig>Volo uiros orare.</orig>
@@ -10559,8 +10560,8 @@
             </choice>
             <lb corresp="#fbsb00027764_00170_line_6_ligne_5"/>
             <choice>
-               <orig>fuperſtitiones illæ ſtultarum fœminarum, quarũ mul¬</orig>
-               <reg type="contemporary">fuperstitiones illae stultarum foeminarum, quarum mul-</reg>
+               <orig>superſtitiones illæ ſtultarum fœminarum, quarũ mul¬</orig>
+               <reg type="contemporary">superstitiones illae stultarum foeminarum, quarum mul-</reg>
             </choice>
             <lb corresp="#fbsb00027764_00170_line_7_ligne_6"/>
             <choice>
@@ -10600,7 +10601,7 @@
          </ab>
          <ab corresp="#fbsb00027764_00170_eSc_textblock_b82513f2"
              type="MainZone-Head"
-             xml:id="C_II_v6">
+             xml:id="C_II_v8b">
             <lb corresp="#fbsb00027764_00170_line_14_ligne_2"/>
             <choice>
                <orig>Suſtollentes &amp;c.</orig>
@@ -10661,7 +10662,7 @@
          </fw>
          <ab corresp="#fbsb00027764_00171_eSc_textblock_df512b5a"
              type="MainZone-Head"
-             xml:id="C_II_v7">
+             xml:id="C_II_v11">
             <lb corresp="#fbsb00027764_00171_line_1_ligne_2"/>
             <choice>
                <orig>Mulier in ſilentio, &amp;c.</orig>

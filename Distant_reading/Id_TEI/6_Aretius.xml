@@ -89190,6 +89190,7 @@
       </surface>
    </sourceDoc>
    <text>
+      <!-- les id C2_v1 ect have been manually ajuste to the verset number -->
       <body>
          <pb corresp="fbsb10313792_00016"/>
          <fw corresp="#fbsb10313792_00016_block_0" type="RunningTitleZone">
@@ -92394,7 +92395,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00053_block_1"
              type="MainZone-Head"
-             xml:id="C_II_v2">
+             xml:id="C_II_v1b">
             <lb corresp="#fbsb10313792_00053_line_19_ligne_2"/>
             <choice>
                <orig>Pro omnibus hominibus.</orig>
@@ -92469,7 +92470,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00054_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v3">
+             xml:id="C_II_v2">
             <lb corresp="#fbsb10313792_00054_line_10_ligne_2"/>
             <choice>
                <orig>2 Pro regibus &amp; omnibus in eminen¬</orig>
@@ -92537,7 +92538,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00055_block_1"
              type="MainZone-Head"
-             xml:id="C_II_v4">
+             xml:id="C_II_v2b">
             <lb corresp="#fbsb10313792_00055_line_8_ligne_2"/>
             <choice>
                <orig>Vt tranquillam &amp; quietam, &amp;c.</orig>
@@ -92580,7 +92581,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00056_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v5">
+             xml:id="C_II_v3">
             <lb corresp="#fbsb10313792_00056_line_4_ligne_2"/>
             <choice>
                <orig>3 Hoc enim bonumn eſt,&amp;c.</orig>
@@ -92878,7 +92879,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00059_block_4"
              type="MainZone-Head"
-             xml:id="C_II_v7">
+             xml:id="C_II_v6b">
             <lb corresp="#fbsb10313792_00059_line_11_ligne_2"/>
             <choice>
                <orig>Temporibus proprijs.</orig>
@@ -92887,7 +92888,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00059_block_3"
              type="MainZone-Head"
-             xml:id="C_II_v8">
+             xml:id="C_II_v7">
             <lb corresp="#fbsb10313792_00059_line_16_ligne_2"/>
             <choice>
                <orig>7 In quod ego conſtitutus ſum &amp;c.</orig>
@@ -92896,7 +92897,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00059_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v9">
+             xml:id="C_II_v8">
             <lb corresp="#fbsb10313792_00059_line_27_ligne_2"/>
             <choice>
                <orig>8 Volo igitur viro orare, &amp;c.</orig>
@@ -93194,7 +93195,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00062_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v10">
+             xml:id="C_II_v9">
             <lb corresp="#fbsb10313792_00062_line_16_ligne_2"/>
             <choice>
                <orig>9 Similiter &amp; mulieres, &amp;c.</orig>
@@ -93285,7 +93286,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00064_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v11">
+             xml:id="C_II_v10">
             <lb corresp="#fbsb10313792_00064_line_26_ligne_2"/>
             <choice>
                <orig>10 Sed quod decet, &amp;c.</orig>
@@ -93322,7 +93323,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00065_block_1"
              type="MainZone-Head"
-             xml:id="C_II_v12">
+             xml:id="C_II_v11">
             <lb corresp="#fbsb10313792_00065_line_3_ligne_2"/>
             <choice>
                <orig>11 Mulier in ſilentio diſcat, &amp;c.</orig>
@@ -93331,7 +93332,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00065_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v13">
+             xml:id="C_II_v12">
             <lb corresp="#fbsb10313792_00065_line_12_ligne_2"/>
             <choice>
                <orig>12 Mulieri autem docere, &amp;c.</orig>
@@ -93340,7 +93341,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00065_block_3"
              type="MainZone-Head"
-             xml:id="C_II_v14">
+             xml:id="C_II_v13">
             <lb corresp="#fbsb10313792_00065_line_25_ligne_2"/>
             <choice>
                <orig>13 Adam enim primus, &amp;c.</orig>
@@ -93406,7 +93407,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00066_block_2"
              type="MainZone-Head"
-             xml:id="C_II_v15">
+             xml:id="C_II_v14">
             <lb corresp="#fbsb10313792_00066_line_7_ligne_2"/>
             <choice>
                <orig>14 Et Adam non eſt deceptus, &amp;c.</orig>
@@ -93415,7 +93416,7 @@
          </ab>
          <ab corresp="#fbsb10313792_00066_block_3"
              type="MainZone-Head"
-             xml:id="C_II_v16">
+             xml:id="C_II_v15">
             <lb corresp="#fbsb10313792_00066_line_14_ligne_2"/>
             <choice>
                <orig>15 Seruabitur autem &amp;c.</orig>
