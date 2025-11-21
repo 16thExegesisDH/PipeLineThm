@@ -15717,6 +15717,7 @@
       </surface>
    </sourceDoc>
    <text>
+      <!-- C2 id _ manually add -->
       <body>
          <pb corresp="f7325965"/>
          <fw corresp="#f7325965_block_5" type="RunningTitleZone">
@@ -15754,7 +15755,7 @@
           <reg type="contemporary">[explicit CAP. I]</reg>
         </choice>
       </ab>-->
-         <ab corresp="#f7325965_block_2a" type="MainZone-Head" xml:id="C_CAP.II"><!-- titre ajouter à la main -->
+         <ab corresp="#f7325965_block_2a" type="MainZone-Head" xml:id="C_II"><!-- titre ajouter à la main -->
             <hi>
                <lb corresp="#f7325965_eSc_line_3395917e_ligne_12"/>
                <choice>
@@ -15830,9 +15831,7 @@
                <reg type="contemporary">uersis impiisque dogmatis atque opinionibus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f7325965_block_2"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v1">
+         <ab corresp="#f7325965_block_2" type="MainZone-Head" xml:id="C_II_v1">
             <lb corresp="#f7325965_line_15_ligne_2"/>
             <choice>
                <orig>INSTRVITVR COETVS EC¬</orig>
@@ -15844,9 +15843,7 @@
                <reg type="contemporary">clesiasticus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f7325965_block_2b"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v2">
+         <ab corresp="#f7325965_block_2b" type="MainZone-Head" xml:id="C_II_v1-2">
             <lb corresp="#f7325965_line_17_ligne_4"/>
             <choice>
                <orig>Adhortor igitur ut ante omnia</orig>
@@ -17528,9 +17525,7 @@
                <reg type="contemporary">quidem</reg>
             </choice>
          </fw>
-         <ab corresp="#f7325976_block_1"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v3">
+         <ab corresp="#f7325976_block_1" type="MainZone-Head" xml:id="C_II_v3-4">
             <lb corresp="#f7325976_line_1_ligne_2"/>
             <choice>
                <orig>Nam hoc bonum eſt &amp; acce¬</orig>
@@ -18526,9 +18521,7 @@
                <reg type="contemporary">4</reg>
             </choice>
          </fw>
-         <ab corresp="#f7325983_block_2"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v4">
+         <ab corresp="#f7325983_block_2" type="MainZone-Head" xml:id="C_II_v5-7">
             <lb corresp="#f7325983_line_2_ligne_2"/>
             <choice>
                <orig>Vnus enim Deus, unus etiam</orig>
@@ -18973,9 +18966,7 @@
                <reg type="contemporary">Pauli laus est.</reg>
             </choice>
          </ab>
-         <ab corresp="#f7325986_block_1"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v5">
+         <ab corresp="#f7325986_block_1" type="MainZone-Head" xml:id="C_II_v8">
             <lb corresp="#f7325986_line_12_ligne_2"/>
             <choice>
                <orig>Volo igitur orare uiros in o¬</orig>
@@ -19376,9 +19367,7 @@
                <reg type="contemporary">rationis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f7325989_block_2"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v6">
+         <ab corresp="#f7325989_block_2" type="MainZone-Head" xml:id="C_II_v9-10">
             <lb corresp="#f7325989_line_10_ligne_2"/>
             <choice>
                <orig>Conſimiliter &amp; mulieres in a¬</orig>
@@ -19633,9 +19622,7 @@
                <reg type="contemporary">pigmentatae Deum habebitis amatorem.</reg>
             </choice>
          </ab>
-         <ab corresp="#f7325991_block_3"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v7">
+         <ab corresp="#f7325991_block_3" type="MainZone-Head" xml:id="C_II_v11-15">
             <lb corresp="#f7325991_line_7_ligne_2"/>
             <choice>
                <orig>Mulier in ſilentio diſcat cum o¬</orig>
@@ -20324,9 +20311,7 @@
                <reg type="contemporary">scortatores autem et adulteros iudicabit deus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f7325995_block_1"
-             type="MainZone-Head"
-             xml:id="C_CAP.II_v8">
+         <ab corresp="#f7325995_block_1" type="MainZone-Head" xml:id="C_II_v11-15b">
             <lb corresp="#f7325995_line_26_ligne_2"/>
             <choice>
                <orig>DESCRIPTIO EPISCOPI ET</orig>
@@ -20436,7 +20421,7 @@
          </ab>
          <ab corresp="#f7325996_eSc_textblock_051960b9"
              type="MainZone-Head"
-             xml:id="C_CAP.II_v9">
+             xml:id="C_II_v15-ep">
             <lb corresp="#f7325996_line_13_ligne_2"/>
             <choice>
                <orig>Indubitatus ſermo, Si quis epi¬</orig>

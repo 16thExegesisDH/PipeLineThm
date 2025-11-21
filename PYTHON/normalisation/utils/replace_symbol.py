@@ -18,6 +18,7 @@ def replace_symbol(text):
         r'enĩ':'enim',
         r'ſpũ':'spiritu',
         r'ᛘ':'-',        #if the symbole is not already change before. 
+        r'❧':' ',        # delete ❧ symbole
     }
 
     for pattern, replacement in replacements.items():

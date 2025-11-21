@@ -16,6 +16,25 @@
         </xsl:copy>
     </xsl:template>
     
+    <!-- Copy DropCapitalZone unchanged -->
+    <xsl:template match="ab[@type='DropCapitalZone']">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+    </xsl:template>
+    <!-- Copy DropCapitalZone unchanged -->
+    <xsl:template match="ab[@type='MainZone-P']">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+    </xsl:template>
+    <!-- Copy DropCapitalZone unchanged -->
+    <xsl:template match="ab[@type='MainZone-P-Continued']">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+    </xsl:template>
+    
     
     <xsl:template match="ab">
         <!-- Skip DropCapitalZone & MainZone-P -->
@@ -25,13 +44,13 @@
                 <xsl:apply-templates select="@*"/>
                 
                 <xsl:choose>
-                    <!-- CASE 1: MainZone-Head chapter with CAP -->
+                    <!-- CASE 1: MainZone-Head chapter with CAP--> 
                     <xsl:when test="@type='MainZone-Head'
                         and (choice/reg[matches(., '^CAP')]
                         or hi/choice/reg[matches(., '^CAP')])">
                         
                         <!-- Build xml:id as 'C_' + last token of all <reg> text, with trailing dot removed and spaces replaced by underscores -->
-                        <xsl:attribute name="xml:id"
+                        <!--<xsl:attribute name="xml:id"
                             select="
                             concat(
                             'C_',
@@ -47,9 +66,35 @@
                             ' ',
                             '_'
                             )
-                            )"/>
+                            )"/>-->
+                        
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="
+                                concat(
+                                'C_',
+                                translate(
+                                replace(
+                                replace(
+                                tokenize(
+                                normalize-space(string-join(.//reg, ' ')),
+                                '\s+'
+                                )[last()],
+                                '^CAP\.?', ''          (: remove leading CAP. if present :)
+                                ),
+                                '\.$', ''                (: remove trailing dot if present :)
+                                ),
+                                ' ',
+                                '_'
+                                )
+                                )
+                                "/>
+                        </xsl:attribute>
+                        
+                        
                         
                     </xsl:when>
+                   
+                    
             
                     
                     <!-- CASE 2: MainZone-Head without CAP -->
@@ -67,17 +112,20 @@
                             'C_',
                             translate(
                             replace(
+                            replace(
                             tokenize(
                             normalize-space(string-join(.//reg, ' ')),
                             '\s+'
                             )[last()],
-                            '\.$',
-                            ''
+                            '^CAP\.?', ''          (: remove leading CAP. if present :)
+                            ),
+                            '\.$', ''                (: remove trailing dot if present :)
                             ),
                             ' ',
                             '_'
                             )
-                            )"/>
+                            )
+                            "/>
                         
                         <xsl:attribute name="xml:id">
                             <!-- prepend chapter-id + v -->
@@ -93,7 +141,9 @@
                                 or hi/choice/reg[matches(., '^CAP.*')])]"/>
                         </xsl:attribute>
                     </xsl:when>
-                
+                    <xsl:when test="ab[@type='DropCapitalZone']"> 
+                        <xsl:apply-templates/>
+                    </xsl:when>
                 </xsl:choose>
                 
                 <!-- Copy children -->
