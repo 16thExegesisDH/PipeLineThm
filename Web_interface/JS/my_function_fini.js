@@ -31,7 +31,7 @@ function toggleImageSource() {
    const firstSrc = "Web_interface/IMG/Paul_in_the_matrix.png";
    const secondSrc = "Web_interface/IMG/team_paul_petit.png";
 
-   img.src = (img.src.includes("183631020.png")) ? secondSrc : firstSrc;
+   img.src = (img.src.includes("Paul_in_the_matrix.png")) ? secondSrc : firstSrc;
 }
 
 function toggleTOC() {
