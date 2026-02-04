@@ -4,6 +4,8 @@ This repository documents the **digital editing pipeline** developed for a **16t
 
 The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
 
+------|----------|-------------| | 1 | ./picture/7325976.jpeg | Original digitized image of a 16th‑century printed page | | ↓ | ⟶ | Image preprocessing / extraction | | 2 | ./picture/PDF_image.png | Normalized image generated from PDF processing | | ↓ | ⟶ | Analytical processing (topic modeling) | | 3 | ./picture/topic_wordclouds_7_mulier.png | Word cloud visualization for topic mulier |
+
 ---
 
 ## General Pipeline Description
