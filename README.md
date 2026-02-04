@@ -26,7 +26,7 @@ Main stages:
 
 The following diagram illustrates the global pipeline from **XML/ALTO encoding** to **distant reading analysis**.
 
-* <img src="./picture/Zurich_Paul_Pipeline.png" width="600"/> 
+ <img src="./picture/Zurich_Paul_Pipeline.png" width="600"/> 
 
 ---
 
@@ -35,7 +35,7 @@ The following diagram illustrates the global pipeline from **XML/ALTO encoding**
 This pipeline focuses on the transformation of **raw printed page data** into a structured **XML/TEI digital edition**.
 
 
-*  <img src="./picture/pipeline_raw_data.png" width="600"/>    
+<img src="./picture/pipeline_raw_data.png" width="600"/>    
 
 
 
