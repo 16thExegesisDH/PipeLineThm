@@ -32,8 +32,7 @@ The following diagram illustrates the global pipeline from **XML/ALTO encoding**
 
 ## Data Processing Pipeline: From Printed Page to XML/TEI
 
-This pipeline focuses on the transformation of **raw printed page data** into a structured **XML/TEI digital edition**.
-
+This pipeline focuses on the transformation of **raw printed page data** into a structured **XML/TEI digital edition** and the first step of **Lemmatization**.
 
 <img src="./picture/pipeline_raw_data.png" width="600"/>    
 
