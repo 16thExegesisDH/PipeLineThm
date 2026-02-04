@@ -1,6 +1,6 @@
 # 16th Century Digital Library – Digital Editing Pipeline
 
-This repository documents the **digital editing pipeline** developed for a **16th-century digital library** project. The pipeline describes the full workflow from **printed page images** to **XML/TEI editions**, and finally to **distant reading and computational analysis** (Zurich approach).
+This repository documents the **digital editing pipeline** developed for a **16th-century digital library** project. The pipeline describes the full workflow from **printed page images** to **XML/TEI editions**, and finally to **distant reading and computational analysis**
 
 The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
 
