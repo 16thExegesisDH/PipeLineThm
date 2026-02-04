@@ -2,7 +2,7 @@
 
 This repository documents the **digital editing pipeline** developed for a **16th-century digital library** project. The pipeline describes the full workflow from **printed page images** to **XML/TEI editions**, and finally to **distant reading and computational analysis**
 
-The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
+### Workflow Overview
 
 | Step | Illustration | Description |
 |------|--------------|-------------|
@@ -11,6 +11,8 @@ The documentation is intended to be **extended and refined over time**. Current 
 | 3    | <img src="./picture/topic_wordclouds_7_mulier.png" width="300"/> | Topic *mulier* word cloud (Lambert Daneau commentary) |
 
 
+
+The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
 ---
 
 ## General Pipeline Description
