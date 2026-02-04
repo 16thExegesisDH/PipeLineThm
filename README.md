@@ -88,7 +88,6 @@ PipeLineThm/
 ---
 
 ## Use of Scripts
-
-Scripts are used at each stage of the pipeline to ensure automation and reproducibility.
+to complete
 
 
