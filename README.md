@@ -8,7 +8,7 @@ This repository documents the **digital editing pipeline** developed for a **16t
 |------|--------------|-------------|
 | 1    | <img src="./picture/7325976.jpeg" width="150"/> | Original digitized image → image preprocessing |
 | 2    | <img src="./picture/PDF_image.png" width="280"/> | Normalized image → analytical processing (topic modeling) |
-| 3    | <img src="./picture/topic_wordclouds_7_mulier.png" width="300"/> | Topic *mulier* word cloud (Lambert Daneau commentary) |
+| 3    | <img src="./picture/topic_wordclouds_7_mulier.png" width="300"/> | Topic *mulier* word cloud [Lambert Daneau commentary](https://www.e-rara.ch/gep_g/doi/10.3931/e-rara-6338) |
 
 
 
