@@ -3,13 +3,13 @@
 This repository documents the **digital editing pipeline** developed for a **16th-century digital library** project. The pipeline describes the full workflow from **printed page images** to **XML/TEI editions**, and finally to **distant reading and computational analysis**
 
 The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
-| Step | File path                          | Description                                              |
+| Step |         illustration              | Description                                              |
 |------|-----------------------------------|----------------------------------------------------------|
-| 1    | ./picture/7325976.jpeg             | Original digitized image of a 16th-century printed page |
-| ↓    |                                   | Image preprocessing / extraction                        |
-| 2    | ./picture/PDF_image.png            | Normalized image generated from PDF processing          |
-| ↓    |                                   | Analytical processing (topic modeling)                  |
-| 3    | ./picture/topic_wordclouds_7_mulier.png | Word cloud visualization for topic *mulier*        |
+| 1    |  <img src="../picture/7325976.jpeg" width="300"/> |               | Original digitized image of a 16th-century printed page |
+| ↓    |                                                                   | Image preprocessing / extraction                        |
+| 2    | <img src="./picture/PDF_image.png " width="300"/>                 | Normalized image generated from PDF processing          |
+| ↓    |                                                                   | Analytical processing (topic modeling)                  |
+| 3    |  <img src="./picture/topic_wordclouds_7_mulier.png" width="300"/> | Word cloud visualization for topic *mulier* fom Lambert Daneau commentary |
 
 ---
 
