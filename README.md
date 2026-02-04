@@ -26,7 +26,7 @@ Main stages:
 
 The following diagram illustrates the global pipeline from **XML/ALTO encoding** to **distant reading analysis**.
 
-* <img src="../picture/Zurich_Paul_Pipeline.png" width="600"/> 
+* <img src="./picture/Zurich_Paul_Pipeline.png" width="600"/> 
 
 ---
 
