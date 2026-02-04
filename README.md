@@ -7,7 +7,7 @@ The documentation is intended to be **extended and refined over time**. Current 
 |------|-----------------------------------|----------------------------------------------------------|
 | 1    |  <img src="./picture/7325976.jpeg" width="150"/>                  | Original digitized image of a 16th-century printed page |
 | ↓    |                                                                   | Image preprocessing / extraction                        |
-| 2    | <img src="./picture/PDF_image.png " width="250"/>                 | Normalized image generated from PDF processing          |
+| 2    | <img src="./picture/PDF_image.png " width="280"/>                 | Normalized image generated from PDF processing          |
 | ↓    |                                                                   | Analytical processing (topic modeling)                  |
 | 3    |  <img src="./picture/topic_wordclouds_7_mulier.png" width="300"/> | Word cloud visualization for topic *mulier* fom Lambert Daneau commentary |
 
