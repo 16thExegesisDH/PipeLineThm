@@ -1,7 +1,5 @@
 # 16th Century Digital Library – Digital Editing Pipeline
 
-## Overview
-
 This repository documents the **digital editing pipeline** developed for a **16th-century digital library** project. The pipeline describes the full workflow from **printed page images** to **XML/TEI editions**, and finally to **distant reading and computational analysis** (Zurich approach).
 
 The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
@@ -28,10 +26,7 @@ Main stages:
 
 The following diagram illustrates the global pipeline from **XML/ALTO encoding** to **distant reading analysis**.
 
-**Diagram:**
-
-* <img src="../picture/Zurich_Paul_Pipeline.png.png" width="300"/> 
-
+* <img src="../picture/Zurich_Paul_Pipeline.png" width="600"/> 
 
 ---
 
@@ -39,9 +34,8 @@ The following diagram illustrates the global pipeline from **XML/ALTO encoding**
 
 This pipeline focuses on the transformation of **raw printed page data** into a structured **XML/TEI digital edition**.
 
-**Diagram:**
 
-*  <img src="./picture/pipeline_raw_data.png" width="300"/>    
+*  <img src="./picture/pipeline_raw_data.png" width="600"/>    
 
 
 
