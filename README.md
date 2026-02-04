@@ -13,6 +13,7 @@ This repository documents the **digital editing pipeline** developed for a **16t
 
 
 The documentation is intended to be **extended and refined over time**. Current sections provide a structured overview of the architecture, data flow, and scripts used in the project.
+
 ---
 
 ## General Pipeline Description
