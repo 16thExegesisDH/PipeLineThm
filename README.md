@@ -30,7 +30,7 @@ The following diagram illustrates the global pipeline from **XML/ALTO encoding**
 
 **Diagram:**
 
-* `Zurich_Paul_Pipeline.png`
+* <img src="../picture/Zurich_Paul_Pipeline.png.png" width="300"/> 
 
 
 ---
@@ -41,11 +41,8 @@ This pipeline focuses on the transformation of **raw printed page data** into a 
 
 **Diagram:**
 
-* `pipeline_raw_data.png`
+*  <img src="./picture/pipeline_raw_data.png" width="300"/>    
 
-Key processing steps include:
-
-* Image preprocessing
 
 
 ---
