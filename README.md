@@ -96,4 +96,19 @@ PipeLineThm/
 ## Use of Scripts
 to complete
 
+## Citation 
+
+```bibtex
+@misc{Goy_Pipeline_16thExegesis,
+  author={Floriane Goy},
+  title={Pipelines, Données TEI et autres formats},
+  version={1.0},
+  address={Genève},
+  publisher={université de Genève},
+  year={2023-2026},
+  url={https://github.com/16thExegesisDH/PipeLineThm},
+}
+```
+
+
 
