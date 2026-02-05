@@ -52,10 +52,6 @@ This pipeline focuses on the transformation of **raw printed page data** into a 
 
 ## Directory Architecture
 
-The project follows a clear folder architecture to separate data, scripts, and outputs.
-
-Example structure:
-
 ```text
 PipeLineThm/
 │
