@@ -4,6 +4,8 @@
     exclude-result-prefixes="xs"
     version="2.0">
     
+    <!-- concerne seulement les vieux fichiers comme lambertus -->
+    
     <xsl:template match="ab">
         <!-- Skip DropCapitalZone & MainZone-P -->
         <xsl:if test="@type != 'DropCapitalZone' and @type != 'MainZone-P'">

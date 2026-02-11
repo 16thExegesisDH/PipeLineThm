@@ -6,6 +6,7 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+    <!-- Le scripte donne le bon découpage pour transforme les xmlid en fichier txt à lemmatiser (10.02.26) -->
     <!-- Adapted to the new segmenentation model -->
     <xsl:strip-space elements="*"/>
     
