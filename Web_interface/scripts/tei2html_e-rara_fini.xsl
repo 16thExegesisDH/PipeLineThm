@@ -42,8 +42,8 @@
         <title>
             <xsl:value-of select="//title[parent::titleStmt]"/>
         </title>
-        <link href="../../../Web_interface/CSS/FG_stylesheet_fini.css" rel="stylesheet"/> 
-        <!--<link href="../../../Web_interface/CSS/FG_stylesheet_small_fini.css" rel="stylesheet"/> -->
+        <!--<link href="../../../Web_interface/CSS/FG_stylesheet_fini.css" rel="stylesheet"/> -->
+        <link href="../../../Web_interface/CSS/FG_stylesheet_small_fini.css" rel="stylesheet"/> 
         <script src="../../../Web_interface/JS/my_function_fini.js" defer="defer"></script>
     </xsl:template>
 

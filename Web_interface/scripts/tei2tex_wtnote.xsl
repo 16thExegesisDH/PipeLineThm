@@ -168,6 +168,11 @@
                 <xsl:apply-templates/>
                 <xsl:text> \pend</xsl:text>
             </xsl:when>
+            <xsl:when test="@type='MainZone-Continued'"> <!-- ajout de la regle pour le nouveau modele de segmentation  -->
+                <xsl:text>\pstart </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text> \pend</xsl:text>
+            </xsl:when>
             <xsl:when test="@type='MainZone'">
                 <xsl:apply-templates select="*|node()"/>
             </xsl:when>
