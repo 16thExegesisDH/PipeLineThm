@@ -30,26 +30,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2html_e-rara_toc_fini</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>Web_interface/scripts/number_corr.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -75,6 +55,46 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Add_identifiant</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/scripts/tei2tex_wtnote.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2tex_notes</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_e-rara_toc_fini</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -175,26 +195,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>tei2txt_by_verses</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Web_interface/scripts/tei2tex_wtnote.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2tex_notes</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -2549,7 +2549,7 @@
                                     <String>${pdu}/Web_interface/scripts/number_corr.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Calvin_C3-6_tei_NF.xml</String>
+                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Hyperius_C1_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -2567,7 +2567,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Web_interface/TEI/5_Calvin_C3-6_tei_NFnb.xml</String>
+                                    <String>${pd}/Web_interface/TEI/5_Hyperius_C1_tei_NF.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -3379,7 +3379,7 @@
                                     <String>${pdu}/Web_interface/scripts/tei2html_e-rara_fini.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
+                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Hyperius_C1_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -3397,7 +3397,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Web_interface/HTML/dh_edition/7_Calvin_test_TOC.html</String>
+                                    <String>${pd}/Web_interface/HTML/dh_edition/7_CHyperius_test_TOC.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -3960,7 +3960,7 @@
                                     <String>${pdu}/Web_interface/scripts/tei2tex_wtnote.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
+                                    <String>${pdu}/Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
