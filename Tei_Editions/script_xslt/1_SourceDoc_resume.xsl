@@ -21,7 +21,7 @@
         
         
          <!--for mdz-->  
-        <xsl:variable name="document">Bugenhagen_C3-6</xsl:variable>
+        <xsl:variable name="document">Cajetan_C1-6</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
