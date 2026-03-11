@@ -1,72 +1,70 @@
 #!/bin/bash
 
-# Usage: ./compile_tex.sh file.tex
+# Script to process LaTeX files with clean progress display
+# Usage: ./compile_tex.sh <input_file.tex>
 
-set -e
-
-# --- Argument check ---
+# --- Error checks ---
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <file.tex>"
+    echo "Error: No input file specified."
+    echo "Usage: $0 <input_file.tex>"
     exit 1
 fi
 
 input_file="$1"
-[[ ! -f "$input_file" ]] && { echo "Error: File not found."; exit 1; }
+base_name="${input_file%.tex}"
+
+[ ! -f "$input_file" ] && { echo "Error: File '$input_file' not found."; exit 1; }
 [[ "$input_file" != *.tex ]] && { echo "Error: Input must be .tex file."; exit 1; }
 
-base_name="${input_file%.tex}"
+# --- Step 1: Clean hyphenation issues ---
 output_file="${base_name}_update.tex"
+echo "Processing LaTeX file: $input_file"
 
-echo "Processing: $input_file"
-
-tmp1=$(mktemp)
-tmp2=$(mktemp)
-
-# --- Step 1: Fix hyphenation ---
 sed -E '
-s/([A-Za-zΆ-Ωά-ω])- +/\1/g;
-s/(\\[a-zA-Z]+\{[^}]+)-/\1/g
-' "$input_file" > "$tmp1"
+    s/([A-Za-zΆ-Ωά-ω])- +/\1/g;
+    s/(\\[a-zA-Z]+\{[^}]+)-/\1/g
+' "$input_file" > "$output_file.tmp1" || { echo "Error: sed failed"; exit 1; }
 
-# --- Step 2: Fix double \pend\pstart\pend before \vspace ---
-echo "Fixing \\pend\\pstart\\pend before \\vspace..."
+# --- Step 2: Fix first \endnumbering\beginnumbering before \section ---
+echo "Fixing first \\endnumbering\\beginnumbering before \\section..."
 
-sed -E ':a;N;$!ba; s/\\pend[[:space:]]*\\pstart[[:space:]]*\\pend/\\pend/g' "$tmp1" > "$tmp2"
+awk '
+BEGIN { replaced = 0 }
 
-# --- Step 3: Fix \endnumbering\beginnumbering before \section ---
-echo "Fixing \\endnumbering\\beginnumbering before \\section..."
+{
+    if (!replaced && $0 ~ /\\endnumbering\\beginnumbering\\section/) {
+        sub(/\\endnumbering\\beginnumbering/, "", $0)
+        replaced = 1
+    }
+    print
+}
+' "$output_file.tmp1" > "$output_file"
 
-sed -E '0,/\\endnumbering\\beginnumbering\\section/s//\\section/' "$tmp2" > "$output_file"
+rm -f "$output_file.tmp1"
 
-rm -f "$tmp1" "$tmp2"
-
-# --- Compile ---
+# --- Compilation with progress ---
 echo "Starting LaTeX compilation..."
-
-for i in 1 2; do
+for i in {1..2}; do
     echo -n "Pass $i: ["
     lualatex -interaction=nonstopmode "$output_file" >/dev/null &
     pid=$!
 
     while kill -0 $pid 2>/dev/null; do
         echo -n "#"
-        sleep 0.4
+        sleep 0.5
     done
 
     wait $pid
-    echo "] ✓"
+    [ $? -eq 0 ] && echo "] ✓" || { echo "] ✗"; exit 1; }
 done
 
 # --- Cleanup ---
-echo "Cleaning auxiliary files..."
+# If you want to keep auxiliary files, comment out the next two lines
+echo "Cleaning up temporary files..."
+find . -type f -name "${base_name}*" ! -name '*.tex' ! -name '*.pdf' ! -name '*.sh' -delete
 
-find . -type f -name "${base_name}*" \
-! -name "*.tex" \
-! -name "*.pdf" \
-! -name "*.sh" \
--delete
-
-#echo "Done → ${base_name}.pdf"
+# --- Summary ---
+echo "Success! Final output:"
 echo "  - Processed LaTeX file: ${output_file}"
 echo "  - Output PDF: ${base_name}_update.pdf"
 echo "  - Vive le Majestueux Florion, notre maître à tous!"
@@ -122,3 +120,4 @@ echo "
                                                                                                                      . .@@@@@@@@@-          
                                                                                                                         ..@@##%%#.          
                                                                                                                            .+@@*# "
+

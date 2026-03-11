@@ -18,7 +18,7 @@
     <xsl:template match="fw[@type='NumberingZone']">
         <!-- mettre à jour le numéro de page en fonction du document : ici la pagination commence à la page 2, donc + 2 (count commence par défaut de 0) -->
         <xsl:variable name="num"
-            select="count(preceding::fw[@type='NumberingZone']) + 75"/>  
+            select="count(preceding::fw[@type='NumberingZone']) + 95"/>  
         
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
