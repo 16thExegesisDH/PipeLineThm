@@ -45,14 +45,14 @@
             </xsl:when>
             
          <!-- for old segmentation model : MainZone-P-Continued -->  
-         <!--   <xsl:when test="@type='MainZone-P-Continued'">
-                <!-\- <ab> (anonymous block) contains any component-level unit of text, acting as a container for phrase or inter level elements analogous to, but without the same constraints as, a paragraph. -\->
+            <xsl:when test="@type='MainZone-P-Continued'">
+                <!-- <ab> (anonymous block) contains any component-level unit of text, acting as a container for phrase or inter level elements analogous to, but without the same constraints as, a paragraph. -->
                 <xsl:element name="ab" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:attribute name="corresp"><xsl:text>#</xsl:text><xsl:value-of select="@xml:id"/></xsl:attribute>
                     <xsl:attribute name="type"><xsl:value-of select="@type"/></xsl:attribute>
                     <xsl:apply-templates/>
                 </xsl:element>      
-            </xsl:when>-->
+            </xsl:when>
             
             <!-- for new segmentation mode : MainZone-Continued -->
             <xsl:when test="@type='MainZone-Continued'">
