@@ -10,7 +10,47 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>Web_interface/scripts/tei2tex_wtnote.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2tex_notes</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>Web_interface/scripts/tei2html_mdz_fini.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>tei2html_mdz_fini</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/TEI/5_Cajetan_C1-6_tei_NF.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -50,31 +90,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Web_interface/scripts/tei2tex_wtnote.xsl</String>
+                                    <String>Web_interface/TEI/5_Bullinger_C2_tei_NF.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>tei2tex_notes</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Web_interface/scripts/number_corr.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>number_corr</String>
+                                        <String>tei2html_e-rara_toc_fini</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -175,6 +195,46 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>1_SourceDoc_resume</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Tei_Editions/data/doc_1.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>1_SourceDoc_resume</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Web_interface/scripts/number_corr.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>number_corr</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -617,26 +677,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>Web_interface/TEI/5_Pellicanus_C2_tei_NF.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei2html_e-rara_toc_fini</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Web_interface/TEI/5_Bullinger_C2_tei_NF.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -1106,26 +1146,6 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Tei_Editions/data/doc_1.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>1_SourceDoc_resume</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
                                     </list>
                                 </field>
                                 <field name="scenarioStorageLocations">
@@ -3960,7 +3980,7 @@
                                     <String>${pdu}/Web_interface/scripts/tei2tex_wtnote.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Web_interface/TEI/5_Bugenhagen_1-Tim_C1-6.xml</String>
+                                    <String>file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/Web_interface/TEI/5_Cajetan_C1-6_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -3978,7 +3998,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Web_interface/TEX/Bugenhagen_1-Tim_C1-6.tex</String>
+                                    <String>${pd}/Web_interface/TEX/Cajetan_1-Tim_C1-6.tex</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -5122,7 +5142,7 @@
                                     <String>${pdu}/Web_interface/scripts/tei2html_mdz_fini.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Web_interface/TEI/5_Cajetan_C2_NF.xml</String>
+                                    <String>${pdu}/Web_interface/TEI/5_Cajetan_C1-6_tei_NF.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -5140,7 +5160,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Web_interface/HTML/dh_edition/7_Cajetan_C1-2_TOC.html</String>
+                                    <String>${pd}/Web_interface/HTML/dh_edition/Cajetan_1-Tim_C1-6.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
