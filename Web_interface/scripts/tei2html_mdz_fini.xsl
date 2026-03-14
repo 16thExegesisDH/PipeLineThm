@@ -622,8 +622,8 @@
         <nav>
             <button class="openbtn" onclick="openNav()" aria-label="Ouvrir le menu de navigation" aria-expanded="false">☰ Navigation</button>
             <div class="download">
-                <a href="{concat('../../TEI/',//TEI/@xml:id),'_tei_NF.zip'}" class="button" target="_blank">[↓] XML-TEI</a>
-                <a href="{concat('../../PDF/',//TEI/@xml:id,'_update.pdf')}" class="button" target="_blank">[↓] PDF</a>
+                <a href="{concat('../../ZIP/',//TEI/@xml:id),'.zip'}" class="button" target="_blank">[↓] XML-TEI</a>
+                <a href="{concat('../../PDF/',//TEI/@xml:id,'.pdf')}" class="button" target="_blank">[↓] PDF</a>
             </div>    
         </nav>
     </xsl:template>
