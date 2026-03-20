@@ -13,12 +13,16 @@ def replace_symbol(text):
         r'¬': '-',        # Replace the symbol '¬' with a dash '-'
         r'\$': ' ',       # Replace the dollar sign '$' with a white space
         r'·':'. ',
+        r'‟':' ',         #Replace the quotation1 by nothing
         r'\|':'',
-        r'˒': ' ',        # delete ˒ symbole
+        r'!':' ',
+        r'}':' ) ',
+        r'˒': ' ',        # Replace the quotation2 by nothing ˒ 
+        r'„':' ',        # Replace the quotation2 by nothing 
         r'enĩ':'enim',
         r'ſpũ':'spiritu',
         r'ᛘ':'-',        #if the symbole is not already change before. 
-        r'❧':' ',        # delete ❧ symbole
+        r'aũt':'autem',
     }
 
     for pattern, replacement in replacements.items():

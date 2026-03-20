@@ -15,6 +15,7 @@ def replace_lettre(text):
         r'œ': 'oe',     # Replace the ligature 'œ' with 'oe'
         r'æ': 'ae',     # Replace the ligature 'æ' with 'ae'
         r'ę': 'ae',     # Replace 'ę' with 'ae'
+        r'ȩ' : 'ae',     # le ȩ est une erreur de lecture de l'ocr
         r'ā': 'a',      # Replace 'ā' with 'a'
         r'à': 'a',
         r'à': 'a',      # Replace 'à' with 'a'
@@ -22,6 +23,7 @@ def replace_lettre(text):
         r'á': 'a',      # Replace combined diacritical 'á' with 'a'
         r'â': 'a',
         r'â':'a',
+        r'\s+dñ':' domin',
         r'è': 'e',      # Replace 'è' with 'e'
         r'è': 'e',      # Replace accented 'è' with 'e'
         r'é': 'e',      # Replace accented 'é' with 'e'
@@ -43,19 +45,21 @@ def replace_lettre(text):
         r'ú': 'u',     # Replace accented 'ú' with 'u'
         r'ú': 'u',    # Replace the lettre 'ú' with 'u'
         r'ù': 'u',     # Replace 'ù' with 'u'
+        r'û': 'u',    
         r'oĩ':'omni',
         r'oĩ':'omni',
         r'oïa':'omnia',
+        r'p̃' : 'pre',
         r'ꝑ': 'per',    # Replace the abbreviation 'ꝑ' with 'per'
         r'ꝓ': 'pro',
         r'q́': 'que ', 
         r'q́;': 'que ',
         r'q́': 'que ',
         r'q́': 'que ',
-        r'ꝙ': 'qu',     # Replace the abbreviation 'ꝙ' with 'qu'
+        #r'ꝙ': 'qu',     # Replace the abbreviation 'ꝙ' with 'qu'
         r'q;': 'que ',   # Replace 'q;' with 'que'
         r'q ': 'que ',
-        r'' : 'que ',
+        r'' : 'que  ',
         r'́ ': 'que   ', 
         r'́' :'que  ', 
         r'q́' : 'que ',
@@ -66,8 +70,12 @@ def replace_lettre(text):
         r'ꝗbus':'quibus',
         #r'ꝗi' : 'qui', # à vérifier (bugenhagen)
         r'ꝗ̃' :'quam',
+        r'' :'quam', 
+        r'ꝵ' :'rum',
+        r'ꝶ' :'rum',
         r'ü̃' : 'un',
         r'ꝰ' : 'us',
+        r'([a-zA-Z])9': r'\1us', # any lettre followed by the number 9 = [lettre]+us
     }
 
     # Apply each pattern-replacement pair to the text

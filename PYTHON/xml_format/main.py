@@ -22,11 +22,13 @@ from utils.ordre_and_categorize import (
 )
 
 from utils.clean_xml import clean_xml
-#from utils.title_form import normalize_titles_Bucer
 #from utils.title_form import normalize_titles_Aretius
-#from utils.title_form import normalize_titles_Lambertus 
+#from utils.title_form import normalize_titles_Bucer
 #from utils.title_form import normalize_titles_Bullinger
 #from utils.title_form import normalize_titles_Bugenhagen
+#from utils.title_form import normalize_titles_Lambertus 
+#from utils.title_form import normalize_titles_Calvin
+#from utils.title_form import normalize_titles_Hyperius
 
 def reorder_elements_and_pb(input_file, output_file):
     """Main function to reorder elements and sort <pb> tags."""
@@ -38,10 +40,13 @@ def reorder_elements_and_pb(input_file, output_file):
     
     #normalize_title : use the accurate fonction for your document
     #normalize_titles_Aretius(root)
-    #normalize_titles_Lambertus(root)
     #normalize_titles_Bucer(root)
     #normalize_titles_Bullinger(root)
     #normalize_titles_Bugenhagen(root)
+    #normalize_titles_Calvin(root)
+    #normalize_titles_Lambertus(root)
+    #normalize_titles_Hyperius(root)
+    
     
     body = root.find(".//body")
     reorder_elements_around_pb(body)
