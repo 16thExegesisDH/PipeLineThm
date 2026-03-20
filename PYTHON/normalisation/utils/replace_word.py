@@ -23,10 +23,8 @@ def replace_word(text):
     r'\s+gr̃':' grati', # abréviation de gratia
     r'\s+libus':' liber',
     #r'\s+oĩa':' omnia',
-    r'numq̃':'numquam'
+    r'numq̃':'numquam',
     r'praecaeptum':'praeceptum',
-    r'pluſq̃':'plusquam',
-    r'quicq̃':'quicquam',
     r'qué ':'que ',
     r'qd ': 'quod ',
     r'\s+spums':' spiritus ',
