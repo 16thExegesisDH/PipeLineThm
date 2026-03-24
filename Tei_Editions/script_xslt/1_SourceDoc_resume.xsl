@@ -13,19 +13,19 @@
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
         
-   <!--     <xsl:variable name="document">Hyperius_C3-6</xsl:variable>
+        <xsl:variable name="document">Pelican_C1-6</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
-        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>-->
+        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
         
         
          <!--for mdz-->  
-        <xsl:variable name="document">Lefevre_C1-6</xsl:variable>
+      <!--  <xsl:variable name="document">Lefevre_C1-6</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://api.digitale-sammlungen.de/</xsl:variable>
         <xsl:variable name="iiif-name">iiif/image/v2/</xsl:variable>
-        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>
+        <xsl:variable name="endfile">/full/0/default.jpg</xsl:variable>-->
         
         <!-- template for coordinates with a specific path, specific path in the $context value -->
         <xsl:template name="coordinate-with-context" xmlns="http://www.tei-c.org/ns/1.0">
