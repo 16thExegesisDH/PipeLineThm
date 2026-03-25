@@ -69567,7 +69567,7 @@
                <reg type="normalized">nostri lesu Christi optatesse cum eis. Amen.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844085_block_4" type="MainZone-Head">
+         <ab corresp="#f844085_block_4" type="MainZone-Head" xml:id="_v1">
             <lb corresp="#f844085_line_8_ligne_2"/>
             <choice>
                <orig>COMMENTARIVM IN EPISTOLAM</orig>
@@ -69591,7 +69591,7 @@
                <reg type="normalized">FINIS.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844085_block_6" type="MainZone-Head">
+         <ab corresp="#f844085_block_6" type="MainZone-Head" xml:id="_v2">
             <lb corresp="#f844085_line_12_ligne_2"/>
             <choice>
                <orig>ARGVMENTVM PER ERAS. ROTEROD.</orig>
@@ -69702,7 +69702,7 @@
                <reg type="normalized">Scribite Laodicea per Tychicum diaconum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844085_block_11" type="MainZone-Head">
+         <ab corresp="#f844085_block_11" type="MainZone-Head" xml:id="_v3">
             <lb corresp="#f844085_line_35_ligne_2"/>
             <choice>
                <orig>AD LECTOREM C.P.</orig>
@@ -69766,7 +69766,7 @@
                </choice>
             </hi>
          </fw>
-         <ab corresp="#f844086_block_2" type="MainZone-Head">
+         <ab corresp="#f844086_block_2" type="MainZone-Head" xml:id="C_PRIMVM">
             <hi>
                <lb corresp="#f844086_line_2_ligne_2"/>
                <choice>
@@ -69784,7 +69784,9 @@
                </choice>
             </hi>
          </ab>
-         <ab corresp="#f844086_block_4" type="MainZone-Head">
+         <ab corresp="#f844086_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v1">
             <hi>
                <lb corresp="#f844086_line_4_ligne_2"/>
                <choice>
@@ -70663,7 +70665,9 @@
                <reg type="normalized">tem, uel non pro uiribus promouent.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844089_block_2" type="MainZone-Head">
+         <ab corresp="#f844089_block_2"
+             type="MainZone-Head"
+             xml:id="C_I_v2">
             <lb corresp="#f844089_line_4_ligne_2"/>
             <choice>
                <orig>Sicut rogaui te ut remaneres Epheſi, cum irem in Macedoniam, ut de</orig>
@@ -71096,7 +71100,9 @@
                <reg type="normalized">sine fide nulla aedificatio, sed subuersio est.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844090_block_4" type="MainZone-Head">
+         <ab corresp="#f844090_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v3">
             <lb corresp="#f844090_line_40_ligne_2"/>
             <choice>
                <orig>Finis autem præcepti eſt charitas, de corde puro, &amp; conſcientia bona,</orig>
@@ -71241,7 +71247,9 @@
                <reg type="normalized">nefacere proximo.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844091_block_3" type="MainZone-Head">
+         <ab corresp="#f844091_block_3"
+             type="MainZone-Head"
+             xml:id="C_I_v4">
             <lb corresp="#f844091_line_14_ligne_2"/>
             <choice>
                <orig>A quibus quidam aberrantes conuerſi ſunt in uaniloquium, uolen¬</orig>
@@ -71390,7 +71398,9 @@
                <reg type="normalized">amiserimus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844091_block_7" type="MainZone-Head">
+         <ab corresp="#f844091_block_7"
+             type="MainZone-Head"
+             xml:id="C_I_v5">
             <lb corresp="#f844091_line_45_ligne_2"/>
             <choice>
                <orig>Scimus autem quia bona eſt lex, ſi quis ea legitime utatur.</orig>
@@ -71478,7 +71488,9 @@
                <reg type="normalized">fugiens, comedente.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844092_block_5" type="MainZone-Head">
+         <ab corresp="#f844092_block_5"
+             type="MainZone-Head"
+             xml:id="C_I_v6">
             <lb corresp="#f844092_line_10_ligne_2"/>
             <choice>
                <orig>Scientes hoc, quia lex iuſto non eſt poſita.</orig>
@@ -71537,7 +71549,9 @@
                <reg type="normalized">mino obtemperaturus pro uirili.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844092_block_7" type="MainZone-Head">
+         <ab corresp="#f844092_block_7"
+             type="MainZone-Head"
+             xml:id="C_I_v7">
             <lb corresp="#f844092_line_21_ligne_2"/>
             <choice>
                <orig>Sed iniuſtis &amp; non ſubditis, impijs &amp; peccatoribus ſceleratis &amp; con¬</orig>
@@ -71895,7 +71909,9 @@
                <reg type="normalized">et iuxta leges rigide sunt plectendi.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844093_block_4" type="MainZone-Head">
+         <ab corresp="#f844093_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v8">
             <lb corresp="#f844093_line_39_ligne_2"/>
             <choice>
                <orig>Et ſi quid aliud ſanæ doctrinæ aduerſatur, quæ eſt ſecundum euangeᛘ</orig>
@@ -72143,7 +72159,9 @@
                <reg type="normalized">quoque fructum centesimum prolaturum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844094_block_4" type="MainZone-Head">
+         <ab corresp="#f844094_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v9">
             <lb corresp="#f844094_line_36_ligne_2"/>
             <choice>
                <orig>Gratias ago ei qui me cõfortauit in Chriſto leſu domino noſtro, quia</orig>
@@ -72376,7 +72394,9 @@
                <reg type="normalized">naque ministeriorum singula singulis impertiri pro singulorum necessitatibus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844095_block_4" type="MainZone-Head">
+         <ab corresp="#f844095_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v10">
             <lb corresp="#f844095_line_30_ligne_2"/>
             <choice>
                <orig>Qui prius eram blaſphemus, &amp; perſecutor, &amp; contumelioſus, ſed mi¬</orig>
@@ -72766,7 +72786,9 @@
                <reg type="normalized">R 4</reg>
             </choice>
          </fw>
-         <ab corresp="#f844097_block_1" type="MainZone-Head">
+         <ab corresp="#f844097_block_1"
+             type="MainZone-Head"
+             xml:id="C_I_v11">
             <lb corresp="#f844097_line_1_ligne_2"/>
             <choice>
                <orig>Superabundauit autem gratia domini noſtri cum fide &amp; dilectione,</orig>
@@ -72890,7 +72912,9 @@
                <reg type="normalized">digna legis, et remissio peceatorum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844097_block_5" type="MainZone-Head">
+         <ab corresp="#f844097_block_5"
+             type="MainZone-Head"
+             xml:id="C_I_v12">
             <lb corresp="#f844097_line_27_ligne_2"/>
             <choice>
                <orig>Fidelis ſermo &amp; omni acceptione dignus, Quia Chriſtus leſus uenit</orig>
@@ -73138,7 +73162,9 @@
                <reg type="normalized">dei gloriam elucesceret.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844098_block_4" type="MainZone-Head">
+         <ab corresp="#f844098_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v13">
             <lb corresp="#f844098_line_24_ligne_2"/>
             <choice>
                <orig>Sedideo miſericordiam ſum conſequutus, ut in me primo oſtenderet</orig>
@@ -73304,7 +73330,9 @@
                <reg type="normalized">dentes assequimur per Christum dominum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844099_block_2" type="MainZone-Head">
+         <ab corresp="#f844099_block_2"
+             type="MainZone-Head"
+             xml:id="C_I_v14">
             <lb corresp="#f844099_line_4_ligne_2"/>
             <choice>
                <orig>Regi autem ſæculorum immortali, inuiſibili ſoli deo honor &amp; gloria</orig>
@@ -73647,7 +73675,9 @@
                <reg type="normalized">ta est, et fidei omnium quae dicta sunt proxime de diuinitatis excellentia et gloria,</reg>
             </choice>
          </ab>
-         <ab corresp="#f844100_block_4" type="MainZone-Head">
+         <ab corresp="#f844100_block_4"
+             type="MainZone-Head"
+             xml:id="C_I_v15">
             <lb corresp="#f844100_line_22_ligne_2"/>
             <choice>
                <orig>Hocpræceptum commendo tibi fili Timothee iuxta prophetias quæ</orig>
@@ -73833,7 +73863,9 @@
                <reg type="normalized">siam Ephesiorum, exemplum futurus episcopis successoribus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844101_block_6" type="MainZone-Head">
+         <ab corresp="#f844101_block_6"
+             type="MainZone-Head"
+             xml:id="C_I_v16">
             <lb corresp="#f844101_line_7_ligne_2"/>
             <choice>
                <orig>Quam quidam repellentes circa fidem naufragauerunt, ex quibus eſt</orig>
@@ -73952,7 +73984,9 @@
                <reg type="normalized">puritasque doctrinae et operum commaculetur, et tandem opprimatueritatem.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844101_eSc_textblock_900b5158" type="MainZone-Head">
+         <ab corresp="#f844101_eSc_textblock_900b5158"
+             type="MainZone-Head"
+             xml:id="C_II">
             <lb corresp="#f844101_line_30_ligne_2"/>
             <choice>
                <orig>CAPVT II.</orig>
@@ -73968,7 +74002,7 @@
                </choice>
             </hi>
          </ab>
-         <ab corresp="#f844101_block_7" type="MainZone-Head">
+         <ab corresp="#f844101_block_7" type="MainZone-Head" xml:id="C_II_v1">
             <lb corresp="#f844101_line_31_ligne_2"/>
             <choice>
                <orig>Bſecro igitur primum omnium fieri obſecrationes, orationes,</orig>
@@ -74283,7 +74317,7 @@
                <reg type="normalized">dei, et sine sanctorum exemplo.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844102_block_3" type="MainZone-Head">
+         <ab corresp="#f844102_block_3" type="MainZone-Head" xml:id="C_II_v2">
             <lb corresp="#f844102_line_42_ligne_2"/>
             <choice>
                <orig>Pro regibus, &amp; omnibus qui in ſublimitate cõſtituti ſunt, ut quietam</orig>
@@ -74541,7 +74575,7 @@
                <reg type="normalized">leues personas diu constare non potest.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844103_block_6" type="MainZone-Head">
+         <ab corresp="#f844103_block_6" type="MainZone-Head" xml:id="C_II_v3">
             <lb corresp="#f844103_line_40_ligne_2"/>
             <choice>
                <orig>Hoc enim bonum eſt, &amp; acceptum coram ſaluatore noſtro deo, qui</orig>
@@ -74774,7 +74808,7 @@
                <reg type="normalized">uoluerit fieri sapiens in deo et saluus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844104_block_4" type="MainZone-Head">
+         <ab corresp="#f844104_block_4" type="MainZone-Head" xml:id="C_II_v4">
             <lb corresp="#f844104_line_35_ligne_2"/>
             <choice>
                <orig>Vnus enim deus, unus &amp; mediator dei &amp; hominum, homo Chriſtus</orig>
@@ -75281,7 +75315,7 @@
                <reg type="normalized">qua probatur.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844106_block_7" type="MainZone-Head">
+         <ab corresp="#f844106_block_7" type="MainZone-Head" xml:id="C_II_v5">
             <lb corresp="#f844106_line_29_ligne_2"/>
             <choice>
                <orig>Cuius teſtimonium temporibus ſuis confirmatum eſt, in quo poſitus</orig>
@@ -75494,7 +75528,7 @@
                <reg type="normalized">nis, ambitionem honoris, et quaesitum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844107_block_5" type="MainZone-Head">
+         <ab corresp="#f844107_block_5" type="MainZone-Head" xml:id="C_II_v6">
             <lb corresp="#f844107_line_18_ligne_2"/>
             <choice>
                <orig>Volo ergo uiros orare in omni loco, leuantes puras manus, ſine ira</orig>
@@ -75682,7 +75716,7 @@
                <reg type="normalized">rimus propter deum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844108_block_3" type="MainZone-Head">
+         <ab corresp="#f844108_block_3" type="MainZone-Head" xml:id="C_II_v7">
             <lb corresp="#f844108_line_4_ligne_2"/>
             <choice>
                <orig>Similiter &amp; mulieres in habitu ornato, cum uerecundia &amp; ſobrietate</orig>
@@ -76035,7 +76069,7 @@
                <reg type="normalized">moneant, corrigant, et a malo exemplo in uerbis et operibus solicite sibi temperent.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844109_block_5" type="MainZone-Head">
+         <ab corresp="#f844109_block_5" type="MainZone-Head" xml:id="C_II_v8">
             <lb corresp="#f844109_line_20_ligne_2"/>
             <choice>
                <orig>iulier in ſilentio diſcat cum omni ſubiectione. Docere autem mulieᛘ</orig>
@@ -76348,7 +76382,7 @@
                <reg type="normalized">potius cum silentio.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844110_block_2" type="MainZone-Head">
+         <ab corresp="#f844110_block_2" type="MainZone-Head" xml:id="C_II_v9">
             <lb corresp="#f844110_line_31_ligne_2"/>
             <choice>
                <orig>Adam enim primus formatus eſt, deinde Eua: &amp; Adam non eſt ſedu</orig>
@@ -76516,7 +76550,7 @@
                <reg type="normalized">ra et sui admonita, praesumere doctrinam non audeat solidae uernalis et sapientiae.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844111_block_7" type="MainZone-Head">
+         <ab corresp="#f844111_block_7" type="MainZone-Head" xml:id="C_II_v10">
             <lb corresp="#f844111_line_11_ligne_2"/>
             <choice>
                <orig>Saluabitur autem per filiorum generationem, ſi permanſerit in fide</orig>
@@ -76660,7 +76694,9 @@
                <reg type="normalized">insolentia puellari deprauatae sunt, ut nesciant quid sit uerecundia uel honestas?</reg>
             </choice>
          </ab>
-         <ab corresp="#f844111_eSc_textblock_fbf81e11" type="MainZone-Head">
+         <ab corresp="#f844111_eSc_textblock_fbf81e11"
+             type="MainZone-Head"
+             xml:id="C_III">
             <lb corresp="#f844111_line_39_ligne_2"/>
             <choice>
                <orig>CAPVT III.</orig>
@@ -76676,7 +76712,9 @@
                </choice>
             </hi>
          </ab>
-         <ab corresp="#f844111_eSc_textblock_fe236880" type="MainZone-Head">
+         <ab corresp="#f844111_eSc_textblock_fe236880"
+             type="MainZone-Head"
+             xml:id="C_III_v1">
             <lb corresp="#f844111_line_40_ligne_2"/>
             <choice>
                <orig>Idelis ſermo.</orig>
@@ -76720,7 +76758,7 @@
                <reg type="normalized">efficax, quem mihi disseminandum credidit in orbem fidelibus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844111_block_9" type="MainZone-Head">
+         <ab corresp="#f844111_block_9" type="MainZone-Head" xml:id="C_III_v2">
             <lb corresp="#f844111_line_49_ligne_2"/>
             <choice>
                <orig>Si quis epiſcopatum deſiderat, bonum opus deſiderat.</orig>
@@ -76981,7 +77019,7 @@
                <reg type="normalized">antistes, praepositus, prior, abbas aut praeceptor.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844112_block_4" type="MainZone-Head">
+         <ab corresp="#f844112_block_4" type="MainZone-Head" xml:id="C_III_v3">
             <lb corresp="#f844112_line_49_ligne_2"/>
             <choice>
                <orig>Oportet enim epiſcopum irreprehenſibilem eſſe.</orig>
@@ -77140,7 +77178,7 @@
                <reg type="normalized">sibilis, quae et consequenter erunt diligentius annotanda.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844113_block_5" type="MainZone-Head">
+         <ab corresp="#f844113_block_5" type="MainZone-Head" xml:id="C_III_v4">
             <lb corresp="#f844113_line_31_ligne_2"/>
             <choice>
                <orig>Vnius uxoris uirum, ſobrium, ornatum, prudentem, pudicum, ho¬</orig>
@@ -78887,7 +78925,7 @@
                <reg type="normalized">scere exercitio filiorum, quod doceat in ecclesia subditorum. Vnde et sequitur.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844120_block_3" type="MainZone-Head">
+         <ab corresp="#f844120_block_3" type="MainZone-Head" xml:id="C_III_v5">
             <lb corresp="#f844120_line_7_ligne_2"/>
             <choice>
                <orig>Quod ſi quis domui ſuæ bene præeſſe neſcit, quomodo eccleliæ dei</orig>
@@ -78936,7 +78974,7 @@
                <reg type="normalized">tius ualeat sustinere.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844120_block_7" type="MainZone-Head">
+         <ab corresp="#f844120_block_7" type="MainZone-Head" xml:id="C_III_v6">
             <lb corresp="#f844120_line_18_ligne_2"/>
             <choice>
                <orig>Non nouitium uel neophitum, ne in ſuperbiam elatus, in iudicium inᛘ</orig>
@@ -79055,7 +79093,7 @@
                <reg type="normalized">cium incidunt calumniatorum, imo et sapientum nonnunquam.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844120_block_10" type="MainZone-Head">
+         <ab corresp="#f844120_block_10" type="MainZone-Head" xml:id="C_III_v7">
             <lb corresp="#f844120_line_42_ligne_2"/>
             <choice>
                <orig>Oportet autem &amp; illum teſtimonium habere bonum ab his qui foris</orig>
@@ -79143,7 +79181,7 @@
                <reg type="normalized">ipsa, et non solum minister.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844121_block_2" type="MainZone-Head">
+         <ab corresp="#f844121_block_2" type="MainZone-Head" xml:id="C_III_v8">
             <lb corresp="#f844121_line_3_ligne_2"/>
             <choice>
                <orig>Diacones ſimiliter pudicos, non bilingues, non multo uino deditos.</orig>
@@ -79277,7 +79315,7 @@
                <reg type="normalized">sus intolerabiles.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844121_block_7" type="MainZone-Head">
+         <ab corresp="#f844121_block_7" type="MainZone-Head" xml:id="C_III_v9">
             <lb corresp="#f844121_line_32_ligne_2"/>
             <choice>
                <orig>Habentes myſterium fidei in conſcientia pura.</orig>
@@ -79331,7 +79369,7 @@
                <reg type="normalized">dide egissent functionem suam, et fideles in ministerio ecclesiae inuenirentur:</reg>
             </choice>
          </ab>
-         <ab corresp="#f844121_block_9" type="MainZone-Head">
+         <ab corresp="#f844121_block_9" type="MainZone-Head" xml:id="C_III_v10">
             <lb corresp="#f844121_line_42_ligne_2"/>
             <choice>
                <orig>Et hi autem probentur primum, &amp; ſic miniſtrent, nullum erimen</orig>
@@ -79424,7 +79462,7 @@
                <reg type="normalized">et statum cum authoritate episcopi dehonestasset.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844122_block_4" type="MainZone-Head">
+         <ab corresp="#f844122_block_4" type="MainZone-Head" xml:id="C_III_v11">
             <lb corresp="#f844122_line_7_ligne_2"/>
             <choice>
                <orig>Mulieres ſimiliter pudicas, non detrahentes, ſobrias, fideles in o¬</orig>
@@ -79523,7 +79561,7 @@
                <reg type="normalized">quantum attinet ad suumofficium.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844122_block_7" type="MainZone-Head">
+         <ab corresp="#f844122_block_7" type="MainZone-Head" xml:id="C_III_v12">
             <lb corresp="#f844122_line_27_ligne_2"/>
             <choice>
                <orig>Diacones ſint unius uxoris uiri, qui filijs ſuis bene præſint, &amp; ſuis doᛘ</orig>
@@ -79884,7 +79922,7 @@
                <reg type="normalized">nemo sinatur in ecclesia, sed aeque non otiosi et ualidi mendicantes ferantur.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844123_block_4" type="MainZone-Head">
+         <ab corresp="#f844123_block_4" type="MainZone-Head" xml:id="C_III_v13">
             <lb corresp="#f844123_line_47_ligne_2"/>
             <choice>
                <orig>Qui enim bene miniſtrauerint, gradum bonum ſibi acquirẽt, &amp; mulᛘ</orig>
@@ -79977,7 +80015,7 @@
                <reg type="normalized">fidelis in Christi obsequio, ut nemo sibi fidem agendorum abrogare possit.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844124_block_5" type="MainZone-Head">
+         <ab corresp="#f844124_block_5" type="MainZone-Head" xml:id="C_III_v14">
             <lb corresp="#f844124_line_14_ligne_2"/>
             <choice>
                <orig>Hæc tibi ſcribo fili Timothee, ſperans me uenire ad te cito.</orig>
@@ -80006,7 +80044,7 @@
                <reg type="normalized">rumofficia essentordinanda in ecclesia.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844124_block_8" type="MainZone-Head">
+         <ab corresp="#f844124_block_8" type="MainZone-Head" xml:id="C_III_v15">
             <lb corresp="#f844124_line_20_ligne_2"/>
             <choice>
                <orig>Si autem tardauero ut ſcias quomodo oporteat te in domo dei con¬</orig>
@@ -80085,7 +80123,7 @@
                <reg type="normalized">na et catholica.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844124_block_11" type="MainZone-Head">
+         <ab corresp="#f844124_block_11" type="MainZone-Head" xml:id="C_III_v16">
             <lb corresp="#f844124_line_36_ligne_2"/>
             <choice>
                <orig>Quæ eſt eccleſia dei uiui, columna &amp; firmamentum ueritatis.</orig>
@@ -80159,7 +80197,7 @@
                <reg type="normalized">mus, et usque ad mortem defendimus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844124_block_14" type="MainZone-Head">
+         <ab corresp="#f844124_block_14" type="MainZone-Head" xml:id="C_III_v17">
             <lb corresp="#f844124_line_51_ligne_2"/>
             <choice>
                <orig>Et manifeſte magnum eſt pietatis ſacramentum, quod manifeſtatum</orig>
@@ -80186,7 +80224,7 @@
                <reg type="normalized">503</reg>
             </choice>
          </fw>
-         <ab corresp="#f844125_block_3" type="MainZone-Head">
+         <ab corresp="#f844125_block_3" type="MainZone-Head" xml:id="C_III_v18">
             <lb corresp="#f844125_line_3_ligne_2"/>
             <choice>
                <orig>gentibus, creditum eſt mundo, aſſumptum eſt in gloria.</orig>
@@ -80544,7 +80582,7 @@
                <reg type="normalized">uenientiora uel consequentiora potest, abundet is suo in spiritu.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844126_block_4" type="MainZone-Head">
+         <ab corresp="#f844126_block_4" type="MainZone-Head" xml:id="C_IIII">
             <lb corresp="#f844126_line_21_ligne_2"/>
             <choice>
                <orig>CAPVT IIII.</orig>
@@ -80552,15 +80590,15 @@
             </choice>
          </ab>
          <ab corresp="#f844126_block_5" type="DropCapitalZone">
-         <hi>
-            <lb corresp="#f844126_ligne_2"/>
-            <choice>
-               <orig>S</orig>
-               <reg type="normalized">S</reg>
-            </choice>
-         </hi>
+            <hi>
+               <lb corresp="#f844126_ligne_2"/>
+               <choice>
+                  <orig>S</orig>
+                  <reg type="normalized">S</reg>
+               </choice>
+            </hi>
          </ab>
-         <ab corresp="#f844126_block_6" type="MainZone-Head">
+         <ab corresp="#f844126_block_6" type="MainZone-Head" xml:id="C_IIII_v1">
             <lb corresp="#f844126_line_23_ligne_2"/>
             <choice>
                <orig>Piritus autem manifeſte dicit, Quia in nouiſſimis temporibus</orig>
@@ -80689,7 +80727,7 @@
                <reg type="normalized">dei, quo uere dominus uult coli, in spiritu, fide, spe et charitate, uereque sanctis operibus </reg>
             </choice>
          </ab>
-         <ab corresp="#f844126_block_9" type="MainZone-Head">
+         <ab corresp="#f844126_block_9" type="MainZone-Head" xml:id="C_IIII_v2">
             <lb corresp="#f844126_line_49_ligne_2"/>
             <choice>
                <orig>Attendentes ſpiritibus erroris, &amp; doctrinis dæmoniorum, in hypo¬</orig>
@@ -81010,7 +81048,7 @@
                <reg type="normalized">seruos suos, durissime iudicabuntur, ut portio eorum futura sit cum infidelibus, etc.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844128_block_4" type="MainZone-Head">
+         <ab corresp="#f844128_block_4" type="MainZone-Head" xml:id="C_IIII_v3">
             <lb corresp="#f844128_line_7_ligne_2"/>
             <choice>
                <orig>Prohibentium nubere, abſtinere à cibis, quos deus creauit ad percipiᛘ</orig>
@@ -81453,7 +81491,7 @@
                <reg type="normalized">ducabo carnes etc.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844129_block_4" type="MainZone-Head">
+         <ab corresp="#f844129_block_4" type="MainZone-Head" xml:id="C_IIII_v4">
             <lb corresp="#f844129_line_43_ligne_2"/>
             <choice>
                <orig>Hæc proponens fratribus, bonus eris miniſter Chriſti leſu, enutritus</orig>
@@ -81656,7 +81694,7 @@
                <reg type="normalized">qui semel gustare inceperunt doctrinam fidei.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844130_block_4" type="MainZone-Head">
+         <ab corresp="#f844130_block_4" type="MainZone-Head" xml:id="C_IIII_v5">
             <lb corresp="#f844130_line_31_ligne_2"/>
             <choice>
                <orig>lueptas autem &amp; aniles fabulas deuita. Exerce autem teipſum ad pie¬</orig>
@@ -81884,7 +81922,7 @@
                <reg type="normalized">nec promissum uero diuino cultus praeferri debet nec praeiudicare.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844131_block_3" type="MainZone-Head">
+         <ab corresp="#f844131_block_3" type="MainZone-Head" xml:id="C_IIII_v6">
             <lb corresp="#f844131_line_23_ligne_2"/>
             <choice>
                <orig>Fidelis ſermo, &amp; omni acceptione dignus. In hoc enim laboramus</orig>
@@ -82281,7 +82319,7 @@
                <reg type="normalized">animo exhorrescit, nihil mixtum, uarium, impurum, duplex et insyncerumad.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844132_block_8" type="MainZone-Head"/>
+         <ab corresp="#f844132_block_8" type="MainZone-Head" xml:id="C_IIII_v7"/>
          <pb corresp="f844133"/>
          <fw corresp="#f844133_block_4" type="RunningTitleZone">
             <lb corresp="#f844133_line_49_ligne_2"/>
@@ -82321,7 +82359,7 @@
                <reg type="normalized">stitatis uirtute libido regatur, et minime regat corpus uel animum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844133_block_2" type="MainZone-Head">
+         <ab corresp="#f844133_block_2" type="MainZone-Head" xml:id="C_IIII_v8">
             <lb corresp="#f844133_line_3_ligne_2"/>
             <choice>
                <orig>Dum uenio attende lectioni, exhortationi &amp; doctrinæ,</orig>
@@ -82594,7 +82632,7 @@
                <reg type="normalized">cantur sint incerta et opiniones, sed scripturarum fide et authoritate solidata.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844134_block_3" type="MainZone-Head">
+         <ab corresp="#f844134_block_3" type="MainZone-Head" xml:id="C_IIII_v9">
             <lb corresp="#f844134_line_5_ligne_2"/>
             <choice>
                <orig>Noli negligere gratiã quæ in te eſt, quæ data eſt tibi per prophetiam,</orig>
@@ -82668,7 +82706,7 @@
                <reg type="normalized">nuum impositionem in profectum ecclesiae tuae.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844134_block_7" type="MainZone-Head">
+         <ab corresp="#f844134_block_7" type="MainZone-Head" xml:id="C_IIII_v10">
             <lb corresp="#f844134_line_21_ligne_2"/>
             <choice>
                <orig>Hæcmeditare, in his eſto, ut profectus tuus manifeſtus ſit omnibus:</orig>
@@ -82832,7 +82870,7 @@
                <reg type="normalized">513</reg>
             </choice>
          </fw>
-         <ab corresp="#f844135_block_1" type="MainZone-Head">
+         <ab corresp="#f844135_block_1" type="MainZone-Head" xml:id="C_V">
             <lb corresp="#f844135_line_1_ligne_2"/>
             <choice>
                <orig>CAPVT V.</orig>
@@ -82840,15 +82878,15 @@
             </choice>
          </ab>
          <ab corresp="#f844135_block_2" type="DropCapitalZone">
-         <hi>
-            <lb corresp="#f844135_ligne_2"/>
-            <choice>
-               <orig>S</orig>
-               <reg type="normalized">S</reg>
-            </choice>
-         </hi>
+            <hi>
+               <lb corresp="#f844135_ligne_2"/>
+               <choice>
+                  <orig>S</orig>
+                  <reg type="normalized">S</reg>
+               </choice>
+            </hi>
          </ab>
-         <ab corresp="#f844135_block_3" type="MainZone-Head">
+         <ab corresp="#f844135_block_3" type="MainZone-Head" xml:id="C_V_v1">
             <lb corresp="#f844135_line_3_ligne_2"/>
             <choice>
                <orig>Eniorem ne increpaueris, ſed obſecraut patrem, iuuenes ut fra¬</orig>
@@ -83126,7 +83164,7 @@
                <reg type="normalized">moribus: nemo enim satis et omnibus horis sapit, hac potissimum in causa.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844136_block_3" type="MainZone-Head">
+         <ab corresp="#f844136_block_3" type="MainZone-Head" xml:id="C_V_v2">
             <lb corresp="#f844136_line_6_ligne_2"/>
             <choice>
                <orig>Viduas honora, quæ ueræ uiduæ ſunt. Si qua autem uidua filios ha¬</orig>
@@ -83270,7 +83308,7 @@
                <reg type="normalized">si ad hoc per episcopum sexagenaria deligatur.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844136_block_8" type="MainZone-Head">
+         <ab corresp="#f844136_block_8" type="MainZone-Head" xml:id="C_V_v3">
             <lb corresp="#f844136_line_37_ligne_2"/>
             <choice>
                <orig>Quæ autem uere uidua eſt &amp; deſolata, ſperet in deum, &amp; inſtet obfe¬</orig>
@@ -83386,7 +83424,7 @@
                <reg type="normalized">per poenitentiam.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844137_block_3" type="MainZone-Head">
+         <ab corresp="#f844137_block_3" type="MainZone-Head" xml:id="C_V_v4">
             <lb corresp="#f844137_line_7_ligne_2"/>
             <choice>
                <orig>Et hoc præcipe, ut irreprehenſibiles ſint.</orig>
@@ -83420,7 +83458,7 @@
                <reg type="normalized">dum libidini exoneratae maritis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844137_block_6" type="MainZone-Head">
+         <ab corresp="#f844137_block_6" type="MainZone-Head" xml:id="C_V_v5">
             <lb corresp="#f844137_line_14_ligne_2"/>
             <choice>
                <orig>Si quis autem ſuorum, &amp; maxime domeſticorum, curam non habet,</orig>
@@ -83564,7 +83602,7 @@
                <reg type="normalized">Sole, et uerior statutis humanis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844137_block_11" type="MainZone-Head">
+         <ab corresp="#f844137_block_11" type="MainZone-Head" xml:id="C_V_v6">
             <lb corresp="#f844137_line_45_ligne_2"/>
             <choice>
                <orig>Vidua eligatur non minus ſexaginta annorum, quæ fuerit unius uiri</orig>
@@ -84528,7 +84566,7 @@
                <reg type="normalized">toti propensi in opera pietatis, neglectui habuerunt temporalia bona sua.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844141_block_3" type="MainZone-Head">
+         <ab corresp="#f844141_block_3" type="MainZone-Head" xml:id="C_V_v7">
             <lb corresp="#f844141_line_23_ligne_2"/>
             <choice>
                <orig>Adoleſcentiores autem uiduas deuita.</orig>
@@ -84632,7 +84670,7 @@
                <reg type="normalized">scientiis inextricabilia posuerunt animabus piis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844141_block_7" type="MainZone-Head">
+         <ab corresp="#f844141_block_7" type="MainZone-Head" xml:id="C_V_v8">
             <lb corresp="#f844141_line_45_ligne_2"/>
             <choice>
                <orig>Cum enim luxuriatæ fuerint in Chriſto, nubere uolunt habentes da¬</orig>
@@ -84765,7 +84803,7 @@
                <reg type="normalized">quam quae fieri potuerint et facta sint.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844142_block_4" type="MainZone-Head">
+         <ab corresp="#f844142_block_4" type="MainZone-Head" xml:id="C_V_v9">
             <lb corresp="#f844142_line_19_ligne_3"/>
             <choice>
                <orig>Simul autem &amp; otioſæ diſcũt circuire domos: non ſolum otiolæ, ſed</orig>
@@ -84844,7 +84882,7 @@
                <reg type="normalized">tiam suam hactenus palliatam produnt tandem, timore tantum poenae dissimulatam.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844142_block_6" type="MainZone-Head">
+         <ab corresp="#f844142_block_6" type="MainZone-Head" xml:id="C_V_v10">
             <lb corresp="#f844142_line_34_ligne_2"/>
             <choice>
                <orig>Volo autẽ iuniores nubere, filios procreare, matresfamilias eſſe, nulᛘ</orig>
@@ -85002,7 +85040,7 @@
                <reg type="normalized">dulgetur.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844143_block_3" type="MainZone-Head">
+         <ab corresp="#f844143_block_3" type="MainZone-Head" xml:id="C_V_v11">
             <lb corresp="#f844143_line_11_ligne_2"/>
             <choice>
                <orig>lam enim quædam conuerſæ ſunt retro poſt ſatanam.</orig>
@@ -85181,7 +85219,7 @@
                <reg type="normalized">diabolicis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844143_block_7" type="MainZone-Head">
+         <ab corresp="#f844143_block_7" type="MainZone-Head" xml:id="C_V_v12">
             <lb corresp="#f844143_line_48_ligne_2"/>
             <choice>
                <orig>Si quis fidelis habet uiduas, ſubminiſtret illis, ut non grauetur eccle¬</orig>
@@ -85259,7 +85297,7 @@
                <reg type="normalized">dandum sit, et uere ecclesiastici qui dicantur.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844144_block_4" type="MainZone-Head">
+         <ab corresp="#f844144_block_4" type="MainZone-Head" xml:id="C_V_v13">
             <lb corresp="#f844144_line_10_ligne_2"/>
             <choice>
                <orig>Qui bene præſunt presbyteri, duplici honore digni habeantur, maxiᛘ</orig>
@@ -85512,7 +85550,7 @@
                <reg type="normalized">spensator sit idoneus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844145_block_5" type="MainZone-Head">
+         <ab corresp="#f844145_block_5" type="MainZone-Head" xml:id="C_V_v14">
             <lb corresp="#f844145_line_9_ligne_2"/>
             <choice>
                <orig>Dicit enim ſcriptura, Non infrenabis os boui trituranti.</orig>
@@ -85651,7 +85689,7 @@
                <reg type="normalized">domini omnia huiusmodi declarabit et iudicabit.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844145_block_8" type="MainZone-Head">
+         <ab corresp="#f844145_block_8" type="MainZone-Head" xml:id="C_V_v15">
             <lb corresp="#f844145_line_37_ligne_2"/>
             <choice>
                <orig>Dignus eſt enim operarius mercede ſua.</orig>
@@ -85829,7 +85867,7 @@
                <reg type="normalized">infidelibus in saeculo futuro.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844146_block_5" type="MainZone-Head">
+         <ab corresp="#f844146_block_5" type="MainZone-Head" xml:id="C_V_v16">
             <lb corresp="#f844146_line_19_ligne_2"/>
             <choice>
                <orig>Aduerſus presbyterum accuſationem noli accipere, niſi ſub duobus</orig>
@@ -86070,7 +86108,7 @@
                <reg type="normalized">conuincendos de inhonestate.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844147_block_5" type="MainZone-Head">
+         <ab corresp="#f844147_block_5" type="MainZone-Head" xml:id="C_V_v17">
             <lb corresp="#f844147_line_16_ligne_2"/>
             <choice>
                <orig>Peccantes coram omnibus argue, ut cæteri timorem habeant.</orig>
@@ -86283,7 +86321,7 @@
                <reg type="normalized">ut feratur ab ecclesia, qui ecclesiam tam grauiter scandalizat.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844148_block_4" type="MainZone-Head">
+         <ab corresp="#f844148_block_4" type="MainZone-Head" xml:id="C_V_v18">
             <lb corresp="#f844148_line_5_ligne_2"/>
             <choice>
                <orig>Teſtificor coram deo &amp; Chriſto leſu, &amp; electis angelis eius, ut hæc cuᛘ</orig>
@@ -86452,7 +86490,7 @@
                <reg type="normalized">siae episcopus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844148_block_7" type="MainZone-Head">
+         <ab corresp="#f844148_block_7" type="MainZone-Head" xml:id="C_V_v19">
             <lb corresp="#f844148_line_39_ligne_2"/>
             <choice>
                <orig>Manus cito nemini impoſueris, ne cõmunicaueris peccatis alienis.</orig>
@@ -86558,7 +86596,7 @@
                <reg type="normalized">ueritatis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844149_block_3" type="MainZone-Head">
+         <ab corresp="#f844149_block_3" type="MainZone-Head" xml:id="C_V_v20">
             <lb corresp="#f844149_line_7_ligne_2"/>
             <choice>
                <orig>Teipſum caſtum cuſtodi.</orig>
@@ -86612,7 +86650,7 @@
                <reg type="normalized">consequenter,</reg>
             </choice>
          </ab>
-         <ab corresp="#f844149_block_6" type="MainZone-Head">
+         <ab corresp="#f844149_block_6" type="MainZone-Head" xml:id="C_V_v21">
             <lb corresp="#f844149_line_18_ligne_2"/>
             <choice>
                <orig>Noli adhuc aquã bibere, ſed modico uino utere, propter ſtomachum</orig>
@@ -86706,7 +86744,7 @@
                <reg type="normalized">fortationes, sed dietam indicit et parsimoniam, optimam studiosorum medicinam.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844149_block_11" type="MainZone-Head">
+         <ab corresp="#f844149_block_11" type="MainZone-Head" xml:id="C_V_v22">
             <lb corresp="#f844149_line_39_ligne_2"/>
             <choice>
                <orig>Quorundam hominum peccata manifeſta ſunt, præcedentia ad iudi¬</orig>
@@ -86909,7 +86947,7 @@
                <reg type="normalized">entur a iudicio diuino.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844150_block_4" type="MainZone-Head">
+         <ab corresp="#f844150_block_4" type="MainZone-Head" xml:id="C_VI">
             <lb corresp="#f844150_line_25_ligne_2"/>
             <choice>
                <orig>CAPVT VI.</orig>
@@ -86923,7 +86961,7 @@
                <reg type="normalized">Q</reg>
             </choice>
          </ab>
-         <ab corresp="#f844150_block_6" type="MainZone-Head">
+         <ab corresp="#f844150_block_6" type="MainZone-Head" xml:id="C_VI_v1">
             <lb corresp="#f844150_line_27_ligne_2"/>
             <choice>
                <orig>Vicũ ſunt ſub iugo ſerui, dominos ſuos om̃i honore dignos</orig>
@@ -87121,7 +87159,7 @@
                <reg type="normalized">erit excutiendum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844151_block_3" type="MainZone-Head">
+         <ab corresp="#f844151_block_3" type="MainZone-Head" xml:id="C_VI_v2">
             <lb corresp="#f844151_line_12_ligne_2"/>
             <choice>
                <orig>Qui autem fideles habent dominos, non contemnant, quia fratres</orig>
@@ -87265,7 +87303,7 @@
                <reg type="normalized">obedire quam hominibus, quamlibet mundana potestate contra deum turgidis.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844151_block_6" type="MainZone-Head">
+         <ab corresp="#f844151_block_6" type="MainZone-Head" xml:id="C_VI_v3">
             <lb corresp="#f844151_line_42_ligne_2"/>
             <choice>
                <orig>Hæc doce &amp; exhortare.</orig>
@@ -87337,7 +87375,7 @@
                <reg type="normalized">saepe praecipitat, sed quae in Christo est, patientiam et longanimitatem.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844152_block_4" type="MainZone-Head">
+         <ab corresp="#f844152_block_4" type="MainZone-Head" xml:id="C_VI_v4">
             <lb corresp="#f844152_line_4_ligne_2"/>
             <choice>
                <orig>Si quis aliter docet, &amp; non acquieſcit ſanis ſermonibus domini noſti</orig>
@@ -87635,7 +87673,7 @@
                <reg type="normalized">tulerunt suum sensum, fastum et quaestum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844153_block_3" type="MainZone-Head">
+         <ab corresp="#f844153_block_3" type="MainZone-Head" xml:id="C_VI_v5">
             <lb corresp="#f844153_line_9_ligne_2"/>
             <choice>
                <orig>Ex quibus oriuntur inuidiæ, cõtentiones &amp; blaſphemiæ, ſuſpicione</orig>
@@ -87903,7 +87941,7 @@
                <reg type="normalized">fortissime?</reg>
             </choice>
          </ab>
-         <ab corresp="#f844154_block_5" type="MainZone-Head">
+         <ab corresp="#f844154_block_5" type="MainZone-Head" xml:id="C_VI_v6">
             <lb corresp="#f844154_line_12_ligne_2"/>
             <choice>
                <orig>Et qui ueritate priuati ſunt, exiſtimantium quæſtum eſſe pietatem.</orig>
@@ -88201,7 +88239,7 @@
                <reg type="normalized">ecclesiae suae.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844155_block_3" type="MainZone-Head">
+         <ab corresp="#f844155_block_3" type="MainZone-Head" xml:id="C_VI_v7">
             <lb corresp="#f844155_line_15_ligne_2"/>
             <choice>
                <orig>Eſt autem quæſtus magnus pietas cum ſufficientia.</orig>
@@ -88235,7 +88273,7 @@
                <reg type="normalized">stare. Multa conquisiuit, et abundanter thesaurizauit sibi, qui pietatem obtinuit.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844155_block_5" type="MainZone-Head">
+         <ab corresp="#f844155_block_5" type="MainZone-Head" xml:id="C_VI_v8">
             <lb corresp="#f844155_line_21_ligne_2"/>
             <choice>
                <orig>Nihil enim intulimus in hunc mundum, hauddubium quia nec auferᛘ</orig>
@@ -88324,7 +88362,7 @@
                <reg type="normalized">tum periculum damnosi luxus et fastus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844155_block_10" type="MainZone-Head">
+         <ab corresp="#f844155_block_10" type="MainZone-Head" xml:id="C_VI_v9">
             <lb corresp="#f844155_line_41_ligne_2"/>
             <choice>
                <orig>Habentes autem alimenta, &amp; quibus tegamur, his contenti ſimus.</orig>
@@ -88452,7 +88490,7 @@
                <reg type="normalized">me apostolici.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844156_block_4" type="MainZone-Head">
+         <ab corresp="#f844156_block_4" type="MainZone-Head" xml:id="C_VI_v10">
             <lb corresp="#f844156_line_12_ligne_2"/>
             <choice>
                <orig>Nam qui uolunt diuites fieri in hoc ſæculo, incidunt in tentationem,</orig>
@@ -88905,7 +88943,7 @@
                <reg type="normalized">culpa bis miseri, cum fide et obedientia Christi possent esse beati.</reg>
             </choice>
          </ab>
-        <!-- <ab corresp="#f844157_block_4" type="MainZone-Head"> deplaced for xslt script
+         <!-- <ab corresp="#f844157_block_4" type="MainZone-Head"> deplaced for xslt script
             <lb corresp="#f844157_line_50_ligne_2"/>
             <choice>
                <orig>Tu autem, o homo dei, hæc fuge, ſectare uero iuſtitiam, pietatem, fi¬</orig>
@@ -88935,7 +88973,7 @@
                <reg type="normalized">ueranter</reg>
             </choice>
          </fw>
-         <ab corresp="#f844158_block_2" type="MainZone-Head">
+         <ab corresp="#f844158_block_2" type="MainZone-Head" xml:id="C_VI_v11">
             <lb corresp="#f844157_line_50_ligne_2"/>
             <choice>
                <orig>Tu autem, o homo dei, hæc fuge, ſectare uero iuſtitiam, pietatem, fi¬</orig>
@@ -89089,7 +89127,7 @@
                <reg type="normalized">tanda sunt semper, sed longe diligentius exercenda in hoc mundo.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844158_block_5" type="MainZone-Head">
+         <ab corresp="#f844158_block_5" type="MainZone-Head" xml:id="C_VI_v12">
             <lb corresp="#f844158_line_33_ligne_2"/>
             <choice>
                <orig>Certa bonum certamen fidei, apprehende uitam æternam, in qua uo¬</orig>
@@ -89240,7 +89278,7 @@
                <reg type="normalized">nuamque ex qua nemo excluditur? De qua alias.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844159_block_3" type="MainZone-Head">
+         <ab corresp="#f844159_block_3" type="MainZone-Head" xml:id="C_VI_v13">
             <lb corresp="#f844159_line_10_ligne_2"/>
             <choice>
                <orig>Præcipio tibi coram deo, qui uiuificat omnia, &amp; Chriſto leſu, qui teſtiᛘ</orig>
@@ -89473,7 +89511,7 @@
                <reg type="normalized">caturus adueniat in fine mundi.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844160_block_4" type="MainZone-Head">
+         <ab corresp="#f844160_block_4" type="MainZone-Head" xml:id="C_VI_v14">
             <lb corresp="#f844160_line_5_ligne_2"/>
             <choice>
                <orig>Quem ſuis temporibus oſtẽdet beatus &amp; ſolus princeps, rex regnan¬</orig>
@@ -89761,7 +89799,7 @@
                <reg type="normalized">mae et spiritus immortales sunt per dei gratiam.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844161_block_3" type="MainZone-Head">
+         <ab corresp="#f844161_block_3" type="MainZone-Head" xml:id="C_VI_v15">
             <lb corresp="#f844161_line_10_ligne_2"/>
             <choice>
                <orig>Qui lucem habitat inacceſſibilem.</orig>
@@ -89835,7 +89873,7 @@
                <reg type="normalized">et quibus.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844161_block_5" type="MainZone-Head">
+         <ab corresp="#f844161_block_5" type="MainZone-Head" xml:id="C_VI_v16">
             <lb corresp="#f844161_line_24_ligne_2"/>
             <choice>
                <orig>Quem nullus hominum uidit, ſed nec uidere poteſt.</orig>
@@ -89949,7 +89987,7 @@
                <reg type="normalized">uore suo complecti.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844161_block_10" type="MainZone-Head">
+         <ab corresp="#f844161_block_10" type="MainZone-Head" xml:id="C_VI_v17">
             <lb corresp="#f844161_line_49_ligne_2"/>
             <choice>
                <orig>Cui eſt honor &amp; imperium ſempiternum. Amen.</orig>
@@ -90156,7 +90194,7 @@
                <reg type="normalized">fugatium diuitiarum. Gentes sperant temporalia, fideles spiritualia et aeterna.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844162_block_7" type="MainZone-Head">
+         <ab corresp="#f844162_block_7" type="MainZone-Head" xml:id="C_VI_v18">
             <lb corresp="#f844162_line_37_ligne_3"/>
             <choice>
                <orig>Sed in deo uiuo, qui præſtat nobis omnia abunde ad fruendum.</orig>
@@ -90234,7 +90272,7 @@
                <reg type="normalized">tem praestat, quod nihil nostra prudentia, cura laboreque obtinemus: nihil enimpro</reg>
             </choice>
          </ab>
-         <ab corresp="#f844162_block_11" type="MainZone-Head"/>
+         <ab corresp="#f844162_block_11" type="MainZone-Head" xml:id="C_VI_v19"/>
          <pb corresp="f844163"/>
          <fw corresp="#f844163_block_2" type="RunningTitleZone">
             <lb corresp="#f844163_line_2_ligne_2"/>
@@ -90324,7 +90362,7 @@
                <reg type="normalized">non ad luxum uel fastum.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844163_block_5" type="MainZone-Head">
+         <ab corresp="#f844163_block_5" type="MainZone-Head" xml:id="C_VI_v20">
             <lb corresp="#f844163_line_17_ligne_2"/>
             <choice>
                <orig>Bene agere, diuites fieri in bonis operibus, facile communicare.</orig>
@@ -90542,7 +90580,7 @@
                <reg type="normalized">dispensanda, cum sua non sint, sed eius qui magis indiget.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844164_block_4" type="MainZone-Head">
+         <ab corresp="#f844164_block_4" type="MainZone-Head" xml:id="C_VI_v21">
             <lb corresp="#f844164_line_6_ligne_2"/>
             <choice>
                <orig>Theſaurizare ſibi fundamentũ bonum in futurum, ut apprehendant</orig>
@@ -90711,7 +90749,7 @@
                <reg type="normalized">non sine perfidia annonam huiusmodi ementium pariter atque uendentium.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844164_block_8" type="MainZone-Head">
+         <ab corresp="#f844164_block_8" type="MainZone-Head" xml:id="C_VI_v22">
             <lb corresp="#f844164_line_41_ligne_2"/>
             <choice>
                <orig>O Timothee, depoſitum cuſtodi.</orig>
@@ -90819,7 +90857,7 @@
                <reg type="normalized">cunias nempe, et equos, et caetera.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844165_block_5" type="MainZone-Head">
+         <ab corresp="#f844165_block_5" type="MainZone-Head" xml:id="C_VI_v23">
             <lb corresp="#f844165_line_8_ligne_2"/>
             <choice>
                <orig>Deuitans prophanas uocum nouitates.</orig>
@@ -90918,7 +90956,7 @@
                <reg type="normalized">stiana uera sanctimonia amiserint.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844165_block_8" type="MainZone-Head">
+         <ab corresp="#f844165_block_8" type="MainZone-Head" xml:id="C_VI_v24">
             <lb corresp="#f844165_line_28_ligne_2"/>
             <choice>
                <orig>Et oppoſitiones falſi nominis ſcientiæ.</orig>
@@ -91064,7 +91102,7 @@
                <reg type="normalized">in melius reformanda.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844166_block_5" type="MainZone-Head">
+         <ab corresp="#f844166_block_5" type="MainZone-Head" xml:id="C_VI_v25">
             <lb corresp="#f844166_line_5_ligne_2"/>
             <choice>
                <orig>Quam quidam promittentes, circa fidem exciderunt.</orig>
@@ -91183,7 +91221,7 @@
                <reg type="normalized">ac errorum in fide et moribus prodierunt.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844166_block_7" type="MainZone-Head">
+         <ab corresp="#f844166_block_7" type="MainZone-Head" xml:id="C_VI_v26">
             <lb corresp="#f844166_line_28_ligne_2"/>
             <choice>
                <orig>Gratia tecum. Amen.</orig>
@@ -91212,7 +91250,7 @@
                <reg type="normalized">nos ? Facessat omnis humana gratia et potestas, dum nobis adest diuina.</reg>
             </choice>
          </ab>
-         <ab corresp="#f844166_block_9" type="MainZone-Head">
+         <ab corresp="#f844166_block_9" type="MainZone-Head" xml:id="C_VI_v27">
             <lb corresp="#f844166_line_33_ligne_2"/>
             <choice>
                <orig>FINIS.</orig>
