@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>952955.jpeg</fileName>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT7" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT8" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT9" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT10" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT11" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT12" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT13" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT14" LABEL="MusicZone" DESCRIPTION="block type MusicZone"/><OtherTag ID="BT15" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT17" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT18" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT19" LABEL="SealZone" DESCRIPTION="block type SealZone"/><OtherTag ID="BT20" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT21" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT22" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT3562" LABEL="MainZone-Continued" DESCRIPTION="block type MainZone-Continued"/><OtherTag ID="BT3563" LABEL="MainZone-Head" DESCRIPTION="block type MainZone-Head"/><OtherTag ID="BT3564" LABEL="MainZone-P" DESCRIPTION="block type MainZone-P"/><OtherTag ID="BT3565" LABEL="MainZone-Entry" DESCRIPTION="block type MainZone-Entry"/>
+    <OtherTag ID="LT7" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT8" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT9" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT10" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT11" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT12" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1000" HEIGHT="1490" PHYSICAL_IMG_NR="44" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1000" HEIGHT="1490">
+        <TextBlock HPOS="147" VPOS="581" WIDTH="532" HEIGHT="169" ID="block_1" TAGREFS="BT22">
+          <Shape><Polygon POINTS="679 581 679 750 147 750 147 581"/></Shape>
+          <TextLine ID="line_1" TAGREFS="LT8" BASELINE="155 615 413 614 657 613" HPOS="152" VPOS="581" WIDTH="503" HEIGHT="51">
+            <Shape><Polygon POINTS="649 581 637 581 624 581 612 581 600 581 587 581 575 581 562 581 550 581 537 581 525 581 513 581 500 581 488 581 484 581 152 582 154 614 155 632 175 624 198 630 200 630 201 632 349 632 349 630 403 623 444 629 445 629 483 623 653 629 655 612 652 581 649 581"/></Shape>
+            <String CONTENT="BASILEA  AE EXCVDEBAT" HPOS="152" VPOS="581" WIDTH="503" HEIGHT="51"/>
+          </TextLine>
+          <TextLine ID="line_2" TAGREFS="LT8" BASELINE="190 654 630 656" HPOS="187" VPOS="617" WIDTH="442" HEIGHT="51">
+            <Shape><Polygon POINTS="187 664 407 660 627 668 629 655 627 619 203 623 190 617 188 653 187 664"/></Shape>
+            <String CONTENT="HENRICVS PETRVS" HPOS="187" VPOS="617" WIDTH="442" HEIGHT="51"/>
+          </TextLine>
+          <TextLine ID="line_3" TAGREFS="LT8" BASELINE="215 694 601 698" HPOS="213" VPOS="655" WIDTH="387" HEIGHT="51">
+            <Shape><Polygon POINTS="213 704 354 706 382 697 437 705 454 699 597 702 600 697 598 661 577 658 566 668 555 659 496 656 484 663 474 656 468 656 457 668 442 659 367 666 337 658 311 666 301 660 275 665 267 656 229 664 217 655 213 704"/></Shape>
+            <String CONTENT="MENSE MARTUO" HPOS="213" VPOS="655" WIDTH="387" HEIGHT="51"/>
+          </TextLine>
+          <TextLine ID="line_4" TAGREFS="LT8" BASELINE="244 731 585 733" HPOS="243" VPOS="697" WIDTH="342" HEIGHT="52">
+            <Shape><Polygon POINTS="244 731 243 740 264 741 277 749 278 749 278 749 351 749 351 749 352 749 368 742 374 748 374 749 375 749 375 749 376 749 409 744 449 749 450 749 451 749 464 743 538 743 544 748 544 749 545 749 546 749 547 749 548 749 548 749 555 744 583 749 585 733 585 709 549 697 548 697 460 697 459 697 458 697 416 709 323 703 322 703 322 703 321 703 321 704 316 708 244 708 244 731"/></Shape>
+            <String CONTENT="AN. M. D. XXXIII." HPOS="243" VPOS="697" WIDTH="342" HEIGHT="52" WC="0.982750440345091"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

@@ -176,6 +176,12 @@
             <xsl:when test="@type='MainZone'">
                 <xsl:apply-templates select="*|node()"/>
             </xsl:when>
+            <!-- teste titlepage -->
+            <xsl:when test="@type='TitlePageZone'">
+                <xsl:text>\pstart </xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text> \pend</xsl:text>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>

@@ -42,8 +42,8 @@
         <title>
             <xsl:value-of select="//title[parent::titleStmt]"/>
         </title>
-        <!--<link href="../../../Web_interface/CSS/FG_stylesheet_fini.css" rel="stylesheet"/> -->
-        <link href="../../../Web_interface/CSS/FG_stylesheet_small_fini.css" rel="stylesheet"/> 
+        <link href="../../../Web_interface/CSS/FG_stylesheet_fini.css" rel="stylesheet"/> 
+     <!--   <link href="../../../Web_interface/CSS/FG_stylesheet_small_fini.css" rel="stylesheet"/> -->
         <script src="../../../Web_interface/JS/my_function_fini.js" defer="defer"></script>
     </xsl:template>
 
@@ -101,8 +101,8 @@
         <nav>
             <button class="openbtn" onclick="openNav()" aria-label="Ouvrir le menu de navigation" aria-expanded="false">☰ Navigation</button>
             <div class="download">
-                <a href="{concat('../../ZIP/',//TEI/@xml:id),'_1-Tim.zip'}" class="button" target="_blank">[↓] XML-TEI</a>
-                <a href="{concat('../../PDF/',//TEI/@xml:id,'_1-Tim.pdf')}" class="button" target="_blank">[↓] PDF</a>
+                <a href="{concat('../../ZIP/',//TEI/@xml:id),'.zip'}" class="button" target="_blank">[↓] XML-TEI</a>
+                <a href="{concat('../../PDF/',//TEI/@xml:id,'.pdf')}" class="button" target="_blank">[↓] PDF</a>
             </div>    
         </nav>
     </xsl:template>

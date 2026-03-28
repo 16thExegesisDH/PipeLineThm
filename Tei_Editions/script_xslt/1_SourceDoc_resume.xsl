@@ -13,7 +13,7 @@
         <!-- Les variables permettent de reconstituer l'url des documents -->
         <!-- for e-rara -->
         
-        <xsl:variable name="document">Pelican_C1-6</xsl:variable>
+        <xsl:variable name="document">Unbekannt_1-Tim_C1-6</xsl:variable>
         <xsl:variable name="folderName">doc_1</xsl:variable>
         <xsl:variable name="nma">https://www.e-rara.ch/</xsl:variable>
         <xsl:variable name="iiif-name">i3f/v20/</xsl:variable>
