@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model "file:/home/floriane/Documents/PaulPipeline/chap3-4.pipeline/odd-setaf-rw-FG.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model "file:/home/floriane/Documents/PaulPipeline/chap3-4.pipeline/odd-setaf-rw-FG.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model "file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model "file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/odd-exegesis.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Bullinger_1-Tim_C1-6">
    <teiHeader>
       <fileDesc>
@@ -1695,12 +1695,12 @@
                   uly="941"
                   lrx="184"
                   lry="950"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="61,941,123,9/full/0/default.jpg">
                <path n="2"
                      xml:id="f7325937_line_19_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7325937_line_19_ligne_2">P</line>
             </zone>
          </zone>
@@ -1890,12 +1890,12 @@
                   uly="1328"
                   lrx="578"
                   lry="1328"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="556,1328,22,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7325937_line_30_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7325937_line_30_ligne_3">5</line>
             </zone>
          </zone>
@@ -5689,12 +5689,12 @@
                   uly="162"
                   lrx="739"
                   lry="162"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="698,162,41,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7325945_line_28_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7325945_line_28_ligne_2"/>
             </zone>
          </zone>
@@ -7656,12 +7656,12 @@
                   uly="148"
                   lrx="705"
                   lry="149"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="674,148,31,1/full/0/default.jpg">
                <path n="2"
                      xml:id="f7325949_line_24_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7325949_line_24_ligne_2">99</line>
             </zone>
          </zone>
@@ -7696,12 +7696,12 @@
                   uly="1344"
                   lrx="560"
                   lry="1344"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="538,1344,22,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7325949_line_26_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7325949_line_26_ligne_3">3</line>
             </zone>
          </zone>
@@ -9638,12 +9638,12 @@
                   uly="1334"
                   lrx="594"
                   lry="1334"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="574,1334,20,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7325953_line_29_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7325953_line_29_ligne_3"/>
             </zone>
          </zone>
@@ -14368,13 +14368,13 @@
             </zone>
          </zone>
          <zone xml:id="f7325963_block_5"
-               type=""
+               type="default"
                n="5"
-               ulx=""
-               uly=""
+               ulx="NaN"
+               uly="NaN"
                lrx="NaN"
                lry="NaN"
-               points=""
+               points="00,00 00,00 00,00 00,00"
                source=",,,/full/0/default.jpg">
             <zone xml:id="f7325963_line_28"
                   type="DefaultLine"
@@ -37091,12 +37091,12 @@
                   uly="1359"
                   lrx="585"
                   lry="1359"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="574,1359,11,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326009_line_31_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326009_line_31_ligne_2">&amp;</line>
             </zone>
          </zone>
@@ -38590,12 +38590,12 @@
                   uly="1337"
                   lrx="975"
                   lry="1337"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="957,1337,18,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326012_line_30_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326012_line_30_ligne_2">in</line>
             </zone>
          </zone>
@@ -39098,12 +39098,12 @@
                   uly="1328"
                   lrx="581"
                   lry="1328"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="497,1328,84,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326013_line_31_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326013_line_31_ligne_2">r 3</line>
             </zone>
          </zone>
@@ -40109,12 +40109,12 @@
                   uly="117"
                   lrx="692"
                   lry="117"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="642,117,50,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326015_line_33_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326015_line_33_ligne_2">132</line>
             </zone>
          </zone>
@@ -41055,12 +41055,12 @@
                   uly="1323"
                   lrx="571"
                   lry="1324"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="494,1323,77,1/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326017_line_29_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326017_line_29_ligne_2">r 5</line>
             </zone>
          </zone>
@@ -45048,12 +45048,12 @@
                   uly="1332"
                   lrx="547"
                   lry="1332"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="535,1332,12,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326025_line_31_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326025_line_31_ligne_2">S</line>
             </zone>
          </zone>
@@ -47080,12 +47080,12 @@
                   uly="1325"
                   lrx="594"
                   lry="1328"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="526,1325,68,3/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326029_line_33_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326029_line_33_ligne_2">S 3</line>
             </zone>
          </zone>
@@ -48982,12 +48982,12 @@
                   uly="1335"
                   lrx="585"
                   lry="1337"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="521,1335,64,2/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326033_line_26_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326033_line_26_ligne_2">S 5</line>
             </zone>
          </zone>
@@ -52378,12 +52378,12 @@
                   uly="1323"
                   lrx="962"
                   lry="1323"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="928,1323,34,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326040_line_28_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326040_line_28_ligne_2">sed</line>
             </zone>
          </zone>
@@ -53847,12 +53847,12 @@
                   uly="1348"
                   lrx="538"
                   lry="1348"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="470,1348,68,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326043_line_28_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326043_line_28_ligne_2">t 2</line>
             </zone>
          </zone>
@@ -54853,12 +54853,12 @@
                   uly="1314"
                   lrx="521"
                   lry="1314"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="506,1314,15,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326045_line_27_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326045_line_27_ligne_2">t</line>
             </zone>
             <zone xml:id="f7326045_line_28"
@@ -54868,12 +54868,12 @@
                   uly="1325"
                   lrx="581"
                   lry="1325"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="558,1325,23,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326045_line_28_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326045_line_28_ligne_3">3</line>
             </zone>
          </zone>
@@ -55849,12 +55849,12 @@
                   uly="1316"
                   lrx="519"
                   lry="1316"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="492,1316,27,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326047_line_28_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326047_line_28_ligne_3">t</line>
             </zone>
          </zone>
@@ -56830,12 +56830,12 @@
                   uly="1312"
                   lrx="504"
                   lry="1316"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="485,1312,19,4/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326049_line_29_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326049_line_29_ligne_2">5</line>
             </zone>
             <zone xml:id="f7326049_line_30"
@@ -56845,12 +56845,12 @@
                   uly="1323"
                   lrx="562"
                   lry="1323"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="540,1323,22,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326049_line_30_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326049_line_30_ligne_3">t</line>
             </zone>
          </zone>
@@ -61765,12 +61765,12 @@
                   uly="1328"
                   lrx="555"
                   lry="1328"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="528,1328,27,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326059_line_33_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326059_line_33_ligne_3">2</line>
             </zone>
          </zone>
@@ -62751,12 +62751,12 @@
                   uly="1334"
                   lrx="565"
                   lry="1335"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="547,1334,18,1/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326061_line_28_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326061_line_28_ligne_3">3</line>
             </zone>
          </zone>
@@ -72705,12 +72705,12 @@
                   uly="1337"
                   lrx="589"
                   lry="1337"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="571,1337,18,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326081_line_30_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326081_line_30_ligne_3">5</line>
             </zone>
          </zone>
@@ -79437,12 +79437,12 @@
                   uly="1318"
                   lrx="526"
                   lry="1319"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="506,1318,20,1/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326095_line_30_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326095_line_30_ligne_3">y</line>
             </zone>
          </zone>
@@ -80418,12 +80418,12 @@
                   uly="1332"
                   lrx="555"
                   lry="1332"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="535,1332,20,0/full/0/default.jpg">
                <path n="2"
                      xml:id="f7326097_line_29_baseline_2"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326097_line_29_ligne_2">2</line>
             </zone>
             <zone xml:id="f7326097_line_30"
@@ -80433,12 +80433,12 @@
                   uly="1335"
                   lrx="492"
                   lry="1335"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source="470,1335,22,0/full/0/default.jpg">
                <path n="3"
                      xml:id="f7326097_line_30_baseline_3"
                      type="baseline"
-                     points=""/>
+                     points="00,00 00,00 00,00 00,00"/>
                <line xml:id="f7326097_line_30_ligne_3">y</line>
             </zone>
          </zone>
@@ -81268,13 +81268,13 @@
                points="445,1122 445,1166 297,1166 297,1122 "
                source="297,1122,148,44/full/0/default.jpg"/>
          <zone xml:id="f7326099_block_5"
-               type=""
+               type="default"
                n="5"
-               ulx=""
-               uly=""
+               ulx="NaN"
+               uly="NaN"
                lrx="NaN"
                lry="NaN"
-               points=""
+               points="00,00 00,00 00,00 00,00"
                source=",,,/full/0/default.jpg">
             <zone xml:id="f7326099_line_23"
                   type="DefaultLine"
@@ -82830,12 +82830,12 @@
                      uly="941"
                      lrx="184"
                      lry="950"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="61,941,123,9/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7325937_line_19_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7325937_line_19_ligne_2">P</line>
                </zone>
             </zone>
@@ -83025,12 +83025,12 @@
                      uly="1328"
                      lrx="578"
                      lry="1328"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="556,1328,22,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7325937_line_30_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7325937_line_30_ligne_3">5</line>
                </zone>
             </zone>
@@ -86824,12 +86824,12 @@
                      uly="162"
                      lrx="739"
                      lry="162"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="698,162,41,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7325945_line_28_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7325945_line_28_ligne_2"/>
                </zone>
             </zone>
@@ -88791,12 +88791,12 @@
                      uly="148"
                      lrx="705"
                      lry="149"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="674,148,31,1/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7325949_line_24_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7325949_line_24_ligne_2">99</line>
                </zone>
             </zone>
@@ -88831,12 +88831,12 @@
                      uly="1344"
                      lrx="560"
                      lry="1344"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="538,1344,22,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7325949_line_26_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7325949_line_26_ligne_3">3</line>
                </zone>
             </zone>
@@ -90773,12 +90773,12 @@
                      uly="1334"
                      lrx="594"
                      lry="1334"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="574,1334,20,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7325953_line_29_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7325953_line_29_ligne_3"/>
                </zone>
             </zone>
@@ -95503,13 +95503,13 @@
                </zone>
             </zone>
             <zone xml:id="f7325963_block_5"
-                  type=""
+                  type="default"
                   n="5"
-                  ulx=""
-                  uly=""
+                  ulx="NaN"
+                  uly="NaN"
                   lrx="NaN"
                   lry="NaN"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source=",,,/full/0/default.jpg">
                <zone xml:id="f7325963_line_28"
                      type="DefaultLine"
@@ -118226,12 +118226,12 @@
                      uly="1359"
                      lrx="585"
                      lry="1359"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="574,1359,11,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326009_line_31_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326009_line_31_ligne_2">&amp;</line>
                </zone>
             </zone>
@@ -119725,12 +119725,12 @@
                      uly="1337"
                      lrx="975"
                      lry="1337"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="957,1337,18,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326012_line_30_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326012_line_30_ligne_2">in</line>
                </zone>
             </zone>
@@ -120233,12 +120233,12 @@
                      uly="1328"
                      lrx="581"
                      lry="1328"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="497,1328,84,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326013_line_31_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326013_line_31_ligne_2">r 3</line>
                </zone>
             </zone>
@@ -121244,12 +121244,12 @@
                      uly="117"
                      lrx="692"
                      lry="117"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="642,117,50,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326015_line_33_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326015_line_33_ligne_2">132</line>
                </zone>
             </zone>
@@ -122190,12 +122190,12 @@
                      uly="1323"
                      lrx="571"
                      lry="1324"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="494,1323,77,1/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326017_line_29_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326017_line_29_ligne_2">r 5</line>
                </zone>
             </zone>
@@ -126183,12 +126183,12 @@
                      uly="1332"
                      lrx="547"
                      lry="1332"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="535,1332,12,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326025_line_31_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326025_line_31_ligne_2">S</line>
                </zone>
             </zone>
@@ -128215,12 +128215,12 @@
                      uly="1325"
                      lrx="594"
                      lry="1328"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="526,1325,68,3/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326029_line_33_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326029_line_33_ligne_2">S 3</line>
                </zone>
             </zone>
@@ -130117,12 +130117,12 @@
                      uly="1335"
                      lrx="585"
                      lry="1337"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="521,1335,64,2/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326033_line_26_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326033_line_26_ligne_2">S 5</line>
                </zone>
             </zone>
@@ -133513,12 +133513,12 @@
                      uly="1323"
                      lrx="962"
                      lry="1323"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="928,1323,34,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326040_line_28_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326040_line_28_ligne_2">sed</line>
                </zone>
             </zone>
@@ -134982,12 +134982,12 @@
                      uly="1348"
                      lrx="538"
                      lry="1348"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="470,1348,68,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326043_line_28_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326043_line_28_ligne_2">t 2</line>
                </zone>
             </zone>
@@ -135988,12 +135988,12 @@
                      uly="1314"
                      lrx="521"
                      lry="1314"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="506,1314,15,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326045_line_27_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326045_line_27_ligne_2">t</line>
                </zone>
                <zone xml:id="f7326045_line_28"
@@ -136003,12 +136003,12 @@
                      uly="1325"
                      lrx="581"
                      lry="1325"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="558,1325,23,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326045_line_28_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326045_line_28_ligne_3">3</line>
                </zone>
             </zone>
@@ -136984,12 +136984,12 @@
                      uly="1316"
                      lrx="519"
                      lry="1316"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="492,1316,27,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326047_line_28_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326047_line_28_ligne_3">t</line>
                </zone>
             </zone>
@@ -137965,12 +137965,12 @@
                      uly="1312"
                      lrx="504"
                      lry="1316"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="485,1312,19,4/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326049_line_29_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326049_line_29_ligne_2">5</line>
                </zone>
                <zone xml:id="f7326049_line_30"
@@ -137980,12 +137980,12 @@
                      uly="1323"
                      lrx="562"
                      lry="1323"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="540,1323,22,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326049_line_30_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326049_line_30_ligne_3">t</line>
                </zone>
             </zone>
@@ -142900,12 +142900,12 @@
                      uly="1328"
                      lrx="555"
                      lry="1328"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="528,1328,27,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326059_line_33_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326059_line_33_ligne_3">2</line>
                </zone>
             </zone>
@@ -143886,12 +143886,12 @@
                      uly="1334"
                      lrx="565"
                      lry="1335"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="547,1334,18,1/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326061_line_28_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326061_line_28_ligne_3">3</line>
                </zone>
             </zone>
@@ -153840,12 +153840,12 @@
                      uly="1337"
                      lrx="589"
                      lry="1337"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="571,1337,18,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326081_line_30_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326081_line_30_ligne_3">5</line>
                </zone>
             </zone>
@@ -160572,12 +160572,12 @@
                      uly="1318"
                      lrx="526"
                      lry="1319"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="506,1318,20,1/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326095_line_30_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326095_line_30_ligne_3">y</line>
                </zone>
             </zone>
@@ -161553,12 +161553,12 @@
                      uly="1332"
                      lrx="555"
                      lry="1332"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="535,1332,20,0/full/0/default.jpg">
                   <path n="2"
                         xml:id="f7326097_line_29_baseline_2"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326097_line_29_ligne_2">2</line>
                </zone>
                <zone xml:id="f7326097_line_30"
@@ -161568,12 +161568,12 @@
                      uly="1335"
                      lrx="492"
                      lry="1335"
-                     points=""
+                     points="00,00 00,00 00,00 00,00"
                      source="470,1335,22,0/full/0/default.jpg">
                   <path n="3"
                         xml:id="f7326097_line_30_baseline_3"
                         type="baseline"
-                        points=""/>
+                        points="00,00 00,00 00,00 00,00"/>
                   <line xml:id="f7326097_line_30_ligne_3">y</line>
                </zone>
             </zone>
@@ -162403,13 +162403,13 @@
                   points="445,1122 445,1166 297,1166 297,1122 "
                   source="297,1122,148,44/full/0/default.jpg"/>
             <zone xml:id="f7326099_block_5"
-                  type=""
+                  type="default"
                   n="5"
-                  ulx=""
-                  uly=""
+                  ulx="NaN"
+                  uly="NaN"
                   lrx="NaN"
                   lry="NaN"
-                  points=""
+                  points="00,00 00,00 00,00 00,00"
                   source=",,,/full/0/default.jpg">
                <zone xml:id="f7326099_line_23"
                      type="DefaultLine"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model "file:/home/floriane/Documents/PaulPipeline/chap3-4.pipeline/odd-setaf-rw-FG.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model "file:/home/floriane/Documents/PaulPipeline/chap3-4.pipeline/odd-setaf-rw-FG.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model "file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model "file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/odd-exegesis.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../schema/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Bullinger_1-Tim_C1-6">
    <teiHeader>
       <fileDesc>
@@ -34,7 +35,7 @@
                <addrLine>22 boulevard des Philosophes</addrLine>
                <addrLine>CH-1211 Genève</addrLine>
             </address>
-            <authority>Theologisches Fakultät, universität Zürich</authority>
+            <!--<authority>Theologisches Fakultät, universität Zürich</authority>-->
             <availability status="restricted" n="CC-BY">
                <licence target="https://creativecommons.org/licenses/by/4.0/"/>
                <p>Creative Commons Attribution 4.0 CC BY 4.0</p>
@@ -54,7 +55,7 @@
                      <biblStruct>
                         <monogr>
                            <author>
-                              <persName role="exegete" ref="isni:0000000118758416 ">
+                              <persName role="presumed_author" ref="isni:0000000118758416 ">
                                  <surname>Cajetan</surname>
                                  <forename>Thomas</forename>
                               </persName>
@@ -65,7 +66,7 @@
                               <pubPlace cert="medium" ref="geonames:3187861">Venise</pubPlace>
                               <respStmt>
                                  <resp>Imprimeur</resp>
-                                 <persName role="printer" ref="isni:0000000121227528">
+                                 <persName role="presumed_printer" ref="isni:0000000121227528">
                                     <surname>Lucantonio</surname>
                                     <forename>Giunta</forename>
                                  </persName>
@@ -150,8 +151,8 @@
                <term type="form">theological commentaries</term>
                <term type="segmentation_quality">gold</term>
                <term type="transcription_quality">gold</term>
-               <term type="intermediary_reg_quality">not applicable</term>
-               <term type="contemporary_reg_quality">normalize with a python script</term>
+               <term type="intermediary_reg_quality">not applicable</term> <!-- if the text has silver quality add correction of verses and chapter -->
+               <term type="normalized_reg_quality">normalize with a python script</term>
                <term type="ling_annotation_quality">not applicable</term>
             </keywords>
          </textClass>
@@ -14368,7 +14369,7 @@
             </zone>
          </zone>
          <zone xml:id="f7325963_block_5"
-               type="NN"
+               type="default"
                n="5"
                ulx="NaN"
                uly="NaN"
@@ -81268,7 +81269,7 @@
                points="445,1122 445,1166 297,1166 297,1122 "
                source="297,1122,148,44/full/0/default.jpg"/>
          <zone xml:id="f7326099_block_5"
-               type="NN"
+               type="default"
                n="5"
                ulx="NaN"
                uly="NaN"

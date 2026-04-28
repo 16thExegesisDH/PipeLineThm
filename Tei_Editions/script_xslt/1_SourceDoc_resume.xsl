@@ -111,19 +111,18 @@
         <!-- Pour l'instant j'utilise l'odd construit par Sonia Solfrini pour le projet SETAF avec quelques modifications mineurs -->      
         <xsl:template match="/" >
             <xsl:processing-instruction name="xml-model">
-            <xsl:text>"file:/home/floriane/Documents/PaulPipeline/chap3-4.pipeline/odd-setaf-rw-FG.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:text>
+            <xsl:text>"file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:text>
         </xsl:processing-instruction>
             <xsl:processing-instruction name="xml-model">
-            <xsl:text>"file:/home/floriane/Documents/PaulPipeline/chap3-4.pipeline/odd-setaf-rw-FG.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:text>
+            <xsl:text>"file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/odd-exegesis.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:text>
         </xsl:processing-instruction>
             <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$document}">
                    
 <!-- teiHeader -->               
                 <teiHeader>
-                    
                     <fileDesc>
                         <titleStmt>
-                            <title>In priorem epistolam Pauli ad Timotheum commemtarii : [Thomas Cajetan], [1531]</title>
+                            <title>Annotationes in Epistolas Pavli Ad Timotheum : [Bugenhagen, Johannes], [1524]</title>
                             <respStmt>
                                 <resp>FNS Paul exegesis projet.</resp>
                                 <persName xml:id="UZ">
@@ -140,11 +139,20 @@
                                     <ptr type="orcid" target="0009-0005-9944-035X"/>
                                 </persName>
                             </respStmt>
+                            <!-- ajouter un collaborateur -->
+                           <!-- <respStmt>
+                                <resp>correction of OCR transcription, conversion to TEI, metadata encoding.</resp>
+                                <persName xml:id="BD">
+                                    <forename>Béatrice</forename>
+                                    <surname>Dupuis</surname>
+                                    <!-\-<ptr type="orcid" target=""/>-\->
+                                </persName>
+                            </respStmt>-->
                         </titleStmt>
                         <extent>
                             <measure unit="total_images" n="48"/>
                             <measure unit="processed_images" n="16"/>
-                        </extent> 
+                        </extent>
                         <publicationStmt>
                             <publisher>16th Century Exegesis of Paul</publisher>
                             <authority>Institut d'Histoire de la Réformation (IHR), université de Genève</authority>
@@ -153,6 +161,10 @@
                                 <addrLine>CH-1211 Genève</addrLine>
                             </address>
                             <authority>Theologisches Fakultät, universität Zürich</authority>
+                            <address>
+                                <addrLine>Kirchgasse 9</addrLine>
+                                <addrLine>8001 Zürich</addrLine>
+                            </address>
                             <availability status="restricted" n="CC-BY">
                                 <licence target="https://creativecommons.org/licenses/by/4.0/"/>
                                 <p>Creative Commons Attribution 4.0 CC BY 4.0</p>
@@ -161,52 +173,43 @@
                         </publicationStmt>
                         <sourceDesc>
                             <msDesc>
-                                <!-- corriger en fonction ici Cajetan  -->
-                                <msIdentifier xml:id="e-rara-62382">
+                                <msIdentifier xml:id="bsb00027764">
                                     <country>Deutschland</country>
                                     <settlement>München</settlement>
-                                    <institution>München Bayerische Staatsbibliothek</institution>
-                                    <idno type="shelfmark">2 Exeg. 610</idno>
+                                    <institution>Bayerische Staatsbibliothek</institution>
+                                    <idno type="shelfmark">Res/Exeg. 309 b#Beibd.3</idno>
                                 </msIdentifier>
                                 <msContents>
                                     <p>
                                         <biblStruct>
                                             <monogr>
-                                                <!-- AUTEUR -->
                                                 <author>
-                                                    <persName role="exegete" ref="isni:0000000118758416 ">
-                                                        <surname>Cajetan</surname>
-                                                        <forename>Thomas</forename>
+                                                    <persName role="presumed_author" ref="isni:0000000109036374">
+                                                        <surname>Johannes</surname>
+                                                        <forename>Bugenhagen</forename>
                                                     </persName>
+                                                    <note><ref target="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"></ref>
+                                                        Historische Lexikon der Schweiz (HLS)</note>
                                                 </author>
-                                                <!--<editor>
-                                                    <persName role="editeur" ref="">
-                                                        <surname>Mylius</surname>
-                                                        <forename>Johannes</forename>
-                                                        <note source="gnd" select=" https://d-nb.info/gnd/119770431 "/>
-                                                    </persName>
-                                                </editor>-->
-                                                <!-- TITRE -->
-                                                <title type="complete_title">Thomae De Vio Caietani Cardinalis sanct christi : in priorem epistolam Pauli ad Timotheum commemtarii </title> 
-                                                <title type="short_title">In priorem epistolam Pauli ad Timotheum commemtarii</title>
+                                                <title type="complete_title">Bugenhagen, Johannes: Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam &amp; secundam</title>
+                                                <title type="short_title">Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam</title>
                                                 <imprint>
-                                                    <!-- LIEU DE PUBLICATION ET IMPRIMEUR -->
-                                                    <pubPlace cert="medium" ref="geonames:3187861">Venise</pubPlace>
+                                                    <pubPlace cert="medium" ref="geonames:7285161">Basel</pubPlace>
                                                     <respStmt>
                                                         <resp>Imprimeur</resp>
-                                                        <persName role="printer" ref="isni:0000000121227528">
-                                                            <surname>Lucantonio</surname>
-                                                            <forename>Giunta</forename>
+                                                        <persName role="presumed_printer" ref="isni:0000000116244569">
+                                                            <surname>Adam?</surname>
+                                                            <forename>Petri?</forename>
                                                         </persName>
-                                                        <!--<note source="Historische Lexikon der Schweiz (HLS)" select="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"/>-->
+                                                        <note><ref target="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"></ref>
+                                                            Historische Lexikon der Schweiz (HLS)</note> 
                                                     </respStmt>
-                                                    <!-- DATE DE PUBLICATION -->
-                                                    <date cert="low">1531</date>
+                                                    <date cert="low">1524</date>
                                                 </imprint>
                                             </monogr>
                                         </biblStruct>
                                     </p>
-                                </msContents>         
+                                </msContents>
                                 <physDesc>
                                     <objectDesc>
                                         <supportDesc>
@@ -217,20 +220,19 @@
                                     </objectDesc>
                                 </physDesc>
                                 <additional>
-                                    <!-- concernant thomas cajetan -->
                                     <surrogates>
                                         <bibl>
-                                            <ref target="https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb10143002-9"/>
+                                            <ref target="https://mdz-nbn-resolving.de/details:bsb00027764"/>
                                             <relatedItem type="original">
-                                                <ref target="bsb10143002">mdz</ref>
+                                                <ref target="#bsb00027764">mdz</ref>
                                             </relatedItem>
                                         </bibl>
                                     </surrogates>
                                     <listBibl>
                                         <bibl>
-                                            <ref target="https://d-nb.info/gnd/118518348">
+                                            <ref target=" https://d-nb.info/gnd/118517287 ">
                                                 <orgName>gnd</orgName>
-                                                <idno>118518348</idno>
+                                                <idno>118517287</idno>
                                             </ref>
                                         </bibl>
                                     </listBibl>
@@ -244,10 +246,10 @@
                         </projectDesc>
                         <editorialDecl>
                             <correction>
-                                <p>The segmentation was corrected manually and the transcription from the OCR was corrected. See the OCR construction project: <!--<ref target="lien internet du mini-memoire"/>.--> </p>
+                                <p>The segmentation was corrected manually and the transcription from the OCR was corrected. See the OCR construction project:  </p>
                             </correction>
                             <normalization>
-                                <p>For regularisation purposes, this transcription has been standardised using a Python script<!--<ref target="lien internet vers le script python"/>.-->.</p>
+                                <p>For regularisation purposes, this transcription has been standardised using a Python script.</p>
                             </normalization>
                         </editorialDecl>
                         <appInfo>
@@ -272,7 +274,7 @@
                                 <category xml:id="SegmOntoLines"/>
                             </taxonomy>
                         </classDecl>
-                    </encodingDesc>   
+                    </encodingDesc>
                     <profileDesc>
                         <langUsage>
                             <language ident="frm">Latin from 16e centuary</language>
@@ -283,14 +285,14 @@
                                 <term type="segmentation_quality">gold</term>
                                 <term type="transcription_quality">gold</term>
                                 <term type="intermediary_reg_quality">not applicable</term>
-                                <term type="contemporary_reg_quality">normalize with a python script</term>
+                                <term type="normalized_reg_quality">normalize with a python script</term>
                                 <term type="ling_annotation_quality">not applicable</term>
                             </keywords>
                         </textClass>
                     </profileDesc>
                     <revisionDesc>
                         <change when="2023-10-18" who="#FG">Création du fichier TEI P5.</change>
-                    </revisionDesc> 
+                    </revisionDesc>
                 </teiHeader>                
 <!-- sourceDoc -->                
                 <sourceDoc xml:id="transcription">
