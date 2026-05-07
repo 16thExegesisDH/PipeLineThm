@@ -120,185 +120,185 @@
                    
 <!-- teiHeader -->               
     <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title> Commentarium in epistolam divi Pauli apostoli ad Timotheum primam. Pellikan, Konrad. Zürich: Christoph Froschauer, 1539</title>
-            <respStmt>
-               <resp>FNS Paul exegesis projet.</resp>
-               <persName xml:id="UZ">
-                  <forename>Ueli</forename>
-                  <surname>Zahnd</surname>
-                  <ptr type="orcid" target="0000-0002-6129-1687"/>
-               </persName>
-            </respStmt>
-            <respStmt>
-               <resp>Modelling and document engineering, segmentation and correction of OCR transcription, conversion to TEI, metadata encoding.</resp>
-               <persName xml:id="FG">
-                  <forename>Floriane</forename>
-                  <surname>Goy</surname>
-                  <ptr type="orcid" target="0009-0005-9944-035X"/>
-               </persName>
-            </respStmt>
-            <respStmt>
-               <resp>correction of OCR transcription, conversion to TEI, metadata encoding.</resp>
-               <persName xml:id="BD">
-                  <forename>Béatrice</forename>
-                  <surname>Dupuis</surname>
-               </persName>
-            </respStmt>
-         </titleStmt>
-         <extent>
-            <measure unit="total_images_book" n="806"/>
-            <measure unit="total_images_commentary" n="82"/>
-            <measure unit="processed_images_commentary" n="82"/>
-         </extent>
-         <publicationStmt>
-            <publisher>16th Century Exegesis of Paul</publisher>
-            <authority>Institut d'Histoire de la Réformation (IHR), université de Genève</authority>
-            <address>
-               <addrLine>22 boulevard des Philosophes</addrLine>
-               <addrLine>CH-1211 Genève</addrLine>
-            </address>
-            <authority>Theologisches Fakultät, universität Zürich</authority>
-            <address>
-               <addrLine>Kirchgasse 9</addrLine>
-               <addrLine>8001 Zürich</addrLine>
-            </address>
-            <availability>
-               <licence target="https://creativecommons.org/publicdomain/mark/1.0/deed.fr"/>
-               <p>Images : Public Domain Mark (e-rara)</p>
-               <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-               <p>Édition : CC BY</p>
-            </availability>
-            <date when="2026-04-29"/>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc>
-               <msIdentifier xml:id="ZB_III_B_14">
-                  <country>Schweiz</country>
-                  <settlement>Zürich</settlement>
-                  <institution>Zentralbibliothek Zürich</institution>
-                  <idno type="shelfmark">III B 14 | G</idno>
-               </msIdentifier>
-               <msContents>
-                  <p>
-                     <biblStruct>
-                        <monogr>
-                           <author>
-                              <persName ref="isni:000000012129718X">
-                                 <surname>Pellikan</surname>
-                                 <forename>Konrad</forename>
-                              </persName>
-                              <note><ref target="https://hls-dhs-dss.ch/de/articles/010781/2009-11-25/"></ref>Historische Lexikon der Schweiz (HLS)</note>
-                           </author>
-                           <title type="book_title">In omnes apostolicas epistolas, Pauli, Petri, Iacobi, Ioannis et Iudae commentarii</title>
-                           <title type="commentary_title">Commentarium in epistolam divi Pauli Apostoli ad Timotheum primam</title>
-                           <imprint>
-                              <pubPlace cert="high" ref="geonames:2657896">Zurich</pubPlace>
-                              <respStmt>
-                                 <resp>Imprimeur</resp>
-                                 <persName ref="isni:0000000121270868">
-                                    <surname>Christoph</surname>
-                                    <forename>Froschauer</forename>
-                                 </persName>
-                                 <note><ref target="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"></ref>Historische Lexikon der Schweiz (HLS)</note>
-                              </respStmt>
-                              <date cert="high">1539</date>
-                           </imprint>
-                        </monogr>
-                     </biblStruct>
-                  </p>
-               </msContents>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>
-                           <dim>In-2°</dim>
-                        </support>
-                     </supportDesc>
-                  </objectDesc>
-               </physDesc>
-               <additional>
-                  <surrogates>
-                     <bibl>
-                        <ref target="https://doi.org/10.3931/e-rara-2604"/>
-                        <ptr target="https://www.e-rara.ch/i3f/v20/843605/manifest"/>
-                        <relatedItem type="original">
-                           <ref target="#ZB_III_B_14">e-rara</ref>
-                        </relatedItem>
-                     </bibl>
-                  </surrogates>
-                  <listBibl>
-                     <bibl>
-                        <ref target="https://d-nb.info/gnd/118739867">
-                           <orgName>d-nb gnd</orgName>
-                           <idno>118739867</idno>
-                        </ref>
-                     </bibl>
-                     <bibl>
-                        <ref target="https://ihr-num.unige.ch/rrp/X600">
-                           <orgName>RRP</orgName>
-                           <idno>X600</idno>
-                        </ref>
-                     </bibl>
-                  </listBibl>
-               </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-            <p>This digital corpus is part of the 16th Century Exegesis of Paul project <ref target="https://www.unige.ch/ihr/fr/recherche/projets/exegese-paulinienne/"/>, directed by Prof-Ueli Zahnd (IHR) and funded by the SNSF <ref target="https://data.snf.ch/grants/grant/207696"></ref>.</p>
-         </projectDesc>
-         <editorialDecl>
-            <correction>
-               <p>The segmentation was corrected manually, and the OCR transcription was fully or partially corrected depending on the dataset.</p>
-            </correction>
-            <normalization>
-               <p>For regularisation purposes, this transcription has been standardised using a Python script.</p>
-            </normalization>
-         </editorialDecl>
-         <appInfo>
-            <application ident="Kraken" version="5.3.0">
-               <label>Kraken</label>
-               <ptr target="https://github.com/mittagessen/kraken"/>
-            </application>
-         </appInfo>
-         <appInfo>
-            <application ident="FoNDUE" version="0.1">
-               <label>FoNDUE</label>
-               <ptr target="https://fondue.unige.ch/"/>
-            </application>
-         </appInfo>
-         <classDecl>
-            <taxonomy xml:id="SegmOnto">
-               <bibl>
-                  <title>SegmOnto</title>
-                  <ptr target="https://segmonto.github.io/"/>
-               </bibl>
-               <category xml:id="SegmOntoZones"/>
-               <category xml:id="SegmOntoLines"/>
-            </taxonomy>
-         </classDecl>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="lat">Latin from 16th century</language>
-         </langUsage>
-         <textClass>
-            <keywords>
-               <term type="form">theological commentaries</term>
-               <term type="segmentation_quality">gold</term>
-               <term type="transcription_quality">gold</term>
-               <term type="intermediary_reg_quality">not applicable</term>
-               <term type="normalized_reg_quality">normalize with a python script<ref target="https://github.com/16thExegesisDH/PipeLineThm/tree/main/PYTHON/normalisation"></ref></term>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change when="2026-04-29" who="#FG">Création du fichier TEI P5.</change>
-      </revisionDesc>
-   </teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>In priorem ad Timotheum epistolam annotationes.Johannes, Bugenhagen. Basel: [Petri Adam], 1524.</title>
+        <respStmt>
+          <resp>FNS Paul exegesis projet.</resp>
+          <persName xml:id="UZ">
+            <forename>Ueli</forename>
+            <surname>Zahnd</surname>
+            <ptr type="orcid" target="0000-0002-6129-1687"/>
+          </persName>
+        </respStmt>
+        <respStmt>
+          <resp>Modelling and document engineering, segmentation and correction of OCR transcription, conversion to TEI, metadata encoding.</resp>
+          <persName xml:id="FG">
+            <forename>Floriane</forename>
+            <surname>Goy</surname>
+            <ptr type="orcid" target="0009-0005-9944-035X"/>
+          </persName>
+        </respStmt>
+         <respStmt>
+          <resp>correction of OCR transcription, conversion to TEI, metadata encoding.</resp>
+          <persName xml:id="BD">
+            <forename>Béatrice</forename>
+            <surname>Dupuis</surname>
+            <ptr type="orcid" target="none"/>
+          </persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="total_images_book" n="314"/>
+        <measure unit="total_images_commentary" n="45"/>
+        <measure unit="processed_images_commentary" n="45"/>
+      </extent>
+      <publicationStmt>
+        <publisher>16th Century Exegesis of Paul</publisher>
+        <authority>Institut d'Histoire de la Réformation (IHR), université de Genève</authority>
+        <address>
+          <addrLine>22 boulevard des Philosophes</addrLine>
+          <addrLine>CH-1211 Genève</addrLine>
+        </address>
+        <authority>Theologisches Fakultät, universität Zürich</authority>
+        <address>
+          <addrLine>Kirchgasse 9</addrLine>
+          <addrLine>8001 Zürich</addrLine>
+        </address>
+        <availability>
+          <licence target=" http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
+          <p>Images : Non-commercial use only (MDZ)</p>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+          <p>Édition : CC BY</p>
+        </availability>
+        <date when="2026-04-29"/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier xml:id="BSB_Res_Exeg.309_Beibd.3">
+            <country>Deutschland</country>
+            <settlement>München</settlement>
+            <institution>Bayerische Staatsbibliothek</institution>
+            <idno type="shelfmark">Res/Exeg. 309 b#Beibd.3</idno>
+          </msIdentifier>
+          <msContents>
+            <p>
+              <biblStruct>
+                <monogr>
+                  <author>
+                    <persName ref="isni:0000000109036374" nymRef="192">
+                      <surname>Johannes</surname>
+                      <forename>Bugenhagen</forename>
+                    </persName>
+                  </author>
+                  <title type="book_title">Bugenhagen, Johannes: Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam &amp; secundam</title>
+                  <title type="commentary_title">In priorem ad Timotheum epistolam annotationes.</title>
+                  <imprint>
+                    <pubPlace cert="medium" ref="geonames:7285161">Basel</pubPlace>
+                    <respStmt>
+                      <resp>Imprimeur</resp>
+                      <persName role="presumed_printer" ref="isni:0000000116244569">
+                        <surname>Adam</surname>
+                        <forename>Petri</forename>
+                      </persName>
+                      <note><ref target="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"></ref>Historische Lexikon der Schweiz (HLS)</note> 
+                    </respStmt>
+                    <date cert="high">1524</date>
+                  </imprint>
+                </monogr>
+              </biblStruct>
+            </p>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>In-8°</dim>
+                </support>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <additional>
+            <surrogates>
+              <bibl>
+                <ref target="https://mdz-nbn-resolving.de/details:bsb00027764"/>
+                <ptr target="https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00027764/manifest"/>
+                <relatedItem type="original">
+                  <ref target="#BSB_Res_Exeg.309_Beibd.3">MDZ</ref>
+                </relatedItem>
+              </bibl>
+            </surrogates>
+            <listBibl>
+              <bibl>
+                <ref target=" https://d-nb.info/gnd/118517287 ">
+                  <orgName>GND</orgName>
+                  <idno>118517287</idno>
+                </ref>
+              </bibl>
+              <bibl>
+                <ref target="https://ihr-num.unige.ch/rrp/X454">
+                  <orgName>RRP</orgName>
+                  <idno>X454</idno>
+                </ref>
+              </bibl>
+            </listBibl>
+          </additional>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This digital corpus is part of the 16th Century Exegesis of Paul project <ref target="https://www.unige.ch/ihr/fr/recherche/projets/exegese-paulinienne/"/>, directed by Prof-Ueli Zahnd (IHR) and funded by the SNSF <ref target="https://data.snf.ch/grants/grant/207696"></ref>.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p>The segmentation was corrected manually, and the OCR transcription was fully or partially corrected depending on the dataset.</p>
+        </correction>
+        <normalization>
+          <p>For regularisation purposes, this transcription has been standardised using a Python script.</p>
+        </normalization>
+      </editorialDecl>
+      <appInfo>
+        <application ident="Kraken" version="5.3.0">
+          <label>Kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+      <appInfo>
+        <application ident="FoNDUE" version="0.1">
+          <label>FoNDUE</label>
+          <ptr target="https://fondue.unige.ch/"/>
+        </application>
+      </appInfo>
+      <classDecl>
+        <taxonomy xml:id="SegmOnto">
+          <bibl>
+            <title>SegmOnto</title>
+            <ptr target="https://segmonto.github.io/"/>
+          </bibl>
+          <category xml:id="SegmOntoZones"/>
+          <category xml:id="SegmOntoLines"/>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin : 16th century</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="form">theological commentaries</term>
+          <term type="segmentation_quality">gold</term>
+          <term type="transcription_quality">gold</term>
+          <term type="intermediary_reg_quality">not applicable</term>
+          <term type="normalized_reg_quality">normalize with a python script<ref target="https://github.com/16thExegesisDH/PipeLineThm/tree/main/PYTHON/normalisation"></ref></term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-04-30" who="#FG">Création du fichier TEI P5.</change>
+    </revisionDesc>
+  </teiHeader>
 <!-- sourceDoc -->                
                 <sourceDoc xml:id="transcription">
                     <xsl:for-each select="$xmlDocuments">
