@@ -10,6 +10,46 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>Distant_reading/XSLT/Ad_id.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Add_identifiant</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>Distant_reading/XSLT/add_id_2.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>add_id_2</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>Web_interface/scripts/tei2tex_wtnote.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -90,26 +130,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>Distant_reading/XSLT/Ad_id.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Add_identifiant</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -135,26 +155,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>tei2txt_by_verses</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>Distant_reading/XSLT/add_id_2.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>add_id_2</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -494,8 +494,8 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Add_identifiant</String>
                                         <String>tei2html_e-rara_toc_fini</String>
+                                        <String>Add_identifiant</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -2443,7 +2443,7 @@
                                     <String>${pdu}/Distant_reading/XSLT/Ad_id.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/Web_interface/TEI/5_Calvin_C1-6_tei_NF.xml</String>
+                                    <String>${pdu}/Web_interface/TEI/last_version/Pellican_1-Tim_C1-6.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -2461,7 +2461,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/Distant_reading/Id_TEI/7_Calvin_1-6.xml</String>
+                                    <String>${pd}/Distant_reading/Id_TEI/Pellican_1-Tim_C1-6_id.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
