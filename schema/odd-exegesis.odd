@@ -882,8 +882,7 @@
                      <attDef ident="subtype" mode="delete"/>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="contemporary"/> <!--faire un lissage -->
-                           <valItem ident="normalized"/>
+                           <valItem ident="normalized"/> <!-- I replace the old attribute contemporary" -->
                         </valList>
                      </attDef>
                   </attList>
@@ -983,14 +982,11 @@
                   <attList>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="genre"/>
                            <valItem ident="form"/>
                            <valItem ident="segmentation_quality"/>
                            <valItem ident="transcription_quality"/>
                            <valItem ident="intermediary_reg_quality"/>
-                           <valItem ident="advanced_reg_quality"/>
-                           <valItem ident="ling_annotation"/>
-                           <valItem ident="ling_annotation_quality"/>
+                           <valItem ident="normalized_reg_quality"/>
                         </valList>
                      </attDef>
                      <attDef ident="corresp" mode="delete"/>
@@ -1036,21 +1032,11 @@
                      <attDef ident="source" mode="delete"/>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="RunningTitleZone"/>
-                           <valItem ident="GraphicZone"/>
                            <valItem ident="MainZone-Head"/>
                            <valItem ident="MainZone-Continued"/>
-                           <valItem ident="MainZone-Entry"/>
                             <valItem ident="MainZone-P"/>
-                           <valItem ident="MainZone-P-Continued"/>
-                           <valItem ident="NumberingZone"/>
                            <valItem ident="DropCapitalZone"/>
-                           <valItem ident="QuireMarkZone"/>
-                           <valItem ident="MarginTextZone"/>
-                           <valItem ident="MarginTextZone-Note"/>
-                           <valItem ident="MarginTextZone:ManuscriptAddendum"/>
-                           <valItem ident="MarginTextZone:handwrittenAddition"/>
-                           <!-- ajouter le MainZone:P-Continued de l'ancien dataset ? -->
+                           <!-- ajouter le MainZone:P-Continued de l'ancien dataset ?  no I want something homogeneus-->
                         </valList>
                      </attDef>
                      <attDef ident="subtype" mode="delete"/>
@@ -1391,20 +1377,14 @@
                      <attDef ident="subtype" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- Checking element "zone" --> <!-- continuer peut-être enlever les valeurs non utiliser? -->
+               <!-- Checking element "zone" --> <!-- continuer peut-être enlever les valeurs non utiliser? oui -->
                <elementSpec ident="zone" mode="change">
                   <attList>
                      <attDef ident="cert" mode="delete"/>
                      <attDef ident="resp" mode="delete"/>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                          <!-- <valItem ident="DamageZone"/>
-                         <valItem ident="InterlinearLine"/>
-                         <valItem ident="StampZone"/>
-                        <valItem ident="TableZone"/> -->
                            <valItem ident="DefaultLine"/>
-                           <valItem ident="DropCapitalLine"/>
-                           <valItem ident="HeadingLine"/>
                            <valItem ident="DropCapitalZone"/>
                            <valItem ident="GraphicZone"/>
                            <valItem ident="MainZone:Head"/>
