@@ -708,8 +708,9 @@
                   <attList>
                      <attDef ident="unit" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="total_images"/>
-                           <valItem ident="processed_images"/>
+                           <valItem ident="total_images_book"/>
+                           <valItem ident="total_images_commentary"/>
+                           <valItem ident="processed_images_commentary"/>
                         </valList>
                      </attDef>
                      <attDef ident="type" mode="delete"/>
@@ -1387,9 +1388,9 @@
                            <valItem ident="DefaultLine"/>
                            <valItem ident="DropCapitalZone"/>
                            <valItem ident="GraphicZone"/>
-                           <valItem ident="MainZone:Head"/>
-                           <valItem ident="MainZone:Continued"/>
-                           <valItem ident="MainZone:P"/>
+                           <valItem ident="MainZone-Head"/>
+                           <valItem ident="MainZone-Continued"/>
+                           <valItem ident="MainZone-P"/>
                            <valItem ident="MarginTextZone-Note"/>
                            <valItem ident="NumberingZone"/>
                            <valItem ident="QuireMarksZone"/>
