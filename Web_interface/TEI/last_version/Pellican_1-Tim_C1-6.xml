@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model "https://raw.githubusercontent.com/16thExegesisDH/PipeLineThm/refs/heads/main/schema/out/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model "https://raw.githubusercontent.com/16thExegesisDH/PipeLineThm/refs/heads/main/schema/out/odd-exegesis.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="../../schema/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="file:/home/floriane/Documents/16thExegesisDH/PipeLineThm/schema/out/odd-exegesis.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Pelican_C1-6"
    xmlns:xi="http://www.w3.org/2001/XInclude"
    xmlns:sch="http://purl.oclc.org/dsdl/schematron">
@@ -4842,7 +4842,7 @@
             </zone>
          </zone>
          <zone xml:id="f844090_block_5"
-               type="MarginTextZone"
+               type="MarginTextZone-Note"
                n="5"
                ulx="235.0"
                uly="1070.0"
@@ -13450,7 +13450,7 @@
       <surface xml:id="f844101" ulx="0" uly="0" lrx="1000" lry="1554">
          <graphic url="https://www.e-rara.ch/i3f/v20/844101/full/full/0/default.jpg"/>
          <zone xml:id="f844101_block_3"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="1"
                ulx="34"
                uly="167"
@@ -14368,7 +14368,7 @@
             </zone>
          </zone>
          <zone xml:id="f844102_block_6"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="2"
                ulx="234"
                uly="168"
@@ -15191,7 +15191,7 @@
       <surface xml:id="f844103" ulx="0" uly="0" lrx="1000" lry="1558">
          <graphic url="https://www.e-rara.ch/i3f/v20/844103/full/full/0/default.jpg"/>
          <zone xml:id="f844103_block_4"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="1"
                ulx="33"
                uly="163"
@@ -16054,7 +16054,7 @@
             </zone>
          </zone>
          <zone xml:id="f844104_block_2"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="2"
                ulx="239"
                uly="155"
@@ -16917,7 +16917,7 @@
             </zone>
          </zone>
          <zone xml:id="f844105_block_3"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="3"
                ulx="34"
                uly="164"
@@ -17715,7 +17715,7 @@
             </zone>
          </zone>
          <zone xml:id="f844106_block_4"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="2"
                ulx="239"
                uly="169"
@@ -18528,7 +18528,7 @@
       <surface xml:id="f844107" ulx="0" uly="0" lrx="1000" lry="1554">
          <graphic url="https://www.e-rara.ch/i3f/v20/844107/full/full/0/default.jpg"/>
          <zone xml:id="f844107_block_3"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="1"
                ulx="44"
                uly="159"
@@ -19431,7 +19431,7 @@
             </zone>
          </zone>
          <zone xml:id="f844108_block_4"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="3"
                ulx="232"
                uly="159"
@@ -20219,7 +20219,7 @@
       <surface xml:id="f844109" ulx="0" uly="0" lrx="1000" lry="1558">
          <graphic url="https://www.e-rara.ch/i3f/v20/844109/full/full/0/default.jpg"/>
          <zone xml:id="f844109_block_3"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="1"
                ulx="34"
                uly="158"
@@ -21097,7 +21097,7 @@
             </zone>
          </zone>
          <zone xml:id="f844110_block_5"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="2"
                ulx="234"
                uly="158"
@@ -21910,7 +21910,7 @@
       <surface xml:id="f844111" ulx="0" uly="0" lrx="1000" lry="1550">
          <graphic url="https://www.e-rara.ch/i3f/v20/844111/full/full/0/default.jpg"/>
          <zone xml:id="f844111_block_5"
-               type="MainZone-P-Continued"
+               type="MainZone-Continued"
                n="1"
                ulx="40"
                uly="166"
@@ -71168,7 +71168,7 @@
                <reg type="normalized">nostris perficiendum: hoc non fitsine fide uerborum dei, et facrarum literarum</reg>
             </choice>
          </ab>
-         <note corresp="#f844090_block_5" type="MarginTextZone">
+         <note corresp="#f844090_block_5" type="MarginTextZone-Note">
             <lb corresp="#f844090_line_42_ligne_2"/>
             <choice>
                <orig>3</orig>
@@ -73824,7 +73824,7 @@
                <reg type="normalized">479</reg>
             </choice>
          </fw>
-         <ab corresp="#f844101_block_3" type="MainZone-P-Continued">
+         <ab corresp="#f844101_block_3" type="MainZone-Continued">
             <lb corresp="#f844101_line_2_ligne_2"/>
             <choice>
                <orig>lata ac religioſa conuerſatione, coram omni eccleſia, quæ eum audacem reddere</orig>
@@ -74102,7 +74102,7 @@
                <reg type="normalized">tiam.</reg>
             </choice>
          </fw>
-         <ab corresp="#f844102_block_6" type="MainZone-P-Continued">
+         <ab corresp="#f844102_block_6" type="MainZone-Continued">
             <lb corresp="#f844102_eSc_line_3e50bc34_ligne_2"/>
             <choice>
                <orig>noſtra conamina, dominum implorare, auxilium illius petere ac aſſiſtentiam, ut</orig>
@@ -74367,7 +74367,7 @@
                <reg type="normalized">S</reg>
             </choice>
          </fw>
-         <ab corresp="#f844103_block_4" type="MainZone-P-Continued">
+         <ab corresp="#f844103_block_4" type="MainZone-Continued">
             <lb corresp="#f844103_line_2_ligne_2"/>
             <choice>
                <orig>tiam. Et omnibus in ſublimitate conſtitutis.) Addita coniunctio expoſitiue ac¬</orig>
@@ -74630,7 +74630,7 @@
                <reg type="normalized">Christum</reg>
             </choice>
          </fw>
-         <ab corresp="#f844104_block_2" type="MainZone-P-Continued">
+         <ab corresp="#f844104_block_2" type="MainZone-Continued">
             <lb corresp="#f844104_line_2_ligne_2"/>
             <choice>
                <orig>dentes facto, optimi dei optimas leges ſcriptas eſſe in cordibus noſtris. Vt ex bo¬</orig>
@@ -74898,7 +74898,7 @@
                <reg type="normalized">2</reg>
             </choice>
          </fw>
-         <ab corresp="#f844105_block_3" type="MainZone-P-Continued">
+         <ab corresp="#f844105_block_3" type="MainZone-Continued">
             <lb corresp="#f844105_line_2_ligne_2"/>
             <choice>
                <orig>Chriſtum eſſe unicum mediatorem, quem pater cœleſtis ſtatuit inter ſe &amp; nos,ut</orig>
@@ -75162,7 +75162,7 @@
                <reg type="normalized">gentium</reg>
             </choice>
          </fw>
-         <ab corresp="#f844106_block_4" type="MainZone-P-Continued">
+         <ab corresp="#f844106_block_4" type="MainZone-Continued">
             <lb corresp="#f844106_line_2_ligne_2"/>
             <choice>
                <orig>fuit, &amp; ſatisfecit deo patri pro omibus, nihil obmiſit de ſuo, quo minus omnes re¬</orig>
@@ -75430,7 +75430,7 @@
                <reg type="normalized">3</reg>
             </choice>
          </fw>
-         <ab corresp="#f844107_block_3" type="MainZone-P-Continued">
+         <ab corresp="#f844107_block_3" type="MainZone-Continued">
             <lb corresp="#f844107_line_2_ligne_2"/>
             <choice>
                <orig>gentium doctorem dederit, teſtantur ſigna apoſtolatus mei: qualem deni me</orig>
@@ -75693,7 +75693,7 @@
                <reg type="normalized">uinis,</reg>
             </choice>
          </fw>
-         <ab corresp="#f844108_block_4" type="MainZone-P-Continued">
+         <ab corresp="#f844108_block_4" type="MainZone-Continued">
             <lb corresp="#f844108_line_2_ligne_2"/>
             <choice>
                <orig>rimus propter deum.</orig>
@@ -75961,7 +75961,7 @@
                <reg type="normalized">S</reg>
             </choice>
          </fw>
-         <ab corresp="#f844109_block_3" type="MainZone-P-Continued">
+         <ab corresp="#f844109_block_3" type="MainZone-Continued">
             <lb corresp="#f844109_line_2_ligne_2"/>
             <choice>
                <orig>uinis, audita meditari &amp; ruminare, ut deinde liberis ea domi recenſeant ac incul¬</orig>
@@ -76224,7 +76224,7 @@
                <reg type="normalized">perata,</reg>
             </choice>
          </fw>
-         <ab corresp="#f844110_block_5" type="MainZone-P-Continued">
+         <ab corresp="#f844110_block_5" type="MainZone-Continued">
             <lb corresp="#f844110_line_2_ligne_2"/>
             <choice>
                <orig>inutilius inſtitui poterat? quid ſtultius excogitari, quàm ut tantundem temporis</orig>
@@ -76487,7 +76487,7 @@
                <reg type="normalized">2</reg>
             </choice>
          </fw>
-         <ab corresp="#f844111_block_5" type="MainZone-P-Continued">
+         <ab corresp="#f844111_block_5" type="MainZone-Continued">
             <lb corresp="#f844111_line_2_ligne_2"/>
             <choice>
                <orig>perata, ſuperbia &amp; auaritia, gula &amp; luxuria decepta eſt, &amp; uiro inſuper inſidia¬</orig>

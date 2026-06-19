@@ -377,6 +377,8 @@
                         <elementRef key="publisher" minOccurs="1" maxOccurs="1"/>
                         <elementRef key="authority" minOccurs="1" maxOccurs="1"/>
                         <elementRef key="address" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="authority" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="address" minOccurs="1" maxOccurs="1"/>
                         <elementRef key="availability" minOccurs="1" maxOccurs="1"/>
                         <elementRef key="date" minOccurs="1" maxOccurs="1"/>
                      </sequence>
@@ -842,7 +844,7 @@
                   <constraintSpec ident="publisher_check" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:publisher">
-                           <sch:assert test="contains(.,'16th centuries exegesis of  Paul,')">16th centuries exegesis of  Paul,</sch:assert>
+                           <sch:assert test="contains(.,'16th centuries exegesis of  Paul')">16th centuries exegesis of  Paul</sch:assert>
                         </sch:rule>
                      </constraint>
                   </constraintSpec> 
@@ -1007,8 +1009,8 @@
                   <attList>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="complete_title"/>
-                           <valItem ident="short_title"/>
+                           <valItem ident="book_title"/>
+                           <valItem ident="commentary_title"/>
                         </valList>
                      </attDef>
                      <attDef ident="level" mode="delete"/>
@@ -1387,11 +1389,13 @@
                         <valList mode="add" type="closed">
                            <valItem ident="DefaultLine"/>
                            <valItem ident="DropCapitalZone"/>
+                           <valItem ident="DropCapitalLine"/>
                            <valItem ident="GraphicZone"/>
                            <valItem ident="MainZone-Head"/>
                            <valItem ident="MainZone-Continued"/>
                            <valItem ident="MainZone-P"/>
                            <valItem ident="MarginTextZone-Note"/>
+                           <valItem ident="MarginTextZone"/>
                            <valItem ident="NumberingZone"/>
                            <valItem ident="QuireMarksZone"/>
                            <valItem ident="RunningTitleZone"/>
