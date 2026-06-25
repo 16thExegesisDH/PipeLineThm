@@ -845,7 +845,7 @@
                   <constraintSpec ident="publisher_check" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:publisher">
-                           <sch:assert test="contains(.,'16th centuries exegesis of  Paul')">16th centuries exegesis of  Paul</sch:assert>
+                           <sch:assert test="contains(.,'16th Century Exegesis of Paul')">16th Century Exegesis of Paul</sch:assert>
                         </sch:rule>
                      </constraint>
                   </constraintSpec> 
