@@ -749,7 +749,8 @@
                      <attDef ident="source" mode="delete"/>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                        <valItem ident="MarginTextZone-Note"/>
+                        <valItem ident="MarginTextZone-Notes"/>
+                           <valItem ident="MarginTextZone"/>
                              <!-- <valItem ident="MarginTextZone:handwrittenAddition"/>
                            <valItem ident="TableZone"/> -->
                         </valList>
@@ -1394,7 +1395,7 @@
                            <valItem ident="MainZone-Head"/>
                            <valItem ident="MainZone-Continued"/>
                            <valItem ident="MainZone-P"/>
-                           <valItem ident="MarginTextZone-Note"/>
+                           <valItem ident="MarginTextZone-Notes"/>
                            <valItem ident="MarginTextZone"/>
                            <valItem ident="NumberingZone"/>
                            <valItem ident="QuireMarksZone"/>
