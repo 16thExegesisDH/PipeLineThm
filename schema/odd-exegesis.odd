@@ -1012,6 +1012,7 @@
                         <valList mode="add" type="closed">
                            <valItem ident="book_title"/>
                            <valItem ident="commentary_title"/>
+                           <valItem ident="default-title"/>
                         </valList>
                      </attDef>
                      <attDef ident="level" mode="delete"/>

@@ -8,7 +8,8 @@
     <!-- script build ob the same code as mdz_toc_fini.xsl, by Floriane Goy, the 3rd decembre 2025
        The only changes concern
     1. e-rara identifier in "template-name ="text-section"
-    2. the place of the Dropcapital in "template match ab" -->
+    2. the place of the Dropcapital in "template match ab"
+    3. corrigé il fonction sur la dernière version de la pipeLine-->
     
     <xsl:strip-space elements="*"/>
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
@@ -42,8 +43,8 @@
         <title>
             <xsl:value-of select="//title[parent::titleStmt]"/>
         </title>
-        <link href="../../../Web_interface/CSS/FG_stylesheet_fini.css" rel="stylesheet"/> 
-     <!--   <link href="../../../Web_interface/CSS/FG_stylesheet_small_fini.css" rel="stylesheet"/> -->
+<!--        <link href="../../../Web_interface/CSS/FG_stylesheet_fini.css" rel="stylesheet"/> 
+-->        <link href="../../../Web_interface/CSS/FG_stylesheet_small_fini.css" rel="stylesheet"/> 
         <script src="../../../Web_interface/JS/my_function_fini.js" defer="defer"></script>
     </xsl:template>
 
@@ -74,7 +75,7 @@
                                     else '> Introduction'"/>
                             </a>
                             <ul style="display: none; padding-left: 8px;">
-                                <xsl:for-each select="if ($FirstNode[choice/reg[matches(., '^CAP')]] or $FirstNode[hi/choice/reg[matches(., '^CAP')]]) 
+                                <xsl:for-each select="if ($FirstNode[choice/reg[matches(., '^CAP.*')]] or $FirstNode[hi/choice/reg[matches(., '^CAP.*')]]) 
                                     then current-group()[position() > 1] 
                                     else current-group()">
                                     
@@ -168,12 +169,12 @@
     <xsl:template match="teiHeader | /sourceDoc | orig"/>
     
     <xsl:template match="ab">
-        <!-- DropCapitalZone is handled by MainZone-P, so we skip rendering it here -->
+        <!-- DropCapitalZone is handled by MainZone-P, so we skip rendering it here  (., '^CAP.*')-->
         <xsl:if test="@type != 'DropCapitalZone' and @type != 'MainZone-P'">
             <xsl:choose>
                 <!-- MainZone-Head special case -->
                 
-                <xsl:when test="@type='MainZone-Head' and (choice/reg[matches(., '^CAP.*')] or hi/choice/reg[matches(., '^CAP.*')])">
+                <xsl:when test="@type='MainZone-Head' and (choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')] or hi/choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')])">
                     <xsl:variable name="Chapter" select="translate(normalize-space(string-join(.//reg, ' ')), ' ', '_')"/>
                     
                     
@@ -183,7 +184,7 @@
                         <xsl:variable name="chapter-token" 
                             select="tokenize(normalize-space(string-join(.//reg, ' ')), '\s+')[last()]"/>
                         <xsl:attribute name="id"
-                            select="concat('C_', replace(replace($chapter-token, '^CAP\.',''), '\.$',''))"/>
+                            select="concat('C_', replace(replace($chapter-token, '^\s*cap([^a-zA-Z]|$)',''), '\.$',''))"/>
                         
                         <span class="ab_mzHead" id="{$Chapter}">
                             
@@ -192,9 +193,9 @@
                     </h2>
                 </xsl:when>
                 
-                <xsl:when test="@type='MainZone-Head' and not(choice/reg[matches(., '^CAP')]) and not(hi/choice/reg[matches(., '^CAP')])">
+                <xsl:when test="@type='MainZone-Head' and not(choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')]) and not(hi/choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')])">
                     
-                    <h3> <!-- ajouter un identifiant pour chaque verset  -->
+                    <h3> <!-- ajouter un identifiant pour chaque verset  !! attention : ajouter cette regex après last '^\s*cap\.?\s*' -->
                         <xsl:variable name="chapter-id" 
                             select="
                             concat(
@@ -204,10 +205,10 @@
                             tokenize(
                             normalize-space(string-join(
                             (preceding-sibling::ab[@type='MainZone-Head' 
-                            and (choice/reg[matches(., '^CAP')] 
-                            or hi/choice/reg[matches(., '^CAP')])]
+                            and (choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')] 
+                            or hi/choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')])]
                             //reg), ' ')), '\s+')[last()],
-                            '^CAP\.',''),
+                            '^\s*cap\.?\s*',''), 
                             '\.$','')
                             )
                             "/>
@@ -216,16 +217,16 @@
                             <xsl:number 
                                 level="any"
                                 count="ab[@type='MainZone-Head' 
-                                and not(choice/reg[matches(., '^CAP')])
-                                and not(hi/choice/reg[matches(., '^CAP')])]"
+                                and not(choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')])
+                                and not(hi/choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')])]"
                                 from="ab[@type='MainZone-Head' 
-                                and (choice/reg[matches(., '^CAP')] 
-                                or hi/choice/reg[matches(., '^CAP')])]"/>
+                                and (choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')] 
+                                or hi/choice/reg[matches(., '^\s*cap([^a-zA-Z]|$)', 'i')])]"/>
                         </xsl:attribute>
-                        <!-- Show DropCap if it exists some e-rara doc have the dropCapital in the verse-->
-                        <xsl:if test="preceding-sibling::*[1][self::ab[@type='DropCapitalZone']]">
+                 
+                        <xsl:if test="lb[1][@type='DropCapitalLine']">
                             <span class="ab_Drop">
-                                <xsl:value-of select="preceding-sibling::ab[@type='DropCapitalZone'][1]//choice/reg"/>
+                                <xsl:value-of select="choice[1]/reg"/>
                             </span>
                         </xsl:if>
                         <span class="ab_mzHead" id="{
@@ -251,18 +252,17 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="ab[@type='DropCapitalZone']"/>
+    <xsl:template match="lb[@type='DropCapitalLine']"/>
     
     <!-- MainZone-P with potential DropCapitalZone integration -->
     <xsl:template match="ab[@type='MainZone-P']">
         <p>
-            <!-- Only show DropCapital if immediately it precede a MainZone-P -->
-            <xsl:if test="preceding-sibling::*[1][self::ab[@type='DropCapitalZone']]">
+            <xsl:if test="lb[1][@type='DropCapitalLine']">
                 <span class="ab_Drop">
-                    <xsl:value-of select="preceding-sibling::ab[@type='DropCapitalZone'][1]//choice/reg"/>
+                    <xsl:value-of select="choice[1]/reg"/>
                 </span>
             </xsl:if>
-            <xsl:apply-templates/>
+         <xsl:apply-templates/>
         </p>
     </xsl:template>
     
@@ -285,19 +285,17 @@
     
     <xsl:template match="choice">
         <xsl:choose>
-            <!-- IF inside DropCapitalZone, NO <br> -->
-            <xsl:when test="ab[@type='DropCapitalZone']">
-                <xsl:value-of select="reg"/>
+            
+            <!-- Do not output the drop capital twice -->
+            <xsl:when test="self::choice[1]
+                [preceding-sibling::lb[1][@type='DropCapitalLine']]">
             </xsl:when>
-            <xsl:when test="ab[@type='Main*']">
-                <xsl:value-of select="reg"/><xsl:element name="br"/>
-            </xsl:when>
-            <xsl:when test="ab[@type='TitlePageZone']">
-                <xsl:value-of select="reg"/><xsl:element name="br"/>
-            </xsl:when>
+            
             <xsl:otherwise>
-                <xsl:value-of select="reg"/><xsl:element name="br"/>
+                <xsl:value-of select="reg"/>
+                <br/>
             </xsl:otherwise>
+            
         </xsl:choose>
     </xsl:template>
     
@@ -315,19 +313,6 @@
                 </p>
             </xsl:when>
         </xsl:choose>
-    </xsl:template>
-    
-    <!-- removes all the hyphens and add a space at the end of the line if there is no hyphens -->
-  <!--  <xsl:template match="note/choice/reg">
-        <xsl:choose>
-            <xsl:when test="contains(., '-')">
-                <xsl:value-of select="translate(., '-', '')"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="concat(., ' ')"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>-->
-    
+    </xsl:template>    
     
 </xsl:stylesheet>

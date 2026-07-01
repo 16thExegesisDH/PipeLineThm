@@ -18,10 +18,10 @@
             <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
     </xsl:template>
-    
+ <!--   
     <xsl:template match="hi">
         <xsl:apply-templates/>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="body">
         
@@ -113,12 +113,16 @@
                             
                             <div type="chapter-title"
                                 xml:id="{$chapter-id}">
-                                <title type="h1">
-                                <!-- preserve chapter ab -->
-                                <xsl:apply-templates
-                                    select="$chapterHead"/>
-                                </title>
-                                <div type="chapter-text">
+                                <ab>
+                                    <xsl:copy-of select="$chapterHead/@*"/>
+                                    
+                                    <title>
+                                        <xsl:attribute name="ref"><xsl:value-of select="concat('#', $chapter-id)"/></xsl:attribute>
+                                        <xsl:apply-templates select="$chapterHead/node()"/>
+                                    </title>
+                                </ab>
+                                <div type="all-chapter-text">
+                                    <xsl:attribute name="corresp"><xsl:value-of select="concat('#',$chapter-id)"/></xsl:attribute>
                                     
                                     <!-- group content by verse -->
                                     <xsl:for-each-group
@@ -141,9 +145,60 @@
                                         <xsl:choose>
                                             
                                             <!-- real verse -->
+                                            
                                             <xsl:when test="$verseHead">
                                                 
-                                                <!-- build verse id once -->
+                                                <!-- Chapter wrapper -->
+                                                <div type="verse+commentary-text">
+                                                    
+                                                    <!-- build verse id using xsl:number logic -->
+                                                  <xsl:variable name="verse-num">
+                                                      <xsl:number
+                                                          level="any"
+                                                          count="ab[@type='MainZone-Head'
+                                                          and not(choice/reg[matches(normalize-space(.), '^cap', 'i')])
+                                                          and not(hi/choice/reg[matches(normalize-space(.), '^cap', 'i')])]"
+                                                          from="ab[@type='MainZone-Head'
+                                                          and (choice/reg[matches(normalize-space(.), '^cap', 'i')]
+                                                          or hi/choice/reg[matches(normalize-space(.), '^cap', 'i')])]"/>
+                                                    </xsl:variable>
+                                                  
+                                                  
+                                                    <xsl:variable name="verse-id"
+                                                        select="concat($chapter-id, '_v', $verse-num)"/>
+                                                    
+                                                    <!-- build verse title number -->
+                                                    <xsl:variable name="verse-title-num" select="$verse-num"/>
+                                                    
+                                                    <div type="verse" xml:id="{$verse-id}">
+                                                        
+                                                        <!-- MAIN TEXT BLOCK -->
+                                                        <ab corresp="#{$verse-id}" type="MainZone-Head">
+                                                            
+                                                            <!-- TITLE INSIDE AB -->
+                                                            <title ref="#{$verse-id}">
+                                                                <xsl:value-of
+                                                                    select="concat($chapter-title, ' v.', $verse-title-num)"/>
+                                                            </title>
+                                                            
+                                                            <!-- drop-cap + content -->
+                                                            <xsl:apply-templates select="$verseHead/node()"/>
+                                                            
+                                                        </ab>
+                                                        
+                                                    </div>
+                                                    
+                                                    <!-- commentary wrapper -->
+                                                    <div type="commentary" corresp="#{$verse-id}">
+                                                        <xsl:apply-templates select="current-group()[position() gt 1]"/>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </xsl:when>
+                                         <!--   <xsl:when test="$verseHead">
+                                                
+                                                <!-\- build verse id once -\->
                                                 
                                                 <xsl:variable name="verse-id">
                                                     <xsl:value-of select="concat($chapter-id,'_v')"/>
@@ -185,13 +240,13 @@
                                                 
                                                 <div type="verse" xml:id="{$verse-id}">
                                                     
-                                                    <!-- verse title -->
+                                                    <!-\- verse title -\->
                                                     <hi type="h2">
                                                     <text><xsl:value-of select="$verse-title"/></text>
                                                     <xsl:apply-templates select="$verseHead"/>
                                                     </hi>
                                               
-                                                    <!-- commentary wrapper -->
+                                                    <!-\- commentary wrapper -\->
                                                     <div type="commentary"
                                                         corresp="#{$verse-id}">
                                                         
@@ -202,7 +257,7 @@
                                                     
                                                 </div>
                                               
-                                            </xsl:when>
+                                            </xsl:when>-->
                                             
                                             <!-- material before first verse -->
                                             <xsl:otherwise>
@@ -231,18 +286,39 @@
                                     <xsl:choose>
                                         
                                         <!-- group begins with a title -->
-                                        <xsl:when test="current-group()[1][self::ab[@type='MainZone-Head']]">
+                                     <!--   <xsl:when test="current-group()[1][self::ab[@type='MainZone-Head']]">
                                             
-                                            <hi type="h1">
+                                            <title type="default-title">
                                                 <xsl:apply-templates
                                                     select="current-group()[1]"/>
-                                            </hi>
+                                            </title>
                                             
-                                            <!-- following material -->
+                                            <!-\- following material -\->
                                             <xsl:if test="count(current-group()) gt 1">
                                                 <div type="introduction-text">
                                                     <xsl:apply-templates
                                                         select="current-group()[position() gt 1]"/>
+                                                </div>
+                                            </xsl:if>
+                                            
+                                        </xsl:when>-->
+                                        <xsl:when test="current-group()[1][self::ab[@type='MainZone-Head']]">
+                                            <div type ="introduction-title">
+                                            <ab>
+                                                <!-- copy attributes of original ab -->
+                                                <xsl:copy-of select="current-group()[1]/@*"/>
+                                                
+                                                <!-- NEW title INSIDE ab -->
+                                                <title type="default-title">
+                                                    <xsl:apply-templates select="current-group()[1]/node()"/>
+                                                </title>
+                                                
+                                            </ab>
+                                            </div>
+                                            <!-- following material -->
+                                            <xsl:if test="count(current-group()) gt 1">
+                                                <div type="introduction-text">
+                                                    <xsl:apply-templates select="current-group()[position() gt 1]"/>
                                                 </div>
                                             </xsl:if>
                                             
