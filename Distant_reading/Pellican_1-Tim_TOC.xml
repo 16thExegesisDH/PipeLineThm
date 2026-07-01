@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>In priorem ad Timotheum epistolam annotationes.Johannes, Bugenhagen. Basel: [Petri Adam], 1524.</title>
+            <title> Commentarium in epistolam divi Pauli apostoli ad Timotheum primam. Konrad, Pellikan. Zürich : Christoph Froschauer, 1539</title>
             <respStmt>
                <resp>FNS Paul exegesis projet.</resp>
                <persName xml:id="UZ">
@@ -23,19 +23,11 @@
                   <ptr type="orcid" target="0009-0005-9944-035X"/>
                </persName>
             </respStmt>
-            <respStmt>
-               <resp>correction of OCR transcription, conversion to TEI, metadata encoding.</resp>
-               <persName xml:id="BD">
-                  <forename>Béatrice</forename>
-                  <surname>Dupuis</surname>
-                  <ptr type="orcid" target="none"/>
-               </persName>
-            </respStmt>
          </titleStmt>
          <extent>
-            <measure unit="total_images_book" n="314"/>
-            <measure unit="total_images_commentary" n="45"/>
-            <measure unit="processed_images_commentary" n="45"/>
+            <measure unit="total_images_book" n="806"/>
+            <measure unit="total_images_commentary" n="82"/>
+            <measure unit="processed_images_commentary" n="82"/>
          </extent>
          <publicationStmt>
             <publisher>16th Century Exegesis of Paul</publisher>
@@ -50,8 +42,8 @@
                <addrLine>8001 Zürich</addrLine>
             </address>
             <availability>
-               <licence target=" http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
-               <p>Images : Non-commercial use only (MDZ)</p>
+               <licence target="https://creativecommons.org/publicdomain/mark/1.0/deed.fr"/>
+               <p>Images : Public Domain Mark (e-rara)</p>
                <licence target="https://creativecommons.org/licenses/by/4.0/"/>
                <p>Édition : CC BY</p>
             </availability>
@@ -59,38 +51,36 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier xml:id="BSB_Res_Exeg.309_Beibd.3">
-                  <country>Deutschland</country>
-                  <settlement>München</settlement>
-                  <institution>Bayerische Staatsbibliothek</institution>
-                  <idno type="shelfmark">Res/Exeg. 309 b#Beibd.3</idno>
+               <msIdentifier xml:id="ZBZ_III_B_14_G">
+                  <country>Schweiz</country>
+                  <settlement>Zürich</settlement>
+                  <institution>Zentralbibliothek Zürich</institution>
+                  <idno type="shelfmark">III B 14 | G</idno>
                </msIdentifier>
                <msContents>
                   <p>
                      <biblStruct>
                         <monogr>
                            <author>
-                              <persName ref="isni:0000000109036374" nymRef="192">
-                                 <surname>Johannes</surname>
-                                 <forename>Bugenhagen</forename>
+                              <persName ref="isni:000000012129718X">
+                                 <surname>Pellikan</surname>
+                                 <forename>Konrad</forename>
                               </persName>
+                              <note><ref target="https://hls-dhs-dss.ch/de/articles/010781/2009-11-25/"></ref>Historische Lexikon der Schweiz (HLS)</note>
                            </author>
-                           <title type="book_title">Bugenhagen, Johannes: Annotationes in decem epistolas Pauli scilicet ad [...] Timotheum primam &amp; secundam</title>
-                           <title type="commentary_title">In priorem ad Timotheum epistolam annotationes.</title>
+                           <title type="book_title">In omnes apostolicas epistolas, Pauli, Petri, Iacobi, Ioannis et Iudae commentarii</title>
+                           <title type="commentary_title">Commentarium in epistolam divi Pauli Apostoli ad Timotheum primam</title>
                            <imprint>
-                              <pubPlace cert="medium" ref="geonames:7285161">Basel</pubPlace>
+                              <pubPlace cert="high" ref="geonames:2657896">Zurich</pubPlace>
                               <respStmt>
                                  <resp>Imprimeur</resp>
-                                 <persName role="presumed_printer" ref="isni:0000000116244569">
-                                    <surname>Adam</surname>
-                                    <forename>Petri</forename>
+                                 <persName ref="isni:0000000121270868">
+                                    <surname>Christoph</surname>
+                                    <forename>Froschauer</forename>
                                  </persName>
-                                 <note>
-                                    <ref target="https://hls-dhs-dss.ch/de/articles/021524/2010-06-03/"/>
-                        Historische Lexikon der Schweiz (HLS)
-                      </note>
+                                 <note><ref target="https://hls-dhs-dss.ch/fr/articles/010612/2018-01-11/"></ref>Historische Lexikon der Schweiz (HLS)</note>
                               </respStmt>
-                              <date cert="high">1524</date>
+                              <date cert="high">1539</date>
                            </imprint>
                         </monogr>
                      </biblStruct>
@@ -100,7 +90,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <dim>In-8°</dim>
+                           <dim>In-2°</dim>
                         </support>
                      </supportDesc>
                   </objectDesc>
@@ -108,24 +98,24 @@
                <additional>
                   <surrogates>
                      <bibl>
-                        <ref target="https://mdz-nbn-resolving.de/details:bsb00027764"/>
-                        <ptr target="https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00027764/manifest"/>
+                        <ref target="https://doi.org/10.3931/e-rara-2604"/>
+                        <ptr target="https://www.e-rara.ch/i3f/v20/843605/manifest"/>
                         <relatedItem type="original">
-                           <ref target="#BSB_Res_Exeg.309_Beibd.3">MDZ</ref>
+                           <ref target="#ZBZ_III_B_14_G">e-rara</ref>
                         </relatedItem>
                      </bibl>
                   </surrogates>
                   <listBibl>
                      <bibl>
-                        <ref target=" https://d-nb.info/gnd/118517287">
+                        <ref target="https://d-nb.info/gnd/118739867">
                            <orgName>GND</orgName>
-                           <idno>118517287</idno>
+                           <idno>118739867</idno>
                         </ref>
                      </bibl>
                      <bibl>
-                        <ref target="https://ihr-num.unige.ch/rrp/X454">
+                        <ref target="https://ihr-num.unige.ch/rrp/X600">
                            <orgName>RRP</orgName>
-                           <idno>X454</idno>
+                           <idno>X600</idno>
                         </ref>
                      </bibl>
                   </listBibl>
@@ -135,13 +125,7 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p>
-          This digital corpus is part of the 16th Century Exegesis of Paul project 
-          <ref target="https://www.unige.ch/ihr/fr/recherche/projets/exegese-paulinienne/"/>
-          , directed by Prof-Ueli Zahnd (IHR) and funded by the SNSF 
-          <ref target="https://data.snf.ch/grants/grant/207696"/>
-          .
-        </p>
+            <p>This digital corpus is part of the 16th Century Exegesis of Paul project <ref target="https://www.unige.ch/ihr/fr/recherche/projets/exegese-paulinienne/"/>, directed by Prof-Ueli Zahnd (IHR) and funded by the SNSF <ref target="https://data.snf.ch/grants/grant/207696"></ref>.</p>
          </projectDesc>
          <editorialDecl>
             <correction>
@@ -184,15 +168,12 @@
                <term type="segmentation_quality">gold</term>
                <term type="transcription_quality">gold</term>
                <term type="intermediary_reg_quality">not applicable</term>
-               <term type="normalized_reg_quality">
-            normalize with a python script
-            <ref target="https://github.com/16thExegesisDH/PipeLineThm/tree/main/PYTHON/normalisation"/>
-               </term>
+               <term type="normalized_reg_quality">normalize with a python script<ref target="https://github.com/16thExegesisDH/PipeLineThm/tree/main/PYTHON/normalisation"></ref></term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-04-30" who="#FG">Création du fichier TEI P5.</change>
+         <change when="2026-04-29" who="#FG">Création du fichier TEI P5.</change>
       </revisionDesc>
    </teiHeader>
    <sourceDoc>
@@ -74720,9 +74701,9 @@
                </fw>
             </div>
          </div>
-         <div type="chapter-title" xml:id="C_PRIMVM">
+         <div type="chapter-title" xml:id="C_I">
             <ab corresp="#f844086_block_2" type="MainZone-Head">
-               <title ref="#C_PRIMVM">
+               <title ref="#C_I">
                   <hi>
                      <lb type="DefaultLine" corresp="#f844086_line_2_ligne_2"/>
                      <choice>
@@ -74732,11 +74713,11 @@
                   </hi>
                </title>
             </ab>
-            <div type="all-chapter-text" corresp="#C_PRIMVM">
+            <div type="all-chapter-text" corresp="#C_I">
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v1">
-                     <ab corresp="#C_PRIMVM_v1" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v1">Cap. PRIMVM v.1</title>
+                  <div type="verse" xml:id="C_I_v1">
+                     <ab corresp="#C_I_v1" type="MainZone-Head">
+                        <title ref="#C_I_v1">Cap. PRIMVM v.1</title>
                         <lb type="DropCapitalLine"
                             corresp="#f844086_line_3_ligne_2"
                             source="#f844086_block_3"/>
@@ -74774,7 +74755,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v1">
+                  <div type="commentary" corresp="#C_I_v1">
                      <ab corresp="#f844086_block_5" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844086_line_8_ligne_2"/>
                         <choice>
@@ -75543,9 +75524,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v2">
-                     <ab corresp="#C_PRIMVM_v2" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v2">Cap. PRIMVM v.2</title>
+                  <div type="verse" xml:id="C_I_v2">
+                     <ab corresp="#C_I_v2" type="MainZone-Head">
+                        <title ref="#C_I_v2">Cap. PRIMVM v.2</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844089_line_4_ligne_2"/>
                            <choice>
@@ -75576,7 +75557,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v2">
+                  <div type="commentary" corresp="#C_I_v2">
                      <ab corresp="#f844089_block_4" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844089_line_9_ligne_2"/>
                         <choice>
@@ -75991,9 +75972,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v3">
-                     <ab corresp="#C_PRIMVM_v3" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v3">Cap. PRIMVM v.3</title>
+                  <div type="verse" xml:id="C_I_v3">
+                     <ab corresp="#C_I_v3" type="MainZone-Head">
+                        <title ref="#C_I_v3">Cap. PRIMVM v.3</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844090_line_40_ligne_2"/>
                            <choice>
@@ -76010,7 +75991,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v3">
+                  <div type="commentary" corresp="#C_I_v3">
                      <ab corresp="#f844090_block_6" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844090_line_43_ligne_2"/>
                         <choice>
@@ -76147,9 +76128,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v4">
-                     <ab corresp="#C_PRIMVM_v4" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v4">Cap. PRIMVM v.4</title>
+                  <div type="verse" xml:id="C_I_v4">
+                     <ab corresp="#C_I_v4" type="MainZone-Head">
+                        <title ref="#C_I_v4">Cap. PRIMVM v.4</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844091_line_14_ligne_2"/>
                            <choice>
@@ -76173,7 +76154,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v4">
+                  <div type="commentary" corresp="#C_I_v4">
                      <ab corresp="#f844091_block_4" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844091_line_17_ligne_2"/>
                         <choice>
@@ -76309,9 +76290,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v5">
-                     <ab corresp="#C_PRIMVM_v5" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v5">Cap. PRIMVM v.5</title>
+                  <div type="verse" xml:id="C_I_v5">
+                     <ab corresp="#C_I_v5" type="MainZone-Head">
+                        <title ref="#C_I_v5">Cap. PRIMVM v.5</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844091_line_45_ligne_2"/>
                            <choice>
@@ -76321,7 +76302,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v5">
+                  <div type="commentary" corresp="#C_I_v5">
                      <ab corresp="#f844091_block_8" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844091_line_46_ligne_2"/>
                         <choice>
@@ -76406,9 +76387,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v6">
-                     <ab corresp="#C_PRIMVM_v6" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v6">Cap. PRIMVM v.6</title>
+                  <div type="verse" xml:id="C_I_v6">
+                     <ab corresp="#C_I_v6" type="MainZone-Head">
+                        <title ref="#C_I_v6">Cap. PRIMVM v.6</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844092_line_10_ligne_2"/>
                            <choice>
@@ -76418,7 +76399,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v6">
+                  <div type="commentary" corresp="#C_I_v6">
                      <ab corresp="#f844092_block_6" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844092_line_11_ligne_2"/>
                         <choice>
@@ -76474,9 +76455,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v7">
-                     <ab corresp="#C_PRIMVM_v7" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v7">Cap. PRIMVM v.7</title>
+                  <div type="verse" xml:id="C_I_v7">
+                     <ab corresp="#C_I_v7" type="MainZone-Head">
+                        <title ref="#C_I_v7">Cap. PRIMVM v.7</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844092_line_21_ligne_2"/>
                            <choice>
@@ -76500,7 +76481,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v7">
+                  <div type="commentary" corresp="#C_I_v7">
                      <ab corresp="#f844092_block_9" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844092_line_25_ligne_2"/>
                         <choice>
@@ -76845,9 +76826,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v8">
-                     <ab corresp="#C_PRIMVM_v8" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v8">Cap. PRIMVM v.8</title>
+                  <div type="verse" xml:id="C_I_v8">
+                     <ab corresp="#C_I_v8" type="MainZone-Head">
+                        <title ref="#C_I_v8">Cap. PRIMVM v.8</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844093_line_39_ligne_2"/>
                            <choice>
@@ -76864,7 +76845,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v8">
+                  <div type="commentary" corresp="#C_I_v8">
                      <ab corresp="#f844093_block_5" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844093_line_41_ligne_2"/>
                         <choice>
@@ -77104,9 +77085,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v9">
-                     <ab corresp="#C_PRIMVM_v9" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v9">Cap. PRIMVM v.9</title>
+                  <div type="verse" xml:id="C_I_v9">
+                     <ab corresp="#C_I_v9" type="MainZone-Head">
+                        <title ref="#C_I_v9">Cap. PRIMVM v.9</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844094_line_36_ligne_2"/>
                            <choice>
@@ -77123,7 +77104,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v9">
+                  <div type="commentary" corresp="#C_I_v9">
                      <ab corresp="#f844094_block_6" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844094_line_39_ligne_2"/>
                         <choice>
@@ -77348,9 +77329,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v10">
-                     <ab corresp="#C_PRIMVM_v10" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v10">Cap. PRIMVM v.10</title>
+                  <div type="verse" xml:id="C_I_v10">
+                     <ab corresp="#C_I_v10" type="MainZone-Head">
+                        <title ref="#C_I_v10">Cap. PRIMVM v.10</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844095_line_30_ligne_2"/>
                            <choice>
@@ -77367,7 +77348,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v10">
+                  <div type="commentary" corresp="#C_I_v10">
                      <ab corresp="#f844095_block_5" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844095_line_32_ligne_2"/>
                         <choice>
@@ -77749,9 +77730,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v11">
-                     <ab corresp="#C_PRIMVM_v11" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v11">Cap. PRIMVM v.11</title>
+                  <div type="verse" xml:id="C_I_v11">
+                     <ab corresp="#C_I_v11" type="MainZone-Head">
+                        <title ref="#C_I_v11">Cap. PRIMVM v.11</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844097_line_1_ligne_2"/>
                            <choice>
@@ -77768,7 +77749,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v11">
+                  <div type="commentary" corresp="#C_I_v11">
                      <ab corresp="#f844097_block_2" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844097_line_3_ligne_2"/>
                         <choice>
@@ -77884,9 +77865,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v12">
-                     <ab corresp="#C_PRIMVM_v12" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v12">Cap. PRIMVM v.12</title>
+                  <div type="verse" xml:id="C_I_v12">
+                     <ab corresp="#C_I_v12" type="MainZone-Head">
+                        <title ref="#C_I_v12">Cap. PRIMVM v.12</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844097_line_27_ligne_2"/>
                            <choice>
@@ -77903,7 +77884,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v12">
+                  <div type="commentary" corresp="#C_I_v12">
                      <ab corresp="#f844097_block_7" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844097_line_30_ligne_2"/>
                         <choice>
@@ -78143,9 +78124,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v13">
-                     <ab corresp="#C_PRIMVM_v13" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v13">Cap. PRIMVM v.13</title>
+                  <div type="verse" xml:id="C_I_v13">
+                     <ab corresp="#C_I_v13" type="MainZone-Head">
+                        <title ref="#C_I_v13">Cap. PRIMVM v.13</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844098_line_24_ligne_2"/>
                            <choice>
@@ -78169,7 +78150,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v13">
+                  <div type="commentary" corresp="#C_I_v13">
                      <ab corresp="#f844098_block_6" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844098_line_28_ligne_2"/>
                         <choice>
@@ -78322,9 +78303,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v14">
-                     <ab corresp="#C_PRIMVM_v14" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v14">Cap. PRIMVM v.14</title>
+                  <div type="verse" xml:id="C_I_v14">
+                     <ab corresp="#C_I_v14" type="MainZone-Head">
+                        <title ref="#C_I_v14">Cap. PRIMVM v.14</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844099_line_4_ligne_2"/>
                            <choice>
@@ -78341,7 +78322,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v14">
+                  <div type="commentary" corresp="#C_I_v14">
                      <ab corresp="#f844099_block_4" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844099_line_7_ligne_2"/>
                         <choice>
@@ -78676,9 +78657,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v15">
-                     <ab corresp="#C_PRIMVM_v15" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v15">Cap. PRIMVM v.15</title>
+                  <div type="verse" xml:id="C_I_v15">
+                     <ab corresp="#C_I_v15" type="MainZone-Head">
+                        <title ref="#C_I_v15">Cap. PRIMVM v.15</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844100_line_22_ligne_2"/>
                            <choice>
@@ -78702,7 +78683,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v15">
+                  <div type="commentary" corresp="#C_I_v15">
                      <ab corresp="#f844100_block_6" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844100_line_26_ligne_2"/>
                         <choice>
@@ -78875,9 +78856,9 @@
                   </div>
                </div>
                <div type="verse+commentary-text">
-                  <div type="verse" xml:id="C_PRIMVM_v16">
-                     <ab corresp="#C_PRIMVM_v16" type="MainZone-Head">
-                        <title ref="#C_PRIMVM_v16">Cap. PRIMVM v.16</title>
+                  <div type="verse" xml:id="C_I_v16">
+                     <ab corresp="#C_I_v16" type="MainZone-Head">
+                        <title ref="#C_I_v16">Cap. PRIMVM v.16</title>
                         <hi>
                            <lb type="DefaultLine" corresp="#f844101_line_7_ligne_2"/>
                            <choice>
@@ -78894,7 +78875,7 @@
                         </hi>
                      </ab>
                   </div>
-                  <div type="commentary" corresp="#C_PRIMVM_v16">
+                  <div type="commentary" corresp="#C_I_v16">
                      <ab corresp="#f844101_block_4" type="MainZone-P">
                         <lb type="DefaultLine" corresp="#f844101_line_9_ligne_2"/>
                         <choice>

@@ -9,7 +9,8 @@
     
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <!-- Decoupage du xml tei en vue d'un fichier pour une table des matières de Tei-publisher -->
-    <!-- le 09.06.26 -->
+    <!-- le 1.07.2026 ça fonctionne parfaitement -->
+    <!-- ne pas oublié de changer les noms de chapitre e.g.C_PRIMVM pour C_I si besoin manuellement chercher _PRIMVM -->
     <xsl:strip-space elements="*"/>
     
     
@@ -18,10 +19,7 @@
             <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
     </xsl:template>
- <!--   
-    <xsl:template match="hi">
-        <xsl:apply-templates/>
-    </xsl:template>-->
+
     
     <xsl:template match="body">
         
@@ -30,9 +28,6 @@
             <!-- preserve body attributes -->
             <xsl:apply-templates select="@*"/>
             
-            <!--<div type="book">
-                <xsl:attribute name="corresp"
-                    select="concat('#', /TEI/@xml:id)"/>-->
                 
                 <!-- group all body children -->
                 <xsl:for-each-group
@@ -41,8 +36,8 @@
                     ab[
                     @type='MainZone-Head'
                     and (
-                    choice/reg[matches(., '^CAP')]
-                    or hi/choice/reg[matches(., '^CAP')]
+                    choice/reg[matches(normalize-space(.), '^cap', 'i')]
+                    or hi/choice/reg[matches(normalize-space(.), '^cap', 'i')]
                     )
                     ]">
                     
@@ -73,8 +68,9 @@
                                 ),
                                 '\s+'
                                 )[last()],
-                                '^CAP\.?',
-                                ''
+                                '^cap\\.?\\s*',
+                                '',
+                                'i'
                                 ),
                                 '\.$',
                                 ''
@@ -100,8 +96,9 @@
                                 ),
                                 '\s+'
                                 )[last()],
-                                '^CAP\.?',
-                                ''
+                                '^cap\\.?\\s*',
+                                '',
+                                'i'
                                 ),
                                 '\.$',
                                 ''
@@ -131,8 +128,8 @@
                                         ab[
                                         @type='MainZone-Head'
                                         and not(
-                                        choice/reg[matches(., '^CAP')]
-                                        or hi/choice/reg[matches(., '^CAP')]
+                                        choice/reg[matches(normalize-space(.), '^cap', 'i')]
+                                        or hi/choice/reg[matches(normalize-space(.), '^cap', 'i')]
                                         )
                                         ]">
                                         
@@ -196,68 +193,7 @@
                                                 </div>
                                                 
                                             </xsl:when>
-                                         <!--   <xsl:when test="$verseHead">
-                                                
-                                                <!-\- build verse id once -\->
-                                                
-                                                <xsl:variable name="verse-id">
-                                                    <xsl:value-of select="concat($chapter-id,'_v')"/>
-                                                    
-                                                    <xsl:number
-                                                        level="any"
-                                                        count="
-                                                        ab[@type='MainZone-Head'
-                                                        and not(
-                                                        choice/reg[matches(., '^CAP')]
-                                                        or hi/choice/reg[matches(., '^CAP')]
-                                                        )]"
-                                                        from="
-                                                        ab[@type='MainZone-Head'
-                                                        and (
-                                                        choice/reg[matches(., '^CAP')]
-                                                        or hi/choice/reg[matches(., '^CAP')]
-                                                        )]"/>
-                                                </xsl:variable>
-                                                
-                                                <xsl:variable name="verse-title">
-                                                    <xsl:value-of select="concat($chapter-title,' v.')"/>
-                                                    
-                                                    <xsl:number
-                                                        level="any"
-                                                        count="
-                                                        ab[@type='MainZone-Head'
-                                                        and not(
-                                                        choice/reg[matches(., '^CAP')]
-                                                        or hi/choice/reg[matches(., '^CAP')]
-                                                        )]"
-                                                        from="
-                                                        ab[@type='MainZone-Head'
-                                                        and (
-                                                        choice/reg[matches(., '^CAP')]
-                                                        or hi/choice/reg[matches(., '^CAP')]
-                                                        )]"/>
-                                                </xsl:variable>
-                                                
-                                                <div type="verse" xml:id="{$verse-id}">
-                                                    
-                                                    <!-\- verse title -\->
-                                                    <hi type="h2">
-                                                    <text><xsl:value-of select="$verse-title"/></text>
-                                                    <xsl:apply-templates select="$verseHead"/>
-                                                    </hi>
-                                              
-                                                    <!-\- commentary wrapper -\->
-                                                    <div type="commentary"
-                                                        corresp="#{$verse-id}">
-                                                        
-                                                        <xsl:apply-templates
-                                                            select="current-group()[position() gt 1]"/>
-                                                        
-                                                    </div>
-                                                    
-                                                </div>
-                                              
-                                            </xsl:when>-->
+                                         
                                             
                                             <!-- material before first verse -->
                                             <xsl:otherwise>
@@ -286,22 +222,7 @@
                                     <xsl:choose>
                                         
                                         <!-- group begins with a title -->
-                                     <!--   <xsl:when test="current-group()[1][self::ab[@type='MainZone-Head']]">
-                                            
-                                            <title type="default-title">
-                                                <xsl:apply-templates
-                                                    select="current-group()[1]"/>
-                                            </title>
-                                            
-                                            <!-\- following material -\->
-                                            <xsl:if test="count(current-group()) gt 1">
-                                                <div type="introduction-text">
-                                                    <xsl:apply-templates
-                                                        select="current-group()[position() gt 1]"/>
-                                                </div>
-                                            </xsl:if>
-                                            
-                                        </xsl:when>-->
+                                  
                                         <xsl:when test="current-group()[1][self::ab[@type='MainZone-Head']]">
                                             <div type ="introduction-title">
                                             <ab>
