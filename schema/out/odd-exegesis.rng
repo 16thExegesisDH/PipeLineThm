@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-07-07T06:43:43Z. .
+Schema generated from ODD source 2026-07-07T06:57:26Z. .
 TEI Edition: Version 4.6.0. Last updated on
         4th April 2023, revision f18deffba
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
@@ -4147,10 +4147,10 @@ relatedItem element must be empty</sch:report>
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:div[@type='verse']">
-               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_§[0-9]+$')">
+               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+$')">
                               L'attribut xml:id d'un div de type "verse" doit suivre le
-                              motif C_&lt;chiffre romain du chant&gt;_§&lt;numéro du verset&gt;
-                              (ex. C_I_§19).
+                              motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du
+                              verset&gt; (ex. C_I_sec_1).
                            </sch:assert>
             </sch:rule>
          </pattern>
@@ -4161,10 +4161,24 @@ relatedItem element must be empty</sch:report>
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:div[@type='verse+commentary-text']">
-               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_§[0-9]+_full$')">
+               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+_full$')">
                               L'attribut xml:id d'un div de type "verse+commentary-text" doit
-                              suivre le motif C_&lt;chiffre romain du chant&gt;_§&lt;numéro du
-                              verset&gt;_full (ex. C_I_§24_full).
+                              suivre le motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro
+                              du verset&gt;_full (ex. C_I_sec_1_full).
+                           </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="myTEI-div-verse_commentary_xmlid_consistency-constraint-rule-12">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      context="tei:div[@type='verse+commentary-text']">
+               <sch:assert test="substring-before(@xml:id, '_full') = tei:div[@type='verse'][1]/@xml:id">
+                              Le xml:id du div "verse+commentary-text" (<sch:value-of select="@xml:id"/>)
+                              doit correspondre exactement à celui de son div "verse" enfant
+                              (<sch:value-of select="tei:div[@type='verse'][1]/@xml:id"/>), suivi de "_full".
                            </sch:assert>
             </sch:rule>
          </pattern>
@@ -4426,7 +4440,7 @@ relatedItem element must be empty</sch:report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(path) defines any line passing through two or more points within a <code xmlns="http://www.w3.org/1999/xhtml">&lt;surface&gt;</code> element. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-path-pathmustnotbeclosed-constraint-rule-12">
+                  id="myTEI-path-pathmustnotbeclosed-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
