@@ -1322,6 +1322,17 @@
                         </sch:rule>
                      </constraint>
                   </constraintSpec>
+                  <constraintSpec ident="verse_commentary_xmlid_pattern" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="tei:div[@type='verse+commentary-text']">
+                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_§[0-9]+_full$')">
+                              L'attribut xml:id d'un div de type "verse+commentary-text" doit
+                              suivre le motif C_&lt;chiffre romain du chant&gt;_§&lt;numéro du
+                              verset&gt;_full (ex. C_I_§24_full).
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>
+                  </constraintSpec>
                   <attList>
                      <attDef ident="next" mode="delete"/>
                      <attDef ident="prev" mode="delete"/>

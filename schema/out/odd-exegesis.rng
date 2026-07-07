@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-07-07T06:32:00Z. .
+Schema generated from ODD source 2026-07-07T06:43:43Z. .
 TEI Edition: Version 4.6.0. Last updated on
         4th April 2023, revision f18deffba
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
@@ -4155,6 +4155,20 @@ relatedItem element must be empty</sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="myTEI-div-verse_commentary_xmlid_pattern-constraint-rule-11">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      context="tei:div[@type='verse+commentary-text']">
+               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_§[0-9]+_full$')">
+                              L'attribut xml:id d'un div de type "verse+commentary-text" doit
+                              suivre le motif C_&lt;chiffre romain du chant&gt;_§&lt;numéro du
+                              verset&gt;_full (ex. C_I_§24_full).
+                           </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="myTEI-div-abstractModel-structure-div-in-l-or-lg-constraint-report-15">
             <rule context="tei:div">
                <sch:report xmlns="http://www.tei-c.org/ns/1.0"
@@ -4412,7 +4426,7 @@ relatedItem element must be empty</sch:report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(path) defines any line passing through two or more points within a <code xmlns="http://www.w3.org/1999/xhtml">&lt;surface&gt;</code> element. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-path-pathmustnotbeclosed-constraint-rule-11">
+                  id="myTEI-path-pathmustnotbeclosed-constraint-rule-12">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
