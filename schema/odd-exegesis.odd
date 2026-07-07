@@ -1312,14 +1312,15 @@
                </elementSpec>
                <!-- Checking element "div" -->
                <elementSpec ident="div" mode="change">
-       
+                  
                   <!-- 1. chapter-title : motif de base -->
                   <constraintSpec ident="chapter_title_xmlid_pattern" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:div[@type='chapter-title']">
-                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+$')">
+                           <sch:assert test="matches(@xml:id, '^[A-Za-z]{3}_[A-Za-z0-9-]+_C_[IVXLCDM]+$')">
                               L'attribut xml:id d'un div de type "chapter-title" doit suivre
-                              le motif C_&lt;chiffre romain du chant&gt; (ex. C_V).
+                              le motif &lt;sigle 3 lettres&gt;_&lt;identifiant aléatoire&gt;_C_&lt;chiffre romain du chant&gt;
+                              (ex. Ano_1-Tim_C_II).
                            </sch:assert>
                         </sch:rule>
                      </constraint>
@@ -1329,9 +1330,10 @@
                   <constraintSpec ident="all_chapter_text_corresp_consistency" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:div[@type='all-chapter-text']">
-                           <sch:assert test="matches(@corresp, '^#C_[IVXLCDM]+$')">
+                           <sch:assert test="matches(@corresp, '^#[A-Za-z]{3}_[A-Za-z0-9-]+_C_[IVXLCDM]+$')">
                               L'attribut corresp d'un div de type "all-chapter-text" doit
-                              suivre le motif #C_&lt;chiffre romain du chant&gt; (ex. #C_V).
+                              suivre le motif #&lt;sigle 3 lettres&gt;_&lt;identifiant aléatoire&gt;_C_&lt;chiffre romain du chant&gt;
+                              (ex. #Ano_1-Tim_C_II).
                            </sch:assert>
                            <sch:assert test="//tei:div[@type='chapter-title'][@xml:id = substring-after(current()/@corresp, '#')]">
                               Le corresp du div "all-chapter-text" (<sch:value-of select="@corresp"/>)
@@ -1346,10 +1348,10 @@
                   <constraintSpec ident="verse_commentary_xmlid_pattern" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:div[@type='verse+commentary-text']">
-                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+_full$')">
+                           <sch:assert test="matches(@xml:id, '^[A-Za-z]{3}_[A-Za-z0-9-]+_C_[IVXLCDM]+_sec_[0-9]+_full$')">
                               L'attribut xml:id d'un div de type "verse+commentary-text" doit
-                              suivre le motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro
-                              du verset&gt;_full (ex. C_V_sec_1_full).
+                              suivre le motif &lt;sigle 3 lettres&gt;_&lt;identifiant aléatoire&gt;_C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro
+                              du verset&gt;_full (ex. Ano_1-Tim_C_II_sec_1_full).
                            </sch:assert>
                            <sch:assert test="substring-before(@xml:id, '_sec_') = substring-after(parent::tei:div[@type='all-chapter-text']/@corresp, '#')">
                               Le chant indiqué dans le xml:id (<sch:value-of select="substring-before(@xml:id, '_sec_')"/>)
@@ -1364,10 +1366,10 @@
                   <constraintSpec ident="verse_xmlid_pattern" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:div[@type='verse']">
-                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+$')">
+                           <sch:assert test="matches(@xml:id, '^[A-Za-z]{3}_[A-Za-z0-9-]+_C_[IVXLCDM]+_sec_[0-9]+$')">
                               L'attribut xml:id d'un div de type "verse" doit suivre le motif
-                              C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du verset&gt;
-                              (ex. C_V_sec_1).
+                              &lt;sigle 3 lettres&gt;_&lt;identifiant aléatoire&gt;_C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du verset&gt;
+                              (ex. Ano_1-Tim_C_II_sec_1).
                            </sch:assert>
                            <sch:assert test="@xml:id = concat(parent::tei:div[@type='verse+commentary-text']/@xml:id, '') or @xml:id = substring-before(parent::tei:div[@type='verse+commentary-text']/@xml:id, '_full')">
                               Le xml:id de ce div "verse" (<sch:value-of select="@xml:id"/>) doit
