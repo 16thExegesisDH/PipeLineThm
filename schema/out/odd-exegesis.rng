@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-07-07T07:31:08Z. .
+Schema generated from ODD source 2026-07-07T07:34:47Z. .
 TEI Edition: Version 4.6.0. Last updated on
         4th April 2023, revision f18deffba
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.6.0/
@@ -4143,21 +4143,38 @@ relatedItem element must be empty</sch:report>
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-div-verse_xmlid_pattern-constraint-rule-10">
+                  id="myTEI-div-chapter_title_xmlid_pattern-constraint-rule-10">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
-                      context="tei:div[@type='verse']">
-               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+$')">
-                              L'attribut xml:id d'un div de type "verse" doit suivre le
-                              motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du
-                              verset&gt; (ex. C_I_sec_1).
+                      context="tei:div[@type='chapter-title']">
+               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+$')">
+                              L'attribut xml:id d'un div de type "chapter-title" doit suivre
+                              le motif C_&lt;chiffre romain du chant&gt; (ex. C_V).
                            </sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-div-verse_commentary_xmlid_pattern-constraint-rule-11">
+                  id="myTEI-div-all_chapter_text_corresp_consistency-constraint-rule-11">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      context="tei:div[@type='all-chapter-text']">
+               <sch:assert test="matches(@corresp, '^#C_[IVXLCDM]+$')">
+                              L'attribut corresp d'un div de type "all-chapter-text" doit
+                              suivre le motif #C_&lt;chiffre romain du chant&gt; (ex. #C_V).
+                           </sch:assert>
+               <sch:assert test="substring-after(@corresp, '#') = preceding-sibling::tei:div[@type='chapter-title'][1]/@xml:id">
+                              Le corresp du div "all-chapter-text" (<sch:value-of select="@corresp"/>)
+                              doit correspondre au xml:id du div "chapter-title" frère précédent
+                              (<sch:value-of select="preceding-sibling::tei:div[@type='chapter-title'][1]/@xml:id"/>).
+                           </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="myTEI-div-verse_commentary_xmlid_pattern-constraint-rule-12">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -4166,52 +4183,32 @@ relatedItem element must be empty</sch:report>
                <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+_full$')">
                               L'attribut xml:id d'un div de type "verse+commentary-text" doit
                               suivre le motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro
-                              du verset&gt;_full (ex. C_I_sec_1_full).
+                              du verset&gt;_full (ex. C_V_sec_1_full).
+                           </sch:assert>
+               <sch:assert test="substring-before(@xml:id, '_sec_') = substring-after(parent::tei:div[@type='all-chapter-text']/@corresp, '#')">
+                              Le chant indiqué dans le xml:id (<sch:value-of select="substring-before(@xml:id, '_sec_')"/>)
+                              doit correspondre au chant du div "all-chapter-text" parent
+                              (<sch:value-of select="substring-after(parent::tei:div[@type='all-chapter-text']/@corresp, '#')"/>).
                            </sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-div-verse_commentary_xmlid_consistency-constraint-rule-12">
+                  id="myTEI-div-verse_xmlid_pattern-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
-                      context="tei:div[@type='verse+commentary-text']">
-               <sch:assert test="substring-before(@xml:id, '_full') = tei:div[@type='verse'][1]/@xml:id">
-                              Le xml:id du div "verse+commentary-text" (<sch:value-of select="@xml:id"/>)
-                              doit correspondre exactement à celui de son div "verse" enfant
-                              (<sch:value-of select="tei:div[@type='verse'][1]/@xml:id"/>), suivi de "_full".
+                      context="tei:div[@type='verse']">
+               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+$')">
+                              L'attribut xml:id d'un div de type "verse" doit suivre le motif
+                              C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du verset&gt;
+                              (ex. C_V_sec_1).
                            </sch:assert>
-            </sch:rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-div-chapter_title_xmlid_pattern-constraint-rule-13">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:xi="http://www.w3.org/2001/XInclude"
-                      context="tei:div[@type='chapter-title']">
-               <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+$')">
-                              L'attribut xml:id d'un div de type "chapter-title" doit suivre le
-                              motif C_&lt;chiffre romain du chant&gt; (ex. C_I).
-                           </sch:assert>
-            </sch:rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-div-all_chapter_text_corresp_consistency-constraint-rule-14">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:xi="http://www.w3.org/2001/XInclude"
-                      context="tei:div[@type='all-chapter-text']">
-               <sch:assert test="matches(@corresp, '^#C_[IVXLCDM]+$')">
-                              L'attribut corresp d'un div de type "all-chapter-text" doit
-                              suivre le motif #C_&lt;chiffre romain du chant&gt; (ex. #C_I).
-                           </sch:assert>
-               <sch:assert test="//tei:div[@type='chapter-title'][@xml:id = substring-after(current()/@corresp, '#')]">
-                              Le corresp du div "all-chapter-text" (<sch:value-of select="@corresp"/>)
-                              doit référencer un div "chapter-title" existant portant ce xml:id
-                              (aucun div chapter-title avec xml:id="<sch:value-of select="substring-after(@corresp, '#')"/>" n'a été trouvé).
+               <sch:assert test="@xml:id = concat(parent::tei:div[@type='verse+commentary-text']/@xml:id, '') or @xml:id = substring-before(parent::tei:div[@type='verse+commentary-text']/@xml:id, '_full')">
+                              Le xml:id de ce div "verse" (<sch:value-of select="@xml:id"/>) doit
+                              correspondre exactement au xml:id de son parent
+                              "verse+commentary-text" privé du suffixe "_full"
+                              (<sch:value-of select="substring-before(parent::tei:div[@type='verse+commentary-text']/@xml:id, '_full')"/>).
                            </sch:assert>
             </sch:rule>
          </pattern>
@@ -4473,7 +4470,7 @@ relatedItem element must be empty</sch:report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(path) defines any line passing through two or more points within a <code xmlns="http://www.w3.org/1999/xhtml">&lt;surface&gt;</code> element. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="myTEI-path-pathmustnotbeclosed-constraint-rule-15">
+                  id="myTEI-path-pathmustnotbeclosed-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"

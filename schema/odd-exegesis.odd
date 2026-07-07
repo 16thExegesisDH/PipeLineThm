@@ -1312,60 +1312,68 @@
                </elementSpec>
                <!-- Checking element "div" -->
                <elementSpec ident="div" mode="change">
-                  <constraintSpec ident="verse_xmlid_pattern" scheme="schematron">
+       
+                  <!-- 1. chapter-title : motif de base -->
+                  <constraintSpec ident="chapter_title_xmlid_pattern" scheme="schematron">
                      <constraint>
-                        <sch:rule context="tei:div[@type='verse']">
-                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+$')">
-                              L'attribut xml:id d'un div de type "verse" doit suivre le
-                              motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du
-                              verset&gt; (ex. C_I_sec_1).
+                        <sch:rule context="tei:div[@type='chapter-title']">
+                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+$')">
+                              L'attribut xml:id d'un div de type "chapter-title" doit suivre
+                              le motif C_&lt;chiffre romain du chant&gt; (ex. C_V).
                            </sch:assert>
                         </sch:rule>
                      </constraint>
                   </constraintSpec>
+                  
+                  <!-- 2. all-chapter-text : corresp vers le chapter-title -->
+                  <constraintSpec ident="all_chapter_text_corresp_consistency" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="tei:div[@type='all-chapter-text']">
+                           <sch:assert test="matches(@corresp, '^#C_[IVXLCDM]+$')">
+                              L'attribut corresp d'un div de type "all-chapter-text" doit
+                              suivre le motif #C_&lt;chiffre romain du chant&gt; (ex. #C_V).
+                           </sch:assert>
+                           <sch:assert test="substring-after(@corresp, '#') = preceding-sibling::tei:div[@type='chapter-title'][1]/@xml:id">
+                              Le corresp du div "all-chapter-text" (<sch:value-of select="@corresp"/>)
+                              doit correspondre au xml:id du div "chapter-title" frère précédent
+                              (<sch:value-of select="preceding-sibling::tei:div[@type='chapter-title'][1]/@xml:id"/>).
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>
+                  </constraintSpec>
+                  
+                  <!-- 3. verse+commentary-text : motif + cohérence avec le chapitre ancêtre -->
                   <constraintSpec ident="verse_commentary_xmlid_pattern" scheme="schematron">
                      <constraint>
                         <sch:rule context="tei:div[@type='verse+commentary-text']">
                            <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+_full$')">
                               L'attribut xml:id d'un div de type "verse+commentary-text" doit
                               suivre le motif C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro
-                              du verset&gt;_full (ex. C_I_sec_1_full).
+                              du verset&gt;_full (ex. C_V_sec_1_full).
+                           </sch:assert>
+                           <sch:assert test="substring-before(@xml:id, '_sec_') = substring-after(parent::tei:div[@type='all-chapter-text']/@corresp, '#')">
+                              Le chant indiqué dans le xml:id (<sch:value-of select="substring-before(@xml:id, '_sec_')"/>)
+                              doit correspondre au chant du div "all-chapter-text" parent
+                              (<sch:value-of select="substring-after(parent::tei:div[@type='all-chapter-text']/@corresp, '#')"/>).
                            </sch:assert>
                         </sch:rule>
                      </constraint>
                   </constraintSpec>
-                  <constraintSpec ident="verse_commentary_xmlid_consistency" scheme="schematron">
+                  
+                  <!-- 4. verse : motif + cohérence avec son parent verse+commentary-text -->
+                  <constraintSpec ident="verse_xmlid_pattern" scheme="schematron">
                      <constraint>
-                        <sch:rule context="tei:div[@type='verse+commentary-text']">
-                           <sch:assert test="substring-before(@xml:id, '_full') = tei:div[@type='verse'][1]/@xml:id">
-                              Le xml:id du div "verse+commentary-text" (<sch:value-of select="@xml:id"/>)
-                              doit correspondre exactement à celui de son div "verse" enfant
-                              (<sch:value-of select="tei:div[@type='verse'][1]/@xml:id"/>), suivi de "_full".
+                        <sch:rule context="tei:div[@type='verse']">
+                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_sec_[0-9]+$')">
+                              L'attribut xml:id d'un div de type "verse" doit suivre le motif
+                              C_&lt;chiffre romain du chant&gt;_sec_&lt;numéro du verset&gt;
+                              (ex. C_V_sec_1).
                            </sch:assert>
-                        </sch:rule>
-                     </constraint>
-                  </constraintSpec>
-                  <constraintSpec ident="chapter_title_xmlid_pattern" scheme="schematron">
-                     <constraint>
-                        <sch:rule context="tei:div[@type='chapter-title']">
-                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+$')">
-                              L'attribut xml:id d'un div de type "chapter-title" doit suivre le
-                              motif C_&lt;chiffre romain du chant&gt; (ex. C_I).
-                           </sch:assert>
-                        </sch:rule>
-                     </constraint>
-                  </constraintSpec>
-                  <constraintSpec ident="all_chapter_text_corresp_consistency" scheme="schematron">
-                     <constraint>
-                        <sch:rule context="tei:div[@type='all-chapter-text']">
-                           <sch:assert test="matches(@corresp, '^#C_[IVXLCDM]+$')">
-                              L'attribut corresp d'un div de type "all-chapter-text" doit
-                              suivre le motif #C_&lt;chiffre romain du chant&gt; (ex. #C_I).
-                           </sch:assert>
-                           <sch:assert test="//tei:div[@type='chapter-title'][@xml:id = substring-after(current()/@corresp, '#')]">
-                              Le corresp du div "all-chapter-text" (<sch:value-of select="@corresp"/>)
-                              doit référencer un div "chapter-title" existant portant ce xml:id
-                              (aucun div chapter-title avec xml:id="<sch:value-of select="substring-after(@corresp, '#')"/>" n'a été trouvé).
+                           <sch:assert test="@xml:id = concat(parent::tei:div[@type='verse+commentary-text']/@xml:id, '') or @xml:id = substring-before(parent::tei:div[@type='verse+commentary-text']/@xml:id, '_full')">
+                              Le xml:id de ce div "verse" (<sch:value-of select="@xml:id"/>) doit
+                              correspondre exactement au xml:id de son parent
+                              "verse+commentary-text" privé du suffixe "_full"
+                              (<sch:value-of select="substring-before(parent::tei:div[@type='verse+commentary-text']/@xml:id, '_full')"/>).
                            </sch:assert>
                         </sch:rule>
                      </constraint>
