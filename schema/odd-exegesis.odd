@@ -1037,11 +1037,11 @@
                      <attDef ident="source" mode="delete"/>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="TitlePageZone"/>
                            <valItem ident="MainZone-Head"/>
                            <valItem ident="MainZone-Continued"/>
-                            <valItem ident="MainZone-P"/>
+                           <valItem ident="MainZone-P"/>
                            <valItem ident="DropCapitalZone"/>
+                           <valItem ident="TitlePageZone"/>
                            <!-- ajouter le MainZone:P-Continued de l'ancien dataset ?  no I want something homogeneus-->
                         </valList>
                      </attDef>
