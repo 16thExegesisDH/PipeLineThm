@@ -1362,10 +1362,10 @@
                               L'attribut corresp d'un div de type "all-chapter-text" doit
                               suivre le motif #C_&lt;chiffre romain du chant&gt; (ex. #C_I).
                            </sch:assert>
-                           <sch:assert test="substring-after(@corresp, '#') = preceding-sibling::tei:div[@type='chapter-title'][1]/@xml:id">
+                           <sch:assert test="//tei:div[@type='chapter-title'][@xml:id = substring-after(current()/@corresp, '#')]">
                               Le corresp du div "all-chapter-text" (<sch:value-of select="@corresp"/>)
-                              doit correspondre au xml:id du div "chapter-title" précédent
-                              (<sch:value-of select="preceding-sibling::tei:div[@type='chapter-title'][1]/@xml:id"/>).
+                              doit référencer un div "chapter-title" existant portant ce xml:id
+                              (aucun div chapter-title avec xml:id="<sch:value-of select="substring-after(@corresp, '#')"/>" n'a été trouvé).
                            </sch:assert>
                         </sch:rule>
                      </constraint>
