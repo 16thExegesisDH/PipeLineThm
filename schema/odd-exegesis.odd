@@ -751,8 +751,8 @@
                         <valList mode="add" type="closed">
                         <valItem ident="MarginTextZone-Notes"/>
                            <valItem ident="MarginTextZone"/>
-                             <!-- <valItem ident="MarginTextZone:handwrittenAddition"/>
-                           <valItem ident="TableZone"/> -->
+                           <valItem ident="MarginTextZone:handwrittenAddition"/>
+                           <!-- <valItem ident="TableZone"/> -->
                         </valList>
                      </attDef>
                      <attDef ident="place" mode="change">
@@ -1311,6 +1311,17 @@
                </elementSpec>
                <!-- Checking element "div" -->
                <elementSpec ident="div" mode="change">
+                  <constraintSpec ident="verse_xmlid_pattern" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="tei:div[@type='verse']">
+                           <sch:assert test="matches(@xml:id, '^C_[IVXLCDM]+_§[0-9]+$')">
+                              L'attribut xml:id d'un div de type "verse" doit suivre le
+                              motif C_&lt;chiffre romain du chant&gt;_§&lt;numéro du verset&gt;
+                              (ex. C_I_§19).
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>
+                  </constraintSpec>
                   <attList>
                      <attDef ident="next" mode="delete"/>
                      <attDef ident="prev" mode="delete"/>
@@ -1390,6 +1401,7 @@
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
                            <valItem ident="DefaultLine"/>
+                           <valItem ident="HeadingLine"/>
                            <valItem ident="DropCapitalZone"/>
                            <valItem ident="DropCapitalLine"/>
                            <valItem ident="GraphicZone"/>
