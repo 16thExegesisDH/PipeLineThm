@@ -982,11 +982,13 @@
                   </attList>
                </elementSpec>               
                <!-- Checking element "term" -->
+               
                <elementSpec ident="term" mode="change">
                   <attList>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
                            <valItem ident="form"/>
+                           <valItem ident="commentary-topic"/> 
                            <valItem ident="segmentation_quality"/>
                            <valItem ident="transcription_quality"/>
                            <valItem ident="intermediary_reg_quality"/>
@@ -1005,6 +1007,19 @@
                      <attDef ident="ref" mode="delete"/>
                   </attList>
                </elementSpec>
+               <!-- the commentaries-topic are the epistle abbreviation model from the Vulgate -->
+               <constraintSpec ident="commentary-topic-values" scheme="schematron">
+                  <constraint>
+                     <sch:rule context="tei:term[@type='commentary-topic']">
+                        <sch:assert test="normalize-space(.) = ('Rom','1-Cor','2-Cor','Gal','Eph','Phil','Col','1-Thess','2-Thess','1-Tim','2-Tim','Tit','Phlm','Hebr')">
+                           The content of &lt;term type="commentary-topic"&gt; must be one of:
+                           Rom, 1-Cor, 2-Cor, Gal, Eph, Phil, Col, 1-Thess, 2-Thess,
+                           1-Tim, 2-Tim, Tit, Phlm, Hebr.
+                        </sch:assert>
+                     </sch:rule>
+                  </constraint>
+               </constraintSpec>
+               
                <!-- Checking element "title" -->
                <elementSpec ident="title" mode="change">
                   <attList>
