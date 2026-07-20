@@ -1052,6 +1052,7 @@
                      <attDef ident="source" mode="delete"/>
                      <attDef ident="type" mode="change">
                         <valList mode="add" type="closed">
+                           <valItem ident="TitlePageZone"/>
                            <valItem ident="MainZone-Head"/>
                            <valItem ident="MainZone-Continued"/>
                            <valItem ident="MainZone-P"/>
